@@ -1,2 +1,92 @@
  * Serving Flask app 'dashboard'
  * Debug mode: off
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+/home/user/Desktop/c2/c2/scripts/real_time_analyzer.py:188: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(query, conn, params=(start_time, end_time))

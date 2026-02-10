@@ -36,3 +36,1931 @@ connection to server at "localhost" (::1), port 5432 failed: FATAL:  password au
 2026-02-10 17:53:39,865 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
 connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
 
+2026-02-10 17:54:39,866 - INFO - Triggering periodic analysis...
+2026-02-10 17:54:39,881 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:55:39,886 - INFO - Triggering periodic analysis...
+2026-02-10 17:55:39,900 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:56:39,903 - INFO - Triggering periodic analysis...
+2026-02-10 17:56:39,918 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:57:39,918 - INFO - Triggering periodic analysis...
+2026-02-10 17:57:39,932 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:58:39,934 - INFO - Triggering periodic analysis...
+2026-02-10 17:58:39,948 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:59:18,409 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 17:59:18,409 - INFO - Triggering periodic analysis...
+2026-02-10 17:59:18,431 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:59:39,949 - INFO - Triggering periodic analysis...
+2026-02-10 17:59:39,963 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:00:18,432 - INFO - Triggering periodic analysis...
+2026-02-10 18:00:18,446 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:00:27,510 - INFO - 127.0.0.1 - - [10/Feb/2026 18:00:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:00:28,508 - INFO - 127.0.0.1 - - [10/Feb/2026 18:00:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:00:28,518 - INFO - 127.0.0.1 - - [10/Feb/2026 18:00:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-10 18:00:31,953 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:00:31,954 - INFO - 127.0.0.1 - - [10/Feb/2026 18:00:31] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:00:32,905 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:00:32,905 - INFO - 127.0.0.1 - - [10/Feb/2026 18:00:32] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:00:38,518 - INFO - 127.0.0.1 - - [10/Feb/2026 18:00:38] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:00:39,964 - INFO - Triggering periodic analysis...
+2026-02-10 18:00:39,980 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:00:48,517 - INFO - 127.0.0.1 - - [10/Feb/2026 18:00:48] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:00:58,519 - INFO - 127.0.0.1 - - [10/Feb/2026 18:00:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:01:08,773 - INFO - 127.0.0.1 - - [10/Feb/2026 18:01:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:01:18,447 - INFO - Triggering periodic analysis...
+2026-02-10 18:01:18,462 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:01:18,521 - INFO - 127.0.0.1 - - [10/Feb/2026 18:01:18] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:01:28,524 - INFO - 127.0.0.1 - - [10/Feb/2026 18:01:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:01:38,521 - INFO - 127.0.0.1 - - [10/Feb/2026 18:01:38] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:01:39,981 - INFO - Triggering periodic analysis...
+2026-02-10 18:01:39,997 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:01:48,524 - INFO - 127.0.0.1 - - [10/Feb/2026 18:01:48] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:01:58,524 - INFO - 127.0.0.1 - - [10/Feb/2026 18:01:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:02:08,526 - INFO - 127.0.0.1 - - [10/Feb/2026 18:02:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:02:14,068 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 18:02:14,069 - INFO - Triggering periodic analysis...
+2026-02-10 18:02:14,086 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:02:18,536 - INFO - 127.0.0.1 - - [10/Feb/2026 18:02:18] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:02:28,529 - INFO - 127.0.0.1 - - [10/Feb/2026 18:02:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:02:35,240 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 18:02:35,240 - INFO - Triggering periodic analysis...
+2026-02-10 18:02:35,256 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:02:35,339 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 18:02:35,339 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 18:02:38,533 - INFO - 127.0.0.1 - - [10/Feb/2026 18:02:38] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:02:39,997 - INFO - Triggering periodic analysis...
+2026-02-10 18:02:40,014 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:02:48,531 - INFO - 127.0.0.1 - - [10/Feb/2026 18:02:48] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:02:58,532 - INFO - 127.0.0.1 - - [10/Feb/2026 18:02:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:03:08,534 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:03:18,536 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:18] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:03:28,541 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:03:35,287 - INFO - Triggering periodic analysis...
+2026-02-10 18:03:35,304 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:03:38,538 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:38] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:03:40,016 - INFO - Triggering periodic analysis...
+2026-02-10 18:03:40,031 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:03:48,545 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:48] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:03:58,547 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:03:58,692 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:58] "GET / HTTP/1.1" 200 -
+2026-02-10 18:03:58,756 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:03:59,667 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:59] "GET / HTTP/1.1" 200 -
+2026-02-10 18:03:59,700 - INFO - 127.0.0.1 - - [10/Feb/2026 18:03:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:00,138 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:00] "GET / HTTP/1.1" 200 -
+2026-02-10 18:04:00,185 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:00,325 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:00] "GET / HTTP/1.1" 200 -
+2026-02-10 18:04:00,374 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:00,537 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:00] "GET / HTTP/1.1" 200 -
+2026-02-10 18:04:00,601 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:00,904 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:00] "GET / HTTP/1.1" 200 -
+2026-02-10 18:04:00,953 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:01,475 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:01] "GET / HTTP/1.1" 200 -
+2026-02-10 18:04:01,528 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:02,722 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:04:02,722 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:04:03,841 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:04:03,841 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:04:04,063 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:04:04,064 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:04:04,471 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:04:04,472 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:04:04,955 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:04:04,956 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:04:05,529 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:04:05,529 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:04:11,529 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:21,532 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:31,536 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:35,305 - INFO - Triggering periodic analysis...
+2026-02-10 18:04:35,320 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:04:40,032 - INFO - Triggering periodic analysis...
+2026-02-10 18:04:40,047 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:04:41,538 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:04:51,539 - INFO - 127.0.0.1 - - [10/Feb/2026 18:04:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:05:01,556 - INFO - 127.0.0.1 - - [10/Feb/2026 18:05:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:05:11,550 - INFO - 127.0.0.1 - - [10/Feb/2026 18:05:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:05:21,552 - INFO - 127.0.0.1 - - [10/Feb/2026 18:05:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:05:31,553 - INFO - 127.0.0.1 - - [10/Feb/2026 18:05:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:05:35,322 - INFO - Triggering periodic analysis...
+2026-02-10 18:05:35,338 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:05:40,048 - INFO - Triggering periodic analysis...
+2026-02-10 18:05:40,066 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:05:41,557 - INFO - 127.0.0.1 - - [10/Feb/2026 18:05:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:05:51,560 - INFO - 127.0.0.1 - - [10/Feb/2026 18:05:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:06:01,556 - INFO - 127.0.0.1 - - [10/Feb/2026 18:06:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:06:11,557 - INFO - 127.0.0.1 - - [10/Feb/2026 18:06:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:06:21,570 - INFO - 127.0.0.1 - - [10/Feb/2026 18:06:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:06:31,564 - INFO - 127.0.0.1 - - [10/Feb/2026 18:06:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:06:35,339 - INFO - Triggering periodic analysis...
+2026-02-10 18:06:35,359 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:06:40,067 - INFO - Triggering periodic analysis...
+2026-02-10 18:06:40,082 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:06:41,565 - INFO - 127.0.0.1 - - [10/Feb/2026 18:06:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:06:51,566 - INFO - 127.0.0.1 - - [10/Feb/2026 18:06:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:07:01,565 - INFO - 127.0.0.1 - - [10/Feb/2026 18:07:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:07:11,568 - INFO - 127.0.0.1 - - [10/Feb/2026 18:07:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:07:21,789 - INFO - 127.0.0.1 - - [10/Feb/2026 18:07:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:07:31,568 - INFO - 127.0.0.1 - - [10/Feb/2026 18:07:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:07:35,360 - INFO - Triggering periodic analysis...
+2026-02-10 18:07:35,379 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:07:40,083 - INFO - Triggering periodic analysis...
+2026-02-10 18:07:40,098 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:07:41,573 - INFO - 127.0.0.1 - - [10/Feb/2026 18:07:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:07:51,576 - INFO - 127.0.0.1 - - [10/Feb/2026 18:07:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:08:01,577 - INFO - 127.0.0.1 - - [10/Feb/2026 18:08:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:08:11,578 - INFO - 127.0.0.1 - - [10/Feb/2026 18:08:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:08:21,589 - INFO - 127.0.0.1 - - [10/Feb/2026 18:08:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:08:31,620 - INFO - 127.0.0.1 - - [10/Feb/2026 18:08:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:08:35,390 - INFO - Triggering periodic analysis...
+2026-02-10 18:08:35,407 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:08:40,101 - INFO - Triggering periodic analysis...
+2026-02-10 18:08:40,121 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:08:41,582 - INFO - 127.0.0.1 - - [10/Feb/2026 18:08:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:08:51,583 - INFO - 127.0.0.1 - - [10/Feb/2026 18:08:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:09:01,581 - INFO - 127.0.0.1 - - [10/Feb/2026 18:09:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:09:11,585 - INFO - 127.0.0.1 - - [10/Feb/2026 18:09:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:09:21,586 - INFO - 127.0.0.1 - - [10/Feb/2026 18:09:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:09:31,588 - INFO - 127.0.0.1 - - [10/Feb/2026 18:09:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:09:35,411 - INFO - Triggering periodic analysis...
+2026-02-10 18:09:35,432 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:09:40,122 - INFO - Triggering periodic analysis...
+2026-02-10 18:09:40,142 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:09:41,595 - INFO - 127.0.0.1 - - [10/Feb/2026 18:09:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:09:51,602 - INFO - 127.0.0.1 - - [10/Feb/2026 18:09:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:10:01,601 - INFO - 127.0.0.1 - - [10/Feb/2026 18:10:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:10:11,600 - INFO - 127.0.0.1 - - [10/Feb/2026 18:10:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:10:21,616 - INFO - 127.0.0.1 - - [10/Feb/2026 18:10:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:10:31,665 - INFO - 127.0.0.1 - - [10/Feb/2026 18:10:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:10:35,433 - INFO - Triggering periodic analysis...
+2026-02-10 18:10:35,455 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:10:40,143 - INFO - Triggering periodic analysis...
+2026-02-10 18:10:40,167 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:10:41,628 - INFO - 127.0.0.1 - - [10/Feb/2026 18:10:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:10:51,617 - INFO - 127.0.0.1 - - [10/Feb/2026 18:10:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:11:01,630 - INFO - 127.0.0.1 - - [10/Feb/2026 18:11:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:11:11,627 - INFO - 127.0.0.1 - - [10/Feb/2026 18:11:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:11:21,630 - INFO - 127.0.0.1 - - [10/Feb/2026 18:11:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:11:31,627 - INFO - 127.0.0.1 - - [10/Feb/2026 18:11:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:11:35,458 - INFO - Triggering periodic analysis...
+2026-02-10 18:11:35,474 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:11:40,171 - INFO - Triggering periodic analysis...
+2026-02-10 18:11:40,189 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:11:41,630 - INFO - 127.0.0.1 - - [10/Feb/2026 18:11:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:11:51,628 - INFO - 127.0.0.1 - - [10/Feb/2026 18:11:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:12:01,628 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:12:03,792 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:03,796 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:12:04,527 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:04,528 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:12:04,696 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:04,697 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:12:04,851 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:04,852 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:12:05,021 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:05,022 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:12:05,197 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:05,198 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:12:05,365 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:05,365 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:12:05,531 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:05,532 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:12:05,730 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:05,730 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:12:11,632 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:12:21,630 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:12:31,636 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:12:35,475 - INFO - Triggering periodic analysis...
+2026-02-10 18:12:35,494 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:40,190 - INFO - Triggering periodic analysis...
+2026-02-10 18:12:40,205 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:12:41,644 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:12:51,641 - INFO - 127.0.0.1 - - [10/Feb/2026 18:12:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:13:01,640 - INFO - 127.0.0.1 - - [10/Feb/2026 18:13:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:13:11,644 - INFO - 127.0.0.1 - - [10/Feb/2026 18:13:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:13:21,642 - INFO - 127.0.0.1 - - [10/Feb/2026 18:13:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:13:31,641 - INFO - 127.0.0.1 - - [10/Feb/2026 18:13:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:13:35,495 - INFO - Triggering periodic analysis...
+2026-02-10 18:13:35,520 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:13:40,206 - INFO - Triggering periodic analysis...
+2026-02-10 18:13:40,224 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:13:41,643 - INFO - 127.0.0.1 - - [10/Feb/2026 18:13:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:13:51,645 - INFO - 127.0.0.1 - - [10/Feb/2026 18:13:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:14:01,655 - INFO - 127.0.0.1 - - [10/Feb/2026 18:14:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:14:11,657 - INFO - 127.0.0.1 - - [10/Feb/2026 18:14:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:14:21,677 - INFO - 127.0.0.1 - - [10/Feb/2026 18:14:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:14:31,694 - INFO - 127.0.0.1 - - [10/Feb/2026 18:14:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:14:35,521 - INFO - Triggering periodic analysis...
+2026-02-10 18:14:35,535 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:14:40,225 - INFO - Triggering periodic analysis...
+2026-02-10 18:14:40,240 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:14:41,710 - INFO - 127.0.0.1 - - [10/Feb/2026 18:14:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:14:51,728 - INFO - 127.0.0.1 - - [10/Feb/2026 18:14:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:15:01,744 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:15:11,763 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:15:21,777 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:15:23,967 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:23,968 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:23] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:24,791 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:24,792 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:24] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:25,000 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:25,001 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:25] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:25,207 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:25,207 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:25] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:25,549 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:25,550 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:25] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:25,839 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:25,840 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:25] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:26,135 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:26,136 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:26] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:26,458 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:26,458 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:26] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:26,740 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:26,740 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:26] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:27,219 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:27,220 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:27] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:27,600 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:27,601 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:27] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:27,912 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:27,913 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:27] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:28,206 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:28,207 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:28] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:28,453 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:28,454 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:28] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:28,648 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:28,648 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:28] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:15:31,792 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:15:35,537 - INFO - Triggering periodic analysis...
+2026-02-10 18:15:35,553 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:40,242 - INFO - Triggering periodic analysis...
+2026-02-10 18:15:40,258 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:15:41,793 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:15:51,793 - INFO - 127.0.0.1 - - [10/Feb/2026 18:15:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:16:04,462 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 18:16:04,463 - INFO - Triggering periodic analysis...
+2026-02-10 18:16:04,470 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 18:16:04,470 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 18:16:04,482 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:16:11,817 - INFO - 127.0.0.1 - - [10/Feb/2026 18:16:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:16:40,259 - INFO - Triggering periodic analysis...
+2026-02-10 18:16:40,274 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:16:43,951 - INFO - 127.0.0.1 - - [10/Feb/2026 18:16:43] "GET / HTTP/1.1" 200 -
+2026-02-10 18:16:43,952 - INFO - 127.0.0.1 - - [10/Feb/2026 18:16:43] "GET / HTTP/1.1" 200 -
+2026-02-10 18:16:43,954 - INFO - 127.0.0.1 - - [10/Feb/2026 18:16:43] "GET / HTTP/1.1" 200 -
+2026-02-10 18:16:44,431 - INFO - 127.0.0.1 - - [10/Feb/2026 18:16:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:16:44,494 - INFO - 127.0.0.1 - - [10/Feb/2026 18:16:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:16:44,665 - INFO - 127.0.0.1 - - [10/Feb/2026 18:16:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:16:44,811 - INFO - 127.0.0.1 - - [10/Feb/2026 18:16:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-10 18:16:54,799 - INFO - 127.0.0.1 - - [10/Feb/2026 18:16:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:17:04,483 - INFO - Triggering periodic analysis...
+2026-02-10 18:17:04,500 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:17:04,793 - INFO - 127.0.0.1 - - [10/Feb/2026 18:17:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:17:14,795 - INFO - 127.0.0.1 - - [10/Feb/2026 18:17:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:17:25,097 - INFO - 127.0.0.1 - - [10/Feb/2026 18:17:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:17:35,096 - INFO - 127.0.0.1 - - [10/Feb/2026 18:17:35] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:17:40,275 - INFO - Triggering periodic analysis...
+2026-02-10 18:17:40,289 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:17:45,097 - INFO - 127.0.0.1 - - [10/Feb/2026 18:17:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:17:55,105 - INFO - 127.0.0.1 - - [10/Feb/2026 18:17:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:18:04,501 - INFO - Triggering periodic analysis...
+2026-02-10 18:18:04,518 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:18:05,101 - INFO - 127.0.0.1 - - [10/Feb/2026 18:18:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:18:15,109 - INFO - 127.0.0.1 - - [10/Feb/2026 18:18:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:18:25,109 - INFO - 127.0.0.1 - - [10/Feb/2026 18:18:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:18:35,111 - INFO - 127.0.0.1 - - [10/Feb/2026 18:18:35] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:18:40,289 - INFO - Triggering periodic analysis...
+2026-02-10 18:18:40,304 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:18:45,113 - INFO - 127.0.0.1 - - [10/Feb/2026 18:18:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:18:55,119 - INFO - 127.0.0.1 - - [10/Feb/2026 18:18:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:19:04,519 - INFO - Triggering periodic analysis...
+2026-02-10 18:19:04,533 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:19:05,125 - INFO - 127.0.0.1 - - [10/Feb/2026 18:19:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:19:15,123 - INFO - 127.0.0.1 - - [10/Feb/2026 18:19:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:19:25,124 - INFO - 127.0.0.1 - - [10/Feb/2026 18:19:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:19:35,124 - INFO - 127.0.0.1 - - [10/Feb/2026 18:19:35] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:19:40,305 - INFO - Triggering periodic analysis...
+2026-02-10 18:19:40,320 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 18:19:45,127 - INFO - 127.0.0.1 - - [10/Feb/2026 18:19:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:19:55,129 - INFO - 127.0.0.1 - - [10/Feb/2026 18:19:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:20:25,944 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 18:20:25,945 - INFO - Triggering periodic analysis...
+2026-02-10 18:20:26,012 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 18:20:26,012 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 18:20:35,143 - INFO - 127.0.0.1 - - [10/Feb/2026 18:20:35] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:20:40,321 - INFO - Triggering periodic analysis...
+2026-02-10 18:20:45,141 - INFO - 127.0.0.1 - - [10/Feb/2026 18:20:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:20:55,144 - INFO - 127.0.0.1 - - [10/Feb/2026 18:20:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:05,143 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:15,144 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:25,143 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:26,034 - INFO - Triggering periodic analysis...
+2026-02-10 18:21:35,143 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:35] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:40,735 - INFO - Triggering periodic analysis...
+2026-02-10 18:21:41,918 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:41] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:42,392 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:42] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:43,450 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:43] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:43,488 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:44,229 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:44] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:44,267 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:44,618 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:44] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:44,677 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:44,769 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:44] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:44,828 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:44,955 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:44] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:45,028 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:45,131 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:45,161 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:45,300 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:45,336 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:45,484 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:45,530 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:45,663 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:45,759 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:45,829 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:45,879 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:46,010 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:46] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:46,055 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:46,188 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:46] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:46,230 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:46,416 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:46] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:46,506 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:47,037 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:47] "GET / HTTP/1.1" 200 -
+2026-02-10 18:21:47,073 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:47] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:21:57,411 - INFO - 127.0.0.1 - - [10/Feb/2026 18:21:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:22:07,414 - INFO - 127.0.0.1 - - [10/Feb/2026 18:22:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:22:17,411 - INFO - 127.0.0.1 - - [10/Feb/2026 18:22:17] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:22:26,052 - INFO - Triggering periodic analysis...
+2026-02-10 18:22:27,818 - INFO - 127.0.0.1 - - [10/Feb/2026 18:22:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:22:37,817 - INFO - 127.0.0.1 - - [10/Feb/2026 18:22:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:22:40,756 - INFO - Triggering periodic analysis...
+2026-02-10 18:22:47,822 - INFO - 127.0.0.1 - - [10/Feb/2026 18:22:47] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:22:57,826 - INFO - 127.0.0.1 - - [10/Feb/2026 18:22:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:23:07,831 - INFO - 127.0.0.1 - - [10/Feb/2026 18:23:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:23:17,846 - INFO - 127.0.0.1 - - [10/Feb/2026 18:23:17] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:23:26,071 - INFO - Triggering periodic analysis...
+2026-02-10 18:23:27,837 - INFO - 127.0.0.1 - - [10/Feb/2026 18:23:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:23:37,838 - INFO - 127.0.0.1 - - [10/Feb/2026 18:23:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:23:40,772 - INFO - Triggering periodic analysis...
+2026-02-10 18:23:47,833 - INFO - 127.0.0.1 - - [10/Feb/2026 18:23:47] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:23:57,926 - INFO - 127.0.0.1 - - [10/Feb/2026 18:23:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:24:07,837 - INFO - 127.0.0.1 - - [10/Feb/2026 18:24:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:24:17,837 - INFO - 127.0.0.1 - - [10/Feb/2026 18:24:17] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:24:26,107 - INFO - Triggering periodic analysis...
+2026-02-10 18:24:27,837 - INFO - 127.0.0.1 - - [10/Feb/2026 18:24:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:24:37,841 - INFO - 127.0.0.1 - - [10/Feb/2026 18:24:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:24:40,801 - INFO - Triggering periodic analysis...
+2026-02-10 18:24:47,841 - INFO - 127.0.0.1 - - [10/Feb/2026 18:24:47] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:24:57,843 - INFO - 127.0.0.1 - - [10/Feb/2026 18:24:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:07,847 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:17,849 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:17] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:25,701 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:25] "GET / HTTP/1.1" 200 -
+2026-02-10 18:25:25,771 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:26,125 - INFO - Triggering periodic analysis...
+2026-02-10 18:25:26,533 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:25:26,572 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:26,692 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:25:26,737 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:26,854 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:25:26,915 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:27,021 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:25:27,071 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:27,201 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:25:27,235 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:27,350 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:25:27,399 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:27,567 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:25:27,599 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:37,890 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:40,817 - INFO - Triggering periodic analysis...
+2026-02-10 18:25:47,889 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:47] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:25:57,890 - INFO - 127.0.0.1 - - [10/Feb/2026 18:25:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:07,896 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:17,897 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:17] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:26,140 - INFO - Triggering periodic analysis...
+2026-02-10 18:26:27,900 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:35,920 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:35] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:35,960 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:35] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:37,264 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:37] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:37,296 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:37,462 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:37] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:37,496 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:37,613 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:37] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:37,662 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:40,843 - INFO - Triggering periodic analysis...
+2026-02-10 18:26:45,672 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:45] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:45,709 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:45,897 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:45] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:45,938 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:46,150 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:46,193 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:46,334 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:46,381 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:46,512 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:46,574 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:46,726 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:46,764 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:46,885 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:46,963 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:47,107 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:47] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:47,194 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:47] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:47,361 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:47] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:47,434 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:47] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:47,984 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:47] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:48,047 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:48] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:48,201 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:48] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:48,297 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:48] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:48,582 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:48] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:48,629 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:48] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:48,815 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:48] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:48,880 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:48] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:49,017 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:49,061 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:49,249 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:49,330 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:49,420 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:49,468 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:49,616 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:49,667 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:49,783 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:49,861 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:49,980 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:49] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:50,021 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:50,120 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:50,153 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:50,321 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:50,351 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:50,500 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:50,531 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:50,664 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:50,702 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:50,866 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:50,929 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:51,078 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:51,116 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:51,232 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:51,270 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:51,430 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:51,483 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:51,617 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:51,661 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:51,798 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:51,847 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:51,980 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:51] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:52,020 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:52,170 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:52,216 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:52,368 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:52,418 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:52,506 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:52,553 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:52,701 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:52,735 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:52,932 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:52] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:53,021 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:53,235 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:53,283 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:53,360 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:53,416 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:53,535 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:53,575 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:53,739 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:53,780 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:53,933 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:53,976 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:54,067 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:54,129 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:54,255 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:54,296 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:54,406 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:54,445 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:54,575 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:54,613 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:54,795 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:54,915 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:54,980 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:54] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:55,041 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:55,114 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:55,163 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:55,314 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:55,342 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:55,509 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:55,548 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:55,660 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:55,695 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:55,859 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:55,895 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:56,000 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:56,073 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:56,209 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:56,248 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:56,543 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:56,564 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:56,679 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:56,730 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:56,874 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:56,911 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:57,061 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:57,130 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:57,247 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:57,291 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:57,416 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:57,461 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:57,558 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:57,609 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:57,749 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:57,796 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:58,129 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:58,171 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:58,298 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:58,350 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:58,496 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:58,547 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:58,682 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:58,712 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:58,869 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:58,927 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:59,015 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:59,068 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:59,211 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:59,275 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:59,383 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:59,414 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:59,549 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:59,605 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:26:59,775 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET / HTTP/1.1" 200 -
+2026-02-10 18:26:59,832 - INFO - 127.0.0.1 - - [10/Feb/2026 18:26:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:09,918 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:19,915 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:19] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:23,460 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:23] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:23,505 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:24,256 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:24] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:24,310 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:24,457 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:24] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:24,503 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:24,674 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:24] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:24,707 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:25,009 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:25] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:25,076 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:25,374 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:25] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:25,405 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:25,541 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:25] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:25,583 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:25,773 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:25] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:25,821 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:25,957 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:25] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:26,040 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:26,154 - INFO - Triggering periodic analysis...
+2026-02-10 18:27:26,177 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:26,259 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:26,501 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:26,575 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:26,697 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:26,750 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:26,849 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:26,896 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:27,047 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:27,115 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:27,247 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:27,282 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:27,400 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:27,446 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:27,548 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:27,600 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:27,795 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:27,842 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:27,949 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:27,994 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:28,138 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:28,200 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:28,311 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:28,380 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:28,512 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:28,534 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:28,666 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:28,714 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:28,832 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:28,884 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:28,998 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:29,060 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:29,185 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:29,232 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:29,387 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:29,426 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:29,529 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:29,564 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:29,734 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:29,781 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:29,932 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:29,968 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:30,115 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:30,155 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:30,276 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:30,353 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:30,470 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:30,511 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:30,670 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:30,712 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:30,807 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:30,867 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:30,993 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:31,039 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:31,160 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:31,192 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:31,354 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:31,395 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:31,528 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:31,602 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:31,713 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:31,779 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:31,862 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:31,906 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:32,055 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:32] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:32,126 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:32,212 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:32] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:32,242 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:32,412 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:32] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:32,447 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:35,563 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:35] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:35,586 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:35] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:35,966 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:35] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:36,018 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:36,369 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:36] "GET / HTTP/1.1" 200 -
+2026-02-10 18:27:36,414 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:40,858 - INFO - Triggering periodic analysis...
+2026-02-10 18:27:46,506 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:27:56,508 - INFO - 127.0.0.1 - - [10/Feb/2026 18:27:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:28:06,510 - INFO - 127.0.0.1 - - [10/Feb/2026 18:28:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:28:16,509 - INFO - 127.0.0.1 - - [10/Feb/2026 18:28:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:28:26,178 - INFO - Triggering periodic analysis...
+2026-02-10 18:28:26,509 - INFO - 127.0.0.1 - - [10/Feb/2026 18:28:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:28:36,512 - INFO - 127.0.0.1 - - [10/Feb/2026 18:28:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:28:40,887 - INFO - Triggering periodic analysis...
+2026-02-10 18:28:46,515 - INFO - 127.0.0.1 - - [10/Feb/2026 18:28:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:29:40,912 - INFO - Triggering periodic analysis...
+2026-02-10 18:30:31,730 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 18:30:31,731 - INFO - Triggering periodic analysis...
+2026-02-10 18:30:31,742 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 18:30:31,742 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 18:30:31,806 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:30:36,553 - INFO - 127.0.0.1 - - [10/Feb/2026 18:30:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:30:40,931 - INFO - Triggering periodic analysis...
+2026-02-10 18:30:41,057 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:30:46,560 - INFO - 127.0.0.1 - - [10/Feb/2026 18:30:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:30:56,562 - INFO - 127.0.0.1 - - [10/Feb/2026 18:30:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:31:06,564 - INFO - 127.0.0.1 - - [10/Feb/2026 18:31:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:31:16,565 - INFO - 127.0.0.1 - - [10/Feb/2026 18:31:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:31:26,571 - INFO - 127.0.0.1 - - [10/Feb/2026 18:31:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:31:31,807 - INFO - Triggering periodic analysis...
+2026-02-10 18:31:31,834 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:31:36,568 - INFO - 127.0.0.1 - - [10/Feb/2026 18:31:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:31:41,058 - INFO - Triggering periodic analysis...
+2026-02-10 18:31:41,089 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:31:46,568 - INFO - 127.0.0.1 - - [10/Feb/2026 18:31:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:31:56,568 - INFO - 127.0.0.1 - - [10/Feb/2026 18:31:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:32:06,571 - INFO - 127.0.0.1 - - [10/Feb/2026 18:32:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:32:16,572 - INFO - 127.0.0.1 - - [10/Feb/2026 18:32:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:32:26,571 - INFO - 127.0.0.1 - - [10/Feb/2026 18:32:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:32:31,835 - INFO - Triggering periodic analysis...
+2026-02-10 18:32:31,851 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:32:36,576 - INFO - 127.0.0.1 - - [10/Feb/2026 18:32:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:32:41,091 - INFO - Triggering periodic analysis...
+2026-02-10 18:32:41,109 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:32:46,587 - INFO - 127.0.0.1 - - [10/Feb/2026 18:32:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:32:56,592 - INFO - 127.0.0.1 - - [10/Feb/2026 18:32:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:33:06,593 - INFO - 127.0.0.1 - - [10/Feb/2026 18:33:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:33:16,596 - INFO - 127.0.0.1 - - [10/Feb/2026 18:33:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:33:19,923 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 18:33:19,923 - INFO - Triggering periodic analysis...
+2026-02-10 18:33:19,929 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 18:33:19,929 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 18:33:19,949 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:33:26,597 - INFO - 127.0.0.1 - - [10/Feb/2026 18:33:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:33:36,600 - INFO - 127.0.0.1 - - [10/Feb/2026 18:33:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:33:41,113 - INFO - Triggering periodic analysis...
+2026-02-10 18:33:41,142 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:33:46,601 - INFO - 127.0.0.1 - - [10/Feb/2026 18:33:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:33:56,612 - INFO - 127.0.0.1 - - [10/Feb/2026 18:33:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:34:06,609 - INFO - 127.0.0.1 - - [10/Feb/2026 18:34:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:34:16,609 - INFO - 127.0.0.1 - - [10/Feb/2026 18:34:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:34:19,952 - INFO - Triggering periodic analysis...
+2026-02-10 18:34:19,971 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:34:26,612 - INFO - 127.0.0.1 - - [10/Feb/2026 18:34:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:34:36,613 - INFO - 127.0.0.1 - - [10/Feb/2026 18:34:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:34:41,145 - INFO - Triggering periodic analysis...
+2026-02-10 18:34:41,161 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:34:46,616 - INFO - 127.0.0.1 - - [10/Feb/2026 18:34:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:34:56,619 - INFO - 127.0.0.1 - - [10/Feb/2026 18:34:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:35:06,624 - INFO - 127.0.0.1 - - [10/Feb/2026 18:35:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:35:16,625 - INFO - 127.0.0.1 - - [10/Feb/2026 18:35:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:35:19,972 - INFO - Triggering periodic analysis...
+2026-02-10 18:35:19,993 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:35:26,628 - INFO - 127.0.0.1 - - [10/Feb/2026 18:35:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:35:36,627 - INFO - 127.0.0.1 - - [10/Feb/2026 18:35:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:35:41,163 - INFO - Triggering periodic analysis...
+2026-02-10 18:35:41,179 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:35:46,629 - INFO - 127.0.0.1 - - [10/Feb/2026 18:35:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:35:56,631 - INFO - 127.0.0.1 - - [10/Feb/2026 18:35:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:36:06,634 - INFO - 127.0.0.1 - - [10/Feb/2026 18:36:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:36:16,634 - INFO - 127.0.0.1 - - [10/Feb/2026 18:36:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:36:19,993 - INFO - Triggering periodic analysis...
+2026-02-10 18:36:20,009 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:36:26,636 - INFO - 127.0.0.1 - - [10/Feb/2026 18:36:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:36:36,638 - INFO - 127.0.0.1 - - [10/Feb/2026 18:36:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:36:41,180 - INFO - Triggering periodic analysis...
+2026-02-10 18:36:41,211 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:36:46,640 - INFO - 127.0.0.1 - - [10/Feb/2026 18:36:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:36:56,641 - INFO - 127.0.0.1 - - [10/Feb/2026 18:36:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:37:06,641 - INFO - 127.0.0.1 - - [10/Feb/2026 18:37:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:37:16,643 - INFO - 127.0.0.1 - - [10/Feb/2026 18:37:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:37:20,012 - INFO - Triggering periodic analysis...
+2026-02-10 18:37:26,656 - INFO - 127.0.0.1 - - [10/Feb/2026 18:37:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:37:36,659 - INFO - 127.0.0.1 - - [10/Feb/2026 18:37:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:37:41,214 - INFO - Triggering periodic analysis...
+2026-02-10 18:37:46,660 - INFO - 127.0.0.1 - - [10/Feb/2026 18:37:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:37:56,660 - INFO - 127.0.0.1 - - [10/Feb/2026 18:37:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:38:06,661 - INFO - 127.0.0.1 - - [10/Feb/2026 18:38:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:38:16,665 - INFO - 127.0.0.1 - - [10/Feb/2026 18:38:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:38:20,030 - INFO - Triggering periodic analysis...
+2026-02-10 18:38:26,666 - INFO - 127.0.0.1 - - [10/Feb/2026 18:38:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:38:36,665 - INFO - 127.0.0.1 - - [10/Feb/2026 18:38:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:38:41,232 - INFO - Triggering periodic analysis...
+2026-02-10 18:38:46,668 - INFO - 127.0.0.1 - - [10/Feb/2026 18:38:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:38:56,669 - INFO - 127.0.0.1 - - [10/Feb/2026 18:38:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:39:06,671 - INFO - 127.0.0.1 - - [10/Feb/2026 18:39:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:39:16,673 - INFO - 127.0.0.1 - - [10/Feb/2026 18:39:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:39:20,047 - INFO - Triggering periodic analysis...
+2026-02-10 18:39:26,673 - INFO - 127.0.0.1 - - [10/Feb/2026 18:39:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:39:36,674 - INFO - 127.0.0.1 - - [10/Feb/2026 18:39:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:39:41,248 - INFO - Triggering periodic analysis...
+2026-02-10 18:39:41,270 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:39:46,674 - INFO - 127.0.0.1 - - [10/Feb/2026 18:39:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:39:56,677 - INFO - 127.0.0.1 - - [10/Feb/2026 18:39:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:40:06,679 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:40:16,681 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:40:20,062 - INFO - Triggering periodic analysis...
+2026-02-10 18:40:20,077 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:26,682 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:40:36,681 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:40:40,291 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:40,292 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:40] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:40:41,272 - INFO - Triggering periodic analysis...
+2026-02-10 18:40:41,288 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:41,560 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:41,561 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:41] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:40:42,218 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:42,219 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:42] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:40:42,396 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:42,396 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:42] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:40:42,573 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:42,574 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:42] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:40:42,742 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:42,743 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:42] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:40:42,942 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:42,943 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:42] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:40:43,167 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:43,167 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:43] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:40:43,587 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:40:43,588 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:43] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:40:46,685 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:40:56,682 - INFO - 127.0.0.1 - - [10/Feb/2026 18:40:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:41:06,682 - INFO - 127.0.0.1 - - [10/Feb/2026 18:41:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:41:16,684 - INFO - 127.0.0.1 - - [10/Feb/2026 18:41:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:41:20,080 - INFO - Triggering periodic analysis...
+2026-02-10 18:41:20,095 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:41:26,685 - INFO - 127.0.0.1 - - [10/Feb/2026 18:41:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:41:36,686 - INFO - 127.0.0.1 - - [10/Feb/2026 18:41:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:41:41,290 - INFO - Triggering periodic analysis...
+2026-02-10 18:41:41,306 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:41:46,864 - INFO - 127.0.0.1 - - [10/Feb/2026 18:41:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:41:56,688 - INFO - 127.0.0.1 - - [10/Feb/2026 18:41:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:42:06,689 - INFO - 127.0.0.1 - - [10/Feb/2026 18:42:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:42:16,693 - INFO - 127.0.0.1 - - [10/Feb/2026 18:42:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:42:20,098 - INFO - Triggering periodic analysis...
+2026-02-10 18:42:20,114 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:42:26,697 - INFO - 127.0.0.1 - - [10/Feb/2026 18:42:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:42:36,699 - INFO - 127.0.0.1 - - [10/Feb/2026 18:42:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:42:41,307 - INFO - Triggering periodic analysis...
+2026-02-10 18:42:41,322 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:42:46,700 - INFO - 127.0.0.1 - - [10/Feb/2026 18:42:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:42:56,705 - INFO - 127.0.0.1 - - [10/Feb/2026 18:42:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:43:06,708 - INFO - 127.0.0.1 - - [10/Feb/2026 18:43:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:43:16,710 - INFO - 127.0.0.1 - - [10/Feb/2026 18:43:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:43:20,114 - INFO - Triggering periodic analysis...
+2026-02-10 18:43:20,128 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:43:26,712 - INFO - 127.0.0.1 - - [10/Feb/2026 18:43:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:43:36,713 - INFO - 127.0.0.1 - - [10/Feb/2026 18:43:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:43:41,323 - INFO - Triggering periodic analysis...
+2026-02-10 18:43:46,715 - INFO - 127.0.0.1 - - [10/Feb/2026 18:43:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:43:56,717 - INFO - 127.0.0.1 - - [10/Feb/2026 18:43:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:44:06,720 - INFO - 127.0.0.1 - - [10/Feb/2026 18:44:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:44:16,720 - INFO - 127.0.0.1 - - [10/Feb/2026 18:44:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:44:20,129 - INFO - Triggering periodic analysis...
+2026-02-10 18:44:26,721 - INFO - 127.0.0.1 - - [10/Feb/2026 18:44:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:44:36,723 - INFO - 127.0.0.1 - - [10/Feb/2026 18:44:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:44:41,336 - INFO - Triggering periodic analysis...
+2026-02-10 18:44:46,724 - INFO - 127.0.0.1 - - [10/Feb/2026 18:44:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:44:56,725 - INFO - 127.0.0.1 - - [10/Feb/2026 18:44:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:45:06,725 - INFO - 127.0.0.1 - - [10/Feb/2026 18:45:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:45:16,730 - INFO - 127.0.0.1 - - [10/Feb/2026 18:45:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:45:20,146 - INFO - Triggering periodic analysis...
+2026-02-10 18:45:26,731 - INFO - 127.0.0.1 - - [10/Feb/2026 18:45:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:45:36,735 - INFO - 127.0.0.1 - - [10/Feb/2026 18:45:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:45:41,351 - INFO - Triggering periodic analysis...
+2026-02-10 18:45:46,736 - INFO - 127.0.0.1 - - [10/Feb/2026 18:45:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:45:56,737 - INFO - 127.0.0.1 - - [10/Feb/2026 18:45:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:46:06,738 - INFO - 127.0.0.1 - - [10/Feb/2026 18:46:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:46:13,439 - INFO - 127.0.0.1 - - [10/Feb/2026 18:46:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:46:14,138 - INFO - 127.0.0.1 - - [10/Feb/2026 18:46:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 18:46:16,742 - INFO - 127.0.0.1 - - [10/Feb/2026 18:46:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:46:20,160 - INFO - Triggering periodic analysis...
+2026-02-10 18:46:26,740 - INFO - 127.0.0.1 - - [10/Feb/2026 18:46:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:46:36,741 - INFO - 127.0.0.1 - - [10/Feb/2026 18:46:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:46:41,365 - INFO - Triggering periodic analysis...
+2026-02-10 18:46:46,744 - INFO - 127.0.0.1 - - [10/Feb/2026 18:46:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:46:56,753 - INFO - 127.0.0.1 - - [10/Feb/2026 18:46:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:47:06,751 - INFO - 127.0.0.1 - - [10/Feb/2026 18:47:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:47:16,751 - INFO - 127.0.0.1 - - [10/Feb/2026 18:47:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:47:20,174 - INFO - Triggering periodic analysis...
+2026-02-10 18:47:26,757 - INFO - 127.0.0.1 - - [10/Feb/2026 18:47:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:47:36,762 - INFO - 127.0.0.1 - - [10/Feb/2026 18:47:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:47:41,380 - INFO - Triggering periodic analysis...
+2026-02-10 18:47:46,761 - INFO - 127.0.0.1 - - [10/Feb/2026 18:47:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:47:56,762 - INFO - 127.0.0.1 - - [10/Feb/2026 18:47:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:48:06,761 - INFO - 127.0.0.1 - - [10/Feb/2026 18:48:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:48:16,763 - INFO - 127.0.0.1 - - [10/Feb/2026 18:48:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:48:20,191 - INFO - Triggering periodic analysis...
+2026-02-10 18:48:26,764 - INFO - 127.0.0.1 - - [10/Feb/2026 18:48:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:48:36,765 - INFO - 127.0.0.1 - - [10/Feb/2026 18:48:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:48:41,399 - INFO - Triggering periodic analysis...
+2026-02-10 18:48:46,777 - INFO - 127.0.0.1 - - [10/Feb/2026 18:48:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:48:56,777 - INFO - 127.0.0.1 - - [10/Feb/2026 18:48:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:49:06,779 - INFO - 127.0.0.1 - - [10/Feb/2026 18:49:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:49:16,781 - INFO - 127.0.0.1 - - [10/Feb/2026 18:49:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:49:20,205 - INFO - Triggering periodic analysis...
+2026-02-10 18:49:26,782 - INFO - 127.0.0.1 - - [10/Feb/2026 18:49:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:49:36,784 - INFO - 127.0.0.1 - - [10/Feb/2026 18:49:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:49:41,414 - INFO - Triggering periodic analysis...
+2026-02-10 18:49:46,784 - INFO - 127.0.0.1 - - [10/Feb/2026 18:49:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:49:56,800 - INFO - 127.0.0.1 - - [10/Feb/2026 18:49:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:50:06,806 - INFO - 127.0.0.1 - - [10/Feb/2026 18:50:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:50:16,807 - INFO - 127.0.0.1 - - [10/Feb/2026 18:50:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:50:20,223 - INFO - Triggering periodic analysis...
+2026-02-10 18:50:26,809 - INFO - 127.0.0.1 - - [10/Feb/2026 18:50:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:50:41,432 - INFO - Triggering periodic analysis...
+2026-02-10 18:51:41,451 - INFO - Triggering periodic analysis...
+2026-02-10 18:52:11,744 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 18:52:11,745 - INFO - Triggering periodic analysis...
+2026-02-10 18:52:11,751 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 18:52:11,751 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 18:52:16,823 - INFO - 127.0.0.1 - - [10/Feb/2026 18:52:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:52:26,823 - INFO - 127.0.0.1 - - [10/Feb/2026 18:52:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:52:36,824 - INFO - 127.0.0.1 - - [10/Feb/2026 18:52:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:52:41,468 - INFO - Triggering periodic analysis...
+2026-02-10 18:52:46,826 - INFO - 127.0.0.1 - - [10/Feb/2026 18:52:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:52:56,826 - INFO - 127.0.0.1 - - [10/Feb/2026 18:52:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:53:06,827 - INFO - 127.0.0.1 - - [10/Feb/2026 18:53:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:53:11,764 - INFO - Triggering periodic analysis...
+2026-02-10 18:53:16,829 - INFO - 127.0.0.1 - - [10/Feb/2026 18:53:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:53:26,832 - INFO - 127.0.0.1 - - [10/Feb/2026 18:53:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:53:36,835 - INFO - 127.0.0.1 - - [10/Feb/2026 18:53:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:53:41,483 - INFO - Triggering periodic analysis...
+2026-02-10 18:53:46,836 - INFO - 127.0.0.1 - - [10/Feb/2026 18:53:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:53:56,836 - INFO - 127.0.0.1 - - [10/Feb/2026 18:53:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:54:06,836 - INFO - 127.0.0.1 - - [10/Feb/2026 18:54:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:54:11,781 - INFO - Triggering periodic analysis...
+2026-02-10 18:54:16,837 - INFO - 127.0.0.1 - - [10/Feb/2026 18:54:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:54:26,840 - INFO - 127.0.0.1 - - [10/Feb/2026 18:54:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:54:36,844 - INFO - 127.0.0.1 - - [10/Feb/2026 18:54:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:54:41,501 - INFO - Triggering periodic analysis...
+2026-02-10 18:54:46,844 - INFO - 127.0.0.1 - - [10/Feb/2026 18:54:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:54:56,843 - INFO - 127.0.0.1 - - [10/Feb/2026 18:54:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:55:06,844 - INFO - 127.0.0.1 - - [10/Feb/2026 18:55:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:55:11,797 - INFO - Triggering periodic analysis...
+2026-02-10 18:55:16,845 - INFO - 127.0.0.1 - - [10/Feb/2026 18:55:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:55:26,844 - INFO - 127.0.0.1 - - [10/Feb/2026 18:55:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:55:36,847 - INFO - 127.0.0.1 - - [10/Feb/2026 18:55:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:55:41,540 - INFO - Triggering periodic analysis...
+2026-02-10 18:55:46,849 - INFO - 127.0.0.1 - - [10/Feb/2026 18:55:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:55:56,849 - INFO - 127.0.0.1 - - [10/Feb/2026 18:55:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:06,854 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:11,820 - INFO - Triggering periodic analysis...
+2026-02-10 18:56:16,854 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:22,675 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:22] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:22,828 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:22] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:24,081 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:24] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:24,138 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:24,573 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:24] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:24,618 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:24,704 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:24] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:24,767 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:24,880 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:24] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:24,923 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:24,992 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:24] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:25,045 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:25,092 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:25] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:25,140 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:25,560 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:25] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:25,597 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:25] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:26,231 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:26,281 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:26,448 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:26,489 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:26,606 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:26,679 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:26,743 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:26,778 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:26,925 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:26,966 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:27,093 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:27,144 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:27,246 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:27,282 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:27,345 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:27,393 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:27,502 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:27,564 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:27,610 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:27,679 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:27,744 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:27,795 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:27,850 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:27,904 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:27] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:28,006 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:28,057 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:28,107 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:28,147 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:28,245 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:28,293 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:28,351 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:28,409 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:28,507 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:28,589 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:28,628 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:28,692 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:28,720 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:28,767 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:28,879 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:28,918 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:28,994 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:28] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:29,065 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:29,105 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:29,149 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:29,246 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:29,288 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:29,364 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:29,455 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:29,511 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:29,559 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:29,605 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:29,671 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:29,749 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:29,799 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:29,855 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:29,905 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:29,994 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:29] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:30,058 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:30,251 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:30,314 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:30,352 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:30,411 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:30,512 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:30,548 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:30,754 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:30,816 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:30,910 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:30,960 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:30,992 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:30] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:31,041 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:31,123 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:31,172 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:31,244 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:31,286 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:31,421 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:31,615 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:31,661 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:31,746 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:31,865 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:31,889 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:31,977 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:32,009 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:32] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:32,098 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:32,127 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:32] "GET / HTTP/1.1" 200 -
+2026-02-10 18:56:32,190 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:41,562 - INFO - Triggering periodic analysis...
+2026-02-10 18:56:42,282 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:42] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:56:52,275 - INFO - 127.0.0.1 - - [10/Feb/2026 18:56:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:57:02,273 - INFO - 127.0.0.1 - - [10/Feb/2026 18:57:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:57:11,834 - INFO - Triggering periodic analysis...
+2026-02-10 18:57:12,272 - INFO - 127.0.0.1 - - [10/Feb/2026 18:57:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:57:22,784 - INFO - 127.0.0.1 - - [10/Feb/2026 18:57:22] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:57:32,787 - INFO - 127.0.0.1 - - [10/Feb/2026 18:57:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:57:41,578 - INFO - Triggering periodic analysis...
+2026-02-10 18:57:42,787 - INFO - 127.0.0.1 - - [10/Feb/2026 18:57:42] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:57:52,789 - INFO - 127.0.0.1 - - [10/Feb/2026 18:57:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:58:02,789 - INFO - 127.0.0.1 - - [10/Feb/2026 18:58:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:58:11,848 - INFO - Triggering periodic analysis...
+2026-02-10 18:58:12,789 - INFO - 127.0.0.1 - - [10/Feb/2026 18:58:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:58:22,791 - INFO - 127.0.0.1 - - [10/Feb/2026 18:58:22] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:58:32,792 - INFO - 127.0.0.1 - - [10/Feb/2026 18:58:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:58:41,595 - INFO - Triggering periodic analysis...
+2026-02-10 18:58:42,794 - INFO - 127.0.0.1 - - [10/Feb/2026 18:58:42] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:58:52,794 - INFO - 127.0.0.1 - - [10/Feb/2026 18:58:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:59:02,795 - INFO - 127.0.0.1 - - [10/Feb/2026 18:59:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:59:11,863 - INFO - Triggering periodic analysis...
+2026-02-10 18:59:12,801 - INFO - 127.0.0.1 - - [10/Feb/2026 18:59:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:59:22,799 - INFO - 127.0.0.1 - - [10/Feb/2026 18:59:22] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:59:32,802 - INFO - 127.0.0.1 - - [10/Feb/2026 18:59:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:59:41,609 - INFO - Triggering periodic analysis...
+2026-02-10 18:59:41,625 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 18:59:42,802 - INFO - 127.0.0.1 - - [10/Feb/2026 18:59:42] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 18:59:52,805 - INFO - 127.0.0.1 - - [10/Feb/2026 18:59:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:00:02,808 - INFO - 127.0.0.1 - - [10/Feb/2026 19:00:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:00:11,876 - INFO - Triggering periodic analysis...
+2026-02-10 19:00:11,894 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 19:00:12,811 - INFO - 127.0.0.1 - - [10/Feb/2026 19:00:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:00:22,811 - INFO - 127.0.0.1 - - [10/Feb/2026 19:00:22] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:00:32,813 - INFO - 127.0.0.1 - - [10/Feb/2026 19:00:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:00:41,628 - INFO - Triggering periodic analysis...
+2026-02-10 19:00:41,643 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 19:00:42,815 - INFO - 127.0.0.1 - - [10/Feb/2026 19:00:42] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:00:52,815 - INFO - 127.0.0.1 - - [10/Feb/2026 19:00:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:01:02,817 - INFO - 127.0.0.1 - - [10/Feb/2026 19:01:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:01:11,897 - INFO - Triggering periodic analysis...
+2026-02-10 19:01:11,930 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 19:01:12,820 - INFO - 127.0.0.1 - - [10/Feb/2026 19:01:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:01:22,818 - INFO - 127.0.0.1 - - [10/Feb/2026 19:01:22] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:01:32,826 - INFO - 127.0.0.1 - - [10/Feb/2026 19:01:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:01:41,647 - INFO - Triggering periodic analysis...
+2026-02-10 19:01:41,662 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 19:01:42,841 - INFO - 127.0.0.1 - - [10/Feb/2026 19:01:42] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:02:41,662 - INFO - Triggering periodic analysis...
+2026-02-10 19:02:41,679 - ERROR - Error during analysis: Invalid frequency: 1S. Failed to parse with error message: ValueError("Invalid frequency: S. Failed to parse with error message: KeyError('S'). Did you mean s?")
+2026-02-10 19:03:41,681 - INFO - Triggering periodic analysis...
+2026-02-10 19:04:26,502 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 19:04:26,502 - INFO - Triggering periodic analysis...
+2026-02-10 19:04:26,509 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 19:04:26,509 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 19:04:32,899 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:04:41,699 - INFO - Triggering periodic analysis...
+2026-02-10 19:04:42,892 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:42] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:04:45,889 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:45] "GET / HTTP/1.1" 200 -
+2026-02-10 19:04:46,596 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:04:47,054 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-10 19:04:49,811 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:49] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:04:50,654 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:50] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:04:51,080 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:51] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:04:51,272 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:51] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:04:51,491 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:51] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:04:56,639 - INFO - 127.0.0.1 - - [10/Feb/2026 19:04:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:05:06,610 - INFO - 127.0.0.1 - - [10/Feb/2026 19:05:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:05:16,620 - INFO - 127.0.0.1 - - [10/Feb/2026 19:05:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:05:26,524 - INFO - Triggering periodic analysis...
+2026-02-10 19:05:26,615 - INFO - 127.0.0.1 - - [10/Feb/2026 19:05:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:05:36,622 - INFO - 127.0.0.1 - - [10/Feb/2026 19:05:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:05:41,715 - INFO - Triggering periodic analysis...
+2026-02-10 19:05:46,644 - INFO - 127.0.0.1 - - [10/Feb/2026 19:05:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:05:56,621 - INFO - 127.0.0.1 - - [10/Feb/2026 19:05:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:06,620 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:16,620 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:26,539 - INFO - Triggering periodic analysis...
+2026-02-10 19:06:26,621 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:34,252 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:34] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:34,880 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:34] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:35,204 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:35] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:35,368 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:35] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:35,545 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:35] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:35,701 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:35] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:35,853 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:35] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:36,622 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:38,641 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:38] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:38,801 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:38] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:38,967 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:38] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:39,163 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:39] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:06:41,734 - INFO - Triggering periodic analysis...
+2026-02-10 19:06:46,625 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:56,825 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:57,276 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:57] "GET / HTTP/1.1" 200 -
+2026-02-10 19:06:57,320 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:58,124 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:58] "GET / HTTP/1.1" 200 -
+2026-02-10 19:06:58,189 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:58,410 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:58] "GET / HTTP/1.1" 200 -
+2026-02-10 19:06:58,511 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:58,565 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:58] "GET / HTTP/1.1" 200 -
+2026-02-10 19:06:58,612 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:58,940 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:58] "GET / HTTP/1.1" 200 -
+2026-02-10 19:06:59,013 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:06:59,111 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:59] "GET / HTTP/1.1" 200 -
+2026-02-10 19:06:59,177 - INFO - 127.0.0.1 - - [10/Feb/2026 19:06:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:11:04,936 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 19:11:04,937 - INFO - Triggering periodic analysis...
+2026-02-10 19:11:04,951 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 19:11:04,951 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 19:11:26,503 - INFO - 127.0.0.1 - - [10/Feb/2026 19:11:26] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:12:05,020 - INFO - Triggering periodic analysis...
+2026-02-10 19:12:35,703 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 19:12:35,703 - INFO - Triggering periodic analysis...
+2026-02-10 19:12:35,763 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 19:12:35,764 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 19:12:39,691 - INFO - 127.0.0.1 - - [10/Feb/2026 19:12:39] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:13:35,736 - INFO - Triggering periodic analysis...
+2026-02-10 19:14:35,774 - INFO - Triggering periodic analysis...
+2026-02-10 19:14:58,849 - INFO - 127.0.0.1 - - [10/Feb/2026 19:14:58] "GET / HTTP/1.1" 200 -
+2026-02-10 19:14:59,059 - INFO - 127.0.0.1 - - [10/Feb/2026 19:14:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:14:59,137 - INFO - 127.0.0.1 - - [10/Feb/2026 19:14:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-10 19:15:02,251 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:02,263 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:02,963 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:02,978 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:03,747 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:03,757 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:04,298 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:04,309 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:04,943 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:04,998 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:05,045 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:05,056 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:05,441 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:05,452 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:06,460 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:06,482 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:07,257 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:07,275 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:07,996 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:15:08,007 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:09,040 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:19,035 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:19] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:29,113 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:35,799 - INFO - Triggering periodic analysis...
+2026-02-10 19:15:39,530 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:39] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:49,531 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:15:59,532 - INFO - 127.0.0.1 - - [10/Feb/2026 19:15:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:05,047 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:05,060 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:05,723 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:05,732 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:05,908 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:05,918 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:06,213 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:06,226 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:06,268 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:06,278 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:06,427 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:06,439 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:06,587 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:06,604 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:06,752 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:06,760 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:06,927 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:06,937 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:07,098 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:07,117 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:07,303 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:07,331 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:08,635 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:08,644 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:08,857 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:08,867 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:09,053 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:09,091 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:09,254 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:09,272 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:09,440 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:09,450 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:09,537 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:09,650 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:09,659 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:09,791 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:09,801 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:09,974 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:09,985 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:10,135 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:10] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:10,143 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:10,288 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:10] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:10,297 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:10,512 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:10] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:10,521 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:11,647 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:11] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:11,655 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:11,837 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:11] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:11,867 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:12,029 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:12] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:12,044 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:12,229 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:12] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:12,239 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:12,437 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:12] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:12,447 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:12,651 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:12] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:12,664 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:13,262 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:13,271 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:13,435 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:13,454 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:13,618 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:13,627 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:13,803 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:13,815 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:13,986 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:14,029 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:14,195 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:16:14,204 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:19,538 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:19] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:29,543 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:35,825 - INFO - Triggering periodic analysis...
+2026-02-10 19:16:39,542 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:39] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:49,544 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:16:59,987 - INFO - 127.0.0.1 - - [10/Feb/2026 19:16:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:00,053 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:00] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:00,074 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:00,966 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:00] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:00,995 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:01,165 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:01,175 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:01,364 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:01,377 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:01,590 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:01,612 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:01,804 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:01,815 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:02,044 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:02,054 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:02,224 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:02,250 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:02,440 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:02,453 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:02,809 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:02,824 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:03,001 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:03,015 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:03,231 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:03,245 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:03,398 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:03,412 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:03,606 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:03,617 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:03,787 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:03,797 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:04,008 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:04,034 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:04,220 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:04,244 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:04,678 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:04,688 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:04,894 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:17:04,905 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:09,989 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:19,990 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:19] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:29,996 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:35,851 - INFO - Triggering periodic analysis...
+2026-02-10 19:17:39,993 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:39] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:49,996 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:17:59,995 - INFO - 127.0.0.1 - - [10/Feb/2026 19:17:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:18:09,997 - INFO - 127.0.0.1 - - [10/Feb/2026 19:18:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:18:19,999 - INFO - 127.0.0.1 - - [10/Feb/2026 19:18:19] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:18:30,005 - INFO - 127.0.0.1 - - [10/Feb/2026 19:18:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:18:35,875 - INFO - Triggering periodic analysis...
+2026-02-10 19:18:39,999 - INFO - 127.0.0.1 - - [10/Feb/2026 19:18:39] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:18:50,001 - INFO - 127.0.0.1 - - [10/Feb/2026 19:18:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:19:00,003 - INFO - 127.0.0.1 - - [10/Feb/2026 19:19:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:19:10,004 - INFO - 127.0.0.1 - - [10/Feb/2026 19:19:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:19:20,004 - INFO - 127.0.0.1 - - [10/Feb/2026 19:19:20] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:19:30,005 - INFO - 127.0.0.1 - - [10/Feb/2026 19:19:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:19:35,897 - INFO - Triggering periodic analysis...
+2026-02-10 19:19:40,006 - INFO - 127.0.0.1 - - [10/Feb/2026 19:19:40] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:19:50,008 - INFO - 127.0.0.1 - - [10/Feb/2026 19:19:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:20:00,012 - INFO - 127.0.0.1 - - [10/Feb/2026 19:20:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:20:10,011 - INFO - 127.0.0.1 - - [10/Feb/2026 19:20:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:20:20,011 - INFO - 127.0.0.1 - - [10/Feb/2026 19:20:20] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:20:30,010 - INFO - 127.0.0.1 - - [10/Feb/2026 19:20:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:20:35,924 - INFO - Triggering periodic analysis...
+2026-02-10 19:20:40,011 - INFO - 127.0.0.1 - - [10/Feb/2026 19:20:40] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:20:50,015 - INFO - 127.0.0.1 - - [10/Feb/2026 19:20:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:21:00,018 - INFO - 127.0.0.1 - - [10/Feb/2026 19:21:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:21:10,020 - INFO - 127.0.0.1 - - [10/Feb/2026 19:21:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:21:20,018 - INFO - 127.0.0.1 - - [10/Feb/2026 19:21:20] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:21:30,018 - INFO - 127.0.0.1 - - [10/Feb/2026 19:21:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:21:35,949 - INFO - Triggering periodic analysis...
+2026-02-10 19:21:40,020 - INFO - 127.0.0.1 - - [10/Feb/2026 19:21:40] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:21:50,020 - INFO - 127.0.0.1 - - [10/Feb/2026 19:21:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:22:00,021 - INFO - 127.0.0.1 - - [10/Feb/2026 19:22:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:22:10,023 - INFO - 127.0.0.1 - - [10/Feb/2026 19:22:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:22:20,023 - INFO - 127.0.0.1 - - [10/Feb/2026 19:22:20] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:22:30,022 - INFO - 127.0.0.1 - - [10/Feb/2026 19:22:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:22:35,985 - INFO - Triggering periodic analysis...
+2026-02-10 19:22:40,034 - INFO - 127.0.0.1 - - [10/Feb/2026 19:22:40] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:22:50,024 - INFO - 127.0.0.1 - - [10/Feb/2026 19:22:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:23:00,025 - INFO - 127.0.0.1 - - [10/Feb/2026 19:23:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:23:10,026 - INFO - 127.0.0.1 - - [10/Feb/2026 19:23:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:23:20,027 - INFO - 127.0.0.1 - - [10/Feb/2026 19:23:20] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:23:30,991 - INFO - 127.0.0.1 - - [10/Feb/2026 19:23:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:23:36,037 - INFO - Triggering periodic analysis...
+2026-02-10 19:23:40,993 - INFO - 127.0.0.1 - - [10/Feb/2026 19:23:40] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:23:50,993 - INFO - 127.0.0.1 - - [10/Feb/2026 19:23:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:24:00,993 - INFO - 127.0.0.1 - - [10/Feb/2026 19:24:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:24:10,995 - INFO - 127.0.0.1 - - [10/Feb/2026 19:24:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:24:15,594 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 19:24:15,594 - INFO - Triggering periodic analysis...
+2026-02-10 19:24:15,618 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 19:24:15,618 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 19:24:20,997 - INFO - 127.0.0.1 - - [10/Feb/2026 19:24:20] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:24:24,039 - INFO - 127.0.0.1 - - [10/Feb/2026 19:24:24] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:24:31,020 - INFO - 127.0.0.1 - - [10/Feb/2026 19:24:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:24:36,981 - INFO - 127.0.0.1 - - [10/Feb/2026 19:24:36] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:24:41,000 - INFO - 127.0.0.1 - - [10/Feb/2026 19:24:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:24:45,041 - INFO - 127.0.0.1 - - [10/Feb/2026 19:24:45] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:24:50,998 - INFO - 127.0.0.1 - - [10/Feb/2026 19:24:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:25:01,004 - INFO - 127.0.0.1 - - [10/Feb/2026 19:25:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:25:11,005 - INFO - 127.0.0.1 - - [10/Feb/2026 19:25:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:25:15,631 - INFO - Triggering periodic analysis...
+2026-02-10 19:25:21,001 - INFO - 127.0.0.1 - - [10/Feb/2026 19:25:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:25:31,729 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 19:25:31,730 - INFO - Triggering periodic analysis...
+2026-02-10 19:25:31,766 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 19:25:31,766 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 19:25:35,625 - INFO - 127.0.0.1 - - [10/Feb/2026 19:25:35] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:25:41,005 - INFO - 127.0.0.1 - - [10/Feb/2026 19:25:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:25:51,006 - INFO - 127.0.0.1 - - [10/Feb/2026 19:25:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:26:01,007 - INFO - 127.0.0.1 - - [10/Feb/2026 19:26:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:26:11,017 - INFO - 127.0.0.1 - - [10/Feb/2026 19:26:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:26:21,012 - INFO - 127.0.0.1 - - [10/Feb/2026 19:26:21] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:26:31,013 - INFO - 127.0.0.1 - - [10/Feb/2026 19:26:31] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:26:31,768 - INFO - Triggering periodic analysis...
+2026-02-10 19:26:41,014 - INFO - 127.0.0.1 - - [10/Feb/2026 19:26:41] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:26:51,025 - INFO - 127.0.0.1 - - [10/Feb/2026 19:26:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:01,026 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:06,329 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:06] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:06,414 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:07,690 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:07] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:07,776 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:08,221 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:08] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:08,289 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:08,390 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:08] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:08,444 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:08,579 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:08] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:08,664 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:08,747 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:08] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:08,796 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:08,945 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:08] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:09,027 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:09,134 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:09,159 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:09,287 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:09,360 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:09,456 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:09,512 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:09,598 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:09,662 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:09,774 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:09,811 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:09,982 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:09] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:10,025 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:10,109 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:10,148 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:10,295 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:10,348 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:10,494 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:10,535 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:10,646 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:10,695 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:10,874 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:10,913 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:11,088 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:11] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:11,128 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:11,830 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:11] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:11,878 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:12,041 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:12,075 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:12,224 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:12,258 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:12,407 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:12,441 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:12,595 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:12,645 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:12,774 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:12,805 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:12,943 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:12,976 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:13,091 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:13] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:13,126 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:13,308 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:13] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:13,355 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:14,439 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:14] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:14,491 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:14,857 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:14] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:14,894 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:15,355 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:15] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:15,381 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:15,785 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:15] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:15,832 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:16,376 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:16] "GET / HTTP/1.1" 200 -
+2026-02-10 19:27:16,415 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:26,722 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:31,798 - INFO - Triggering periodic analysis...
+2026-02-10 19:27:36,723 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:46,726 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:56,725 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:57,671 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:57] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:27:57,698 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:57,824 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:57] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:27:57,838 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:57] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:58,014 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:58] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:27:58,029 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:58,204 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:58] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:27:58,214 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:59,142 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:59] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:27:59,171 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:59,265 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:59] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:27:59,277 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:59,462 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:59] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:27:59,483 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:27:59,679 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:59] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:27:59,695 - INFO - 127.0.0.1 - - [10/Feb/2026 19:27:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:01,507 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:01,518 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:01,685 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:01,695 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:01,863 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:01,877 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:02,040 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:02,056 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:02,219 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:02,230 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:02,392 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:02,403 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:02,560 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:02,571 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:02,711 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:02,726 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:03,132 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:03,150 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:03,170 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:03,180 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:04,114 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:04,129 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:04,674 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:04,684 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:04,998 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:05,007 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:05,296 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:05,308 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:05,493 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:05,503 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:05,687 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:05,711 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:05,846 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:05,872 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:06,027 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:06,038 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:06,208 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:06,222 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:06,406 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:06,416 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:06,633 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:06,644 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:06,728 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:06,933 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:06,946 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:07,105 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:07,127 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:07,276 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:07,358 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:07,437 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:07,449 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:07,618 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:07,628 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:07,758 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:07,782 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:07,929 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:07,942 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:08,084 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:08,094 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:08,257 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:08,267 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:08,431 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:08,450 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:08,588 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:08,598 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:08,749 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:08,758 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:08,904 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:08,925 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:09,068 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:09,090 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:09,273 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 19:28:09,282 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:16,727 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:26,728 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:31,826 - INFO - Triggering periodic analysis...
+2026-02-10 19:28:36,732 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:46,729 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:28:56,730 - INFO - 127.0.0.1 - - [10/Feb/2026 19:28:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:29:06,730 - INFO - 127.0.0.1 - - [10/Feb/2026 19:29:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:29:16,731 - INFO - 127.0.0.1 - - [10/Feb/2026 19:29:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:29:26,733 - INFO - 127.0.0.1 - - [10/Feb/2026 19:29:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:29:31,844 - INFO - Triggering periodic analysis...
+2026-02-10 19:29:36,735 - INFO - 127.0.0.1 - - [10/Feb/2026 19:29:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:29:46,734 - INFO - 127.0.0.1 - - [10/Feb/2026 19:29:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:29:56,735 - INFO - 127.0.0.1 - - [10/Feb/2026 19:29:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:30:06,735 - INFO - 127.0.0.1 - - [10/Feb/2026 19:30:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:30:16,736 - INFO - 127.0.0.1 - - [10/Feb/2026 19:30:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:30:26,739 - INFO - 127.0.0.1 - - [10/Feb/2026 19:30:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:30:31,858 - INFO - Triggering periodic analysis...
+2026-02-10 19:30:36,742 - INFO - 127.0.0.1 - - [10/Feb/2026 19:30:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:30:46,742 - INFO - 127.0.0.1 - - [10/Feb/2026 19:30:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:30:56,743 - INFO - 127.0.0.1 - - [10/Feb/2026 19:30:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:31:06,741 - INFO - 127.0.0.1 - - [10/Feb/2026 19:31:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:31:16,743 - INFO - 127.0.0.1 - - [10/Feb/2026 19:31:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:31:26,747 - INFO - 127.0.0.1 - - [10/Feb/2026 19:31:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:31:31,874 - INFO - Triggering periodic analysis...
+2026-02-10 19:31:36,747 - INFO - 127.0.0.1 - - [10/Feb/2026 19:31:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:31:46,745 - INFO - 127.0.0.1 - - [10/Feb/2026 19:31:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:31:56,747 - INFO - 127.0.0.1 - - [10/Feb/2026 19:31:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:32:06,749 - INFO - 127.0.0.1 - - [10/Feb/2026 19:32:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:32:16,749 - INFO - 127.0.0.1 - - [10/Feb/2026 19:32:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:32:26,750 - INFO - 127.0.0.1 - - [10/Feb/2026 19:32:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:32:31,889 - INFO - Triggering periodic analysis...
+2026-02-10 19:32:36,750 - INFO - 127.0.0.1 - - [10/Feb/2026 19:32:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:32:46,752 - INFO - 127.0.0.1 - - [10/Feb/2026 19:32:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:32:56,752 - INFO - 127.0.0.1 - - [10/Feb/2026 19:32:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:33:06,752 - INFO - 127.0.0.1 - - [10/Feb/2026 19:33:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:33:16,754 - INFO - 127.0.0.1 - - [10/Feb/2026 19:33:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:33:26,762 - INFO - 127.0.0.1 - - [10/Feb/2026 19:33:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:33:31,903 - INFO - Triggering periodic analysis...
+2026-02-10 19:33:36,760 - INFO - 127.0.0.1 - - [10/Feb/2026 19:33:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:33:46,759 - INFO - 127.0.0.1 - - [10/Feb/2026 19:33:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:33:56,760 - INFO - 127.0.0.1 - - [10/Feb/2026 19:33:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:34:06,762 - INFO - 127.0.0.1 - - [10/Feb/2026 19:34:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:34:16,762 - INFO - 127.0.0.1 - - [10/Feb/2026 19:34:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:34:26,764 - INFO - 127.0.0.1 - - [10/Feb/2026 19:34:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:34:31,918 - INFO - Triggering periodic analysis...
+2026-02-10 19:34:36,764 - INFO - 127.0.0.1 - - [10/Feb/2026 19:34:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:34:46,764 - INFO - 127.0.0.1 - - [10/Feb/2026 19:34:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:34:56,956 - INFO - 127.0.0.1 - - [10/Feb/2026 19:34:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:35:06,770 - INFO - 127.0.0.1 - - [10/Feb/2026 19:35:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:35:16,770 - INFO - 127.0.0.1 - - [10/Feb/2026 19:35:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:35:26,772 - INFO - 127.0.0.1 - - [10/Feb/2026 19:35:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:35:31,933 - INFO - Triggering periodic analysis...
+2026-02-10 19:35:36,779 - INFO - 127.0.0.1 - - [10/Feb/2026 19:35:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:35:46,772 - INFO - 127.0.0.1 - - [10/Feb/2026 19:35:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:35:56,772 - INFO - 127.0.0.1 - - [10/Feb/2026 19:35:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:36:06,774 - INFO - 127.0.0.1 - - [10/Feb/2026 19:36:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:36:16,773 - INFO - 127.0.0.1 - - [10/Feb/2026 19:36:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:36:26,774 - INFO - 127.0.0.1 - - [10/Feb/2026 19:36:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:36:31,953 - INFO - Triggering periodic analysis...
+2026-02-10 19:36:36,775 - INFO - 127.0.0.1 - - [10/Feb/2026 19:36:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:36:46,775 - INFO - 127.0.0.1 - - [10/Feb/2026 19:36:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:36:56,777 - INFO - 127.0.0.1 - - [10/Feb/2026 19:36:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:37:06,780 - INFO - 127.0.0.1 - - [10/Feb/2026 19:37:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:37:16,779 - INFO - 127.0.0.1 - - [10/Feb/2026 19:37:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:37:26,780 - INFO - 127.0.0.1 - - [10/Feb/2026 19:37:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:37:31,967 - INFO - Triggering periodic analysis...
+2026-02-10 19:37:36,782 - INFO - 127.0.0.1 - - [10/Feb/2026 19:37:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:37:46,782 - INFO - 127.0.0.1 - - [10/Feb/2026 19:37:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:37:56,783 - INFO - 127.0.0.1 - - [10/Feb/2026 19:37:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:38:06,784 - INFO - 127.0.0.1 - - [10/Feb/2026 19:38:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:38:16,786 - INFO - 127.0.0.1 - - [10/Feb/2026 19:38:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:38:26,785 - INFO - 127.0.0.1 - - [10/Feb/2026 19:38:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:38:31,981 - INFO - Triggering periodic analysis...
+2026-02-10 19:38:36,787 - INFO - 127.0.0.1 - - [10/Feb/2026 19:38:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:38:46,788 - INFO - 127.0.0.1 - - [10/Feb/2026 19:38:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:38:56,787 - INFO - 127.0.0.1 - - [10/Feb/2026 19:38:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:39:06,789 - INFO - 127.0.0.1 - - [10/Feb/2026 19:39:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:39:16,789 - INFO - 127.0.0.1 - - [10/Feb/2026 19:39:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:39:26,790 - INFO - 127.0.0.1 - - [10/Feb/2026 19:39:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:39:31,995 - INFO - Triggering periodic analysis...
+2026-02-10 19:39:36,790 - INFO - 127.0.0.1 - - [10/Feb/2026 19:39:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:39:46,792 - INFO - 127.0.0.1 - - [10/Feb/2026 19:39:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:39:56,796 - INFO - 127.0.0.1 - - [10/Feb/2026 19:39:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:40:06,794 - INFO - 127.0.0.1 - - [10/Feb/2026 19:40:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:40:16,795 - INFO - 127.0.0.1 - - [10/Feb/2026 19:40:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:40:26,796 - INFO - 127.0.0.1 - - [10/Feb/2026 19:40:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:40:32,011 - INFO - Triggering periodic analysis...
+2026-02-10 19:40:36,797 - INFO - 127.0.0.1 - - [10/Feb/2026 19:40:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:40:46,798 - INFO - 127.0.0.1 - - [10/Feb/2026 19:40:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:40:56,801 - INFO - 127.0.0.1 - - [10/Feb/2026 19:40:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:41:06,800 - INFO - 127.0.0.1 - - [10/Feb/2026 19:41:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:41:16,803 - INFO - 127.0.0.1 - - [10/Feb/2026 19:41:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:41:26,802 - INFO - 127.0.0.1 - - [10/Feb/2026 19:41:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:41:32,024 - INFO - Triggering periodic analysis...
+2026-02-10 19:41:36,802 - INFO - 127.0.0.1 - - [10/Feb/2026 19:41:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:41:46,806 - INFO - 127.0.0.1 - - [10/Feb/2026 19:41:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:41:56,807 - INFO - 127.0.0.1 - - [10/Feb/2026 19:41:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:42:06,811 - INFO - 127.0.0.1 - - [10/Feb/2026 19:42:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:42:16,810 - INFO - 127.0.0.1 - - [10/Feb/2026 19:42:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:42:26,818 - INFO - 127.0.0.1 - - [10/Feb/2026 19:42:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:42:32,039 - INFO - Triggering periodic analysis...
+2026-02-10 19:42:36,810 - INFO - 127.0.0.1 - - [10/Feb/2026 19:42:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:42:46,811 - INFO - 127.0.0.1 - - [10/Feb/2026 19:42:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:42:56,814 - INFO - 127.0.0.1 - - [10/Feb/2026 19:42:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:43:06,818 - INFO - 127.0.0.1 - - [10/Feb/2026 19:43:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:43:16,819 - INFO - 127.0.0.1 - - [10/Feb/2026 19:43:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:43:26,816 - INFO - 127.0.0.1 - - [10/Feb/2026 19:43:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:43:32,056 - INFO - Triggering periodic analysis...
+2026-02-10 19:43:36,826 - INFO - 127.0.0.1 - - [10/Feb/2026 19:43:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:43:46,821 - INFO - 127.0.0.1 - - [10/Feb/2026 19:43:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:43:56,822 - INFO - 127.0.0.1 - - [10/Feb/2026 19:43:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:44:06,823 - INFO - 127.0.0.1 - - [10/Feb/2026 19:44:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:44:16,824 - INFO - 127.0.0.1 - - [10/Feb/2026 19:44:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:44:26,825 - INFO - 127.0.0.1 - - [10/Feb/2026 19:44:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:44:32,073 - INFO - Triggering periodic analysis...
+2026-02-10 19:44:36,828 - INFO - 127.0.0.1 - - [10/Feb/2026 19:44:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:44:46,828 - INFO - 127.0.0.1 - - [10/Feb/2026 19:44:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:44:56,829 - INFO - 127.0.0.1 - - [10/Feb/2026 19:44:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:45:06,835 - INFO - 127.0.0.1 - - [10/Feb/2026 19:45:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:45:16,836 - INFO - 127.0.0.1 - - [10/Feb/2026 19:45:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:45:26,834 - INFO - 127.0.0.1 - - [10/Feb/2026 19:45:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:45:32,089 - INFO - Triggering periodic analysis...
+2026-02-10 19:45:36,831 - INFO - 127.0.0.1 - - [10/Feb/2026 19:45:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:45:46,831 - INFO - 127.0.0.1 - - [10/Feb/2026 19:45:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:45:56,832 - INFO - 127.0.0.1 - - [10/Feb/2026 19:45:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:46:06,836 - INFO - 127.0.0.1 - - [10/Feb/2026 19:46:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:46:16,834 - INFO - 127.0.0.1 - - [10/Feb/2026 19:46:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:46:26,836 - INFO - 127.0.0.1 - - [10/Feb/2026 19:46:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:46:32,105 - INFO - Triggering periodic analysis...
+2026-02-10 19:46:36,836 - INFO - 127.0.0.1 - - [10/Feb/2026 19:46:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:46:46,838 - INFO - 127.0.0.1 - - [10/Feb/2026 19:46:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:46:56,838 - INFO - 127.0.0.1 - - [10/Feb/2026 19:46:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:47:06,839 - INFO - 127.0.0.1 - - [10/Feb/2026 19:47:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:47:16,840 - INFO - 127.0.0.1 - - [10/Feb/2026 19:47:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:47:26,841 - INFO - 127.0.0.1 - - [10/Feb/2026 19:47:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:47:32,121 - INFO - Triggering periodic analysis...
+2026-02-10 19:47:36,842 - INFO - 127.0.0.1 - - [10/Feb/2026 19:47:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:47:46,844 - INFO - 127.0.0.1 - - [10/Feb/2026 19:47:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:47:56,844 - INFO - 127.0.0.1 - - [10/Feb/2026 19:47:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:48:06,846 - INFO - 127.0.0.1 - - [10/Feb/2026 19:48:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:48:16,846 - INFO - 127.0.0.1 - - [10/Feb/2026 19:48:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:48:26,850 - INFO - 127.0.0.1 - - [10/Feb/2026 19:48:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:48:32,137 - INFO - Triggering periodic analysis...
+2026-02-10 19:48:36,849 - INFO - 127.0.0.1 - - [10/Feb/2026 19:48:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:48:46,849 - INFO - 127.0.0.1 - - [10/Feb/2026 19:48:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:48:56,852 - INFO - 127.0.0.1 - - [10/Feb/2026 19:48:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:49:06,853 - INFO - 127.0.0.1 - - [10/Feb/2026 19:49:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:49:16,851 - INFO - 127.0.0.1 - - [10/Feb/2026 19:49:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:49:26,852 - INFO - 127.0.0.1 - - [10/Feb/2026 19:49:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:49:32,153 - INFO - Triggering periodic analysis...
+2026-02-10 19:49:36,852 - INFO - 127.0.0.1 - - [10/Feb/2026 19:49:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:49:46,855 - INFO - 127.0.0.1 - - [10/Feb/2026 19:49:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:49:56,855 - INFO - 127.0.0.1 - - [10/Feb/2026 19:49:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:50:06,855 - INFO - 127.0.0.1 - - [10/Feb/2026 19:50:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:50:16,858 - INFO - 127.0.0.1 - - [10/Feb/2026 19:50:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:50:26,860 - INFO - 127.0.0.1 - - [10/Feb/2026 19:50:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:50:32,168 - INFO - Triggering periodic analysis...
+2026-02-10 19:50:36,863 - INFO - 127.0.0.1 - - [10/Feb/2026 19:50:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:50:46,862 - INFO - 127.0.0.1 - - [10/Feb/2026 19:50:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:50:56,863 - INFO - 127.0.0.1 - - [10/Feb/2026 19:50:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:51:06,863 - INFO - 127.0.0.1 - - [10/Feb/2026 19:51:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:51:16,865 - INFO - 127.0.0.1 - - [10/Feb/2026 19:51:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:51:26,866 - INFO - 127.0.0.1 - - [10/Feb/2026 19:51:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:51:32,190 - INFO - Triggering periodic analysis...
+2026-02-10 19:51:36,867 - INFO - 127.0.0.1 - - [10/Feb/2026 19:51:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:51:46,869 - INFO - 127.0.0.1 - - [10/Feb/2026 19:51:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:51:56,868 - INFO - 127.0.0.1 - - [10/Feb/2026 19:51:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:52:06,869 - INFO - 127.0.0.1 - - [10/Feb/2026 19:52:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:52:16,870 - INFO - 127.0.0.1 - - [10/Feb/2026 19:52:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:52:26,871 - INFO - 127.0.0.1 - - [10/Feb/2026 19:52:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:52:32,204 - INFO - Triggering periodic analysis...
+2026-02-10 19:52:36,887 - INFO - 127.0.0.1 - - [10/Feb/2026 19:52:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:52:46,874 - INFO - 127.0.0.1 - - [10/Feb/2026 19:52:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:52:56,877 - INFO - 127.0.0.1 - - [10/Feb/2026 19:52:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:53:06,883 - INFO - 127.0.0.1 - - [10/Feb/2026 19:53:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:53:16,888 - INFO - 127.0.0.1 - - [10/Feb/2026 19:53:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:53:26,879 - INFO - 127.0.0.1 - - [10/Feb/2026 19:53:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:53:32,221 - INFO - Triggering periodic analysis...
+2026-02-10 19:53:36,881 - INFO - 127.0.0.1 - - [10/Feb/2026 19:53:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:53:46,881 - INFO - 127.0.0.1 - - [10/Feb/2026 19:53:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:53:56,881 - INFO - 127.0.0.1 - - [10/Feb/2026 19:53:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:54:06,885 - INFO - 127.0.0.1 - - [10/Feb/2026 19:54:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:54:16,883 - INFO - 127.0.0.1 - - [10/Feb/2026 19:54:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:54:26,886 - INFO - 127.0.0.1 - - [10/Feb/2026 19:54:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:54:32,252 - INFO - Triggering periodic analysis...
+2026-02-10 19:54:36,887 - INFO - 127.0.0.1 - - [10/Feb/2026 19:54:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:54:46,885 - INFO - 127.0.0.1 - - [10/Feb/2026 19:54:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:54:56,888 - INFO - 127.0.0.1 - - [10/Feb/2026 19:54:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:55:06,898 - INFO - 127.0.0.1 - - [10/Feb/2026 19:55:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:55:16,891 - INFO - 127.0.0.1 - - [10/Feb/2026 19:55:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:55:26,899 - INFO - 127.0.0.1 - - [10/Feb/2026 19:55:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:55:32,268 - INFO - Triggering periodic analysis...
+2026-02-10 19:55:36,895 - INFO - 127.0.0.1 - - [10/Feb/2026 19:55:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:55:46,894 - INFO - 127.0.0.1 - - [10/Feb/2026 19:55:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:55:56,901 - INFO - 127.0.0.1 - - [10/Feb/2026 19:55:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:56:06,896 - INFO - 127.0.0.1 - - [10/Feb/2026 19:56:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:56:16,900 - INFO - 127.0.0.1 - - [10/Feb/2026 19:56:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:56:26,899 - INFO - 127.0.0.1 - - [10/Feb/2026 19:56:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:56:32,282 - INFO - Triggering periodic analysis...
+2026-02-10 19:56:36,901 - INFO - 127.0.0.1 - - [10/Feb/2026 19:56:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:56:46,902 - INFO - 127.0.0.1 - - [10/Feb/2026 19:56:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:56:56,902 - INFO - 127.0.0.1 - - [10/Feb/2026 19:56:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:57:06,905 - INFO - 127.0.0.1 - - [10/Feb/2026 19:57:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:57:16,909 - INFO - 127.0.0.1 - - [10/Feb/2026 19:57:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:57:26,907 - INFO - 127.0.0.1 - - [10/Feb/2026 19:57:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:57:32,299 - INFO - Triggering periodic analysis...
+2026-02-10 19:57:36,909 - INFO - 127.0.0.1 - - [10/Feb/2026 19:57:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:57:46,911 - INFO - 127.0.0.1 - - [10/Feb/2026 19:57:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:57:56,910 - INFO - 127.0.0.1 - - [10/Feb/2026 19:57:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:58:06,913 - INFO - 127.0.0.1 - - [10/Feb/2026 19:58:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:58:16,916 - INFO - 127.0.0.1 - - [10/Feb/2026 19:58:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:58:26,916 - INFO - 127.0.0.1 - - [10/Feb/2026 19:58:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:58:32,322 - INFO - Triggering periodic analysis...
+2026-02-10 19:58:36,914 - INFO - 127.0.0.1 - - [10/Feb/2026 19:58:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:58:46,915 - INFO - 127.0.0.1 - - [10/Feb/2026 19:58:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:58:56,916 - INFO - 127.0.0.1 - - [10/Feb/2026 19:58:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:59:06,926 - INFO - 127.0.0.1 - - [10/Feb/2026 19:59:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:59:16,919 - INFO - 127.0.0.1 - - [10/Feb/2026 19:59:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:59:26,921 - INFO - 127.0.0.1 - - [10/Feb/2026 19:59:26] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:59:32,337 - INFO - Triggering periodic analysis...
+2026-02-10 19:59:36,921 - INFO - 127.0.0.1 - - [10/Feb/2026 19:59:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:59:46,922 - INFO - 127.0.0.1 - - [10/Feb/2026 19:59:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 19:59:56,923 - INFO - 127.0.0.1 - - [10/Feb/2026 19:59:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 20:00:06,927 - INFO - 127.0.0.1 - - [10/Feb/2026 20:00:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 20:00:16,933 - INFO - 127.0.0.1 - - [10/Feb/2026 20:00:16] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 20:00:26,929 - INFO - 127.0.0.1 - - [10/Feb/2026 20:00:26] "GET /api/alerts HTTP/1.1" 200 -

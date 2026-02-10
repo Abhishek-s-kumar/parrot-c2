@@ -59,7 +59,7 @@ def get_alerts():
 
 @app.route('/api/analyze', methods=['GET'])
 def trigger_analyze():
-    results = engine.analyze_recent_traffic(window_minutes=5)
+    results = engine.analyze_recent_traffic(window_minutes=30)
     return jsonify({
         "timestamp": datetime.now().isoformat(),
         "total_connections": sum(r['samples'] for r in results) if results else 0,

@@ -3,10 +3,12 @@ import sys
 import logging
 import configparser
 import psycopg2
+import subprocess
+import re
 import numpy as np
 import pandas as pd
 from scipy import stats
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 # Configure logging
 logging.basicConfig(
@@ -21,6 +23,66 @@ class DetectionEngine:
         self.ALPHA = 0.4 # FFT weight
         self.BETA = 0.4  # Autocorrelation weight
         self.GAMMA = 0.2 # Entropy weight
+        self._ip_cache = {}
+
+    def _ipv6_to_mac(self, ipv6):
+        """Attempts to derive MAC from SLAAC IPv6 (Modified EUI-64)."""
+        try:
+            if not ipv6.startswith('fe80::'):
+                return None
+            
+            # Extract IID part
+            iid_str = ipv6.replace('fe80::', '')
+            # Expanded representation (partial)
+            parts = iid_str.split(':')
+            if len(parts) < 2: return None
+            
+            # Handle cases like a00:27ff:fe4e:aa95
+            full_hex = "".join(part.zfill(4) for part in parts)
+            if 'fffe' not in full_hex: return None
+            
+            # e.g. 0a0027fffe4eaa95
+            mac_raw = full_hex.replace('fffe', '')
+            # 0a00274eaa95
+            
+            # Flip 7th bit of first byte
+            first_byte = int(mac_raw[:2], 16)
+            first_byte ^= 0x02
+            
+            mac_parts = [f"{first_byte:02x}"] + [mac_raw[i:i+2] for i in range(2, len(mac_raw), 2)]
+            return ":".join(mac_parts)
+        except:
+            return None
+
+    def _get_ip_mapping(self):
+        """Builds a mapping of IPv6 to IPv4 based on neighbor table (MAC matching)."""
+        mapping = {}
+        mac_to_ipv4 = {}
+        try:
+            # Get ARP/Neighbor table
+            output = subprocess.check_output(['ip', 'neigh', 'show'], stderr=subprocess.STDOUT).decode()
+            
+            for line in output.splitlines():
+                parts = line.split()
+                if len(parts) >= 5 and 'lladdr' in parts:
+                    ip = parts[0]
+                    mac = parts[parts.index('lladdr') + 1].lower()
+                    if '.' in ip: # IPv4
+                        mac_to_ipv4[mac] = ip
+
+            # Now try to match IPv6 addresses to these MACs
+            # 1. Direct neighbor table match
+            for line in output.splitlines():
+                parts = line.split()
+                if len(parts) >= 5 and 'lladdr' in parts:
+                    ip = parts[0]
+                    mac = parts[parts.index('lladdr') + 1].lower()
+                    if ':' in ip and mac in mac_to_ipv4:
+                        mapping[ip] = mac_to_ipv4[mac]
+        except Exception as e:
+            logging.error(f"Error building IP mapping: {e}")
+        
+        return mapping, mac_to_ipv4
 
     def _connect_db(self):
         try:
@@ -114,7 +176,7 @@ class DetectionEngine:
 
         try:
             # Query recent traffic from conn_log
-            end_time = datetime.now()
+            end_time = datetime.now(timezone.utc)
             start_time = end_time - timedelta(minutes=window_minutes)
             
             query = """
@@ -136,17 +198,28 @@ class DetectionEngine:
                 host_df.set_index('ts', inplace=True)
                 
                 # Resample to 1s intervals, fill with 0
-                resampled = host_df['resp_bytes'].resample('1S').sum().fillna(0)
+                resampled = host_df['resp_bytes'].resample('1s').sum().fillna(0)
                 
                 fft_peak, _ = self.calculate_fft(resampled)
                 autocorr_max = self.calculate_autocorrelation(resampled)
                 entropy_norm = self.calculate_entropy(resampled)
                 p_score = self.calculate_p_score(fft_peak, autocorr_max, entropy_norm)
                 
-                detected = p_score > 0.7
+                detected = p_score > 0.6
                 
+                # Get IP mapping for display
+                mapping, mac_to_ipv4 = self._get_ip_mapping()
+                mapped_ip = mapping.get(host)
+                if not mapped_ip:
+                    mac = self._ipv6_to_mac(host)
+                    if mac and mac in mac_to_ipv4:
+                        mapped_ip = mac_to_ipv4[mac]
+                
+                display_host = f"{host} ({mapped_ip})" if mapped_ip else host
+
                 results.append({
                     'host': host,
+                    'display_host': display_host,
                     'p_score': p_score,
                     'fft_peak': fft_peak,
                     'autocorr_max': autocorr_max,

@@ -38,6 +38,7 @@ class C2Monitor:
                     alert = {
                         'timestamp': datetime.now().isoformat(),
                         'host': det['host'],
+                        'display_host': det.get('display_host', det['host']),
                         'p_score': det['p_score'],
                         'details': {
                             'fft_peak': det['fft_peak'],
@@ -62,7 +63,7 @@ class C2Monitor:
         try:
             while True:
                 logging.info("Triggering periodic analysis...")
-                results = self.engine.analyze_recent_traffic(window_minutes=5)
+                results = self.engine.analyze_recent_traffic(window_minutes=30)
                 self.update_alerts_json(results)
                 time.sleep(self.interval)
         except KeyboardInterrupt:

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -138,6 +139,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -188,7 +190,7 @@
                 const data = await response.json();
                 const container = document.getElementById('alerts-container');
                 container.innerHTML = '';
-                
+
                 if (data.alerts.length === 0) {
                     container.innerHTML = '<div style="color: #8b949e">No active alerts.</div>';
                     return;
@@ -197,9 +199,10 @@
                 data.alerts.forEach(alert => {
                     const div = document.createElement('div');
                     div.className = 'alert-item';
+                    const hostName = alert.display_host || alert.host;
                     div.innerHTML = `
                         <div class="alert-time">${new Date(alert.timestamp).toLocaleString()}</div>
-                        <div class="alert-host">Beacon Detected: ${alert.host}</div>
+                        <div class="alert-host">Beacon Detected: ${hostName}</div>
                         <div style="font-size: 14px">P-Score: ${alert.p_score.toFixed(3)}</div>
                     `;
                     container.appendChild(div);
@@ -213,10 +216,10 @@
             try {
                 const resultsBody = document.getElementById('results-body');
                 resultsBody.innerHTML = '<tr><td colspan="6" style="text-align: center">Analyzing...</td></tr>';
-                
+
                 const response = await fetch('/api/analyze');
                 const data = await response.json();
-                
+
                 resultsBody.innerHTML = '';
                 if (data.results.length === 0) {
                     resultsBody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: #8b949e">No traffic analyzed in the current window.</td></tr>';
@@ -225,8 +228,9 @@
 
                 data.results.forEach(res => {
                     const tr = document.createElement('tr');
+                    const hostName = res.display_host || res.host;
                     tr.innerHTML = `
-                        <td>${res.host}</td>
+                        <td>${hostName}</td>
                         <td>${res.p_score.toFixed(3)}</td>
                         <td>${res.fft_peak.toFixed(3)}</td>
                         <td>${res.autocorr_max.toFixed(3)}</td>
@@ -235,7 +239,7 @@
                     `;
                     resultsBody.appendChild(tr);
                 });
-                
+
                 fetchAlerts();
             } catch (error) {
                 console.error('Error triggering analysis:', error);
@@ -248,4 +252,5 @@
         setInterval(fetchAlerts, 10000);
     </script>
 </body>
+
 </html>
