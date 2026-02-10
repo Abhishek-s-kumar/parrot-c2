@@ -1,0 +1,38 @@
+2026-02-10 17:50:12,766 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 17:50:12,766 - INFO - Triggering periodic analysis...
+2026-02-10 17:50:12,791 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 17:50:12,791 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 17:50:12,831 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:50:39,752 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-02-10 17:50:39,752 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-10 17:50:39,774 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-02-10 17:50:39,774 - INFO - Triggering periodic analysis...
+2026-02-10 17:50:39,809 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:50:50,842 - INFO - 127.0.0.1 - - [10/Feb/2026 17:50:50] "GET /api/status HTTP/1.1" 200 -
+2026-02-10 17:50:50,857 - INFO - 127.0.0.1 - - [10/Feb/2026 17:50:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-10 17:50:50,887 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:50:50,888 - INFO - 127.0.0.1 - - [10/Feb/2026 17:50:50] "GET /api/analyze HTTP/1.1" 200 -
+2026-02-10 17:51:39,810 - INFO - Triggering periodic analysis...
+2026-02-10 17:51:39,825 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:52:39,827 - INFO - Triggering periodic analysis...
+2026-02-10 17:52:39,842 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:53:39,851 - INFO - Triggering periodic analysis...
+2026-02-10 17:53:39,865 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+

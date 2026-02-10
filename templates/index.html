@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C2 Beacon Detection Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --danger-color: #f85149;
+            --success-color: #3fb950;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .status-online {
+            background-color: rgba(63, 185, 80, 0.2);
+            color: var(--success-color);
+            border: 1px solid var(--success-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: #8b949e;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .beacon-alert {
+            color: var(--danger-color);
+            font-weight: 600;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .alert-item {
+            padding: 10px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .alert-item:last-child {
+            border-bottom: none;
+        }
+
+        .alert-time {
+            font-size: 12px;
+            color: #8b949e;
+        }
+
+        .alert-host {
+            font-weight: 600;
+            color: var(--danger-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>C2 Beacon Detection Dashboard</h1>
+            <span class="status-badge status-online">SYSTEM ONLINE</span>
+        </header>
+
+        <div class="grid">
+            <div class="main-content">
+                <div class="card">
+                    <div class="card-title">
+                        Recent Analysis Results
+                        <button class="btn" onclick="triggerAnalyze()">Manual Scan</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Host IP</th>
+                                <th>P-Score</th>
+                                <th>FFT Peak</th>
+                                <th>Autocorr</th>
+                                <th>Entropy</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-body">
+                            <!-- Results populated via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="card">
+                    <div class="card-title">Live Alerts</div>
+                    <div id="alerts-container">
+                        <!-- Alerts populated via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function fetchAlerts() {
+            try {
+                const response = await fetch('/api/alerts');
+                const data = await response.json();
+                const container = document.getElementById('alerts-container');
+                container.innerHTML = '';
+                
+                if (data.alerts.length === 0) {
+                    container.innerHTML = '<div style="color: #8b949e">No active alerts.</div>';
+                    return;
+                }
+
+                data.alerts.forEach(alert => {
+                    const div = document.createElement('div');
+                    div.className = 'alert-item';
+                    div.innerHTML = `
+                        <div class="alert-time">${new Date(alert.timestamp).toLocaleString()}</div>
+                        <div class="alert-host">Beacon Detected: ${alert.host}</div>
+                        <div style="font-size: 14px">P-Score: ${alert.p_score.toFixed(3)}</div>
+                    `;
+                    container.appendChild(div);
+                });
+            } catch (error) {
+                console.error('Error fetching alerts:', error);
+            }
+        }
+
+        async function triggerAnalyze() {
+            try {
+                const resultsBody = document.getElementById('results-body');
+                resultsBody.innerHTML = '<tr><td colspan="6" style="text-align: center">Analyzing...</td></tr>';
+                
+                const response = await fetch('/api/analyze');
+                const data = await response.json();
+                
+                resultsBody.innerHTML = '';
+                if (data.results.length === 0) {
+                    resultsBody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: #8b949e">No traffic analyzed in the current window.</td></tr>';
+                    return;
+                }
+
+                data.results.forEach(res => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${res.host}</td>
+                        <td>${res.p_score.toFixed(3)}</td>
+                        <td>${res.fft_peak.toFixed(3)}</td>
+                        <td>${res.autocorr_max.toFixed(3)}</td>
+                        <td>${res.entropy_norm.toFixed(3)}</td>
+                        <td class="${res.detected ? 'beacon-alert' : ''}">${res.detected ? 'BEACON' : 'NORMAL'}</td>
+                    `;
+                    resultsBody.appendChild(tr);
+                });
+                
+                fetchAlerts();
+            } catch (error) {
+                console.error('Error triggering analysis:', error);
+            }
+        }
+
+        // Initial fetch
+        fetchAlerts();
+        // Poll for alerts every 10s
+        setInterval(fetchAlerts, 10000);
+    </script>
+</body>
+</html>

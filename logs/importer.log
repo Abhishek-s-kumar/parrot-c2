@@ -1,0 +1,7 @@
+2026-02-10 17:50:38,852 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:50:38,866 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "c2user"
+
+2026-02-10 17:50:38,897 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
