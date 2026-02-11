@@ -33,7 +33,7 @@ if [ -f "$BASE_DIR/.importer.pid" ] && ps -p $(cat "$BASE_DIR/.importer.pid") > 
     echo "Zeek Log Importer is already running."
 else
     echo "Starting Zeek Log Importer..."
-    nohup python3 "$SCRIPTS_DIR/zeek_importer.py" > "$LOG_DIR/importer_out.log" 2>&1 &
+    nohup "$VENV_DIR/bin/python3" "$SCRIPTS_DIR/zeek_importer.py" > "$LOG_DIR/importer_out.log" 2>&1 &
     echo $! > "$BASE_DIR/.importer.pid"
 fi
 
@@ -42,7 +42,7 @@ if [ -f "$BASE_DIR/.monitor.pid" ] && ps -p $(cat "$BASE_DIR/.monitor.pid") > /d
     echo "C2 Monitor Service is already running."
 else
     echo "Starting C2 Monitor Service..."
-    nohup python3 "$SCRIPTS_DIR/monitor_c2.py" > "$LOG_DIR/monitor_out.log" 2>&1 &
+    nohup "$VENV_DIR/bin/python3" "$SCRIPTS_DIR/monitor_c2.py" > "$LOG_DIR/monitor_out.log" 2>&1 &
     echo $! > "$BASE_DIR/.monitor.pid"
 fi
 
@@ -51,7 +51,13 @@ if [ -f "$BASE_DIR/.dashboard.pid" ] && ps -p $(cat "$BASE_DIR/.dashboard.pid") 
     echo "Flask Dashboard is already running."
 else
     echo "Starting Flask Dashboard (Port 5000)..."
-    nohup python3 "$SCRIPTS_DIR/dashboard.py" > "$LOG_DIR/dashboard_out.log" 2>&1 &
+    # Double check port 5000 one last time
+    if lsof -i :5000 > /dev/null 2>&1; then
+        echo "Port 5000 still in use. Force clearing..."
+        sudo fuser -k 5000/tcp > /dev/null 2>&1
+        sleep 2
+    fi
+    nohup "$VENV_DIR/bin/python3" "$SCRIPTS_DIR/dashboard.py" > "$LOG_DIR/dashboard_out.log" 2>&1 &
     echo $! > "$BASE_DIR/.dashboard.pid"
 fi
 

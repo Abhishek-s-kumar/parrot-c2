@@ -32,7 +32,11 @@ fi
 if [ -f "$BASE_DIR/.dashboard.pid" ]; then
     PID=$(cat "$BASE_DIR/.dashboard.pid")
     if ps -p $PID > /dev/null; then
-        echo "[RUNNING] Flask Dashboard (PID $PID)"
+        if netstat -tuln | grep -q ":5000 "; then
+            echo "[RUNNING] Flask Dashboard (PID $PID)"
+        else
+            echo "[STARTING] Flask Dashboard (PID $PID - waiting for port 5000)"
+        fi
     else
         echo "[FAILED ] Flask Dashboard (PID $PID - not responding)"
     fi

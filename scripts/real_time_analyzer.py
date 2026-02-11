@@ -249,6 +249,57 @@ class DetectionEngine:
         finally:
             conn.close()
 
+    def get_online_systems(self, window_minutes=10):
+        """Returns a list of unique hosts seen in the last X minutes."""
+        conn = self._connect_db()
+        if not conn:
+            return []
+
+        try:
+            end_time = datetime.now(timezone.utc)
+            start_time = end_time - timedelta(minutes=window_minutes)
+
+            query = """
+                SELECT id_orig_h, MAX(ts) as last_seen
+                FROM conn_log
+                WHERE ts >= %s AND ts <= %s
+                GROUP BY id_orig_h
+                ORDER BY last_seen DESC
+            """
+            df = pd.read_sql_query(query, conn, params=(start_time, end_time))
+
+            if df.empty:
+                return []
+
+            mapping, mac_to_ipv4 = self._get_ip_mapping()
+            
+            systems = []
+            for _, row in df.iterrows():
+                host = row['id_orig_h']
+                last_seen = row['last_seen']
+                
+                mapped_ip = mapping.get(host)
+                if not mapped_ip:
+                    mac = self._ipv6_to_mac(host)
+                    if mac and mac in mac_to_ipv4:
+                        mapped_ip = mac_to_ipv4[mac]
+                
+                display_host = f"{host} ({mapped_ip})" if mapped_ip else host
+                
+                systems.append({
+                    'host': host,
+                    'display_host': display_host,
+                    'last_seen': last_seen.isoformat() if isinstance(last_seen, datetime) else str(last_seen)
+                })
+            
+            return systems
+
+        except Exception as e:
+            logging.error(f"Error fetching online systems: {e}")
+            return []
+        finally:
+            conn.close()
+
 def main():
     config = configparser.ConfigParser()
     config.read('/home/user/Desktop/c2/c2/config/database.conf')

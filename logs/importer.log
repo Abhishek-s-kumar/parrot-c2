@@ -258,3 +258,13 @@ connection to server at "localhost" (::1), port 5432 failed: FATAL:  password au
 2026-02-10 19:24:14,459 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
 2026-02-10 19:25:30,618 - INFO - Connected to PostgreSQL
 2026-02-10 19:25:30,631 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-11 17:05:12,772 - INFO - Connected to PostgreSQL
+2026-02-11 17:05:12,788 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-11 17:53:16,371 - INFO - Imported 6 records from conn.log
+2026-02-11 17:53:54,163 - INFO - Imported 1 records from conn.log
+2026-02-11 17:53:56,193 - INFO - Imported 1 records from conn.log
+2026-02-11 17:58:22,937 - INFO - Imported 1 records from conn.log
+2026-02-11 17:58:24,912 - INFO - Imported 2 records from conn.log
+2026-02-11 18:00:00,021 - INFO - Imported 2 records from conn.log
+2026-02-11 18:02:37,029 - INFO - Connected to PostgreSQL
+2026-02-11 18:02:37,031 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
