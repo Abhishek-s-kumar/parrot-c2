@@ -4004,3 +4004,18 @@ connection to server at "localhost" (::1), port 5432 failed: FATAL:  password au
 2026-02-12 15:12:18,920 - INFO - 127.0.0.1 - - [12/Feb/2026 15:12:18] "GET /api/online_systems HTTP/1.1" 200 -
 2026-02-12 15:12:29,333 - INFO - 127.0.0.1 - - [12/Feb/2026 15:12:29] "GET /api/alerts HTTP/1.1" 200 -
 2026-02-12 15:12:29,351 - INFO - 127.0.0.1 - - [12/Feb/2026 15:12:29] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-12 15:12:39,333 - INFO - 127.0.0.1 - - [12/Feb/2026 15:12:39] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-12 15:12:39,352 - INFO - 127.0.0.1 - - [12/Feb/2026 15:12:39] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-12 15:12:49,351 - INFO - 127.0.0.1 - - [12/Feb/2026 15:12:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-12 15:12:49,371 - INFO - 127.0.0.1 - - [12/Feb/2026 15:12:49] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-12 15:12:55,868 - INFO - Triggering periodic analysis...
+2026-02-12 15:12:55,892 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.596
+2026-02-12 15:12:55,903 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.598
+2026-02-12 15:12:59,352 - INFO - 127.0.0.1 - - [12/Feb/2026 15:12:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-12 15:12:59,375 - INFO - 127.0.0.1 - - [12/Feb/2026 15:12:59] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-12 15:13:09,354 - INFO - 127.0.0.1 - - [12/Feb/2026 15:13:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-12 15:13:09,374 - INFO - 127.0.0.1 - - [12/Feb/2026 15:13:09] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-12 15:13:19,354 - INFO - 127.0.0.1 - - [12/Feb/2026 15:13:19] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-12 15:13:19,374 - INFO - 127.0.0.1 - - [12/Feb/2026 15:13:19] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-12 15:13:29,357 - INFO - 127.0.0.1 - - [12/Feb/2026 15:13:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-12 15:13:29,377 - INFO - 127.0.0.1 - - [12/Feb/2026 15:13:29] "GET /api/online_systems HTTP/1.1" 200 -
