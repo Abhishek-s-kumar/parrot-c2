@@ -268,3 +268,47 @@ connection to server at "localhost" (::1), port 5432 failed: FATAL:  password au
 2026-02-11 18:00:00,021 - INFO - Imported 2 records from conn.log
 2026-02-11 18:02:37,029 - INFO - Connected to PostgreSQL
 2026-02-11 18:02:37,031 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-12 14:19:21,425 - INFO - Connected to PostgreSQL
+2026-02-12 14:19:21,429 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-12 14:28:10,973 - INFO - Connected to PostgreSQL
+2026-02-12 14:28:10,981 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-12 14:39:58,139 - INFO - Imported 1 records from conn.log
+2026-02-12 14:40:06,122 - INFO - Imported 1 records from conn.log
+2026-02-12 14:41:46,207 - INFO - Imported 1 records from conn.log
+2026-02-12 14:44:20,380 - INFO - Imported 1 records from conn.log
+2026-02-12 14:45:40,452 - INFO - Imported 1 records from conn.log
+2026-02-12 14:45:59,457 - INFO - Imported 1 records from conn.log
+2026-02-12 14:47:51,565 - INFO - Imported 1 records from conn.log
+2026-02-12 14:50:08,264 - INFO - Connected to PostgreSQL
+2026-02-12 14:50:08,268 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-12 14:50:45,245 - INFO - Imported 1 records from conn.log
+2026-02-12 14:51:43,841 - INFO - Connected to PostgreSQL
+2026-02-12 14:51:43,854 - INFO - Imported 11 records from conn.log
+2026-02-12 14:51:43,856 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-12 14:52:07,999 - INFO - Imported 1 records from conn.log
+2026-02-12 14:52:17,165 - INFO - Imported 1 records from conn.log
+2026-02-12 14:52:26,206 - INFO - Imported 1 records from conn.log
+2026-02-12 14:53:59,276 - INFO - Imported 1 records from conn.log
+2026-02-12 14:54:00,373 - INFO - Imported 1 records from conn.log
+2026-02-12 14:54:01,376 - INFO - Imported 2 records from conn.log
+2026-02-12 14:54:09,484 - INFO - Imported 1 records from conn.log
+2026-02-12 14:54:11,501 - INFO - Imported 1 records from conn.log
+2026-02-12 14:54:54,783 - INFO - Imported 2 records from conn.log
+2026-02-12 14:57:37,917 - INFO - Imported 1 records from conn.log
+2026-02-12 14:57:38,447 - INFO - Connected to PostgreSQL
+2026-02-12 14:57:38,469 - INFO - Imported 10 records from conn.log
+2026-02-12 14:57:38,471 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-12 14:59:15,127 - INFO - Connected to PostgreSQL
+2026-02-12 14:59:15,179 - INFO - Imported 10 records from conn.log
+2026-02-12 14:59:15,182 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-12 15:00:00,004 - INFO - Imported 1 records from conn.log
+2026-02-12 15:01:24,024 - INFO - Imported 9 records from conn.log
+2026-02-12 15:03:01,540 - INFO - Imported 1 records from conn.log
+2026-02-12 15:07:53,338 - INFO - Connected to PostgreSQL
+2026-02-12 15:07:53,352 - INFO - Imported 10 records from conn.log
+2026-02-12 15:07:53,405 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-12 15:09:36,542 - INFO - Imported 1 records from conn.log
+2026-02-12 15:10:54,908 - INFO - Connected to PostgreSQL
+2026-02-12 15:10:54,919 - INFO - Imported 10 records from conn.log
+2026-02-12 15:10:54,922 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-12 15:12:02,926 - INFO - Imported 1 records from conn.log

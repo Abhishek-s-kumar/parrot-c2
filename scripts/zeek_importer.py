@@ -20,8 +20,6 @@ class ZeekLogHandler(FileSystemEventHandler):
         self.log_file = log_file
         self.db_config = db_config
         self.last_position = 0
-        if os.path.exists(self.log_file):
-            self.last_position = os.path.getsize(self.log_file)
         self.conn = self._connect_db()
 
     def _connect_db(self):
