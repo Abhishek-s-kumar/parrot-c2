@@ -312,3 +312,52 @@ connection to server at "localhost" (::1), port 5432 failed: FATAL:  password au
 2026-02-12 15:10:54,919 - INFO - Imported 10 records from conn.log
 2026-02-12 15:10:54,922 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
 2026-02-12 15:12:02,926 - INFO - Imported 1 records from conn.log
+2026-02-13 05:16:29,502 - INFO - Connected to PostgreSQL
+2026-02-13 05:16:29,633 - INFO - Imported 10 records from conn.log
+2026-02-13 05:16:29,636 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-13 05:21:47,451 - INFO - Connected to PostgreSQL
+2026-02-13 05:21:47,465 - INFO - Imported 10 records from conn.log
+2026-02-13 05:21:47,467 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-13 05:43:19,168 - INFO - Connected to PostgreSQL
+2026-02-13 05:43:19,215 - INFO - Imported 10 records from conn.log
+2026-02-13 05:43:19,217 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-13 05:47:12,389 - INFO - Connected to PostgreSQL
+2026-02-13 05:47:12,409 - INFO - Imported 10 records from conn.log
+2026-02-13 05:47:12,412 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-13 05:48:46,830 - INFO - Imported 1 records from conn.log
+2026-02-13 05:49:15,016 - INFO - Imported 1 records from conn.log
+2026-02-13 05:49:50,071 - INFO - Connected to PostgreSQL
+2026-02-13 05:49:50,089 - INFO - Imported 10 records from conn.log
+2026-02-13 05:49:50,100 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-13 05:52:43,940 - INFO - Imported 1 records from conn.log
+2026-02-13 05:54:44,759 - INFO - Connected to PostgreSQL
+2026-02-13 05:54:44,785 - INFO - Imported 10 records from conn.log
+2026-02-13 05:54:44,789 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-13 05:57:16,401 - INFO - Imported 1 records from conn.log
+2026-02-13 05:58:54,337 - INFO - Imported 1 records from conn.log
+2026-02-13 05:58:54,342 - ERROR - Error parsing line: SSL connection has been closed unexpectedly
+
+2026-02-13 05:58:54,346 - ERROR - Error processing log file: connection already closed
+2026-02-13 05:59:14,991 - INFO - Imported 1 records from conn.log
+2026-02-13 05:59:15,007 - INFO - Connected to PostgreSQL
+2026-02-13 05:59:15,016 - INFO - Imported 1 records from conn.log
+2026-02-13 06:03:41,639 - INFO - Connected to PostgreSQL
+2026-02-13 06:03:41,837 - INFO - Imported 10 records from conn.log
+2026-02-13 06:03:41,838 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-13 06:22:51,284 - INFO - Connected to PostgreSQL
+2026-02-13 06:22:51,295 - INFO - Imported 10 records from conn.log
+2026-02-13 06:22:51,297 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-13 06:43:38,390 - INFO - Connected to PostgreSQL
+2026-02-13 06:43:38,414 - INFO - Imported 10 records from conn.log
+2026-02-13 06:43:38,418 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-13 06:43:44,310 - INFO - Imported 1 records from conn.log
+2026-02-13 06:44:31,801 - INFO - Imported 1 records from conn.log
+2026-02-13 06:44:47,640 - INFO - Imported 1 records from conn.log
+2026-02-13 06:45:07,213 - INFO - Imported 1 records from conn.log
+2026-02-13 06:45:50,011 - INFO - Imported 1 records from conn.log
+2026-02-13 06:46:01,122 - INFO - Imported 1 records from conn.log
+2026-02-13 06:49:42,353 - INFO - Imported 1 records from conn.log
+2026-02-13 06:50:50,869 - INFO - Imported 1 records from conn.log
+2026-02-13 06:53:49,577 - INFO - Imported 1 records from conn.log
+2026-02-13 06:55:42,902 - INFO - Imported 1 records from conn.log
+2026-02-13 07:00:00,008 - INFO - Imported 1 records from conn.log
