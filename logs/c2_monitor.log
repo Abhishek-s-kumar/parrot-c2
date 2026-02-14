@@ -7550,3 +7550,912 @@ connection to server at "localhost" (::1), port 5432 failed: FATAL:  password au
 2026-02-13 07:00:43,799 - INFO - 127.0.0.1 - - [13/Feb/2026 07:00:43] "GET /api/online_systems HTTP/1.1" 200 -
 2026-02-13 07:00:53,805 - INFO - 127.0.0.1 - - [13/Feb/2026 07:00:53] "GET /api/alerts HTTP/1.1" 200 -
 2026-02-13 07:00:53,825 - INFO - 127.0.0.1 - - [13/Feb/2026 07:00:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:01:03,805 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:01:03,825 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:01:13,805 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:01:13,825 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:01:23,809 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:01:23,828 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:01:33,808 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:01:33,828 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:01:42,792 - INFO - Triggering periodic analysis...
+2026-02-13 07:01:42,823 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.594
+2026-02-13 07:01:42,836 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.592
+2026-02-13 07:01:43,810 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:01:43,830 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:01:53,811 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:01:53,833 - INFO - 127.0.0.1 - - [13/Feb/2026 07:01:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:02:03,810 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:02:03,832 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:02:13,815 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:02:13,833 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:02:23,813 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:02:23,830 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:02:33,814 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:02:33,836 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:02:42,840 - INFO - Triggering periodic analysis...
+2026-02-13 07:02:42,871 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.594
+2026-02-13 07:02:42,883 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.592
+2026-02-13 07:02:43,816 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:02:43,838 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:02:53,818 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:02:53,840 - INFO - 127.0.0.1 - - [13/Feb/2026 07:02:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:03:03,817 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:03:03,838 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:03:13,818 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:03:13,838 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:03:23,823 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:03:23,848 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:03:33,829 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:03:33,848 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:03:42,886 - INFO - Triggering periodic analysis...
+2026-02-13 07:03:42,914 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.594
+2026-02-13 07:03:42,926 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.588
+2026-02-13 07:03:43,829 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:03:43,847 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:03:53,830 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:03:53,850 - INFO - 127.0.0.1 - - [13/Feb/2026 07:03:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:04:03,835 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:04:03,858 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:04:13,835 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:04:13,866 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:04:23,836 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:04:23,856 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:04:33,847 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:04:33,868 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:04:42,929 - INFO - Triggering periodic analysis...
+2026-02-13 07:04:42,961 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.594
+2026-02-13 07:04:42,974 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.588
+2026-02-13 07:04:43,841 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:04:43,859 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:04:53,847 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:04:53,866 - INFO - 127.0.0.1 - - [13/Feb/2026 07:04:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:05:03,846 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:05:03,868 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:05:13,851 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:05:13,875 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:05:23,850 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:05:23,871 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:05:33,849 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:05:33,870 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:05:42,978 - INFO - Triggering periodic analysis...
+2026-02-13 07:05:43,011 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.594
+2026-02-13 07:05:43,023 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.588
+2026-02-13 07:05:43,852 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:05:43,872 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:05:53,856 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:05:53,875 - INFO - 127.0.0.1 - - [13/Feb/2026 07:05:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:06:03,877 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:06:03,900 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:06:13,877 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:06:13,900 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:06:23,878 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:06:23,899 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:06:33,880 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:06:33,904 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:06:43,030 - INFO - Triggering periodic analysis...
+2026-02-13 07:06:43,067 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.596
+2026-02-13 07:06:43,083 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.588
+2026-02-13 07:06:43,878 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:06:43,912 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:06:53,883 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:06:53,910 - INFO - 127.0.0.1 - - [13/Feb/2026 07:06:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:07:03,885 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:07:03,909 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:07:13,885 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:07:13,912 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:07:23,886 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:07:23,906 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:07:33,891 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:07:33,914 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:07:43,086 - INFO - Triggering periodic analysis...
+2026-02-13 07:07:43,122 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.596
+2026-02-13 07:07:43,134 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.588
+2026-02-13 07:07:43,892 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:07:43,913 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:07:53,889 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:07:53,908 - INFO - 127.0.0.1 - - [13/Feb/2026 07:07:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:08:03,889 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:08:03,908 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:08:13,890 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:08:13,912 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:08:23,894 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:08:23,915 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:08:33,898 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:08:33,915 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:08:43,137 - INFO - Triggering periodic analysis...
+2026-02-13 07:08:43,169 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.596
+2026-02-13 07:08:43,190 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.589
+2026-02-13 07:08:43,898 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:08:43,917 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:08:53,897 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:08:53,917 - INFO - 127.0.0.1 - - [13/Feb/2026 07:08:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:09:03,901 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:09:03,921 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:09:13,905 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:09:13,927 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:09:23,900 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:09:23,918 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:09:33,901 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:09:33,922 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:09:43,193 - INFO - Triggering periodic analysis...
+2026-02-13 07:09:43,226 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.596
+2026-02-13 07:09:43,240 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.589
+2026-02-13 07:09:43,902 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:09:43,921 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:09:53,902 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:09:53,923 - INFO - 127.0.0.1 - - [13/Feb/2026 07:09:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:10:03,902 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:10:03,922 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:10:13,904 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:10:13,925 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:10:23,903 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:10:23,923 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:10:33,904 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:10:33,927 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:10:43,245 - INFO - Triggering periodic analysis...
+2026-02-13 07:10:43,274 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.596
+2026-02-13 07:10:43,286 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.589
+2026-02-13 07:10:43,905 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:10:43,925 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:10:53,909 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:10:53,935 - INFO - 127.0.0.1 - - [13/Feb/2026 07:10:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:11:03,926 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:11:03,949 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:11:13,925 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:11:13,945 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:11:23,925 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:11:23,944 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:11:33,928 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:11:33,950 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:11:43,292 - INFO - Triggering periodic analysis...
+2026-02-13 07:11:43,322 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.576
+2026-02-13 07:11:43,337 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.597
+2026-02-13 07:11:43,928 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:11:43,958 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:11:53,932 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:11:53,960 - INFO - 127.0.0.1 - - [13/Feb/2026 07:11:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:12:03,945 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:12:03,966 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:12:13,946 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:12:13,965 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:12:23,948 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:12:23,969 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:12:33,951 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:12:33,974 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:12:43,343 - INFO - Triggering periodic analysis...
+2026-02-13 07:12:43,375 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.597
+2026-02-13 07:12:43,391 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.573
+2026-02-13 07:12:43,950 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:12:43,972 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:12:53,951 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:12:53,976 - INFO - 127.0.0.1 - - [13/Feb/2026 07:12:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:13:03,955 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:13:03,976 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:13:13,955 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:13:13,982 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:13:23,954 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:13:23,976 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:13:33,960 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:13:33,983 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:13:43,395 - INFO - Triggering periodic analysis...
+2026-02-13 07:13:43,425 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.598
+2026-02-13 07:13:43,439 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.593
+2026-02-13 07:13:43,959 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:13:43,979 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:13:53,959 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:13:53,980 - INFO - 127.0.0.1 - - [13/Feb/2026 07:13:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:14:03,961 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:14:03,983 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:14:13,962 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:14:13,982 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:14:23,964 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:14:23,990 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:14:33,965 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:14:33,989 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:14:43,441 - INFO - Triggering periodic analysis...
+2026-02-13 07:14:43,472 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.593
+2026-02-13 07:14:43,966 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:14:43,988 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:14:53,972 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:14:53,992 - INFO - 127.0.0.1 - - [13/Feb/2026 07:14:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:15:03,970 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:15:03,992 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:15:13,970 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:15:13,992 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:15:23,975 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:15:23,997 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:23] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:15:33,980 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:15:34,004 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:15:43,478 - INFO - Triggering periodic analysis...
+2026-02-13 07:15:43,509 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.593
+2026-02-13 07:15:43,983 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:15:44,006 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:15:53,983 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:15:54,006 - INFO - 127.0.0.1 - - [13/Feb/2026 07:15:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:16:03,985 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:16:04,005 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:16:13,989 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:16:14,010 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:16:23,989 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:16:24,008 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:16:33,993 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:16:34,012 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:16:43,516 - INFO - Triggering periodic analysis...
+2026-02-13 07:16:43,546 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.593
+2026-02-13 07:16:43,991 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:16:44,011 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:16:53,994 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:16:54,016 - INFO - 127.0.0.1 - - [13/Feb/2026 07:16:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:17:03,994 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:17:04,018 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:17:13,997 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:17:14,018 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:17:23,996 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:17:24,015 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:17:33,998 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:17:34,022 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:17:43,552 - INFO - Triggering periodic analysis...
+2026-02-13 07:17:43,629 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.593
+2026-02-13 07:17:44,039 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:17:44,086 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:17:54,010 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:17:54,035 - INFO - 127.0.0.1 - - [13/Feb/2026 07:17:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:18:04,011 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:18:04,041 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:18:14,010 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:18:14,033 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:18:24,012 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:18:24,030 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:18:34,013 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:18:34,034 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:18:43,637 - INFO - Triggering periodic analysis...
+2026-02-13 07:18:43,669 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.595
+2026-02-13 07:18:44,012 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:18:44,034 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:18:54,015 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:18:54,035 - INFO - 127.0.0.1 - - [13/Feb/2026 07:18:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:19:04,014 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:19:04,032 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:19:14,014 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:19:14,036 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:19:24,015 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:19:24,035 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:19:34,017 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:19:34,043 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:19:43,676 - INFO - Triggering periodic analysis...
+2026-02-13 07:19:43,708 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.595
+2026-02-13 07:19:44,023 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:19:44,044 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:19:54,032 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:19:54,057 - INFO - 127.0.0.1 - - [13/Feb/2026 07:19:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:20:04,033 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:20:04,049 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:20:14,034 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:20:14,049 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:20:24,035 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:20:24,049 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:20:34,035 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:20:34,053 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:20:43,713 - INFO - Triggering periodic analysis...
+2026-02-13 07:20:43,741 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.593
+2026-02-13 07:20:44,040 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:20:44,060 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:20:54,042 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:20:54,060 - INFO - 127.0.0.1 - - [13/Feb/2026 07:20:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:21:04,043 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:21:04,058 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:21:14,044 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:21:14,058 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:21:24,046 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:21:24,064 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:21:34,047 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:21:34,064 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:21:43,745 - INFO - Triggering periodic analysis...
+2026-02-13 07:21:43,777 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.593
+2026-02-13 07:21:44,050 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:21:44,066 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:21:54,054 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:21:54,069 - INFO - 127.0.0.1 - - [13/Feb/2026 07:21:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:22:04,051 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:22:04,067 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:22:14,055 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:22:14,069 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:22:24,053 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:22:24,073 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:22:34,055 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:22:34,075 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:22:43,780 - INFO - Triggering periodic analysis...
+2026-02-13 07:22:43,807 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.593
+2026-02-13 07:22:44,056 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:22:44,072 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:22:54,056 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:22:54,069 - INFO - 127.0.0.1 - - [13/Feb/2026 07:22:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:23:04,059 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:23:04,077 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:23:14,061 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:23:14,078 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:23:24,062 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:23:24,078 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:23:34,062 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:23:34,077 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:23:43,811 - INFO - Triggering periodic analysis...
+2026-02-13 07:23:43,838 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.593
+2026-02-13 07:23:44,064 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:23:44,081 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:23:54,066 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:23:54,085 - INFO - 127.0.0.1 - - [13/Feb/2026 07:23:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:24:04,066 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:24:04,082 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:24:14,067 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:24:14,087 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:24:24,071 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:24:24,086 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:24:34,097 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:24:34,114 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:24:43,845 - INFO - Triggering periodic analysis...
+2026-02-13 07:24:43,871 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.592
+2026-02-13 07:24:44,097 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:24:44,114 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:24:54,098 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:24:54,117 - INFO - 127.0.0.1 - - [13/Feb/2026 07:24:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:25:04,099 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:25:04,116 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:25:14,101 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:25:14,116 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:25:24,101 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:25:24,119 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:25:34,104 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:25:34,116 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:25:43,877 - INFO - Triggering periodic analysis...
+2026-02-13 07:25:43,905 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.592
+2026-02-13 07:25:44,102 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:25:44,117 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:25:54,106 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:25:54,125 - INFO - 127.0.0.1 - - [13/Feb/2026 07:25:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:26:04,104 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:26:04,120 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:26:14,106 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:26:14,129 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:26:24,108 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:26:24,124 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:26:34,109 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:26:34,130 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:26:43,911 - INFO - Triggering periodic analysis...
+2026-02-13 07:26:43,939 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.592
+2026-02-13 07:26:44,110 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:26:44,123 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:26:54,112 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:26:54,126 - INFO - 127.0.0.1 - - [13/Feb/2026 07:26:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:27:04,112 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:27:04,128 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:27:14,113 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:27:14,129 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:27:24,114 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:27:24,131 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:27:34,115 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:27:34,130 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:27:43,947 - INFO - Triggering periodic analysis...
+2026-02-13 07:27:43,975 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.592
+2026-02-13 07:27:44,115 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:27:44,132 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:27:54,116 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:27:54,130 - INFO - 127.0.0.1 - - [13/Feb/2026 07:27:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:28:04,117 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:28:04,132 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:28:14,119 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:28:14,138 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:28:24,118 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:28:24,133 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:28:34,119 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:28:34,133 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:28:43,981 - INFO - Triggering periodic analysis...
+2026-02-13 07:28:44,012 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.592
+2026-02-13 07:28:44,119 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:28:44,132 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:28:54,120 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:28:54,136 - INFO - 127.0.0.1 - - [13/Feb/2026 07:28:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:29:04,122 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:29:04,134 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:29:14,126 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:29:14,140 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:29:24,132 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:29:24,147 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:29:34,132 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:29:34,148 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:29:44,022 - INFO - Triggering periodic analysis...
+2026-02-13 07:29:44,049 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.592
+2026-02-13 07:29:44,134 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:29:44,149 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:29:54,133 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:29:54,150 - INFO - 127.0.0.1 - - [13/Feb/2026 07:29:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:30:04,134 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:30:04,156 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:30:14,137 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:30:14,154 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:30:24,137 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:30:24,154 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:30:34,140 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:30:34,166 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:30:44,054 - INFO - Triggering periodic analysis...
+2026-02-13 07:30:44,085 - INFO - BEACON DETECTED: host=192.168.56.15 p_score=0.592
+2026-02-13 07:30:44,144 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:30:44,158 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:30:54,145 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:30:54,160 - INFO - 127.0.0.1 - - [13/Feb/2026 07:30:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:31:04,147 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:31:04,161 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:31:14,148 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:31:14,163 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:31:24,154 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:31:24,172 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:31:34,152 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:31:34,165 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:31:44,093 - INFO - Triggering periodic analysis...
+2026-02-13 07:31:44,151 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:31:44,167 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:31:54,153 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:31:54,168 - INFO - 127.0.0.1 - - [13/Feb/2026 07:31:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:32:04,153 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:32:04,168 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:32:14,156 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:32:14,175 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:32:24,157 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:32:24,174 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:32:34,162 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:32:34,177 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:32:44,112 - INFO - Triggering periodic analysis...
+2026-02-13 07:32:44,164 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:32:44,182 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:32:54,164 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:32:54,178 - INFO - 127.0.0.1 - - [13/Feb/2026 07:32:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:33:04,165 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:33:04,181 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:33:14,165 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:33:14,183 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:33:24,165 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:33:24,181 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:33:34,169 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:33:34,184 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:33:44,130 - INFO - Triggering periodic analysis...
+2026-02-13 07:33:44,170 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:33:44,184 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:33:54,178 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:33:54,197 - INFO - 127.0.0.1 - - [13/Feb/2026 07:33:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:34:04,181 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:34:04,198 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:34:14,179 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:34:14,194 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:34:24,182 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:34:24,198 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:34:34,187 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:34:34,204 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:34:44,147 - INFO - Triggering periodic analysis...
+2026-02-13 07:34:44,187 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:34:44,202 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:34:54,189 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:34:54,209 - INFO - 127.0.0.1 - - [13/Feb/2026 07:34:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:35:04,200 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:35:04,214 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:35:14,199 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:35:14,212 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:35:24,200 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:35:24,212 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:35:34,204 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:35:34,218 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:35:44,163 - INFO - Triggering periodic analysis...
+2026-02-13 07:35:44,205 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:35:44,221 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:35:54,206 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:35:54,219 - INFO - 127.0.0.1 - - [13/Feb/2026 07:35:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:36:04,206 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:36:04,222 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:36:14,209 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:36:14,225 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:36:24,210 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:36:24,226 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:36:34,214 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:36:34,230 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:36:44,178 - INFO - Triggering periodic analysis...
+2026-02-13 07:36:44,217 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:36:44,249 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:36:54,210 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:36:54,226 - INFO - 127.0.0.1 - - [13/Feb/2026 07:36:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:37:04,212 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:37:04,226 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:37:14,214 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:37:14,228 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:37:24,218 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:37:24,236 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:37:34,217 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:37:34,232 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:37:44,197 - INFO - Triggering periodic analysis...
+2026-02-13 07:37:44,220 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:37:44,234 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:37:54,220 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:37:54,235 - INFO - 127.0.0.1 - - [13/Feb/2026 07:37:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:38:04,225 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:38:04,244 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:38:14,229 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:38:14,241 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:38:24,225 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:38:24,239 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:38:34,226 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:38:34,241 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:38:44,214 - INFO - Triggering periodic analysis...
+2026-02-13 07:38:44,226 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:38:44,241 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:38:54,226 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:38:54,241 - INFO - 127.0.0.1 - - [13/Feb/2026 07:38:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:39:04,227 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:39:04,242 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:39:14,234 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:39:14,251 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:39:24,239 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:39:24,253 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:39:34,240 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:39:34,257 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:39:44,230 - INFO - Triggering periodic analysis...
+2026-02-13 07:39:44,241 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:39:44,258 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:39:54,246 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:39:54,264 - INFO - 127.0.0.1 - - [13/Feb/2026 07:39:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:40:04,246 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:40:04,261 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:40:14,248 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:40:14,262 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:40:24,248 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:40:24,263 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:40:34,250 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:40:34,267 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:40:44,251 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:40:44,256 - INFO - Triggering periodic analysis...
+2026-02-13 07:40:44,266 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:40:54,269 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:40:54,285 - INFO - 127.0.0.1 - - [13/Feb/2026 07:40:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:41:04,269 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:41:04,283 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:41:14,270 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:41:14,292 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:41:24,274 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:41:24,288 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:41:34,276 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:41:34,291 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:41:44,273 - INFO - Triggering periodic analysis...
+2026-02-13 07:41:44,280 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:41:44,296 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:41:54,281 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:41:54,294 - INFO - 127.0.0.1 - - [13/Feb/2026 07:41:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:42:04,283 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:42:04,301 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:42:14,284 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:42:14,301 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:42:24,285 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:42:24,303 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:42:34,288 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:42:34,310 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:42:44,288 - INFO - Triggering periodic analysis...
+2026-02-13 07:42:44,290 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:42:44,307 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:42:54,288 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:42:54,304 - INFO - 127.0.0.1 - - [13/Feb/2026 07:42:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:43:04,290 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:43:04,306 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:43:14,291 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:43:14,310 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:43:24,291 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:43:24,319 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:43:34,293 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:43:34,308 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:43:44,291 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:43:44,306 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:43:44,307 - INFO - Triggering periodic analysis...
+2026-02-13 07:43:54,293 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:43:54,307 - INFO - 127.0.0.1 - - [13/Feb/2026 07:43:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:44:04,468 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:44:04,472 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:44:14,296 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:44:14,314 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:44:24,300 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:44:24,315 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:44:34,298 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:44:34,318 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:44:44,300 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:44:44,318 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:44:44,320 - INFO - Triggering periodic analysis...
+2026-02-13 07:44:54,299 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:44:54,315 - INFO - 127.0.0.1 - - [13/Feb/2026 07:44:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:45:04,303 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:45:04,317 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:45:14,306 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:45:14,323 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:45:24,306 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:45:24,322 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:45:34,306 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:45:34,321 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:45:44,311 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:45:44,327 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:45:44,334 - INFO - Triggering periodic analysis...
+2026-02-13 07:45:54,311 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:45:54,328 - INFO - 127.0.0.1 - - [13/Feb/2026 07:45:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:46:04,314 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:46:04,331 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:46:14,317 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:46:14,334 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:46:24,319 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:46:24,334 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:46:34,321 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:46:34,334 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:46:44,322 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:46:44,337 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:46:44,348 - INFO - Triggering periodic analysis...
+2026-02-13 07:46:54,326 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:46:54,340 - INFO - 127.0.0.1 - - [13/Feb/2026 07:46:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:47:04,327 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:47:04,343 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:47:14,332 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:47:14,344 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:47:24,335 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:47:24,350 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:47:34,336 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:47:34,350 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:47:44,338 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:47:44,355 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:47:44,363 - INFO - Triggering periodic analysis...
+2026-02-13 07:47:54,337 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:47:54,352 - INFO - 127.0.0.1 - - [13/Feb/2026 07:47:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:48:04,341 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:48:04,354 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:48:14,341 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:48:14,354 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:48:24,345 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:48:24,361 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:48:34,345 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:48:34,359 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:48:44,350 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:48:44,364 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:48:44,376 - INFO - Triggering periodic analysis...
+2026-02-13 07:48:54,349 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:48:54,363 - INFO - 127.0.0.1 - - [13/Feb/2026 07:48:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:49:04,349 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:49:04,365 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:49:14,351 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:49:14,364 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:49:24,354 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:49:24,370 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:49:34,353 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:49:34,366 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:49:44,354 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:49:44,367 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:49:44,390 - INFO - Triggering periodic analysis...
+2026-02-13 07:49:54,356 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:49:54,370 - INFO - 127.0.0.1 - - [13/Feb/2026 07:49:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:50:04,357 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:50:04,370 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:50:14,356 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:50:14,371 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:50:24,360 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:50:24,375 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:50:34,359 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:50:34,374 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:50:44,360 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:50:44,374 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:50:44,405 - INFO - Triggering periodic analysis...
+2026-02-13 07:50:54,362 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:50:54,375 - INFO - 127.0.0.1 - - [13/Feb/2026 07:50:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:51:04,363 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:51:04,377 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:51:14,368 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:51:14,383 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:51:24,369 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:51:24,385 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:51:34,371 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:51:34,387 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:51:44,377 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:51:44,392 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:51:44,419 - INFO - Triggering periodic analysis...
+2026-02-13 07:51:54,381 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:51:54,394 - INFO - 127.0.0.1 - - [13/Feb/2026 07:51:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:52:04,391 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:52:04,411 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:52:14,393 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:52:14,409 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:52:24,394 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:52:24,407 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:52:34,393 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:52:34,407 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:52:44,396 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:52:44,411 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:52:44,432 - INFO - Triggering periodic analysis...
+2026-02-13 07:52:54,398 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:52:54,417 - INFO - 127.0.0.1 - - [13/Feb/2026 07:52:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:53:04,399 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:53:04,412 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:53:14,399 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:53:14,413 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:53:24,399 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:53:24,413 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:53:34,404 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:53:34,417 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:53:44,410 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:53:44,423 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:53:44,446 - INFO - Triggering periodic analysis...
+2026-02-13 07:53:54,411 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:53:54,426 - INFO - 127.0.0.1 - - [13/Feb/2026 07:53:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:54:04,412 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:54:04,428 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:54:14,411 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:54:14,427 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:54:24,412 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:54:24,426 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:54:34,413 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:54:34,428 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:54:44,416 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:54:44,435 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:54:44,460 - INFO - Triggering periodic analysis...
+2026-02-13 07:54:54,420 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:54:54,433 - INFO - 127.0.0.1 - - [13/Feb/2026 07:54:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:55:04,418 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:55:04,432 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:55:14,420 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:55:14,434 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:55:24,421 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:55:24,433 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:55:34,422 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:55:34,442 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:55:44,424 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:55:44,438 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:55:44,480 - INFO - Triggering periodic analysis...
+2026-02-13 07:55:54,426 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:55:54,444 - INFO - 127.0.0.1 - - [13/Feb/2026 07:55:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:56:04,429 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:56:04,444 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:56:14,430 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:56:14,443 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:56:24,430 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:56:24,445 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:56:34,432 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:56:34,447 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:56:44,434 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:56:44,449 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:56:44,494 - INFO - Triggering periodic analysis...
+2026-02-13 07:56:54,437 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:56:54,451 - INFO - 127.0.0.1 - - [13/Feb/2026 07:56:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:57:04,439 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:57:04,454 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:57:14,446 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:57:14,460 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:57:24,455 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:57:24,469 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:57:34,459 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:57:34,474 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:57:44,462 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:57:44,476 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:57:44,509 - INFO - Triggering periodic analysis...
+2026-02-13 07:57:54,462 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:57:54,480 - INFO - 127.0.0.1 - - [13/Feb/2026 07:57:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:58:04,462 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:58:04,476 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:58:14,463 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:58:14,478 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:58:24,467 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:58:24,482 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:58:34,469 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:58:34,482 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:58:44,470 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:58:44,482 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:58:44,529 - INFO - Triggering periodic analysis...
+2026-02-13 07:58:54,472 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:58:54,486 - INFO - 127.0.0.1 - - [13/Feb/2026 07:58:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:59:04,473 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:59:04,487 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:59:14,472 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:59:14,488 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:59:24,474 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:59:24,490 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:59:34,479 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:59:34,493 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:59:44,479 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:59:44,494 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 07:59:44,544 - INFO - Triggering periodic analysis...
+2026-02-13 07:59:54,482 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 07:59:54,497 - INFO - 127.0.0.1 - - [13/Feb/2026 07:59:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:00:04,482 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:00:04,497 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:00:14,482 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:00:14,497 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:00:24,485 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:00:24,497 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:00:34,485 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:00:34,501 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:00:44,486 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:00:44,500 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:00:44,559 - INFO - Triggering periodic analysis...
+2026-02-13 08:00:54,485 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:00:54,500 - INFO - 127.0.0.1 - - [13/Feb/2026 08:00:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:01:04,488 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:01:04,503 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:01:14,498 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:01:14,515 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:01:24,499 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:01:24,512 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:01:34,498 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:01:34,514 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:01:44,502 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:01:44,517 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:01:44,572 - INFO - Triggering periodic analysis...
+2026-02-13 08:01:54,503 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:01:54,517 - INFO - 127.0.0.1 - - [13/Feb/2026 08:01:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:02:04,504 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:02:04,517 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:02:14,503 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:02:14,516 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:02:24,506 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:02:24,521 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:02:34,508 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:02:34,521 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:02:44,509 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:02:44,522 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:02:44,587 - INFO - Triggering periodic analysis...
+2026-02-13 08:02:54,508 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:02:54,524 - INFO - 127.0.0.1 - - [13/Feb/2026 08:02:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:03:04,511 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:03:04,526 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:03:14,511 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:03:14,524 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:03:24,511 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:03:24,525 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:03:34,511 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:03:34,525 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:03:44,513 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:03:44,527 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:03:44,615 - INFO - Triggering periodic analysis...
+2026-02-13 08:03:54,515 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:03:54,531 - INFO - 127.0.0.1 - - [13/Feb/2026 08:03:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:04:04,515 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:04:04,530 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:04:14,517 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:04:14,532 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:04:24,522 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:04:24,536 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:04:34,523 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:04:34,537 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:04:44,524 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:04:44,538 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:04:44,634 - INFO - Triggering periodic analysis...
+2026-02-13 08:04:54,524 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:04:54,539 - INFO - 127.0.0.1 - - [13/Feb/2026 08:04:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:05:04,529 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:05:04,542 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:05:14,536 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:05:14,550 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:05:24,540 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:05:24,554 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:05:34,538 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:05:34,553 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:05:44,539 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:05:44,554 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:05:44,649 - INFO - Triggering periodic analysis...
+2026-02-13 08:05:54,541 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:05:54,555 - INFO - 127.0.0.1 - - [13/Feb/2026 08:05:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:06:04,541 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:06:04,557 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:06:14,545 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:06:14,560 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:06:24,548 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:06:24,562 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:06:34,547 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:06:34,561 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:06:44,550 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:06:44,563 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:06:44,662 - INFO - Triggering periodic analysis...
+2026-02-13 08:06:54,551 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:06:54,566 - INFO - 127.0.0.1 - - [13/Feb/2026 08:06:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:07:04,551 - INFO - 127.0.0.1 - - [13/Feb/2026 08:07:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:07:04,565 - INFO - 127.0.0.1 - - [13/Feb/2026 08:07:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:07:14,553 - INFO - 127.0.0.1 - - [13/Feb/2026 08:07:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:07:14,568 - INFO - 127.0.0.1 - - [13/Feb/2026 08:07:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:07:24,555 - INFO - 127.0.0.1 - - [13/Feb/2026 08:07:24] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:07:24,574 - INFO - 127.0.0.1 - - [13/Feb/2026 08:07:24] "GET /api/online_systems HTTP/1.1" 200 -
+2026-02-13 08:07:34,559 - INFO - 127.0.0.1 - - [13/Feb/2026 08:07:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-02-13 08:07:34,574 - INFO - 127.0.0.1 - - [13/Feb/2026 08:07:34] "GET /api/online_systems HTTP/1.1" 200 -
