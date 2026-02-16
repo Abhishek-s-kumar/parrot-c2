@@ -124,6 +124,14 @@ class DetectionEngine:
         if len(time_series) < 10:
             return 0.0
         
+        # Check for high frequency (e.g. 1Hz pings)
+        # If more than half the samples are non-zero and mean interval is low
+        non_zero = time_series[time_series > 0]
+        if len(non_zero) > 1:
+            intervals = np.diff(non_zero.index.view(int) / 10**9)
+            if np.mean(intervals) < 2.0: # Faster than 0.5 Hz
+                return 0.0
+
         ts_centered = time_series - np.mean(time_series)
         if np.std(ts_centered) == 0:
             return 0.0
@@ -135,7 +143,7 @@ class DetectionEngine:
             autocorr = autocorr / autocorr[0]
             
         if len(autocorr) > 20:
-            autocorr_max = np.max(autocorr[1:20])
+            autocorr_max = np.max(autocorr[1:120]) # Look deeper for slower beacons
         elif len(autocorr) > 1:
             autocorr_max = np.max(autocorr[1:])
         else:
@@ -169,7 +177,7 @@ class DetectionEngine:
         )
         return float(p_score)
 
-    def analyze_recent_traffic(self, window_minutes=5):
+    def analyze_recent_traffic(self, window_minutes=20):
         conn = self._connect_db()
         if not conn:
             return []
@@ -180,7 +188,7 @@ class DetectionEngine:
             start_time = end_time - timedelta(minutes=window_minutes)
             
             query = """
-                SELECT id_orig_h, ts, resp_bytes 
+                SELECT id_orig_h, ts, (COALESCE(orig_bytes, 0) + COALESCE(resp_bytes, 0)) as total_bytes 
                 FROM conn_log 
                 WHERE ts >= %s AND ts <= %s
                 ORDER BY ts ASC
@@ -194,18 +202,28 @@ class DetectionEngine:
             hosts = df['id_orig_h'].unique()
             
             for host in hosts:
+                # Skip the local monitoring IP to avoid self-detection from pings
+                if host == '192.168.56.20':
+                    continue
+
                 host_df = df[df['id_orig_h'] == host].copy()
                 host_df.set_index('ts', inplace=True)
                 
                 # Resample to 1s intervals, fill with 0
-                resampled = host_df['resp_bytes'].resample('1s').sum().fillna(0)
+                resampled = host_df['total_bytes'].resample('1s').sum().fillna(0)
                 
+                # Check if we have enough active data points (at least 3 connections)
+                active_points = len(host_df)
+                if active_points < 3:
+                    continue
+
                 fft_peak, _ = self.calculate_fft(resampled)
                 autocorr_max = self.calculate_autocorrelation(resampled)
                 entropy_norm = self.calculate_entropy(resampled)
                 p_score = self.calculate_p_score(fft_peak, autocorr_max, entropy_norm)
                 
-                detected = p_score > 0.6
+                # More sensitive threshold for sparse beacons in larger window
+                detected = p_score > 0.5
                 
                 # Get IP mapping for display
                 mapping, mac_to_ipv4 = self._get_ip_mapping()
@@ -245,6 +263,59 @@ class DetectionEngine:
 
         except Exception as e:
             logging.error(f"Error during analysis: {e}")
+            return []
+        finally:
+            conn.close()
+
+    def get_online_systems(self, window_minutes=10):
+        """Returns a list of unique hosts seen in the last X minutes."""
+        conn = self._connect_db()
+        if not conn:
+            return []
+
+        try:
+            end_time = datetime.now(timezone.utc)
+            start_time = end_time - timedelta(minutes=window_minutes)
+
+            query = """
+                SELECT id_orig_h as host, MAX(ts) as last_seen FROM conn_log WHERE ts >= %s AND ts <= %s GROUP BY id_orig_h
+                UNION
+                SELECT id_resp_h as host, MAX(ts) as last_seen FROM conn_log WHERE ts >= %s AND ts <= %s GROUP BY id_resp_h
+                ORDER BY last_seen DESC
+            """
+            df = pd.read_sql_query(query, conn, params=(start_time, end_time, start_time, end_time))
+
+            if df.empty:
+                return []
+
+            # Deduplicate just in case of overlaps in last_seen
+            df = df.sort_values('last_seen', ascending=False).drop_duplicates('host')
+
+            mapping, mac_to_ipv4 = self._get_ip_mapping()
+            
+            systems = []
+            for _, row in df.iterrows():
+                host = row['host']
+                last_seen = row['last_seen']
+                
+                mapped_ip = mapping.get(host)
+                if not mapped_ip:
+                    mac = self._ipv6_to_mac(host)
+                    if mac and mac in mac_to_ipv4:
+                        mapped_ip = mac_to_ipv4[mac]
+                
+                display_host = f"{host} ({mapped_ip})" if mapped_ip else host
+                
+                systems.append({
+                    'host': host,
+                    'display_host': display_host,
+                    'last_seen': last_seen.isoformat() if isinstance(last_seen, datetime) else str(last_seen)
+                })
+            
+            return systems
+
+        except Exception as e:
+            logging.error(f"Error fetching online systems: {e}")
             return []
         finally:
             conn.close()

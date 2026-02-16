@@ -66,5 +66,15 @@ def trigger_analyze():
         "results": results
     })
 
+@app.route('/api/online_systems', methods=['GET'])
+def get_online_systems():
+    window = request.args.get('window', default=10, type=int)
+    systems = engine.get_online_systems(window_minutes=window)
+    return jsonify({
+        "timestamp": datetime.now().isoformat(),
+        "total_systems": len(systems),
+        "systems": systems
+    })
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
