@@ -1,0 +1,14 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2026-03-01-17-31-10
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+1772386260.528522	CQXp5C2V8IiCcJStLd	192.168.56.15	5353	224.0.0.251	5353	udp	dns	-	-	-	S0	T	F	0	D	1	73	0	0	-
+1772386340.062164	CB7V0S2Ea8SdBG8K7g	192.168.56.15	138	192.168.56.255	138	udp	-	0.000001	445	0	S0	T	T	0	D	2	501	0	0	-
+1772386650.170707	CviGU3Jd0Ctz17KB5	192.168.56.15	138	192.168.56.255	138	udp	-	0.000536	445	0	S0	T	T	0	D	2	501	0	0	-
+1772386772.375740	CtHTGy3b1BQnLFg5z9	192.168.56.15	5353	224.0.0.251	5353	udp	dns	-	-	-	S0	T	F	0	D	1	73	0	0	-
+1772386889.115096	C38Yys4WD1D8YDmrH	fe80::a00:27ff:fe4e:aa95	133	ff02::2	134	icmp	-	-	-	-	OTH	T	F	0	-	1	56	0	0	-
+1772387010.284520	CdQMWd2Y6kpMNp6rX4	192.168.56.15	138	192.168.56.255	138	udp	-	0.000358	445	0	S0	T	T	0	D	2	501	0	0	-

@@ -372,3 +372,90 @@ connection to server at "localhost" (::1), port 5432 failed: FATAL:  password au
 2026-02-13 08:00:00,003 - INFO - Imported 1 records from conn.log
 2026-02-14 18:35:39,518 - INFO - Connected to PostgreSQL
 2026-02-14 18:35:39,532 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-26 07:18:21,222 - INFO - Connected to PostgreSQL
+2026-02-26 07:18:21,225 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-02-26 07:23:42,707 - INFO - Imported 9 records from conn.log
+2026-02-26 07:23:52,702 - INFO - Imported 1 records from conn.log
+2026-02-26 07:23:56,708 - INFO - Imported 1 records from conn.log
+2026-02-26 07:24:00,713 - INFO - Imported 4 records from conn.log
+2026-02-26 07:24:05,727 - INFO - Imported 16 records from conn.log
+2026-02-26 07:24:06,719 - INFO - Imported 2 records from conn.log
+2026-02-26 07:24:10,715 - INFO - Imported 4 records from conn.log
+2026-02-26 07:24:11,727 - INFO - Imported 1 records from conn.log
+2026-02-26 07:24:16,734 - INFO - Imported 1 records from conn.log
+2026-02-26 07:24:32,760 - INFO - Imported 1 records from conn.log
+2026-02-26 07:24:39,783 - INFO - Imported 1 records from conn.log
+2026-02-26 07:24:44,798 - INFO - Imported 1 records from conn.log
+2026-02-26 07:24:45,796 - INFO - Imported 1 records from conn.log
+2026-02-26 07:24:52,811 - INFO - Imported 1 records from conn.log
+2026-02-26 07:24:53,809 - INFO - Imported 1 records from conn.log
+2026-02-26 07:24:54,812 - INFO - Imported 2 records from conn.log
+2026-02-26 07:24:58,833 - INFO - Imported 1 records from conn.log
+2026-02-26 07:25:01,836 - INFO - Imported 1 records from conn.log
+2026-02-26 07:25:03,836 - INFO - Imported 2 records from conn.log
+2026-02-26 07:25:12,856 - INFO - Imported 1 records from conn.log
+2026-02-26 07:25:22,862 - INFO - Imported 1 records from conn.log
+2026-02-26 07:25:27,867 - INFO - Imported 1 records from conn.log
+2026-02-26 07:25:55,939 - INFO - Imported 2 records from conn.log
+2026-02-26 07:26:08,958 - INFO - Imported 1 records from conn.log
+2026-02-26 07:26:26,983 - INFO - Imported 1 records from conn.log
+2026-02-26 07:26:28,995 - INFO - Imported 1 records from conn.log
+2026-02-26 07:26:56,043 - INFO - Imported 1 records from conn.log
+2026-02-26 07:27:02,056 - INFO - Imported 1 records from conn.log
+2026-02-26 07:27:12,079 - INFO - Imported 1 records from conn.log
+2026-02-26 07:27:57,144 - INFO - Imported 1 records from conn.log
+2026-02-26 07:29:49,351 - INFO - Imported 1 records from conn.log
+2026-02-26 07:31:53,699 - INFO - Imported 1 records from conn.log
+2026-02-26 07:31:59,716 - INFO - Imported 1 records from conn.log
+2026-02-26 07:32:38,791 - INFO - Imported 1 records from conn.log
+2026-02-26 07:33:23,865 - INFO - Imported 1 records from conn.log
+2026-02-26 07:34:09,943 - INFO - Imported 1 records from conn.log
+2026-02-26 07:34:27,962 - INFO - Imported 1 records from conn.log
+2026-02-26 07:34:29,963 - INFO - Imported 1 records from conn.log
+2026-02-26 07:34:56,108 - INFO - Imported 1 records from conn.log
+2026-02-26 07:35:01,019 - INFO - Imported 1 records from conn.log
+2026-02-26 07:35:12,039 - INFO - Imported 1 records from conn.log
+2026-02-26 07:39:42,878 - INFO - Imported 1 records from conn.log
+2026-02-26 07:39:52,917 - INFO - Imported 1 records from conn.log
+2026-02-26 07:39:59,929 - INFO - Imported 1 records from conn.log
+2026-02-26 07:40:38,996 - INFO - Imported 1 records from conn.log
+2026-02-26 07:41:24,074 - INFO - Imported 1 records from conn.log
+2026-02-26 07:42:09,191 - INFO - Imported 1 records from conn.log
+2026-02-26 07:42:28,211 - INFO - Imported 1 records from conn.log
+2026-02-26 07:42:29,217 - INFO - Imported 1 records from conn.log
+2026-02-26 07:42:57,311 - INFO - Imported 1 records from conn.log
+2026-02-26 07:43:00,319 - INFO - Imported 1 records from conn.log
+2026-02-26 07:43:12,347 - INFO - Imported 1 records from conn.log
+2026-02-26 07:47:54,244 - INFO - Imported 1 records from conn.log
+2026-02-26 07:48:38,369 - INFO - Imported 2 records from conn.log
+2026-02-26 07:49:24,492 - INFO - Imported 1 records from conn.log
+2026-02-26 07:50:10,644 - INFO - Imported 1 records from conn.log
+2026-02-26 07:50:28,701 - INFO - Imported 1 records from conn.log
+2026-02-26 07:50:30,703 - INFO - Imported 1 records from conn.log
+2026-02-26 07:50:57,765 - INFO - Imported 1 records from conn.log
+2026-02-26 07:51:01,768 - INFO - Imported 1 records from conn.log
+2026-02-26 07:51:13,789 - INFO - Imported 1 records from conn.log
+2026-02-26 07:52:03,927 - INFO - Imported 1 records from conn.log
+2026-02-26 07:55:43,567 - INFO - Imported 1 records from conn.log
+2026-02-26 07:55:53,591 - INFO - Imported 1 records from conn.log
+2026-02-26 07:56:38,750 - INFO - Imported 1 records from conn.log
+2026-02-26 07:57:24,883 - INFO - Imported 1 records from conn.log
+2026-02-26 07:58:08,993 - INFO - Imported 1 records from conn.log
+2026-02-26 07:58:28,026 - INFO - Imported 1 records from conn.log
+2026-02-26 07:58:29,028 - INFO - Imported 1 records from conn.log
+2026-03-01 17:14:04,154 - INFO - Connected to PostgreSQL
+2026-03-01 17:14:04,265 - INFO - Imported 10 records from conn.log
+2026-03-01 17:14:04,267 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-03-01 17:30:25,436 - INFO - Connected to PostgreSQL
+2026-03-01 17:30:25,477 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-03-01 17:31:05,820 - INFO - Connected to PostgreSQL
+2026-03-01 17:31:05,831 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-03-01 17:31:11,679 - INFO - Imported 9 records from conn.log
+2026-03-01 17:33:21,070 - INFO - Imported 1 records from conn.log
+2026-03-01 17:37:09,693 - INFO - Connected to PostgreSQL
+2026-03-01 17:37:09,707 - INFO - Imported 10 records from conn.log
+2026-03-01 17:37:09,733 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-03-01 17:38:31,060 - INFO - Imported 1 records from conn.log
+2026-03-01 17:39:43,367 - INFO - Imported 1 records from conn.log
+2026-03-01 17:42:29,164 - INFO - Imported 1 records from conn.log
+2026-03-01 17:44:30,949 - INFO - Imported 1 records from conn.log

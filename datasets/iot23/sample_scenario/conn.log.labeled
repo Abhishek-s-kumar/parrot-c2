@@ -1,0 +1,7 @@
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	label
+15404691.000000	CHuX8K3D655v4S73Mv	192.168.56.10	4444	192.168.56.15	80	tcp	http	0.01	100	200	SF	T	T	0	ShAdDaFf	5	400	5	400	(empty)   C&C   
+15404692.000000	CHuX8K3D655v4S73Mv	192.168.56.10	4444	192.168.56.15	80	tcp	http	0.01	100	200	SF	T	T	0	ShAdDaFf	5	400	5	400	(empty)   C&C   
+15404693.000000	CHuX8K3D655v4S73Mv	192.168.56.10	4444	192.168.56.15	80	tcp	http	0.01	100	200	SF	T	T	0	ShAdDaFf	5	400	5	400	(empty)   C&C   
+15404694.000000	CHuX8K3D655v4S73Mv	192.168.56.10	4444	192.168.56.15	80	tcp	http	0.01	100	200	SF	T	T	0	ShAdDaFf	5	400	5	400	(empty)   C&C   
+15404695.000000	CHuX8K3D655v4S73Mv	192.168.56.10	4444	192.168.56.15	80	tcp	http	0.01	100	200	SF	T	T	0	ShAdDaFf	5	400	5	400	(empty)   Benign
+15404696.000000	CHuX8K3D655v4S73Mv	192.168.56.10	4444	192.168.56.15	80	tcp	http	0.01	100	200	SF	T	T	0	ShAdDaFf	5	400	5	400	(empty)   Benign

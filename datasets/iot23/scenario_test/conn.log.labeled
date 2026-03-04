@@ -1,0 +1,28 @@
+#separator \x09
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents	label	detailed-label
+1710000000.000000	C1	192.168.1.10	44332	1.1.1.1	53	udp	dns	0.01	50	100	SF	-	-	0	Dd	1	78	1	128	-	benign	-
+1710000001.000000	C2	192.168.1.10	55432	10.0.0.5	80	tcp	http	0.5	200	500	SF	-	-	0	ShAdDaFf	5	400	8	800	-	benign	-
+1710000002.000000	C21	192.168.1.10	55433	10.0.0.5	80	tcp	http	0.5	200	500	SF	-	-	0	ShAdDaFf	5	400	8	800	-	benign	-
+1710000003.000000	C22	192.168.1.10	55434	10.0.0.5	80	tcp	http	0.5	200	500	SF	-	-	0	ShAdDaFf	5	400	8	800	-	benign	-
+1710000004.000000	C23	192.168.1.10	55435	10.0.0.5	80	tcp	http	0.5	200	500	SF	-	-	0	ShAdDaFf	5	400	8	800	-	benign	-
+1710000005.000000	C24	192.168.1.10	55436	10.0.0.5	80	tcp	http	0.5	200	500	SF	-	-	0	ShAdDaFf	5	400	8	800	-	benign	-
+1710000000.000000	M1	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000060.000000	M2	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000120.000000	M3	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000180.000000	M4	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000240.000000	M5	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000300.000000	M6	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000360.000000	M7	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000420.000000	M8	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000480.000000	M9	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000540.000000	M10	192.168.1.20	4444	8.8.8.8	4444	tcp	-	0.1	100	100	SF	-	-	0	ShAdDaf	2	200	2	200	-	C&C	Malicious-C2
+1710000000.000000	H1	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
+1710000030.000000	H2	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
+1710000060.000000	H3	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
+1710000090.000000	H4	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
+1710000120.000000	H5	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
+1710000150.000000	H6	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
+1710000180.000000	H7	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
+1710000210.000000	H8	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
+1710000240.000000	H9	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
+1710000270.000000	H10	192.168.1.30	5555	9.9.9.9	5555	udp	-	0.05	60	60	SF	-	-	0	Dd	1	88	1	88	-	HeartBeat	Periodic-KeepAlive
