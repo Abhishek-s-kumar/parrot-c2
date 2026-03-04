@@ -24,6 +24,26 @@ class DetectionEngine:
         self.BETA = 0.4  # Autocorrelation weight
         self.GAMMA = 0.2 # Entropy weight
         self._ip_cache = {}
+        self.MONITOR_IP = '192.168.56.20'
+
+    def _is_host_address(self, ip):
+        """Returns True if the IP is likely a host (not broadcast/multicast/unspecified)."""
+        if not ip or ip in ['0.0.0.0', '255.255.255.255', '::', self.MONITOR_IP]:
+            return False
+        
+        # IPv4 Multicast (224.0.0.0/4)
+        if ip.startswith(('224.', '225.', '226.', '227.', '228.', '229.', '230.', '231.', '232.', '233.', '234.', '235.', '236.', '237.', '238.', '239.')):
+            return False
+            
+        # IPv6 Multicast (ff00::/8)
+        if ip.lower().startswith('ff'):
+            return False
+            
+        # IPv4 Broadcast (common lab patterns)
+        if ip.endswith('.255'):
+            return False
+
+        return True
 
     def _ipv6_to_mac(self, ipv6):
         """Attempts to derive MAC from SLAAC IPv6 (Modified EUI-64)."""
@@ -267,7 +287,7 @@ class DetectionEngine:
         finally:
             conn.close()
 
-    def get_online_systems(self, window_minutes=10):
+    def get_online_systems(self, window_minutes=10080):
         """Returns a list of unique hosts seen in the last X minutes."""
         conn = self._connect_db()
         if not conn:
@@ -296,6 +316,9 @@ class DetectionEngine:
             systems = []
             for _, row in df.iterrows():
                 host = row['host']
+                if not self._is_host_address(host):
+                    continue
+                    
                 last_seen = row['last_seen']
                 
                 mapped_ip = mapping.get(host)

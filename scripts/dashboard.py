@@ -68,7 +68,7 @@ def trigger_analyze():
 
 @app.route('/api/online_systems', methods=['GET'])
 def get_online_systems():
-    window = request.args.get('window', default=10, type=int)
+    window = request.args.get('window', default=10080, type=int)
     systems = engine.get_online_systems(window_minutes=window)
     return jsonify({
         "timestamp": datetime.now().isoformat(),

@@ -1,0 +1,5 @@
+scenario,host,p_score,fft_peak,autocorr_max,entropy_norm,prediction,ground_truth
+sample_scenario,192.168.56.10,0.0,0.0,0.0,1.0,False,True
+scenario_test,192.168.1.10,0.0,0.0,0.0,1.0,False,False
+scenario_test,192.168.1.20,0.5732087687172673,0.9994436890061329,0.0,0.13284353442592953,True,True
+scenario_test,192.168.1.30,0.5535345465503012,0.9977840493153943,0.0,0.22789536587928316,True,True
