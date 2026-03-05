@@ -1,8 +1,18 @@
 #!/bin/bash
 
 BASE_DIR="/home/user/Desktop/c2/c2"
+ZEEK_DIR="/opt/zeek"
 
 echo "--- C2 System Status ---"
+
+# Check Zeek
+if sudo $ZEEK_DIR/bin/zeekctl status | grep -q "running"; then
+    echo "[RUNNING] Zeek Network Monitor"
+elif sudo $ZEEK_DIR/bin/zeekctl status | grep -q "crashed"; then
+    echo "[CRASHED] Zeek Network Monitor"
+else
+    echo "[STOPPED] Zeek Network Monitor"
+fi
 
 # Check Importer
 if [ -f "$BASE_DIR/.importer.pid" ]; then
