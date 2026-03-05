@@ -1,0 +1,16 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2026-03-05-14-20-06
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
+#types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
+1772720404.894824	CfPeP3nPULDKtTROk	fe80::48f5:1000:b11d:cd30	5353	ff02::fb	5353	udp	0	-	_ipp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	TXT 14 model=MacSamba,fe80::48f5:1000:b11d:cd30,mx.local,mx.local,TXT 17 protovers=1020003,mx.local,TXT 0 ,mx.local	4500.000000,120.000000,120.000000,120.000000,4500.000000,120.000000,4500.000000,120.000000	F
+1772720406.183428	CfPeP3nPULDKtTROk	fe80::48f5:1000:b11d:cd30	5353	ff02::fb	5353	udp	0	-	_ipp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	_device-info._tcp.local,saned._sane-port._tcp.local,TXT 17 protovers=1020003,mx.local,fe80::48f5:1000:b11d:cd30,_sane-port._tcp.local,mx._smb._tcp.local,TXT 0 ,mx.local,_smb._tcp.local,mx._device-info._tcp.local,TXT 14 model=MacSamba,mx.local	4500.000000,4500.000000,4500.000000,120.000000,120.000000,4500.000000,4500.000000,4500.000000,120.000000,4500.000000,4500.000000,4500.000000,120.000000	F
+1772720407.237277	CfPeP3nPULDKtTROk	fe80::48f5:1000:b11d:cd30	5353	ff02::fb	5353	udp	0	-	_ipp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	TXT 14 model=MacSamba,fe80::48f5:1000:b11d:cd30,mx.local,mx.local,TXT 17 protovers=1020003,mx.local,TXT 0 ,mx.local	4500.000000,120.000000,120.000000,120.000000,4500.000000,120.000000,4500.000000,120.000000	F
+1772720434.662090	CfPeP3nPULDKtTROk	fe80::48f5:1000:b11d:cd30	5353	ff02::fb	5353	udp	0	-	_ipp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1772720450.035409	CbpFPQ2VfSJ4yNTGQ4	fe80::48f5:1000:b11d:cd30	5353	ff02::fb	5353	udp	0	-	_ipp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	TXT 14 model=MacSamba,fe80::48f5:1000:b11d:cd30,mx.local,mx.local,TXT 17 protovers=1020003,mx.local,TXT 0 ,mx.local	4500.000000,120.000000,120.000000,120.000000,4500.000000,120.000000,4500.000000,120.000000	F
+1772720451.439051	CbpFPQ2VfSJ4yNTGQ4	fe80::48f5:1000:b11d:cd30	5353	ff02::fb	5353	udp	0	-	_ipp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	_device-info._tcp.local,saned._sane-port._tcp.local,TXT 17 protovers=1020003,mx.local,fe80::48f5:1000:b11d:cd30,_sane-port._tcp.local,mx._smb._tcp.local,TXT 0 ,mx.local,_smb._tcp.local,mx._device-info._tcp.local,TXT 14 model=MacSamba,mx.local	4500.000000,4500.000000,4500.000000,120.000000,120.000000,4500.000000,4500.000000,4500.000000,120.000000,4500.000000,4500.000000,4500.000000,120.000000	F
+1772720452.129211	CbpFPQ2VfSJ4yNTGQ4	fe80::48f5:1000:b11d:cd30	5353	ff02::fb	5353	udp	0	-	mx._device-info._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 14 model=MacSamba,fe80::48f5:1000:b11d:cd30,mx.local,mx.local,TXT 17 protovers=1020003,mx.local,TXT 0 ,mx.local	4500.000000,120.000000,120.000000,120.000000,4500.000000,120.000000,4500.000000,120.000000	F
+#close	2026-03-05-14-20-57
