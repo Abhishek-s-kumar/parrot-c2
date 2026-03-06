@@ -62,7 +62,7 @@ def trigger_analyze():
     results = engine.analyze_recent_traffic(window_minutes=30)
     return jsonify({
         "timestamp": datetime.now().isoformat(),
-        "total_connections": sum(r['samples'] for r in results) if results else 0,
+        "total_connections": sum(r.get('samples', 0) for r in results) if results else 0,
         "results": results
     })
 

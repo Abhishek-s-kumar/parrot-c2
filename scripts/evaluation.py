@@ -25,20 +25,39 @@ class EvaluationModule:
             return
             
         try:
+            # Debugging table counts
+            cursor = conn.cursor()
+            cursor.execute("SELECT COUNT(*) FROM detection_results")
+            dr_count = cursor.fetchone()[0]
+            cursor.execute("SELECT COUNT(*) FROM ground_truth")
+            gt_count = cursor.fetchone()[0]
+            logging.info(f"Evaluation counts: detection_results={dr_count}, ground_truth={gt_count}")
+            cursor.close()
+
             # Join detection_results with aggregated ground_truth labels per host
+            # Use host() function for inet and TRIM() for potential whitespaces
             query = """
                 SELECT dr.host_ip, dr.p_score, dr.detected, gt.actual_label
                 FROM detection_results dr
                 JOIN (
-                    SELECT host_ip, MAX(label) as actual_label
+                    SELECT TRIM(host_ip) as host_ip, MAX(label) as actual_label
                     FROM ground_truth
-                    GROUP BY host_ip
+                    GROUP BY 1
                 ) gt ON host(dr.host_ip) = gt.host_ip
             """
             df = pd.read_sql_query(query, conn)
             
             if df.empty:
-                print("No overlapping ground truth found for evaluation.")
+                print(f"No overlapping ground truth found for evaluation (DR rows: {dr_count}, GT rows: {gt_count}).")
+                # List a few IPs for investigation
+                cursor = conn.cursor()
+                cursor.execute("SELECT host(host_ip) FROM detection_results LIMIT 3")
+                dr_ips = [r[0] for r in cursor.fetchall()]
+                cursor.execute("SELECT host_ip FROM ground_truth LIMIT 3")
+                gt_ips = [r[0] for r in cursor.fetchall()]
+                print(f"Sample DR IPs: {dr_ips}")
+                print(f"Sample GT IPs: {gt_ips}")
+                cursor.close()
                 return
 
             y_true = df['actual_label']
