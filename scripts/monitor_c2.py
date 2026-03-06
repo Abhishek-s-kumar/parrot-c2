@@ -83,7 +83,7 @@ def main():
     config.read('/home/user/Desktop/c2/c2/config/database.conf')
     db_config = config['database']
     
-    monitor = C2Monitor(db_config)
+    monitor = C2Monitor(dict(db_config))
     monitor.run()
 
 if __name__ == "__main__":

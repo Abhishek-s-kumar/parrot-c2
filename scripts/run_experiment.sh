@@ -6,12 +6,16 @@
 BASE_DIR="/home/user/Desktop/c2/c2"
 VENV_PYTHON="${BASE_DIR}/venv/bin/python3"
 
+echo "=== [0/5] Cleaning previous results ==="
+export PGPASSWORD="c2password"
+psql -h 127.0.0.1 -U c2user -d c2db -c "TRUNCATE detection_results; TRUNCATE ground_truth; TRUNCATE conn_log;"
+
 echo "=== [1/5] Starting Monitoring System ==="
 sudo ${BASE_DIR}/start_c2_system.sh
 sleep 5
 
 echo "=== [2/5] Ingesting Labeled Dataset ==="
-${VENV_PYTHON} ${BASE_DIR}/scripts/load_labeled_dataset.py ${BASE_DIR}/datasets/iot23/sample_scenario/conn.log.labeled --recent
+${VENV_PYTHON} ${BASE_DIR}/scripts/load_labeled_dataset.py ${BASE_DIR}/datasets/iot23/scenario_test/conn.log.labeled --recent
 
 echo "=== [3/5] Running Detection Engine analysis ==="
 time ${VENV_PYTHON} ${BASE_DIR}/scripts/real_time_analyzer.py

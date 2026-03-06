@@ -12,7 +12,7 @@ class CrossHostCorrelation:
 
     def _connect_db(self):
         try:
-            params = self.db_config.copy()
+            params = dict(self.db_config).copy()
             if 'name' in params:
                 params['dbname'] = params.pop('name')
             return psycopg2.connect(**params)

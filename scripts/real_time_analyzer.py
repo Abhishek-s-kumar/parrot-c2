@@ -24,7 +24,8 @@ class DetectionEngine:
         self.ALPHA = 0.4 # FFT weight
         self.BETA = 0.4  # Autocorrelation weight
         self.GAMMA = 0.2 # Entropy weight
-        self._ip_cache = {}
+        self._ip_mapping_cache = (None, None)
+        self._last_mapping_update = 0
         self.MONITOR_IP = '192.168.56.20'
 
     def _is_host_address(self, ip):
@@ -60,6 +61,11 @@ class DetectionEngine:
 
     def _get_ip_mapping(self):
         """Builds a mapping of IPv6 to IPv4 based on neighbor table (MAC matching)."""
+        import time
+        now = time.time()
+        if self._ip_mapping_cache[0] is not None and (now - self._last_mapping_update) < 300:
+            return self._ip_mapping_cache
+
         mapping = {}
         mac_to_ipv4 = {}
         try:
@@ -86,7 +92,9 @@ class DetectionEngine:
         except Exception as e:
             logging.error(f"Error building IP mapping: {e}")
         
-        return mapping, mac_to_ipv4
+        self._ip_mapping_cache = (mapping, mac_to_ipv4)
+        self._last_mapping_update = now
+        return self._ip_mapping_cache
 
     def _connect_db(self):
         try:
@@ -108,7 +116,7 @@ class DetectionEngine:
             return 0.0, 0.0
 
         N = len(time_series)
-        if N < 8: # User recommended 8
+        if N < 5: # User recommended 8, but we use 5 for sensitivity
             return 0.0, 0.0
         
         # Apply FFT on values
@@ -139,7 +147,7 @@ class DetectionEngine:
         if not isinstance(time_series, (pd.Series, np.ndarray, list)):
             return 0.0
 
-        if len(time_series) < 10:
+        if len(time_series) < 5:
             return 0.0
         
         # Check if the signal is purely zero or constant
@@ -182,7 +190,7 @@ class DetectionEngine:
         if not isinstance(time_series, (pd.Series, np.ndarray, list)):
             return 1.0
 
-        if len(time_series) < 10:
+        if len(time_series) < 5:
             return 1.0
             
         if isinstance(time_series, pd.Series):
@@ -224,8 +232,11 @@ class DetectionEngine:
 
         try:
             # Query recent traffic from conn_log
-            end_time = datetime.now(timezone.utc)
+            # Ensure we use UTC for everything
+            end_time = datetime.now(timezone.utc).replace(tzinfo=None) # Make naive for 'timestamp without time zone'
             start_time = end_time - timedelta(minutes=window_minutes)
+            
+            logging.info(f"Analyzing traffic from {start_time} to {end_time}")
             
             # Count connections per second/interval
             query = """
@@ -236,17 +247,18 @@ class DetectionEngine:
             """
             df = pd.read_sql_query(query, conn, params=(start_time, end_time))
             
+            logging.info(f"Retrieved {len(df)} rows from conn_log")
+            
             if df.empty:
+                print(f"No traffic found in the last {window_minutes} minutes.")
                 return []
 
             results = []
+            db_batch = []
             hosts = df['id_orig_h'].unique()
             
-            # Phase 1.1: Move IP Mapping Outside Loop
+            # Phase 1.1: Move IP Mapping Outside Loop (Issue 6)
             mapping, mac_to_ipv4 = self._get_ip_mapping()
-            
-            # Phase 1.2: Batch Database inserts
-            cursor = conn.cursor()
             
             for host in hosts:
                 if not self._is_host_address(host):
@@ -256,36 +268,34 @@ class DetectionEngine:
                 if len(host_df) < 5:
                     continue
 
-                # --- Type 1: Periodic Volume (Connection Counts) ---
+                # --- Type 1: Periodic Volume (Issue 1) ---
                 host_df_v = host_df.copy()
                 host_df_v['conn_count'] = 1
                 host_df_v.set_index('ts', inplace=True)
                 resampled = host_df_v['conn_count'].resample('5s').sum().fillna(0)
                 
                 p_score_v = 0.0
-                if len(resampled) >= 10:
+                fft_peak_v, autocorr_max_v, entropy_norm_v = 0.0, 0.0, 1.0
+                if len(resampled) >= 5:
                     fft_peak_v, _ = self.calculate_fft(resampled)
                     autocorr_max_v = self.calculate_autocorrelation(resampled)
                     entropy_norm_v = self.calculate_entropy(resampled)
                     p_score_v = self.calculate_p_score(fft_peak_v, autocorr_max_v, entropy_norm_v)
 
-                # --- Type 2: Sparse Events (Inter-arrival Times) ---
-                # Task 1.2: Support sparse event signals
+                # --- Type 2: Sparse Events (Issue 2) ---
                 host_df_t = host_df.sort_values('ts')
                 deltas = host_df_t['ts'].diff().dt.total_seconds().dropna()
                 
                 p_score_t = 0.0
-                fft_peak_t = 0.0
-                autocorr_max_t = 0.0
-                entropy_norm_t = 1.0
+                fft_peak_t, autocorr_max_t, entropy_norm_t = 0.0, 0.0, 1.0
                 
-                if len(deltas) >= 10:
+                if len(deltas) >= 5:
                     fft_peak_t, _ = self.calculate_fft(deltas)
                     autocorr_max_t = self.calculate_autocorrelation(deltas)
                     entropy_norm_t = self.calculate_entropy(deltas)
                     p_score_t = self.calculate_p_score(fft_peak_t, autocorr_max_t, entropy_norm_t)
 
-                # Final Detection Fusion (take the more significant pattern)
+                # Final Detection Fusion
                 p_score = max(p_score_v, p_score_t)
                 detected = p_score > self.p_threshold 
                 
@@ -302,36 +312,43 @@ class DetectionEngine:
                     'display_host': display_host,
                     'p_score': p_score,
                     'detected': detected,
-                    'type': 'volume' if p_score_v >= p_score_t else 'sparse'
+                    'type': 'volume' if p_score_v >= p_score_t else 'sparse',
+                    'fft_peak': max(fft_peak_v, fft_peak_t),
+                    'autocorr_max': max(autocorr_max_v, autocorr_max_t),
+                    'entropy_norm': min(entropy_norm_v, entropy_norm_t),
+                    'samples': len(host_df)
                 })
                 
-                # Store in DB (batch)
-                cursor.execute("""
-                    INSERT INTO detection_results (
-                        host_ip, p_score, fft_peak, autocorr_max, entropy_norm, sample_count, detected
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s)
-                """, (host, p_score, 
-                      max(fft_peak_v, fft_peak_t), 
-                      max(autocorr_max_v, autocorr_max_t), 
-                      min(entropy_norm_v, entropy_norm_t), 
-                      len(host_df), detected))
+                # Prepare for Database Batch (Issue 7)
+                db_batch.append((
+                    host, p_score, 
+                    max(fft_peak_v, fft_peak_t), 
+                    max(autocorr_max_v, autocorr_max_t), 
+                    min(entropy_norm_v, entropy_norm_t), 
+                    len(host_df), detected
+                ))
 
                 if detected:
                     logging.info(f"BEACON DETECTED: host={host} p_score={p_score:.3f} autocorr={max(autocorr_max_v, autocorr_max_t):.3f}")
-                    # Export for Task 5.1 (Visualization)
                     try:
                         out_dir = "/home/user/Desktop/c2/c2/output"
                         os.makedirs(out_dir, exist_ok=True)
-                        if p_score_v >= p_score_t:
-                            resampled.to_csv(os.path.join(out_dir, f'time_series_{host}.csv'), header=['total_bytes'])
-                        else:
-                            deltas.to_csv(os.path.join(out_dir, f'time_series_{host}.csv'), header=['total_bytes'])
+                        signal_to_save = resampled if p_score_v >= p_score_t else deltas
+                        signal_to_save.to_csv(os.path.join(out_dir, f'time_series_{host}.csv'), header=['total_bytes'])
                     except Exception as e:
                         logging.warning(f"Could not save plotting data: {e}")
 
-            # Commit batch
-            conn.commit()
-            cursor.close()
+            # Phase 1.2: Execute Batch Insert (Issue 7)
+            if db_batch:
+                cursor = conn.cursor()
+                cursor.executemany("""
+                    INSERT INTO detection_results (
+                        host_ip, p_score, fft_peak, autocorr_max, entropy_norm, sample_count, detected
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s)
+                """, db_batch)
+                conn.commit()
+                cursor.close()
+            
             return results
 
         except Exception as e:

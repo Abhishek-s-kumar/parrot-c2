@@ -29,9 +29,9 @@ def map_label(label_str):
     label_str = label_str.lower()
     if 'benign' in label_str:
         return 0
-    if 'c&c' in label_str or 'malicious' in label_str or 'attack' in label_str or 'part of horizontal port scan' in label_str:
+    if 'c&c' in label_str or 'malicious' in label_str or 'attack' in label_str or 'heartbeat' in label_str or 'port scan' in label_str:
         return 1
-    return 0 # Default to benign if unknown
+    return 0
 
 def ingest_labeled_log(file_path, db_config):
     conn = connect_db(db_config)
@@ -45,15 +45,20 @@ def ingest_labeled_log(file_path, db_config):
         # Calculate timestamp offset if needed (to make it 'recent')
         offset = 0
         if "--recent" in sys.argv:
+            max_ts = 0
             with open(file_path, 'r') as f:
                 for line in f:
                     if not line.startswith('#'):
                         parts = line.strip().split('\t')
                         if len(parts) > 0:
-                            last_ts = float(parts[0])
-                            offset = datetime.now(timezone.utc).timestamp() - last_ts
-                            break
-            logging.info(f"Shifting timestamps by {offset} seconds to make them recent.")
+                            try:
+                                ts = float(parts[0])
+                                if ts > max_ts:
+                                    max_ts = ts
+                            except: continue
+            if max_ts > 0:
+                offset = datetime.now(timezone.utc).timestamp() - max_ts
+                logging.info(f"Shifting timestamps by {offset} seconds (Last record = now).")
 
         # Read the file line by line to handle large files
         with open(file_path, 'r') as f:
@@ -75,8 +80,14 @@ def ingest_labeled_log(file_path, db_config):
                     
                     uid = parts[1]
                     orig_h = parts[2]
+                    # Map test subnet to environment subnet for evaluation overlap
+                    if orig_h.startswith('192.168.1.'):
+                        orig_h = orig_h.replace('192.168.1.', '192.168.56.')
                     orig_p = int(parts[3])
                     resp_h = parts[4]
+                    # Map test subnet to environment subnet for evaluation overlap
+                    if resp_h.startswith('192.168.1.'):
+                        resp_h = resp_h.replace('192.168.1.', '192.168.56.')
                     resp_p = int(parts[5])
                     proto = parts[6]
                     service = parts[7]
@@ -92,7 +103,7 @@ def ingest_labeled_log(file_path, db_config):
                     orig_ip_bytes = int(parts[17]) if parts[17] != '-' else 0
                     resp_pkts = int(parts[18]) if parts[18] != '-' else 0
                     resp_ip_bytes = int(parts[19]) if parts[19] != '-' else 0
-                    label_str = parts[20]
+                    label_str = parts[21]
                     
                     label_val = map_label(label_str)
                     
