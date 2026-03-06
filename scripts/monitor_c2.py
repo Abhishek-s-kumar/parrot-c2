@@ -6,6 +6,7 @@ import logging
 import configparser
 from datetime import datetime
 from real_time_analyzer import DetectionEngine
+from cross_host_correlation import CrossHostCorrelation
 
 # Configure logging
 logging.basicConfig(
@@ -17,6 +18,7 @@ logging.basicConfig(
 class C2Monitor:
     def __init__(self, db_config, interval=60):
         self.engine = DetectionEngine(db_config)
+        self.correlator = CrossHostCorrelation(db_config)
         self.interval = interval
         self.alerts_file = '/home/user/Desktop/c2/c2/output/alerts.json'
 
@@ -65,6 +67,13 @@ class C2Monitor:
                 logging.info("Triggering periodic analysis...")
                 results = self.engine.analyze_recent_traffic(window_minutes=30)
                 self.update_alerts_json(results)
+                
+                logging.info("Checking for synchronized beaconing...")
+                sync_groups = self.correlator.analyze_synchronization(window_minutes=30)
+                if sync_groups:
+                    for group in sync_groups:
+                        logging.warning(f"SYNCHRONIZED BEACONING DETECTED across hosts: {group}")
+                
                 time.sleep(self.interval)
         except KeyboardInterrupt:
             logging.info("Stopping Monitor Service")

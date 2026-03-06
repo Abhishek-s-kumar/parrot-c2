@@ -144,28 +144,31 @@ class DetectionEngine:
         if len(time_series) < 10:
             return 0.0
         
-        # Check for high frequency (e.g. 1Hz pings)
-        # If more than half the samples are non-zero and mean interval is low
-        non_zero = time_series[time_series > 0]
-        if len(non_zero) > 1:
-            intervals = np.diff(non_zero.index.view(int) / 10**9)
-            if np.mean(intervals) < 2.0: # Faster than 0.5 Hz
-                return 0.0
+        # Check if the signal is purely zero or constant
+        if np.all(time_series == time_series.iloc[0]):
+            return 0.0
 
         ts_centered = time_series - np.mean(time_series)
-        if np.std(ts_centered) == 0:
+        std = np.std(ts_centered)
+        if std == 0:
             return 0.0
             
         autocorr = np.correlate(ts_centered, ts_centered, mode='full')
         autocorr = autocorr[len(autocorr)//2:]
         
+        # Normalize by the zero-lag value (variance * N)
         if autocorr[0] > 0:
             autocorr = autocorr / autocorr[0]
             
-        if len(autocorr) > 20:
-            autocorr_max = np.max(autocorr[1:120]) # Look deeper for slower beacons
-        elif len(autocorr) > 1:
-            autocorr_max = np.max(autocorr[1:])
+        # For beacons, we look for secondary peaks
+        # A good beacon should have a strong peak at its period
+        if len(autocorr) > 10:
+            # Skip the first few lags to avoid the main peak
+            secondary_peaks = autocorr[5:300] if len(autocorr) > 300 else autocorr[5:]
+            if len(secondary_peaks) > 0:
+                autocorr_max = np.max(secondary_peaks)
+            else:
+                autocorr_max = 0.0
         else:
             autocorr_max = 0.0
             
@@ -173,13 +176,18 @@ class DetectionEngine:
 
     def calculate_entropy(self, time_series):
         if len(time_series) < 10:
-            return 1.0 # High entropy for small samples (or default to 1)
+            return 1.0
             
-        hist, _ = np.histogram(time_series.values, bins=10, density=True)
+        # Use connection counts for entropy
+        counts = time_series.values
+        if np.sum(counts) == 0:
+            return 1.0
+            
+        hist, _ = np.histogram(counts, bins=10, density=True)
         hist = hist[hist > 0]
         
-        if len(hist) == 0:
-            return 1.0
+        if len(hist) <= 1:
+            return 0.0 # Highly regular if all samples in one bin
             
         hist = hist / hist.sum()
         entropy = -np.sum(hist * np.log2(hist))
@@ -190,14 +198,15 @@ class DetectionEngine:
         return float(entropy_norm)
 
     def calculate_p_score(self, fft_peak, autocorr_max, entropy_norm):
-        p_score = (
-            self.ALPHA * fft_peak +
-            self.BETA * autocorr_max +
-            self.GAMMA * (1.0 - entropy_norm)
+        # Increased weight for autocorrelation as it's more reliable for C2
+        P_SCORE = (
+            0.3 * fft_peak +
+            0.5 * autocorr_max +
+            0.2 * (1.0 - entropy_norm)
         )
-        return float(p_score)
+        return float(P_SCORE)
 
-    def analyze_recent_traffic(self, window_minutes=20):
+    def analyze_recent_traffic(self, window_minutes=60):
         conn = self._connect_db()
         if not conn:
             return []
@@ -207,8 +216,9 @@ class DetectionEngine:
             end_time = datetime.now(timezone.utc)
             start_time = end_time - timedelta(minutes=window_minutes)
             
+            # Count connections per second/interval
             query = """
-                SELECT id_orig_h, ts, (COALESCE(orig_bytes, 0) + COALESCE(resp_bytes, 0)) as total_bytes 
+                SELECT id_orig_h, ts
                 FROM conn_log 
                 WHERE ts >= %s AND ts <= %s
                 ORDER BY ts ASC
@@ -222,19 +232,18 @@ class DetectionEngine:
             hosts = df['id_orig_h'].unique()
             
             for host in hosts:
-                # Skip the local monitoring IP to avoid self-detection from pings
-                if host == '192.168.56.20':
+                if not self._is_host_address(host):
                     continue
 
                 host_df = df[df['id_orig_h'] == host].copy()
+                host_df['conn_count'] = 1
                 host_df.set_index('ts', inplace=True)
                 
-                # Resample to 1s intervals, fill with 0
-                resampled = host_df['total_bytes'].resample('1s').sum().fillna(0)
+                # Resample to 5s intervals for clearer beacon patterns
+                # This reduces noise from jitter and small timing variations
+                resampled = host_df['conn_count'].resample('5s').sum().fillna(0)
                 
-                # Check if we have enough active data points (at least 3 connections)
-                active_points = len(host_df)
-                if active_points < 3:
+                if len(host_df) < 5:
                     continue
 
                 fft_peak, _ = self.calculate_fft(resampled)
@@ -242,10 +251,9 @@ class DetectionEngine:
                 entropy_norm = self.calculate_entropy(resampled)
                 p_score = self.calculate_p_score(fft_peak, autocorr_max, entropy_norm)
                 
-                # More sensitive threshold for sparse beacons in larger window
-                detected = p_score > 0.5
+                # Threshold for detection
+                detected = p_score > 0.45 
                 
-                # Get IP mapping for display
                 mapping, mac_to_ipv4 = self._get_ip_mapping()
                 mapped_ip = mapping.get(host)
                 if not mapped_ip:
@@ -277,7 +285,7 @@ class DetectionEngine:
                 cursor.close()
 
                 if detected:
-                    logging.info(f"BEACON DETECTED: host={host} p_score={p_score:.3f}")
+                    logging.info(f"BEACON DETECTED: host={host} p_score={p_score:.3f} autocorr={autocorr_max:.3f}")
 
             return results
 
