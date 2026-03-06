@@ -17557,3 +17557,16 @@ KeyError: 'samples'
 2026-03-06 15:00:23,418 - INFO - 127.0.0.1 - - [06/Mar/2026 15:00:23] "GET /api/online_systems HTTP/1.1" 200 -
 2026-03-06 15:00:33,402 - INFO - 127.0.0.1 - - [06/Mar/2026 15:00:33] "GET /api/alerts HTTP/1.1" 200 -
 2026-03-06 15:00:33,423 - INFO - 127.0.0.1 - - [06/Mar/2026 15:00:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-06 15:00:39,631 - INFO - Triggering periodic analysis...
+2026-03-06 15:00:39,643 - INFO - Analyzing traffic from 2026-03-06 14:30:39.643214 to 2026-03-06 15:00:39.643214
+2026-03-06 15:00:39,649 - INFO - Retrieved 26 rows from conn_log
+2026-03-06 15:00:39,663 - INFO - BEACON DETECTED: host=192.168.56.30 p_score=0.796 autocorr=0.898
+2026-03-06 15:00:39,677 - INFO - Checking for synchronized beaconing...
+2026-03-06 15:00:43,401 - INFO - 127.0.0.1 - - [06/Mar/2026 15:00:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-06 15:00:43,419 - INFO - 127.0.0.1 - - [06/Mar/2026 15:00:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-06 15:00:53,403 - INFO - 127.0.0.1 - - [06/Mar/2026 15:00:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-06 15:00:53,424 - INFO - 127.0.0.1 - - [06/Mar/2026 15:00:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-06 15:01:03,400 - INFO - 127.0.0.1 - - [06/Mar/2026 15:01:03] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-06 15:01:03,419 - INFO - 127.0.0.1 - - [06/Mar/2026 15:01:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-06 15:01:13,403 - INFO - 127.0.0.1 - - [06/Mar/2026 15:01:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-06 15:01:13,419 - INFO - 127.0.0.1 - - [06/Mar/2026 15:01:13] "GET /api/online_systems HTTP/1.1" 200 -
