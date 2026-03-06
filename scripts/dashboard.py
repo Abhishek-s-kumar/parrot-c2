@@ -66,6 +66,48 @@ def trigger_analyze():
         "results": results
     })
 
+@app.route('/api/stats')
+def get_stats():
+    conn = engine._connect_db()
+    if not conn: return jsonify({"error": "db failed"})
+    try:
+        cursor = conn.cursor()
+        # 1. Top Beaconing Hosts
+        cursor.execute("""
+            SELECT host(host_ip), MAX(p_score) as max_p
+            FROM detection_results 
+            WHERE detected = true 
+            GROUP BY host_ip 
+            ORDER BY max_p DESC LIMIT 5
+        """)
+        top_hosts = [{"host": r[0], "p_score": r[1]} for r in cursor.fetchall()]
+
+        # 2. Beacon Interval Distribution
+        cursor.execute("""
+            SELECT ROUND(beacon_interval_estimate/10)*10 as bucket, COUNT(*) 
+            FROM detection_results 
+            WHERE detected = true AND beacon_interval_estimate IS NOT NULL
+            GROUP BY bucket ORDER BY bucket
+        """)
+        intervals = [{"bucket": int(r[0]), "count": r[1]} for r in cursor.fetchall()]
+
+        # 3. Detection Trends (Last 24h)
+        cursor.execute("""
+            SELECT date_trunc('hour', analyzed_at) as hr, COUNT(*) 
+            FROM detection_results 
+            WHERE detected = true 
+            GROUP BY hr ORDER BY hr DESC LIMIT 24
+        """)
+        trends = [{"hour": r[0].isoformat(), "count": r[1]} for r in cursor.fetchall()]
+
+        return jsonify({
+            "top_hosts": top_hosts,
+            "intervals": intervals,
+            "trends": trends
+        })
+    finally:
+        conn.close()
+
 @app.route('/api/online_systems', methods=['GET'])
 def get_online_systems():
     window = request.args.get('window', default=10080, type=int)
