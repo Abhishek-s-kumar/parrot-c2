@@ -1,0 +1,34 @@
+                                          Table "public.conn_log"
+     Column     |            Type             | Collation | Nullable |               Default                
+----------------+-----------------------------+-----------+----------+--------------------------------------
+ id             | integer                     |           | not null | nextval('conn_log_id_seq'::regclass)
+ ts             | timestamp without time zone |           | not null | 
+ uid            | character varying(50)       |           |          | 
+ id_orig_h      | inet                        |           |          | 
+ id_orig_p      | integer                     |           |          | 
+ id_resp_h      | inet                        |           |          | 
+ id_resp_p      | integer                     |           |          | 
+ proto          | character varying(10)       |           |          | 
+ service        | character varying(50)       |           |          | 
+ duration       | double precision            |           |          | 
+ orig_bytes     | integer                     |           |          | 
+ resp_bytes     | integer                     |           |          | 
+ conn_state     | character varying(30)       |           |          | 
+ local_orig     | boolean                     |           |          | 
+ local_resp     | boolean                     |           |          | 
+ missed_bytes   | integer                     |           |          | 
+ history        | character varying(50)       |           |          | 
+ orig_pkts      | integer                     |           |          | 
+ orig_ip_bytes  | integer                     |           |          | 
+ resp_pkts      | integer                     |           |          | 
+ resp_ip_bytes  | integer                     |           |          | 
+ tunnel_parents | character varying(100)      |           |          | 
+ imported_at    | timestamp without time zone |           |          | CURRENT_TIMESTAMP
+Indexes:
+    "conn_log_pkey" PRIMARY KEY, btree (id)
+    "idx_conn_log_dst" btree (id_resp_h)
+    "idx_conn_log_orig_h" btree (id_orig_h)
+    "idx_conn_log_resp_h" btree (id_resp_h)
+    "idx_conn_log_src" btree (id_orig_h)
+    "idx_conn_log_ts" btree (ts)
+

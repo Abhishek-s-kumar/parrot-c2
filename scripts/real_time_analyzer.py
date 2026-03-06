@@ -20,6 +20,7 @@ logging.basicConfig(
 class DetectionEngine:
     def __init__(self, db_config):
         self.db_config = db_config
+        self.p_threshold = 0.6 # Task 6.1: Optimized threshold
         self.ALPHA = 0.4 # FFT weight
         self.BETA = 0.4  # Autocorrelation weight
         self.GAMMA = 0.2 # Entropy weight
@@ -46,32 +47,15 @@ class DetectionEngine:
         return True
 
     def _ipv6_to_mac(self, ipv6):
-        """Attempts to derive MAC from SLAAC IPv6 (Modified EUI-64)."""
+        """Safe heuristic to extract MAC part from IPv6 suffix."""
         try:
-            if not ipv6.startswith('fe80::'):
+            if not isinstance(ipv6, str):
                 return None
-            
-            # Extract IID part
-            iid_str = ipv6.replace('fe80::', '')
-            # Expanded representation (partial)
-            parts = iid_str.split(':')
-            if len(parts) < 2: return None
-            
-            # Handle cases like a00:27ff:fe4e:aa95
-            full_hex = "".join(part.zfill(4) for part in parts)
-            if 'fffe' not in full_hex: return None
-            
-            # e.g. 0a0027fffe4eaa95
-            mac_raw = full_hex.replace('fffe', '')
-            # 0a00274eaa95
-            
-            # Flip 7th bit of first byte
-            first_byte = int(mac_raw[:2], 16)
-            first_byte ^= 0x02
-            
-            mac_parts = [f"{first_byte:02x}"] + [mac_raw[i:i+2] for i in range(2, len(mac_raw), 2)]
-            return ":".join(mac_parts)
-        except:
+            parts = ipv6.split(":")
+            if len(parts) < 4:
+                return None
+            return parts[-1] # User's recommended safe fix
+        except Exception:
             return None
 
     def _get_ip_mapping(self):
@@ -119,12 +103,21 @@ class DetectionEngine:
             return None
 
     def calculate_fft(self, time_series):
+        # Phase 2: Fix FFT Type Error
+        if not isinstance(time_series, (pd.Series, np.ndarray, list)):
+            return 0.0, 0.0
+
         N = len(time_series)
-        if N < 10:
+        if N < 8: # User recommended 8
             return 0.0, 0.0
         
-        # Apply FFT on resp_bytes
-        fft_result = np.fft.rfft(time_series.values)
+        # Apply FFT on values
+        if isinstance(time_series, pd.Series):
+            values = time_series.values
+        else:
+            values = time_series
+            
+        fft_result = np.fft.rfft(values)
         frequencies = np.fft.rfftfreq(N, d=1.0)
         
         magnitude = 2.0 / N * np.abs(fft_result)
@@ -133,7 +126,8 @@ class DetectionEngine:
             peak_magnitude = np.max(magnitude[1:])
             peak_idx = np.argmax(magnitude[1:]) + 1
             peak_frequency = frequencies[peak_idx]
-            fft_peak = peak_magnitude / np.max(magnitude) if np.max(magnitude) > 0 else 0.0
+            max_mag = np.max(magnitude)
+            fft_peak = peak_magnitude / max_mag if max_mag > 0 else 0.0
         else:
             fft_peak = 0.0
             peak_frequency = 0.0
@@ -141,14 +135,24 @@ class DetectionEngine:
         return float(fft_peak), float(peak_frequency)
 
     def calculate_autocorrelation(self, time_series):
+        # Phase 4: Tune Autocorrelation
+        if not isinstance(time_series, (pd.Series, np.ndarray, list)):
+            return 0.0
+
         if len(time_series) < 10:
             return 0.0
         
         # Check if the signal is purely zero or constant
-        if np.all(time_series == time_series.iloc[0]):
+        if isinstance(time_series, pd.Series):
+            vals = time_series.values
+        else:
+            vals = time_series
+            
+        if np.std(vals) == 0:
             return 0.0
 
-        ts_centered = time_series - np.mean(time_series)
+        # Normalize signal before processing
+        ts_centered = vals - np.mean(vals)
         std = np.std(ts_centered)
         if std == 0:
             return 0.0
@@ -156,15 +160,14 @@ class DetectionEngine:
         autocorr = np.correlate(ts_centered, ts_centered, mode='full')
         autocorr = autocorr[len(autocorr)//2:]
         
-        # Normalize by the zero-lag value (variance * N)
+        # Normalize by the zero-lag value
         if autocorr[0] > 0:
             autocorr = autocorr / autocorr[0]
             
         # For beacons, we look for secondary peaks
-        # A good beacon should have a strong peak at its period
-        if len(autocorr) > 10:
-            # Skip the first few lags to avoid the main peak
-            secondary_peaks = autocorr[5:300] if len(autocorr) > 300 else autocorr[5:]
+        if len(autocorr) > 2:
+            # Skip the first lag to avoid the self-correlation peak
+            secondary_peaks = autocorr[1:len(autocorr)//2] # User recommended len//2
             if len(secondary_peaks) > 0:
                 autocorr_max = np.max(secondary_peaks)
             else:
@@ -175,19 +178,27 @@ class DetectionEngine:
         return float(autocorr_max)
 
     def calculate_entropy(self, time_series):
+        # Phase 5: Fix Entropy Calculation
+        if not isinstance(time_series, (pd.Series, np.ndarray, list)):
+            return 1.0
+
         if len(time_series) < 10:
             return 1.0
             
-        # Use connection counts for entropy
-        counts = time_series.values
-        if np.sum(counts) == 0:
-            return 1.0
+        if isinstance(time_series, pd.Series):
+            counts = time_series.values
+        else:
+            counts = time_series
+
+        if np.std(counts) == 0: # User's fix
+            return 1.0 # High regularity
             
+        # Normalize and compute entropy
         hist, _ = np.histogram(counts, bins=10, density=True)
         hist = hist[hist > 0]
         
         if len(hist) <= 1:
-            return 0.0 # Highly regular if all samples in one bin
+            return 0.0
             
         hist = hist / hist.sum()
         entropy = -np.sum(hist * np.log2(hist))
@@ -231,30 +242,53 @@ class DetectionEngine:
             results = []
             hosts = df['id_orig_h'].unique()
             
+            # Phase 1.1: Move IP Mapping Outside Loop
+            mapping, mac_to_ipv4 = self._get_ip_mapping()
+            
+            # Phase 1.2: Batch Database inserts
+            cursor = conn.cursor()
+            
             for host in hosts:
                 if not self._is_host_address(host):
                     continue
 
                 host_df = df[df['id_orig_h'] == host].copy()
-                host_df['conn_count'] = 1
-                host_df.set_index('ts', inplace=True)
-                
-                # Resample to 5s intervals for clearer beacon patterns
-                # This reduces noise from jitter and small timing variations
-                resampled = host_df['conn_count'].resample('5s').sum().fillna(0)
-                
                 if len(host_df) < 5:
                     continue
 
-                fft_peak, _ = self.calculate_fft(resampled)
-                autocorr_max = self.calculate_autocorrelation(resampled)
-                entropy_norm = self.calculate_entropy(resampled)
-                p_score = self.calculate_p_score(fft_peak, autocorr_max, entropy_norm)
+                # --- Type 1: Periodic Volume (Connection Counts) ---
+                host_df_v = host_df.copy()
+                host_df_v['conn_count'] = 1
+                host_df_v.set_index('ts', inplace=True)
+                resampled = host_df_v['conn_count'].resample('5s').sum().fillna(0)
                 
-                # Threshold for detection
-                detected = p_score > 0.45 
+                p_score_v = 0.0
+                if len(resampled) >= 10:
+                    fft_peak_v, _ = self.calculate_fft(resampled)
+                    autocorr_max_v = self.calculate_autocorrelation(resampled)
+                    entropy_norm_v = self.calculate_entropy(resampled)
+                    p_score_v = self.calculate_p_score(fft_peak_v, autocorr_max_v, entropy_norm_v)
+
+                # --- Type 2: Sparse Events (Inter-arrival Times) ---
+                # Task 1.2: Support sparse event signals
+                host_df_t = host_df.sort_values('ts')
+                deltas = host_df_t['ts'].diff().dt.total_seconds().dropna()
                 
-                mapping, mac_to_ipv4 = self._get_ip_mapping()
+                p_score_t = 0.0
+                fft_peak_t = 0.0
+                autocorr_max_t = 0.0
+                entropy_norm_t = 1.0
+                
+                if len(deltas) >= 10:
+                    fft_peak_t, _ = self.calculate_fft(deltas)
+                    autocorr_max_t = self.calculate_autocorrelation(deltas)
+                    entropy_norm_t = self.calculate_entropy(deltas)
+                    p_score_t = self.calculate_p_score(fft_peak_t, autocorr_max_t, entropy_norm_t)
+
+                # Final Detection Fusion (take the more significant pattern)
+                p_score = max(p_score_v, p_score_t)
+                detected = p_score > self.p_threshold 
+                
                 mapped_ip = mapping.get(host)
                 if not mapped_ip:
                     mac = self._ipv6_to_mac(host)
@@ -267,26 +301,37 @@ class DetectionEngine:
                     'host': host,
                     'display_host': display_host,
                     'p_score': p_score,
-                    'fft_peak': fft_peak,
-                    'autocorr_max': autocorr_max,
-                    'entropy_norm': entropy_norm,
-                    'samples': len(resampled),
-                    'detected': detected
+                    'detected': detected,
+                    'type': 'volume' if p_score_v >= p_score_t else 'sparse'
                 })
                 
-                # Store in DB
-                cursor = conn.cursor()
+                # Store in DB (batch)
                 cursor.execute("""
                     INSERT INTO detection_results (
                         host_ip, p_score, fft_peak, autocorr_max, entropy_norm, sample_count, detected
                     ) VALUES (%s, %s, %s, %s, %s, %s, %s)
-                """, (host, p_score, fft_peak, autocorr_max, entropy_norm, len(resampled), detected))
-                conn.commit()
-                cursor.close()
+                """, (host, p_score, 
+                      max(fft_peak_v, fft_peak_t), 
+                      max(autocorr_max_v, autocorr_max_t), 
+                      min(entropy_norm_v, entropy_norm_t), 
+                      len(host_df), detected))
 
                 if detected:
-                    logging.info(f"BEACON DETECTED: host={host} p_score={p_score:.3f} autocorr={autocorr_max:.3f}")
+                    logging.info(f"BEACON DETECTED: host={host} p_score={p_score:.3f} autocorr={max(autocorr_max_v, autocorr_max_t):.3f}")
+                    # Export for Task 5.1 (Visualization)
+                    try:
+                        out_dir = "/home/user/Desktop/c2/c2/output"
+                        os.makedirs(out_dir, exist_ok=True)
+                        if p_score_v >= p_score_t:
+                            resampled.to_csv(os.path.join(out_dir, f'time_series_{host}.csv'), header=['total_bytes'])
+                        else:
+                            deltas.to_csv(os.path.join(out_dir, f'time_series_{host}.csv'), header=['total_bytes'])
+                    except Exception as e:
+                        logging.warning(f"Could not save plotting data: {e}")
 
+            # Commit batch
+            conn.commit()
+            cursor.close()
             return results
 
         except Exception as e:

@@ -12,8 +12,10 @@ logging.basicConfig(
 )
 
 class DataVisualizer:
-    def __init__(self):
-        self.output_dir = '/home/user/Desktop/c2/c2/output'
+    def __init__(self, output_dir=None):
+        self.output_dir = output_dir or '/home/user/Desktop/c2/c2/output/graphs'
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir, exist_ok=True)
 
     def plot_time_series(self, host):
         output_dir = self.output_dir  # Ensure self.output_dir is accessible
@@ -79,7 +81,7 @@ class DataVisualizer:
             logging.error(f"Error plotting FFT: {e}")
 
     def plot_autocorrelation(self, host):
-        csv_path = os.path.join(self.output_dir, f'autocorr_{host}.csv')
+        csv_path = os.path.join('/home/user/Desktop/c2/c2/output', f'autocorr_{host}.csv') # Base output dir for data
         if not os.path.exists(csv_path):
             logging.warning(f"File not found: {csv_path}")
             return
@@ -106,6 +108,22 @@ class DataVisualizer:
             
         except Exception as e:
             logging.error(f"Error plotting Autocorrelation: {e}")
+
+    def plot_correlation_heatmap(self, correlation_matrix, hosts):
+        """Generates a heatmap of cross-host correlations (Task 5.1)."""
+        import seaborn as sns
+        try:
+            plt.figure(figsize=(12, 10))
+            sns.heatmap(correlation_matrix, annot=True, xticklabels=hosts, yticklabels=hosts, cmap='viridis')
+            plt.title('Cross-Host Correlation Heatmap')
+            plt.tight_layout()
+            
+            output_path = os.path.join(self.output_dir, 'cross_host_heatmap.png')
+            plt.savefig(output_path)
+            plt.close()
+            logging.info(f"Saved Correlation Heatmap to {output_path}")
+        except Exception as e:
+            logging.error(f"Error plotting heatmap: {e}")
 
 def main():
     parser = argparse.ArgumentParser(description='Generate Plots from C2 Analysis Data')

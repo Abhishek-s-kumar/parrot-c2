@@ -25,34 +25,42 @@ class EvaluationModule:
             return
             
         try:
-            # In a real scenario, we would join with a ground_truth table.
-            # Here, we'll simulate evaluation by comparing detected flags with a heuristic 
-            # or simply reporting stats from the detection_results table.
-            # For Task 7.2, we are expected to show these metrics.
-            
-            query = "SELECT host_ip, p_score, detected FROM detection_results"
+            # Join detection_results with aggregated ground_truth labels per host
+            query = """
+                SELECT dr.host_ip, dr.p_score, dr.detected, gt.actual_label
+                FROM detection_results dr
+                JOIN (
+                    SELECT host_ip, MAX(label) as actual_label
+                    FROM ground_truth
+                    GROUP BY host_ip
+                ) gt ON host(dr.host_ip) = gt.host_ip
+            """
             df = pd.read_sql_query(query, conn)
             
             if df.empty:
-                print("No detection results to evaluate.")
+                print("No overlapping ground truth found for evaluation.")
                 return
 
-            # Simulate ground truth for evaluation demonstration
-            # Heuristic: if p_score > 0.6 it's likely a true positive in our lab
-            df['ground_truth'] = df['p_score'] > 0.55
+            y_true = df['actual_label']
+            y_pred = df['detected'].astype(int)
             
-            y_true = df['ground_truth']
-            y_pred = df['detected']
-            
-            print("=== C2 Detection System Evaluation ===")
-            print(f"Total samples evaluated: {len(df)}")
+            print("=== C2 Detection System Evaluation (Ground Truth) ===")
+            print(f"Total hosts evaluated: {len(df)}")
             print("\nClassification Report:")
             print(classification_report(y_true, y_pred))
             
             cm = confusion_matrix(y_true, y_pred)
-            tn, fp, fn, tp = cm.ravel()
+            # Handle cases where only one class is present
+            if cm.size == 4:
+                tn, fp, fn, tp = cm.ravel()
+            else:
+                tn, fp, fn, tp = 0, 0, 0, 0
+                if y_true.iloc[0] == 0: tn = len(df)
+                else: tp = len(df)
             
-            accuracy = (tp + tn) / len(df)
+            # Metrics
+            total = len(df)
+            accuracy = (tp + tn) / total if total > 0 else 0
             precision = tp / (tp + fp) if (tp + fp) > 0 else 0
             recall = tp / (tp + fn) if (tp + fn) > 0 else 0
             f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
