@@ -16,7 +16,23 @@ echo "=== C2 Detection Experiment Starting: ${TIMESTAMP} ==="
 # Initialize metadata
 echo "{\"experiment_timestamp\": \"${TIMESTAMP}\", \"scenarios\": {}}" > ${METADATA_FILE}
 
+echo "[*] Checking available scenarios..."
+AVAILABLE_SCENARIOS=()
 for SCENARIO in "${SCENARIOS[@]}"; do
+    LOG_FILE="${BASE_DIR}/datasets/iot23/${SCENARIO}/conn.log.labeled"
+    if [ -f "${LOG_FILE}" ]; then
+        AVAILABLE_SCENARIOS+=("${SCENARIO}")
+    else
+        echo " [!] Note: ${SCENARIO} dataset not found at ${LOG_FILE}. It will be skipped."
+    fi
+done
+
+if [ ${#AVAILABLE_SCENARIOS[@]} -eq 0 ]; then
+    echo " [!] Error: No scenarios found to process. Exiting."
+    exit 1
+fi
+
+for SCENARIO in "${AVAILABLE_SCENARIOS[@]}"; do
     LOG_FILE="${BASE_DIR}/datasets/iot23/${SCENARIO}/conn.log.labeled"
     
     if [ ! -f "${LOG_FILE}" ]; then
