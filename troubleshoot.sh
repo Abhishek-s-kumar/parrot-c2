@@ -69,5 +69,25 @@ else
     echo " [!] CRITICAL: Importer process NOT running."
 fi
 
+# 6. Check C2 Monitor Process
+echo "[*] Checking C2 Monitor..."
+if pgrep -f "monitor_c2.py" > /dev/null; then
+    echo " [OK] Monitor process running."
+else
+    echo " [!] CRITICAL: Monitor process NOT running."
+fi
+
+# 7. Check Dashboard Status
+echo "[*] Checking Dashboard..."
+if pgrep -f "dashboard.py" > /dev/null; then
+    if curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:5000/api/status | grep -q "200"; then
+        echo " [OK] Dashboard process running and responding on port 5000."
+    else
+        echo " [!] WARNING: Dashboard process running but NOT RESPONDING on port 5000."
+    fi
+else
+    echo " [!] CRITICAL: Dashboard process NOT running."
+fi
+
 echo "--------------------------------------"
 echo "Troubleshooting Complete."

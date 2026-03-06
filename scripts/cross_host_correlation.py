@@ -89,25 +89,23 @@ class CrossHostCorrelation:
 
             # Pairwise correlation
             sync_groups = []
-            visited = set()
+            remaining_hosts = set(signals.keys())
             
-            host_list = list(signals.keys())
-            for i in range(len(host_list)):
-                host_a = host_list[i]
-                if host_a in visited: continue
-                
+            while remaining_hosts:
+                host_a = remaining_hosts.pop()
                 current_group = {host_a}
-                for j in range(i + 1, len(host_list)):
-                    host_b = host_list[j]
+                
+                to_remove = set()
+                for host_b in remaining_hosts:
                     corr = self.compute_cross_correlation(signals[host_a], signals[host_b])
-                    
                     if corr > self.threshold:
                         current_group.add(host_b)
-                        visited.add(host_b)
+                        to_remove.add(host_b)
+                
+                remaining_hosts -= to_remove
                 
                 if len(current_group) > 1:
                     sync_groups.append(list(current_group))
-                    visited.add(host_a)
             
             return sync_groups
 

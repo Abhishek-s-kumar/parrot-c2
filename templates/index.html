@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C2 Beacon Detection Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>C2 Beacon SOC Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
             --bg-color: #0d1117;
@@ -15,69 +16,84 @@
             --danger-color: #f85149;
             --success-color: #3fb950;
             --border-color: #30363d;
+            --header-bg: #010409;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Outfit', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
-            padding: 20px;
+            overflow-x: hidden;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
+        .navbar {
+            background-color: var(--header-bg);
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        h1 {
-            font-size: 24px;
+        .navbar h1 {
             margin: 0;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
         }
 
-        .status-badge {
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
+        .container {
+            padding: 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
         }
 
-        .status-online {
-            background-color: rgba(63, 185, 80, 0.2);
-            color: var(--success-color);
-            border: 1px solid var(--success-color);
-        }
-
-        .grid {
+        .grid-main {
             display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 20px;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
         }
 
         .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
-        .card-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 15px;
+        .col-8 {
+            grid-column: span 8;
+        }
+
+        .col-4 {
+            grid-column: span 4;
+        }
+
+        .col-6 {
+            grid-column: span 6;
+        }
+
+        .col-12 {
+            grid-column: span 12;
+        }
+
+        .card-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.75rem;
+        }
+
+        .card-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #f0f6fc;
         }
 
         table {
@@ -87,211 +103,233 @@
 
         th {
             text-align: left;
-            padding: 10px;
-            border-bottom: 1px solid var(--border-color);
+            padding: 1rem;
             color: #8b949e;
+            border-bottom: 1px solid var(--border-color);
         }
 
         td {
-            padding: 10px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .beacon-alert {
-            color: var(--danger-color);
-            font-weight: 600;
+            padding: 1rem;
+            border-bottom: 1px solid #21262d;
         }
 
         .btn {
-            background-color: var(--accent-color);
+            background: linear-gradient(135deg, #238636 0%, #2ea043 100%);
             color: white;
             border: none;
-            padding: 8px 16px;
+            padding: 0.6rem 1.2rem;
             border-radius: 6px;
             cursor: pointer;
             font-weight: 600;
+            transition: transform 0.2s;
         }
 
         .btn:hover {
-            opacity: 0.9;
+            transform: scale(1.02);
         }
 
-        .alert-item {
-            padding: 10px;
-            border-bottom: 1px solid var(--border-color);
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .bg-danger {
+            background: rgba(248, 81, 73, 0.15);
+            color: var(--danger-color);
+            border: 1px solid var(--danger-color);
+        }
+
+        .bg-success {
+            background: rgba(63, 185, 80, 0.15);
+            color: var(--success-color);
+            border: 1px solid var(--success-color);
+        }
+
+        .sidebar-item {
+            padding: 0.75rem;
+            border-bottom: 1px solid #21262d;
             display: flex;
-            flex-direction: column;
-            gap: 5px;
+            justify-content: space-between;
         }
 
-        .alert-item:last-child {
+        .sidebar-item:last-child {
             border-bottom: none;
         }
 
-        .alert-time {
-            font-size: 12px;
-            color: #8b949e;
-        }
-
-        .alert-host {
-            font-weight: 600;
-            color: var(--danger-color);
+        .chart-container {
+            position: relative;
+            height: 250px;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>C2 Beacon Detection Dashboard</h1>
-            <span class="status-badge status-online">SYSTEM ONLINE</span>
-        </header>
+    <div class="navbar">
+        <h1>BeaconEye <span style="color: var(--accent-color)">C2 SOC</span></h1>
+        <div id="system-status" class="status-badge bg-success">CORE ENGINE ONLINE</div>
+    </div>
 
-        <div class="grid">
-            <div class="main-content">
-                <div class="card">
-                    <div class="card-title">
-                        Recent Analysis Results
-                        <button class="btn" onclick="triggerAnalyze()">Manual Scan</button>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Host IP</th>
-                                <th>P-Score</th>
-                                <th>FFT Peak</th>
-                                <th>Autocorr</th>
-                                <th>Entropy</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody id="results-body">
-                            <!-- Results populated via JS -->
-                        </tbody>
-                    </table>
+    <div class="container">
+        <div class="grid-main">
+            <!-- Top Row Metrics -->
+            <div class="card col-4">
+                <div class="card-title">Detection Score Trends</div>
+                <div class="chart-container">
+                    <canvas id="trendChart"></canvas>
+                </div>
+            </div>
+            <div class="card col-4">
+                <div class="card-title">Interval Distribution (s)</div>
+                <div class="chart-container">
+                    <canvas id="intervalChart"></canvas>
+                </div>
+            </div>
+            <div class="card col-4">
+                <div class="card-title">Top Malicious Hosts</div>
+                <div class="chart-container">
+                    <canvas id="hostChart"></canvas>
                 </div>
             </div>
 
-            <div class="sidebar">
-                <div class="card">
-                    <div class="card-title">Live Alerts</div>
-                    <div id="alerts-container">
-                        <!-- Alerts populated via JS -->
-                    </div>
+            <!-- Main Results Table -->
+            <div class="card col-8">
+                <div class="card-header">
+                    <div class="card-title">Detection Forensics</div>
+                    <button class="btn" onclick="triggerAnalyze()">Deep Scan</button>
                 </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Host</th>
+                            <th>P-Score</th>
+                            <th>Interval</th>
+                            <th>Samples</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-body">
+                        <tr>
+                            <td colspan="5" style="text-align: center">Initializing forensics...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                <div class="card">
-                    <div class="card-title">Online Systems</div>
-                    <div id="systems-container">
-                        <!-- Systems populated via JS -->
-                    </div>
-                </div>
+            <!-- Alerts Sidebar -->
+            <div class="card col-4">
+                <div class="card-title">Critical Alerts</div>
+                <div id="alerts-container"></div>
+                <div class="card-title" style="margin-top:2rem">Active Systems</div>
+                <div id="systems-container"></div>
             </div>
         </div>
     </div>
 
     <script>
-        async function fetchAlerts() {
+        let trendChart, intervalChart, hostChart;
+
+        function initCharts() {
+            const ctxT = document.getElementById('trendChart').getContext('2d');
+            trendChart = new Chart(ctxT, {
+                type: 'line',
+                data: { labels: [], datasets: [{ label: 'Detections', data: [], borderColor: '#58a6ff', tension: 0.3 }] },
+                options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
+            });
+
+            const ctxI = document.getElementById('intervalChart').getContext('2d');
+            intervalChart = new Chart(ctxI, {
+                type: 'bar',
+                data: { labels: [], datasets: [{ label: 'Hosts', data: [], backgroundColor: '#3fb950' }] },
+                options: { maintainAspectRatio: false, plugins: { legend: { display: false } } }
+            });
+
+            const ctxH = document.getElementById('hostChart').getContext('2d');
+            hostChart = new Chart(ctxH, {
+                type: 'doughnut',
+                data: { labels: [], datasets: [{ data: [], backgroundColor: ['#f85149', '#db6d28', '#d29922', '#3fb950', '#58a6ff'] }] },
+                options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { color: '#c9d1d9', boxWidth: 10 } } } }
+            });
+        }
+
+        async function updateStats() {
             try {
-                const response = await fetch('/api/alerts');
-                const data = await response.json();
-                const container = document.getElementById('alerts-container');
-                container.innerHTML = '';
+                const res = await fetch('/api/stats');
+                const data = await res.json();
 
-                if (data.alerts.length === 0) {
-                    container.innerHTML = '<div style="color: #8b949e">No active alerts.</div>';
-                    return;
-                }
+                // Update Trend
+                trendChart.data.labels = data.trends.map(t => new Date(t.hour).getHours() + ':00');
+                trendChart.data.datasets[0].data = data.trends.map(t => t.count);
+                trendChart.update();
 
-                data.alerts.forEach(alert => {
-                    const div = document.createElement('div');
-                    div.className = 'alert-item';
-                    const hostName = alert.display_host || alert.host;
-                    div.innerHTML = `
-                        <div class="alert-time">${new Date(alert.timestamp).toLocaleString()}</div>
-                        <div class="alert-host">Beacon Detected: ${hostName}</div>
-                        <div style="font-size: 14px">P-Score: ${alert.p_score.toFixed(3)}</div>
-                    `;
-                    container.appendChild(div);
-                });
-            } catch (error) {
-                console.error('Error fetching alerts:', error);
-            }
+                // Update Intervals
+                intervalChart.data.labels = data.intervals.map(i => i.bucket + 's');
+                intervalChart.data.datasets[0].data = data.intervals.map(i => i.count);
+                intervalChart.update();
+
+                // Update Hosts
+                hostChart.data.labels = data.top_hosts.map(h => h.host.substring(0, 15));
+                hostChart.data.datasets[0].data = data.top_hosts.map(h => h.p_score);
+                hostChart.update();
+
+            } catch (e) { console.error("Stats fail", e); }
         }
 
         async function triggerAnalyze() {
+            const body = document.getElementById('results-body');
+            body.innerHTML = '<tr><td colspan="5" style="text-align: center">Analyzing traffic patterns...</td></tr>';
             try {
-                const resultsBody = document.getElementById('results-body');
-                resultsBody.innerHTML = '<tr><td colspan="6" style="text-align: center">Analyzing...</td></tr>';
-
-                const response = await fetch('/api/analyze');
-                const data = await response.json();
-
-                resultsBody.innerHTML = '';
-                if (data.results.length === 0) {
-                    resultsBody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: #8b949e">No traffic analyzed in the current window.</td></tr>';
-                    return;
-                }
-
-                data.results.forEach(res => {
+                const res = await fetch('/api/analyze');
+                const data = await res.json();
+                body.innerHTML = '';
+                data.results.forEach(r => {
                     const tr = document.createElement('tr');
-                    const hostName = res.display_host || res.host;
+                    const interval = r.beacon_interval_estimate ? r.beacon_interval_estimate.toFixed(1) + 's' : 'N/A';
                     tr.innerHTML = `
-                        <td>${hostName}</td>
-                        <td>${res.p_score.toFixed(3)}</td>
-                        <td>${res.fft_peak.toFixed(3)}</td>
-                        <td>${res.autocorr_max.toFixed(3)}</td>
-                        <td>${res.entropy_norm.toFixed(3)}</td>
-                        <td class="${res.detected ? 'beacon-alert' : ''}">${res.detected ? 'BEACON' : 'NORMAL'}</td>
+                        <td style="color: var(--accent-color)">${r.display_host || r.host}</td>
+                        <td>${r.p_score.toFixed(3)}</td>
+                        <td>${interval}</td>
+                        <td>${r.samples}</td>
+                        <td><span class="status-badge ${r.detected ? 'bg-danger' : 'bg-success'}">${r.detected ? 'MALICIOUS' : 'CLEAN'}</span></td>
                     `;
-                    resultsBody.appendChild(tr);
+                    body.appendChild(tr);
                 });
+                updateStats();
+            } catch (e) { body.innerHTML = '<tr><td colspan="5">Scan failed</td></tr>'; }
+        }
 
-                fetchAlerts();
-            } catch (error) {
-                console.error('Error triggering analysis:', error);
-            }
+        async function fetchAlerts() {
+            const container = document.getElementById('alerts-container');
+            const res = await fetch('/api/alerts');
+            const data = await res.json();
+            container.innerHTML = data.alerts.length ? '' : '<div style="color: #6e7681">No threats active</div>';
+            data.alerts.slice(0, 5).forEach(a => {
+                const div = document.createElement('div');
+                div.className = 'sidebar-item';
+                div.innerHTML = `<span style="color: var(--danger-color)">!</span> <span>${a.display_host || a.host}</span> <span style="font-size:0.8rem">${a.p_score.toFixed(2)}</span>`;
+                container.appendChild(div);
+            });
         }
 
         async function fetchSystems() {
-            try {
-                const response = await fetch('/api/online_systems');
-                const data = await response.json();
-                const container = document.getElementById('systems-container');
-                container.innerHTML = '';
-
-                if (data.systems.length === 0) {
-                    container.innerHTML = '<div style="color: #8b949e">No systems seen recently.</div>';
-                    return;
-                }
-
-                data.systems.forEach(system => {
-                    const div = document.createElement('div');
-                    div.style = 'padding: 8px 0; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;';
-
-                    const lastSeen = new Date(system.last_seen);
-                    const now = new Date();
-                    const secondsAgo = Math.floor((now - lastSeen) / 1000);
-
-                    div.innerHTML = `
-                        <div style="font-size: 14px; color: var(--accent-color); font-weight: 600;">${system.display_host}</div>
-                        <div style="font-size: 11px; color: #8b949e">${secondsAgo}s ago</div>
-                    `;
-                    container.appendChild(div);
-                });
-            } catch (error) {
-                console.error('Error fetching systems:', error);
-            }
+            const container = document.getElementById('systems-container');
+            const res = await fetch('/api/online_systems');
+            const data = await res.json();
+            container.innerHTML = '';
+            data.systems.slice(0, 8).forEach(s => {
+                const div = document.createElement('div');
+                div.className = 'sidebar-item';
+                div.innerHTML = `<span style="color: var(--success-color)">●</span> <span>${s.display_host}</span>`;
+                container.appendChild(div);
+            });
         }
 
-        // Initial fetch
-        fetchAlerts();
-        fetchSystems();
-        // Poll every 10s
-        setInterval(() => {
-            fetchAlerts();
-            fetchSystems();
-        }, 10000);
+        initCharts();
+        triggerAnalyze();
+        setInterval(() => { fetchAlerts(); fetchSystems(); updateStats(); }, 30000);
+        fetchAlerts(); fetchSystems();
     </script>
 </body>
 
