@@ -7,8 +7,12 @@ import subprocess
 import re
 import numpy as np
 import pandas as pd
+import warnings
 from scipy import stats
 from datetime import datetime, timedelta, timezone
+
+# Suppress specific numpy warnings for constant signals
+warnings.filterwarnings('ignore', category=RuntimeWarning, message='invalid value encountered in divide')
 
 # Configure logging
 logging.basicConfig(
@@ -341,10 +345,26 @@ class DetectionEngine:
                     try:
                         out_dir = "/home/user/Desktop/c2/c2/output"
                         os.makedirs(out_dir, exist_ok=True)
+                        
+                        # Save Time Series
                         signal_to_save = resampled if p_score_v >= p_score_t else deltas
-                        signal_to_save.to_csv(os.path.join(out_dir, f'time_series_{host}.csv'), header=['total_bytes'])
+                        signal_to_save.to_csv(os.path.join(out_dir, f'time_series_{host}.csv'), header=['total_bytes'], index_label='ts' if p_score_v >= p_score_t else 'idx')
+                        
+                        # Save FFT Data (Task 4.1 benefit)
+                        sig = signal_to_save.values if hasattr(signal_to_save, 'values') else np.array(signal_to_save)
+                        sig = sig - np.mean(sig)
+                        if np.std(sig) > 0: sig = sig / np.std(sig)
+                        fft_vals = np.abs(np.fft.rfft(sig))
+                        freqs = np.fft.rfftfreq(len(sig), d=1.0)
+                        pd.DataFrame({'frequency': freqs, 'magnitude': fft_vals}).to_csv(os.path.join(out_dir, f'fft_{host}.csv'), index=False)
+                        
+                        # Save Autocorrelation Data
+                        lags = range(1, min(len(sig), 50))
+                        corrs = [np.corrcoef(sig[:-lag], sig[lag:])[0, 1] for lag in lags if (len(sig)-lag) > 1]
+                        pd.DataFrame({'lag': list(lags)[:len(corrs)], 'correlation': corrs}).to_csv(os.path.join(out_dir, f'autocorr_{host}.csv'), index=False)
+                        
                     except Exception as e:
-                        logging.warning(f"Could not save plotting data: {e}")
+                        logging.warning(f"Could not save plotting data for {host}: {e}")
 
             # Phase 1.2: Execute Batch Insert (Issue 7)
             if db_batch:
