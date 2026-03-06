@@ -1,5 +1,89 @@
 [
   {
+    "timestamp": "2026-03-06T06:19:25.090994",
+    "host": "192.168.56.30",
+    "display_host": "192.168.56.30",
+    "p_score": 0.5973852454590534,
+    "details": {
+      "fft_peak": 1.0,
+      "autocorr_max": -0.0009737079934808809,
+      "entropy_norm": 0.011126356717771575,
+      "samples": 1029
+    }
+  },
+  {
+    "timestamp": "2026-03-06T06:18:25.055614",
+    "host": "192.168.56.30",
+    "display_host": "192.168.56.30",
+    "p_score": 0.5972638564343588,
+    "details": {
+      "fft_peak": 1.0,
+      "autocorr_max": -0.0010245880193321582,
+      "entropy_norm": 0.011631541789542031,
+      "samples": 978
+    }
+  },
+  {
+    "timestamp": "2026-03-06T06:17:25.021883",
+    "host": "192.168.56.30",
+    "display_host": "192.168.56.30",
+    "p_score": 0.5970992396005099,
+    "details": {
+      "fft_peak": 1.0,
+      "autocorr_max": -0.0010940892929582255,
+      "entropy_norm": 0.012315623411534088,
+      "samples": 916
+    }
+  },
+  {
+    "timestamp": "2026-03-06T06:16:24.982848",
+    "host": "192.168.56.30",
+    "display_host": "192.168.56.30",
+    "p_score": 0.5969122642545275,
+    "details": {
+      "fft_peak": 1.0,
+      "autocorr_max": -0.001173705697757751,
+      "entropy_norm": 0.013091267331847074,
+      "samples": 854
+    }
+  },
+  {
+    "timestamp": "2026-03-06T06:15:24.899792",
+    "host": "192.168.56.30",
+    "display_host": "192.168.56.30",
+    "p_score": 0.5966942149460961,
+    "details": {
+      "fft_peak": 1.0,
+      "autocorr_max": -0.001267423066459692,
+      "entropy_norm": 0.013994079136600125,
+      "samples": 791
+    }
+  },
+  {
+    "timestamp": "2026-03-06T06:14:24.856180",
+    "host": "192.168.56.30",
+    "display_host": "192.168.56.30",
+    "p_score": 0.596445274459484,
+    "details": {
+      "fft_peak": 1.0,
+      "autocorr_max": -0.0013755106347698993,
+      "entropy_norm": 0.015022606433040238,
+      "samples": 729
+    }
+  },
+  {
+    "timestamp": "2026-03-06T06:13:24.820426",
+    "host": "192.168.56.30",
+    "display_host": "192.168.56.30",
+    "p_score": 0.596208648830187,
+    "details": {
+      "fft_peak": 1.0,
+      "autocorr_max": -0.001479283495204853,
+      "entropy_norm": 0.01599818885865535,
+      "samples": 678
+    }
+  },
+  {
     "timestamp": "2026-03-05T14:58:03.706053",
     "host": "192.168.56.10",
     "display_host": "192.168.56.10",
@@ -1113,90 +1197,6 @@
       "autocorr_max": 0.0,
       "entropy_norm": 0.04570302331307408,
       "samples": 397
-    }
-  },
-  {
-    "timestamp": "2026-03-05T14:44:02.057260",
-    "host": "fe80::897b:d7c5:3972:53e",
-    "display_host": "fe80::897b:d7c5:3972:53e",
-    "p_score": 0.5932655882547218,
-    "details": {
-      "fft_peak": 0.9897962275819892,
-      "autocorr_max": 0.0,
-      "entropy_norm": 0.013264513890369692,
-      "samples": 1098
-    }
-  },
-  {
-    "timestamp": "2026-03-05T14:44:02.057259",
-    "host": "192.168.56.30",
-    "display_host": "192.168.56.30",
-    "p_score": 0.5495492938465085,
-    "details": {
-      "fft_peak": 0.892236446943807,
-      "autocorr_max": 0.0,
-      "entropy_norm": 0.03672642465507185,
-      "samples": 1333
-    }
-  },
-  {
-    "timestamp": "2026-03-05T14:44:02.057257",
-    "host": "::",
-    "display_host": "::",
-    "p_score": 0.5874242013095187,
-    "details": {
-      "fft_peak": 0.9799620961972548,
-      "autocorr_max": 0.0,
-      "entropy_norm": 0.0228031858469168,
-      "samples": 843
-    }
-  },
-  {
-    "timestamp": "2026-03-05T14:44:02.057255",
-    "host": "0.0.0.0",
-    "display_host": "0.0.0.0",
-    "p_score": 0.5946935117572236,
-    "details": {
-      "fft_peak": 0.998586352946189,
-      "autocorr_max": 0.0,
-      "entropy_norm": 0.02370514710626005,
-      "samples": 837
-    }
-  },
-  {
-    "timestamp": "2026-03-05T14:44:02.057242",
-    "host": "fe80::48f5:1000:b11d:cd30",
-    "display_host": "fe80::48f5:1000:b11d:cd30",
-    "p_score": 0.5612422708731107,
-    "details": {
-      "fft_peak": 0.9209168572835358,
-      "autocorr_max": 0.0,
-      "entropy_norm": 0.035622360201517815,
-      "samples": 979
-    }
-  },
-  {
-    "timestamp": "2026-03-05T14:43:01.951109",
-    "host": "192.168.56.10",
-    "display_host": "192.168.56.10",
-    "p_score": 0.5768474623046042,
-    "details": {
-      "fft_peak": 0.9997243961358212,
-      "autocorr_max": 0.0,
-      "entropy_norm": 0.11521148074862174,
-      "samples": 86
-    }
-  },
-  {
-    "timestamp": "2026-03-05T14:43:01.951107",
-    "host": "192.168.56.15",
-    "display_host": "192.168.56.15",
-    "p_score": 0.5888707275966075,
-    "details": {
-      "fft_peak": 0.9991307719742072,
-      "autocorr_max": 0.0,
-      "entropy_norm": 0.05390790596537697,
-      "samples": 326
     }
   }
 ]
