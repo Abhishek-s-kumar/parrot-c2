@@ -76,20 +76,36 @@ class DetectionEngine:
         except Exception:
             return None
 
-    def _get_ip_mapping(self):
-        """Builds a mapping of IPv6 to IPv4 based on neighbor table (MAC matching)."""
+    def _get_ip_mapping(self, active_hosts=None):
+        """Builds a mapping of IPv6 to IPv4 based on combined ARP (IPv4) and NDP (IPv6) tables."""
         import time
         now = time.time()
-        if self._ip_mapping_cache[0] is not None and (now - self._last_mapping_update) < 300:
+        if self._ip_mapping_cache[0] is not None and (now - self._last_mapping_update) < 120:
             return self._ip_mapping_cache
 
         mapping = {}
         mac_to_ipv4 = {}
+        mac_to_ipv6 = {}
+        
         try:
-            # Get ARP/Neighbor table
-            output = subprocess.check_output(['ip', 'neigh', 'show'], stderr=subprocess.STDOUT).decode()
-            
-            for line in output.splitlines():
+            # Proactively populate ARP and NDP tables by pinging active hosts
+            import subprocess
+            if active_hosts:
+                for h in active_hosts:
+                    if h != self.MONITOR_IP:
+                        if ':' in h:
+                            # Ping IPv6 (NDP)
+                            subprocess.Popen(['ping6', '-c', '1', '-W', '1', h], 
+                                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                        elif '.' in h:
+                            # Ping IPv4 (ARP)
+                            subprocess.Popen(['ping', '-c', '1', '-W', '1', h], 
+                                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                time.sleep(0.5) # Give ARP/NDP a moment to resolve
+
+            # 1. Collect IPv4 Neighbors (ARP)
+            output_v4 = subprocess.check_output(['ip', 'neigh', 'show'], stderr=subprocess.STDOUT).decode()
+            for line in output_v4.splitlines():
                 parts = line.split()
                 if len(parts) >= 5 and 'lladdr' in parts:
                     ip = parts[0]
@@ -97,15 +113,38 @@ class DetectionEngine:
                     if '.' in ip: # IPv4
                         mac_to_ipv4[mac] = ip
 
-            # Now try to match IPv6 addresses to these MACs
-            # 1. Direct neighbor table match
-            for line in output.splitlines():
+            # 2. Collect IPv6 Neighbors (NDP)
+            output_v6 = subprocess.check_output(['ip', '-6', 'neigh', 'show'], stderr=subprocess.STDOUT).decode()
+            for line in output_v6.splitlines():
+                parts = line.split()
+                if len(parts) >= 5 and 'lladdr' in parts:
+                    ip = parts[0]
+                    mac = parts[parts.index('lladdr') + 1].lower()
+                    if ':' in ip: # IPv6
+                        if mac not in mac_to_ipv6:
+                            mac_to_ipv6[mac] = []
+                        mac_to_ipv6[mac].append(ip)
+
+            # 3. Unify them (MAC -> Primary IP)
+            for mac, ipv6_list in mac_to_ipv6.items():
+                if mac in mac_to_ipv4:
+                    primary_ip = mac_to_ipv4[mac]
+                    for ipv6 in ipv6_list:
+                        mapping[ipv6] = primary_ip
+                else:
+                    primary_ip = ipv6_list[0]
+                    for ipv6 in ipv6_list[1:]:
+                        mapping[ipv6] = primary_ip
+                        
+            # Also catch any stray mapped IPv6s from output_v4
+            for line in output_v4.splitlines():
                 parts = line.split()
                 if len(parts) >= 5 and 'lladdr' in parts:
                     ip = parts[0]
                     mac = parts[parts.index('lladdr') + 1].lower()
                     if ':' in ip and mac in mac_to_ipv4:
                         mapping[ip] = mac_to_ipv4[mac]
+                        
         except Exception as e:
             logging.error(f"Error building IP mapping: {e}")
         
@@ -265,7 +304,7 @@ class DetectionEngine:
             
             # Query recent traffic from conn_log
             query = """
-                SELECT id_orig_h, ts, orig_bytes
+                SELECT id_orig_h, ts, orig_bytes, orig_l2_addr
                 FROM conn_log 
                 WHERE ts >= %s AND ts <= %s
                 ORDER BY ts ASC
@@ -280,21 +319,41 @@ class DetectionEngine:
 
             results = []
             db_batch = []
-            hosts = df['id_orig_h'].unique()
             
             import time as pytime
             start_perf = pytime.time()
             
-            # Phase 1.1: Move IP Mapping Outside Loop (Issue 6)
-            mapping, mac_to_ipv4 = self._get_ip_mapping()
+            # Map MAC addresses to their primary IP for display purposes
+            # We prefer IPv4 as the primary display name if one exists for the MAC
+            mac_to_display_ip = {}
+            for _, row in df.iterrows():
+                mac = row['orig_l2_addr']
+                ip = row['id_orig_h']
+                if mac and mac != '-':
+                    if mac not in mac_to_display_ip:
+                        mac_to_display_ip[mac] = ip
+                    elif '.' in ip and ':' in mac_to_display_ip[mac]:
+                        # Upgrade display name from IPv6 to IPv4
+                        mac_to_display_ip[mac] = ip
+
+            # Filter out traffic that has no MAC address (e.g., localhost or routing errors)
+            df = df.dropna(subset=['orig_l2_addr'])
+            df = df[df['orig_l2_addr'] != '-']
+
+            # Group traffic natively by hardware MAC address (Solving Phase 3)
+            macs = df['orig_l2_addr'].unique()
             
             hosts_analyzed = 0
-            for host in hosts:
-                if not self._is_host_address(host):
+            for mac in macs:
+                host_df = df[df['orig_l2_addr'] == mac].copy()
+                
+                # Get the primary IP for this MAC to check if it's a valid target
+                display_ip = mac_to_display_ip.get(mac, '')
+                if not self._is_host_address(display_ip):
                     continue
+                    
                 hosts_analyzed += 1
-
-                host_df = df[df['id_orig_h'] == host].copy()
+                
                 if len(host_df) < 3:  # Lowered from 5 to catch early Meterpreter sessions
                     continue
 
@@ -341,17 +400,9 @@ class DetectionEngine:
                 p_score = max(p_score_v, p_score_t)
                 detected = p_score > self.p_threshold 
                 
-                mapped_ip = mapping.get(host)
-                if not mapped_ip:
-                    mac = self._ipv6_to_mac(host)
-                    if mac and mac in mac_to_ipv4:
-                        mapped_ip = mac_to_ipv4[mac]
-                
-                display_host = f"{host} ({mapped_ip})" if mapped_ip else host
-
                 results.append({
-                    'host': host,
-                    'display_host': display_host,
+                    'host': display_ip, # Primary IPv4 used for the API interface
+                    'display_host': display_ip,
                     'p_score': p_score,
                     'detected': detected,
                     'detection_type': 'beacon',
@@ -372,7 +423,7 @@ class DetectionEngine:
                     interval_est = float(np.mean(deltas)) if len(deltas) > 0 else 0.0
 
                 db_batch.append((
-                    str(host),
+                    str(display_ip),
                     float(p_score),
                     float(max(fft_peak_v, fft_peak_t)),
                     float(max(autocorr_max_v, autocorr_max_t)),
@@ -385,14 +436,14 @@ class DetectionEngine:
                 ))
 
                 if detected:
-                    logging.info(f"BEACON DETECTED: host={host} p_score={p_score:.3f} interval={interval_est:.1f}s")
+                    logging.info(f"BEACON DETECTED: mac={mac} ip={display_ip} p_score={p_score:.3f} interval={interval_est:.1f}s")
                     try:
                         out_dir = "/home/user/Desktop/c2/c2/output"
                         os.makedirs(out_dir, exist_ok=True)
                         
                         # Save Time Series
                         signal_to_save = resampled if p_score_v >= p_score_t else deltas
-                        signal_to_save.to_csv(os.path.join(out_dir, f'time_series_{host}.csv'), header=['total_bytes'], index_label='ts' if p_score_v >= p_score_t else 'idx')
+                        signal_to_save.to_csv(os.path.join(out_dir, f'time_series_{display_ip}.csv'), header=['total_bytes'], index_label='ts' if p_score_v >= p_score_t else 'idx')
                         
                         # Save FFT Data (Task 4.1 benefit)
                         sig = signal_to_save.values if hasattr(signal_to_save, 'values') else np.array(signal_to_save)
@@ -400,15 +451,15 @@ class DetectionEngine:
                         if np.std(sig) > 0: sig = sig / np.std(sig)
                         fft_vals = np.abs(np.fft.rfft(sig))
                         freqs = np.fft.rfftfreq(len(sig), d=1.0)
-                        pd.DataFrame({'frequency': freqs, 'magnitude': fft_vals}).to_csv(os.path.join(out_dir, f'fft_{host}.csv'), index=False)
+                        pd.DataFrame({'frequency': freqs, 'magnitude': fft_vals}).to_csv(os.path.join(out_dir, f'fft_{display_ip}.csv'), index=False)
                         
                         # Save Autocorrelation Data
                         lags = range(1, min(len(sig), 50))
                         corrs = [np.corrcoef(sig[:-lag], sig[lag:])[0, 1] for lag in lags if (len(sig)-lag) > 1]
-                        pd.DataFrame({'lag': list(lags)[:len(corrs)], 'correlation': corrs}).to_csv(os.path.join(out_dir, f'autocorr_{host}.csv'), index=False)
+                        pd.DataFrame({'lag': list(lags)[:len(corrs)], 'correlation': corrs}).to_csv(os.path.join(out_dir, f'autocorr_{display_ip}.csv'), index=False)
                         
                     except Exception as e:
-                        logging.warning(f"Could not save plotting data for {host}: {e}")
+                        logging.warning(f"Could not save plotting data for {display_ip}: {e}")
 
             # Phase 2.2: Z-Score Anomaly Detection
             sample_counts = [r['samples'] for r in results]
@@ -466,9 +517,9 @@ class DetectionEngine:
             start_time = end_time - timedelta(minutes=window_minutes)
 
             query = """
-                SELECT id_orig_h as host, MAX(ts) as last_seen FROM conn_log WHERE ts >= %s AND ts <= %s GROUP BY id_orig_h
+                SELECT orig_l2_addr as mac, id_orig_h as host, MAX(ts) as last_seen FROM conn_log WHERE ts >= %s AND ts <= %s AND orig_l2_addr IS NOT NULL AND orig_l2_addr != '-' GROUP BY orig_l2_addr, id_orig_h
                 UNION
-                SELECT id_resp_h as host, MAX(ts) as last_seen FROM conn_log WHERE ts >= %s AND ts <= %s GROUP BY id_resp_h
+                SELECT resp_l2_addr as mac, id_resp_h as host, MAX(ts) as last_seen FROM conn_log WHERE ts >= %s AND ts <= %s AND resp_l2_addr IS NOT NULL AND resp_l2_addr != '-' GROUP BY resp_l2_addr, id_resp_h
                 ORDER BY last_seen DESC
             """
             df = pd.read_sql_query(query, conn, params=(start_time, end_time, start_time, end_time))
@@ -476,30 +527,34 @@ class DetectionEngine:
             if df.empty:
                 return []
 
-            # Deduplicate just in case of overlaps in last_seen
-            df = df.sort_values('last_seen', ascending=False).drop_duplicates('host')
+            # Group natively by hardware MAC address 
+            # Prefer IPv4 as primary display IP
+            mac_to_display_ip = {}
+            for _, row in df.iterrows():
+                mac = row['mac']
+                ip = row['host']
+                if mac not in mac_to_display_ip:
+                    mac_to_display_ip[mac] = ip
+                elif '.' in ip and ':' in mac_to_display_ip[mac]:
+                    mac_to_display_ip[mac] = ip
 
-            mapping, mac_to_ipv4 = self._get_ip_mapping()
+            df['display_host'] = df.apply(lambda row: mac_to_display_ip.get(row['mac'], row['host']), axis=1)
+            
+            # Group again after mapping to merge the last_seen times for the same MAC
+            df = df.groupby('display_host', as_index=False)['last_seen'].max()
+            df = df.sort_values('last_seen', ascending=False)
             
             systems = []
             for _, row in df.iterrows():
-                host = row['host']
+                host = row['display_host'] # This is the primary IPv4
                 if not self._is_host_address(host):
                     continue
                     
                 last_seen = row['last_seen']
                 
-                mapped_ip = mapping.get(host)
-                if not mapped_ip:
-                    mac = self._ipv6_to_mac(host)
-                    if mac and mac in mac_to_ipv4:
-                        mapped_ip = mac_to_ipv4[mac]
-                
-                display_host = f"{host} ({mapped_ip})" if mapped_ip else host
-                
                 systems.append({
                     'host': host,
-                    'display_host': display_host,
+                    'display_host': host,
                     'last_seen': last_seen.isoformat() if isinstance(last_seen, datetime) else str(last_seen)
                 })
             
