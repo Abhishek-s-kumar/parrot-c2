@@ -68,7 +68,7 @@ class ZeekLogHandler(FileSystemEventHandler):
                     try:
                         # Map Zeek fields to DB columns
                         # conn.log format typically:
-                        # ts, uid, id_orig_h, id_orig_p, id_resp_h, id_resp_p, proto, service, duration, orig_bytes, resp_bytes, conn_state, ...
+                        # ts, uid, id_orig_h, id_orig_p, id_resp_h, id_resp_p, proto, service, duration, orig_bytes, resp_bytes, conn_state, local_orig, local_resp, missed_bytes, history, orig_pkts, orig_ip_bytes, resp_pkts, resp_ip_bytes, tunnel_parents, orig_l2_addr, resp_l2_addr
                         ts = datetime.fromtimestamp(float(parts[0]))
                         uid = parts[1]
                         orig_h = parts[2]
@@ -81,14 +81,18 @@ class ZeekLogHandler(FileSystemEventHandler):
                         orig_bytes = int(parts[9]) if parts[9] != '-' else None
                         resp_bytes = int(parts[10]) if parts[10] != '-' else None
                         conn_state = parts[11]
+                        
+                        orig_l2_addr = parts[21] if len(parts) > 21 and parts[21] != '-' else None
+                        resp_l2_addr = parts[22] if len(parts) > 22 and parts[22] != '-' else None
 
                         cursor.execute("""
                             INSERT INTO conn_log (
                                 ts, uid, id_orig_h, id_orig_p, id_resp_h, id_resp_p, 
-                                proto, service, duration, orig_bytes, resp_bytes, conn_state
-                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                                proto, service, duration, orig_bytes, resp_bytes, conn_state,
+                                orig_l2_addr, resp_l2_addr
+                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                             ON CONFLICT (uid) DO NOTHING
-                        """, (ts, uid, orig_h, orig_p, resp_h, resp_p, proto, service, duration, orig_bytes, resp_bytes, conn_state))
+                        """, (ts, uid, orig_h, orig_p, resp_h, resp_p, proto, service, duration, orig_bytes, resp_bytes, conn_state, orig_l2_addr, resp_l2_addr))
                     except Exception as e:
                         logging.error(f"Error parsing line: {e}")
                 
@@ -112,7 +116,7 @@ def main():
         os.makedirs(os.path.dirname(zeek_log_path), exist_ok=True)
     if not os.path.exists(zeek_log_path):
         with open(zeek_log_path, 'w') as f:
-            f.write("#fields\tts\tuid\tid.orig_h\tid.orig_p\tid.resp_h\tid.resp_p\tproto\tservice\tduration\torig_bytes\tresp_bytes\tconn_state\n")
+            f.write("#fields\tts\tuid\tid.orig_h\tid.orig_p\tid.resp_h\tid.resp_p\tproto\tservice\tduration\torig_bytes\tresp_bytes\tconn_state\tlocal_orig\tlocal_resp\tmissed_bytes\thistory\torig_pkts\torig_ip_bytes\tresp_pkts\tresp_ip_bytes\ttunnel_parents\torig_l2_addr\tresp_l2_addr\n")
 
     handler = ZeekLogHandler(zeek_log_path, db_config)
     # Initial processing
