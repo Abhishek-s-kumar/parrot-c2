@@ -87,6 +87,7 @@ class ZeekLogHandler(FileSystemEventHandler):
                                 ts, uid, id_orig_h, id_orig_p, id_resp_h, id_resp_p, 
                                 proto, service, duration, orig_bytes, resp_bytes, conn_state
                             ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                            ON CONFLICT (uid) DO NOTHING
                         """, (ts, uid, orig_h, orig_p, resp_h, resp_p, proto, service, duration, orig_bytes, resp_bytes, conn_state))
                     except Exception as e:
                         logging.error(f"Error parsing line: {e}")

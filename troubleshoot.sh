@@ -12,12 +12,27 @@ echo "--------------------------------------"
 
 # 1. Check Zeek Status
 echo "[*] Checking Zeek Status..."
-if sudo $ZEEK_DIR/bin/zeekctl status | grep -q "crashed"; then
+ZEEK_STATUS=$(sudo $ZEEK_DIR/bin/zeekctl status 2>&1)
+if echo "$ZEEK_STATUS" | grep -q "crashed"; then
     echo " [!] CRITICAL: Zeek has CRASHED!"
-    echo "     Attempting to restart Zeek..."
-    sudo $ZEEK_DIR/bin/zeekctl deploy
+    echo "     Attempting to restart Zeek (zeekctl restart)..."
+    sudo $ZEEK_DIR/bin/zeekctl restart
+    sleep 2
+    # Guard: restore promiscuous mode on enp0s8 in case it dropped
+    sudo ip link set enp0s8 promisc on
+    echo " [INFO] Promiscuous mode re-enabled on enp0s8."
+elif echo "$ZEEK_STATUS" | grep -q "running"; then
+    echo " [OK] Zeek is running."
+    # Verify promiscuous mode is on (it should be)
+    if ip link show enp0s8 | grep -q "PROMISC"; then
+        echo " [OK] enp0s8 is in promiscuous mode (capturing all traffic)."
+    else
+        echo " [!] WARNING: enp0s8 is NOT in promiscuous mode! Re-enabling..."
+        sudo ip link set enp0s8 promisc on
+    fi
 else
-    echo " [OK] Zeek seems to be running."
+    echo " [!] Zeek status unknown:"
+    echo "$ZEEK_STATUS"
 fi
 
 # 2. Check Zeek Log Updates
@@ -87,6 +102,26 @@ if pgrep -f "dashboard.py" > /dev/null; then
     fi
 else
     echo " [!] CRITICAL: Dashboard process NOT running."
+fi
+
+
+# 8. Detection Status — Active Hosts Being Monitored
+echo "[*] Checking Live Host Detection..."
+HOST_COUNT=$(PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c "SELECT COUNT(DISTINCT id_orig_h) FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes';" 2>/dev/null | xargs)
+if [ "$HOST_COUNT" -gt 0 ] 2>/dev/null; then
+    echo " [OK] $HOST_COUNT active source hosts seen in last 10 minutes:"
+    PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c \
+        "SELECT '  -> ' || host(id_orig_h) || ' (' || COUNT(*) || ' conns)' FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes' GROUP BY id_orig_h;" 2>/dev/null
+else
+    echo " [!] WARNING: No live hosts seen in the last 10 minutes."
+    echo "     Zeek may not be capturing traffic on enp0s8, or no traffic is flowing."
+fi
+
+DETECTED_HOSTS=$(PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c "SELECT COUNT(*) FROM detection_results WHERE detected = true AND analyzed_at >= NOW() - INTERVAL '60 minutes';" 2>/dev/null | xargs)
+if [ "$DETECTED_HOSTS" -gt 0 ] 2>/dev/null; then
+    echo " [OK] $DETECTED_HOSTS beacon detection(s) in the last 60 minutes."
+else
+    echo " [INFO] No beacon detections in the last 60 minutes — awaiting traffic."
 fi
 
 echo "--------------------------------------"
