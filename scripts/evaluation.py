@@ -39,10 +39,10 @@ class EvaluationModule:
                 SELECT dr.host_ip, dr.p_score, dr.detected, gt.actual_label
                 FROM detection_results dr
                 JOIN (
-                    SELECT TRIM(host_ip) as host_ip, MAX(label) as actual_label
+                    SELECT host_ip::inet as host_ip, MAX(label) as actual_label
                     FROM ground_truth
                     GROUP BY 1
-                ) gt ON host(dr.host_ip) = gt.host_ip
+                ) gt ON dr.host_ip = gt.host_ip
             """
             df = pd.read_sql_query(query, conn)
             

@@ -29,14 +29,17 @@ class DetectionEngine:
         self.weights_config = configparser.ConfigParser()
         self.weights_config.read('/home/user/Desktop/c2/c2/config/detection_weights.ini')
         
-        self.p_threshold = 0.6 
-        self.ALPHA = float(self.weights_config.get('weights', 'fft_peak', fallback=0.4))
-        self.BETA = float(self.weights_config.get('weights', 'autocorr_max', fallback=0.4))
-        self.GAMMA = float(self.weights_config.get('weights', 'entropy_norm', fallback=0.2))
+        self.p_threshold = float(self.weights_config.get('logic', 'p_threshold', fallback=0.55)) 
+        self.ALPHA = float(self.weights_config.get('weights', 'fft_peak', fallback=0.30))
+        self.BETA = float(self.weights_config.get('weights', 'autocorr_max', fallback=0.25))
+        self.GAMMA = float(self.weights_config.get('weights', 'entropy_norm', fallback=0.15))
+        self.DELTA = float(self.weights_config.get('weights', 'iat_variance', fallback=0.15))
+        self.EPSILON = float(self.weights_config.get('weights', 'pkt_stability', fallback=0.15))
         
         self.window_low = int(self.weights_config.get('logic', 'window_low_rate', fallback=15))
         self.window_high = int(self.weights_config.get('logic', 'window_high_rate', fallback=5))
         self.rate_threshold = int(self.weights_config.get('logic', 'rate_threshold', fallback=5))
+        self.z_threshold = float(self.weights_config.get('logic', 'z_threshold', fallback=2.5))
 
         self._ip_mapping_cache = (None, None)
         self._last_mapping_update = 0
@@ -192,7 +195,7 @@ class DetectionEngine:
             return 1.0
             
         if np.std(sig) == 0: 
-            return 1.0 # High regularity
+            return 0.0 # High regularity (constant signal) - Updated per research guide
             
         # Normalize and compute entropy
         hist, _ = np.histogram(sig, bins=10, density=True)
@@ -209,12 +212,41 @@ class DetectionEngine:
         
         return float(entropy_norm)
 
-    def calculate_p_score(self, fft_peak, autocorr_max, entropy_norm):
-        """Fusion score using current weights."""
+    def calculate_iat_variance_score(self, deltas):
+        """Measure consistency of inter-arrival times. Low variance = High Score."""
+        if len(deltas) < 5:
+            return 0.0
+        
+        mean = np.mean(deltas)
+        if mean == 0:
+            return 0.0
+            
+        cv = np.std(deltas) / mean
+        score = 1.0 - cv
+        return float(np.clip(score, 0, 1))
+
+    def calculate_pkt_stability_score(self, host_df):
+        """Measure consistency of packet sizes (orig_bytes)."""
+        sizes = host_df['orig_bytes'].dropna()
+        if len(sizes) < 5:
+            return 0.0
+            
+        mean = np.mean(sizes)
+        if mean == 0:
+            return 1.0 # Identical empty packets are stable
+            
+        cv = np.std(sizes) / mean
+        score = 1.0 - cv
+        return float(np.clip(score, 0, 1))
+
+    def calculate_p_score(self, fft_peak, autocorr_max, entropy_norm, iat_var_score, pkt_stab_score):
+        """Five-feature fusion score using expert research weights."""
         P_SCORE = (
             self.ALPHA * fft_peak +
             self.BETA * autocorr_max +
-            self.GAMMA * (1.0 - entropy_norm)
+            self.GAMMA * (1.0 - entropy_norm) +
+            self.DELTA * iat_var_score +
+            self.EPSILON * pkt_stab_score
         )
         return float(P_SCORE)
 
@@ -231,9 +263,9 @@ class DetectionEngine:
             
             logging.info(f"Analyzing traffic from {start_time} to {end_time}")
             
-            # Count connections per second/interval
+            # Query recent traffic from conn_log
             query = """
-                SELECT id_orig_h, ts
+                SELECT id_orig_h, ts, orig_bytes
                 FROM conn_log 
                 WHERE ts >= %s AND ts <= %s
                 ORDER BY ts ASC
@@ -263,7 +295,7 @@ class DetectionEngine:
                 hosts_analyzed += 1
 
                 host_df = df[df['id_orig_h'] == host].copy()
-                if len(host_df) < 5:
+                if len(host_df) < 3:  # Lowered from 5 to catch early Meterpreter sessions
                     continue
 
                 # --- Improvement 2: Adaptive Windowing (Task 4.2) ---
@@ -271,7 +303,7 @@ class DetectionEngine:
                 events_per_min = len(host_df) / window_minutes
                 step = f"{self.window_low}s" if events_per_min < self.rate_threshold else f"{self.window_high}s"
 
-                # --- Type 1: Periodic Volume (Issue 1) ---
+                # --- Type 1: Periodic Volume ---
                 host_df_v = host_df.copy()
                 host_df_v['conn_count'] = 1
                 host_df_v.set_index('ts', inplace=True)
@@ -279,24 +311,31 @@ class DetectionEngine:
                 
                 p_score_v = 0.0
                 fft_peak_v, autocorr_max_v, entropy_norm_v = 0.0, 0.0, 1.0
+                iat_score_v, pkt_score_v = 0.0, 0.0
+                
                 if len(resampled) >= 5:
                     fft_peak_v, _ = self.calculate_fft(resampled)
                     autocorr_max_v = self.calculate_autocorrelation(resampled)
                     entropy_norm_v = self.calculate_entropy(resampled)
-                    p_score_v = self.calculate_p_score(fft_peak_v, autocorr_max_v, entropy_norm_v)
+                    iat_score_v = self.calculate_iat_variance_score(resampled.values)
+                    pkt_score_v = self.calculate_pkt_stability_score(host_df)
+                    p_score_v = self.calculate_p_score(fft_peak_v, autocorr_max_v, entropy_norm_v, iat_score_v, pkt_score_v)
 
-                # --- Type 2: Sparse Events (Issue 2) ---
+                # --- Type 2: Sparse Events ---
                 host_df_t = host_df.sort_values('ts')
                 deltas = host_df_t['ts'].diff().dt.total_seconds().dropna()
                 
                 p_score_t = 0.0
                 fft_peak_t, autocorr_max_t, entropy_norm_t = 0.0, 0.0, 1.0
+                iat_score_t, pkt_score_t = 0.0, 0.0
                 
                 if len(deltas) >= 5:
                     fft_peak_t, _ = self.calculate_fft(deltas)
                     autocorr_max_t = self.calculate_autocorrelation(deltas)
                     entropy_norm_t = self.calculate_entropy(deltas)
-                    p_score_t = self.calculate_p_score(fft_peak_t, autocorr_max_t, entropy_norm_t)
+                    iat_score_t = self.calculate_iat_variance_score(deltas.values)
+                    pkt_score_t = pkt_score_v # Reuse packet stability from same host
+                    p_score_t = self.calculate_p_score(fft_peak_t, autocorr_max_t, entropy_norm_t, iat_score_t, pkt_score_t)
 
                 # Final Detection Fusion
                 p_score = max(p_score_v, p_score_t)
@@ -315,29 +354,34 @@ class DetectionEngine:
                     'display_host': display_host,
                     'p_score': p_score,
                     'detected': detected,
-                    'type': 'volume' if p_score_v >= p_score_t else 'sparse',
+                    'detection_type': 'beacon',
                     'fft_peak': max(fft_peak_v, fft_peak_t),
                     'autocorr_max': max(autocorr_max_v, autocorr_max_t),
                     'entropy_norm': min(entropy_norm_v, entropy_norm_t),
+                    'iat_score': max(iat_score_v, iat_score_t),
+                    'pkt_score': pkt_score_v,
                     'samples': len(host_df)
                 })
                 
-                # Prepare for Database Batch (Issue 7 + Phase 2 Enrichment)
+                # Prepare for Database Batch
                 interval_est = 0.0
                 if p_score_v >= p_score_t:
                     _, peak_f = self.calculate_fft(resampled)
-                    interval_est = 1.0 / peak_f if peak_f > 0 else 0.0
+                    interval_est = float(1.0 / peak_f if peak_f > 0 else 0.0)
                 else:
-                    # For sparse, the interval is directly in the deltas
-                    interval_est = np.mean(deltas) if len(deltas) > 0 else 0.0
+                    interval_est = float(np.mean(deltas)) if len(deltas) > 0 else 0.0
 
                 db_batch.append((
-                    host, p_score, 
-                    max(fft_peak_v, fft_peak_t), 
-                    max(autocorr_max_v, autocorr_max_t), 
-                    min(entropy_norm_v, entropy_norm_t), 
-                    len(host_df), detected,
-                    interval_est, len(host_df), 30 # interval_est, signal_length, analysis_window
+                    str(host),
+                    float(p_score),
+                    float(max(fft_peak_v, fft_peak_t)),
+                    float(max(autocorr_max_v, autocorr_max_t)),
+                    float(min(entropy_norm_v, entropy_norm_t)),
+                    int(len(host_df)),
+                    bool(detected),
+                    float(interval_est),
+                    int(len(host_df)),
+                    int(30)
                 ))
 
                 if detected:
@@ -366,16 +410,31 @@ class DetectionEngine:
                     except Exception as e:
                         logging.warning(f"Could not save plotting data for {host}: {e}")
 
-            # Phase 1.2: Execute Batch Insert (Issue 7)
+            # Phase 2.2: Z-Score Anomaly Detection
+            sample_counts = [r['samples'] for r in results]
+            if len(sample_counts) >= 2:
+                mu = np.mean(sample_counts)
+                sigma = np.std(sample_counts)
+                
+                for r in results:
+                    z = (r['samples'] - mu) / (sigma + 1e-9)
+                    r['z_score'] = float(round(z, 3))
+                    
+                    if abs(z) > self.z_threshold:
+                        r['detected'] = True
+                        r['detection_type'] = 'anomaly'
+                        logging.info(f"ANOMALY DETECTED: host={r['host']} z_score={z:.3f} samples={r['samples']}")
+
+            # Phase 1.2: Execute Batch Insert
             if db_batch:
                 cursor = conn.cursor()
                 cursor.executemany("""
                     INSERT INTO detection_results (
                         host_ip, p_score, fft_peak, autocorr_max, entropy_norm, 
                         sample_count, detected, beacon_interval_estimate, 
-                        signal_length, analysis_window
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                """, db_batch)
+                        signal_length, analysis_window, detection_type
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """, [b + (results[i]['detection_type'],) for i, b in enumerate(db_batch)])
                 conn.commit()
                 cursor.close()
             
