@@ -31409,3 +31409,6 @@ LINE 6: ...S ('192.168.56.10', 0.3, 0.0, 0.0, 0.0, 6, false, np.float64...
 2026-03-08 18:39:39,754 - INFO - Retrieved 1086 rows from conn_log
 2026-03-08 18:39:39,793 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.641 interval=2.1s
 2026-03-08 18:39:39,826 - INFO - Checking for synchronized beaconing...
+2026-03-08 18:39:49,020 - INFO - 127.0.0.1 - - [08/Mar/2026 18:39:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:39:49,035 - INFO - 127.0.0.1 - - [08/Mar/2026 18:39:49] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:39:49,040 - INFO - 127.0.0.1 - - [08/Mar/2026 18:39:49] "GET /api/online_systems HTTP/1.1" 200 -
