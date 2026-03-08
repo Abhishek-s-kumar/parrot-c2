@@ -107,15 +107,18 @@ fi
 
 # 8. Detection Status — Active Hosts Being Monitored
 echo "[*] Checking Live Host Detection..."
-HOST_COUNT=$(PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c "SELECT COUNT(DISTINCT id_orig_h) FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes';" 2>/dev/null | xargs)
+# Use the same fallback logic as the Python Detection Engine:
+# 1. Prefer orig_l2_addr as the host identity
+# 2. Fall back to resp_l2_addr if orig is missing
+HOST_COUNT=$(PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c "SELECT COUNT(DISTINCT COALESCE(orig_l2_addr, resp_l2_addr)) FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes';" 2>/dev/null | xargs)
 if [ "$HOST_COUNT" -gt 0 ] 2>/dev/null; then
     echo " [OK] $HOST_COUNT active source hosts seen in last 10 minutes:"
     PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c \
-        "SELECT '  -> ' || host(id_orig_h) || ' (' || COUNT(*) || ' conns)' FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes' GROUP BY id_orig_h;" 2>/dev/null
+        "SELECT '  -> MAC: ' || COALESCE(orig_l2_addr, resp_l2_addr) || ' (' || COUNT(*) || ' conns)' FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes' GROUP BY COALESCE(orig_l2_addr, resp_l2_addr);" 2>/dev/null
     
     # NEW: Diagnose hosts with < 3 connections (below detection threshold)
     LOW_SAMPLE_HOSTS=$(PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c \
-        "SELECT '  -> [!] ' || host(id_orig_h) || ' has only ' || COUNT(*) || ' conns (Detection Engine needs >= 3 samples to analyze).' FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes' GROUP BY id_orig_h HAVING COUNT(*) < 3;" 2>/dev/null)
+        "SELECT '  -> [!] MAC: ' || COALESCE(orig_l2_addr, resp_l2_addr) || ' has only ' || COUNT(*) || ' conns (Detection Engine needs >= 3 samples to analyze).' FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes' GROUP BY COALESCE(orig_l2_addr, resp_l2_addr) HAVING COUNT(*) < 3;" 2>/dev/null)
     
     if [ -n "$LOW_SAMPLE_HOSTS" ] && [ "$LOW_SAMPLE_HOSTS" != " " ]; then
         echo " [!] DIAGNOSIS: Some hosts are active but below the analysis threshold:"

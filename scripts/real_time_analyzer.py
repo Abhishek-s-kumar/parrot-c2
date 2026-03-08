@@ -265,21 +265,70 @@ class DetectionEngine:
         return float(np.clip(score, 0, 1))
 
     def calculate_pkt_stability_score(self, host_df):
-        """Measure consistency of packet sizes (orig_bytes)."""
-        sizes = host_df['orig_bytes'].dropna()
-        if len(sizes) < 5:
+        """Measure consistency of packet sizes (total bytes per connection). High = stable = suspicious."""
+        sizes = (host_df['orig_bytes'].fillna(0) + host_df['resp_bytes'].fillna(0))
+        # Filter out 0-byte TCP control packets (like REJ/ACK) to find the true payload stability
+        payload_sizes = sizes[sizes > 0]
+        
+        # If all packets were 0 bytes, or too few payloads, evaluate all packets
+        eval_sizes = payload_sizes if len(payload_sizes) >= 5 else sizes
+        
+        if len(eval_sizes) < 5:
             return 0.0
             
-        mean = np.mean(sizes)
+        mean = np.mean(eval_sizes)
         if mean == 0:
-            return 1.0 # Identical empty packets are stable
+            return 1.0 # All-zero packets are maximally stable
             
-        cv = np.std(sizes) / mean
-        score = 1.0 - cv
-        return float(np.clip(score, 0, 1))
+        cv = np.std(eval_sizes) / mean
+        return float(np.clip(1.0 - cv, 0, 1))
+
+    def calculate_destination_diversity(self, host_df):
+        """Single destination = maximally suspicious (score=1). Many = benign (score near 0)."""
+        # Filter out broadcast/multicast noise that dilutes the C2 destination count
+        dests = host_df['id_resp_h'].dropna().astype(str)
+        dests = dests[
+            ~dests.str.endswith('.255') & 
+            ~dests.str.startswith('224.') & 
+            ~dests.str.startswith('ff') &
+            (dests != '255.255.255.255')
+        ]
+        
+        unique_dests = dests.nunique()
+        if unique_dests == 0:
+            return 1.0 # If only broadcast traffic exists, or 1 destination, penalize
+        return float(np.clip(1.0 / unique_dests, 0, 1))
+
+    def calculate_session_duration_score(self, host_df):
+        """Short sessions = C2-like (score near 1). Long sessions = benign (score near 0)."""
+        mean_dur = host_df['duration'].dropna().mean()
+        if np.isnan(mean_dur) or mean_dur < 0:
+            return 0.5 # Unknown duration is neutral
+        return float(np.clip(1.0 / (1.0 + mean_dur), 0, 1))
+
+    def calculate_destination_reputation(self, host_df):
+        """Traffic ONLY to trusted IPs = score 0. All untrusted = score 1."""
+        TRUSTED_IPS = {'8.8.8.8', '8.8.4.4', '1.1.1.1', '1.0.0.1', '9.9.9.9',
+                       '208.67.222.222', '208.67.220.220'}
+        dests = set(host_df['id_resp_h'].dropna().astype(str).unique())
+        if not dests:
+            return 0.5
+        suspicious = dests - TRUSTED_IPS
+        return float(len(suspicious) / len(dests))
+
+    def calculate_final_score(self, periodicity_score, dest_diversity, pkt_stability,
+                              session_score, dest_reputation):
+        """Two-part 60/40 behavioral fusion per spec."""
+        behavior_score = (
+            0.30 * dest_diversity +
+            0.20 * pkt_stability +
+            0.10 * session_score +
+            0.10 * dest_reputation
+        )
+        return float(np.clip(0.6 * periodicity_score + 0.4 * behavior_score, 0, 1))
 
     def calculate_p_score(self, fft_peak, autocorr_max, entropy_norm, iat_var_score, pkt_stab_score):
-        """Five-feature fusion score using expert research weights."""
+        """Legacy periodicity-only score (kept for internal use as periodicity_score component)."""
         P_SCORE = (
             self.ALPHA * fft_peak +
             self.BETA * autocorr_max +
@@ -303,8 +352,10 @@ class DetectionEngine:
             logging.info(f"Analyzing traffic from {start_time} to {end_time}")
             
             # Query recent traffic from conn_log
+            # Pull all fields needed for behavioral analysis
             query = """
-                SELECT id_orig_h, ts, orig_bytes, orig_l2_addr
+                SELECT id_orig_h, id_resp_h, ts, orig_bytes, resp_bytes, duration,
+                       local_orig, orig_l2_addr, resp_l2_addr
                 FROM conn_log 
                 WHERE ts >= %s AND ts <= %s
                 ORDER BY ts ASC
@@ -323,29 +374,41 @@ class DetectionEngine:
             import time as pytime
             start_perf = pytime.time()
             
-            # Map MAC addresses to their primary IP for display purposes
-            # We prefer IPv4 as the primary display name if one exists for the MAC
+            # Compute host_mac and host_ip:
+            # We prefer the ORIGINATOR side (orig_l2_addr / id_orig_h) as the primary host identity
+            # because in a C2 scenario, the victim machine INITIATES the beacon callout.
+            # The local_orig field from Zeek should be used to determine this, but it's often
+            # NULL in practice. We use a robust fallback: prefer orig_l2_addr, fall back to resp_l2_addr.
+            df['host_mac'] = df['orig_l2_addr'].astype(str).replace({'nan': None, 'None': None, '-': None})
+            df['host_ip'] = df['id_orig_h'].astype(str).replace({'nan': None, 'None': None})
+            
+            # For rows where orig_l2_addr is missing, fall back to the responder side
+            resp_mac_col = df['resp_l2_addr'].astype(str).replace({'nan': None, 'None': None, '-': None})
+            resp_ip_col = df['id_resp_h'].astype(str).replace({'nan': None, 'None': None})
+            df['host_mac'] = df['host_mac'].fillna(resp_mac_col)
+            df['host_ip'] = df['host_ip'].fillna(resp_ip_col)
+
+            # Build MAC → primary display IP map (prefer IPv4 over IPv6)
             mac_to_display_ip = {}
             for _, row in df.iterrows():
-                mac = row['orig_l2_addr']
-                ip = row['id_orig_h']
-                if mac and mac != '-':
+                mac = row['host_mac']
+                ip = row['host_ip']
+                if mac and mac not in ('nan', '-', 'None'):
                     if mac not in mac_to_display_ip:
                         mac_to_display_ip[mac] = ip
-                    elif '.' in ip and ':' in mac_to_display_ip[mac]:
-                        # Upgrade display name from IPv6 to IPv4
+                    elif '.' in ip and ':' in mac_to_display_ip.get(mac, ''):
                         mac_to_display_ip[mac] = ip
 
-            # Filter out traffic that has no MAC address (e.g., localhost or routing errors)
-            df = df.dropna(subset=['orig_l2_addr'])
-            df = df[df['orig_l2_addr'] != '-']
+            # Filter rows without a valid host MAC
+            df = df[~df['host_mac'].isin(['nan', '-', 'None', ''])]
+            df = df.dropna(subset=['host_mac'])
 
-            # Group traffic natively by hardware MAC address (Solving Phase 3)
-            macs = df['orig_l2_addr'].unique()
+            # Group natively by hardware MAC address
+            macs = df['host_mac'].unique()
             
             hosts_analyzed = 0
             for mac in macs:
-                host_df = df[df['orig_l2_addr'] == mac].copy()
+                host_df = df[df['host_mac'] == mac].copy()
                 
                 # Get the primary IP for this MAC to check if it's a valid target
                 display_ip = mac_to_display_ip.get(mac, '')
@@ -354,7 +417,7 @@ class DetectionEngine:
                     
                 hosts_analyzed += 1
                 
-                if len(host_df) < 3:  # Lowered from 5 to catch early Meterpreter sessions
+                if len(host_df) < 3:  # Minimum samples needed for analysis
                     continue
 
                 # --- Improvement 2: Adaptive Windowing (Task 4.2) ---
@@ -396,12 +459,22 @@ class DetectionEngine:
                     pkt_score_t = pkt_score_v # Reuse packet stability from same host
                     p_score_t = self.calculate_p_score(fft_peak_t, autocorr_max_t, entropy_norm_t, iat_score_t, pkt_score_t)
 
-                # Final Detection Fusion
-                p_score = max(p_score_v, p_score_t)
-                detected = p_score > self.p_threshold 
+                # --- Behavioral Features (Improvement 2) ---
+                dest_diversity = self.calculate_destination_diversity(host_df)
+                session_score = self.calculate_session_duration_score(host_df)
+                dest_reputation = self.calculate_destination_reputation(host_df)
+
+                # --- Final Detection Fusion (60% periodicity + 40% behavior) ---
+                periodicity_score = max(p_score_v, p_score_t)
+                best_pkt_stability = max(pkt_score_v, pkt_score_t) if pkt_score_v or pkt_score_t else self.calculate_pkt_stability_score(host_df)
+                p_score = self.calculate_final_score(
+                    periodicity_score, dest_diversity, best_pkt_stability,
+                    session_score, dest_reputation
+                )
+                detected = p_score > self.p_threshold
                 
                 results.append({
-                    'host': display_ip, # Primary IPv4 used for the API interface
+                    'host': display_ip,
                     'display_host': display_ip,
                     'p_score': p_score,
                     'detected': detected,
@@ -410,7 +483,10 @@ class DetectionEngine:
                     'autocorr_max': max(autocorr_max_v, autocorr_max_t),
                     'entropy_norm': min(entropy_norm_v, entropy_norm_t),
                     'iat_score': max(iat_score_v, iat_score_t),
-                    'pkt_score': pkt_score_v,
+                    'pkt_score': best_pkt_stability,
+                    'dest_diversity': round(dest_diversity, 3),
+                    'session_score': round(session_score, 3),
+                    'dest_reputation': round(dest_reputation, 3),
                     'samples': len(host_df)
                 })
                 
