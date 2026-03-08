@@ -112,6 +112,15 @@ if [ "$HOST_COUNT" -gt 0 ] 2>/dev/null; then
     echo " [OK] $HOST_COUNT active source hosts seen in last 10 minutes:"
     PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c \
         "SELECT '  -> ' || host(id_orig_h) || ' (' || COUNT(*) || ' conns)' FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes' GROUP BY id_orig_h;" 2>/dev/null
+    
+    # NEW: Diagnose hosts with < 3 connections (below detection threshold)
+    LOW_SAMPLE_HOSTS=$(PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c \
+        "SELECT '  -> [!] ' || host(id_orig_h) || ' has only ' || COUNT(*) || ' conns (Detection Engine needs >= 3 samples to analyze).' FROM conn_log WHERE ts >= NOW() - INTERVAL '10 minutes' GROUP BY id_orig_h HAVING COUNT(*) < 3;" 2>/dev/null)
+    
+    if [ -n "$LOW_SAMPLE_HOSTS" ] && [ "$LOW_SAMPLE_HOSTS" != " " ]; then
+        echo " [!] DIAGNOSIS: Some hosts are active but below the analysis threshold:"
+        echo "$LOW_SAMPLE_HOSTS"
+    fi
 else
     echo " [!] WARNING: No live hosts seen in the last 10 minutes."
     echo "     Zeek may not be capturing traffic on enp0s8, or no traffic is flowing."
