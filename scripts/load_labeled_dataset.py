@@ -5,6 +5,8 @@ from datetime import datetime, timezone
 import logging
 import sys
 import os
+import gzip
+import glob
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -46,7 +48,12 @@ def ingest_labeled_log(file_path, db_config):
         offset = 0
         if "--recent" in sys.argv:
             max_ts = 0
-            with open(file_path, 'r') as f:
+            
+            # Helper to open either gzipped or plain text files
+            opener = gzip.open if file_path.endswith('.gz') else open
+            mode = 'rt' if file_path.endswith('.gz') else 'r'
+            
+            with opener(file_path, mode) as f:
                 for line in f:
                     if not line.startswith('#'):
                         parts = line.strip().split('\t')
@@ -61,7 +68,10 @@ def ingest_labeled_log(file_path, db_config):
                 logging.info(f"Shifting timestamps by {offset} seconds (Last record = now).")
 
         # Read the file line by line to handle large files
-        with open(file_path, 'r') as f:
+        opener = gzip.open if file_path.endswith('.gz') else open
+        mode = 'rt' if file_path.endswith('.gz') else 'r'
+        
+        with opener(file_path, mode) as f:
             count = 0
             batch_conn = []
             batch_gt = []
@@ -161,12 +171,26 @@ def insert_batches(cursor, batch_conn, batch_gt):
     """
     cursor.executemany(query_gt, batch_gt)
 
+def process_input(target_path, db_config):
+    if os.path.isdir(target_path):
+        # Sort the paths for deterministic experiments (handles both compressed and uncompressed files)
+        scenario_paths = sorted(
+            glob.glob(os.path.join(target_path, "*", "conn.log.labeled*"))
+        )
+        for log_file in scenario_paths:
+            logging.info(f"Processing {log_file}")
+            ingest_labeled_log(log_file, db_config)
+    elif os.path.isfile(target_path):
+        ingest_labeled_log(target_path, db_config)
+    else:
+        logging.error("Invalid path provided.")
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 load_labeled_dataset.py <path_to_conn_log_labeled>")
+        print("Usage: python3 load_labeled_dataset.py <path_to_conn_log_labeled_or_directory>")
         sys.exit(1)
         
-    log_file = sys.argv[1]
+    target = sys.argv[1]
     db_config_path = '/home/user/Desktop/c2/c2/config/database.conf'
     
     if not os.path.exists(db_config_path):
@@ -174,4 +198,4 @@ if __name__ == "__main__":
         sys.exit(1)
         
     db_config = load_config(db_config_path)
-    ingest_labeled_log(log_file, db_config)
+    process_input(target, db_config)
