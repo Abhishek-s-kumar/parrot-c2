@@ -31412,3 +31412,386 @@ LINE 6: ...S ('192.168.56.10', 0.3, 0.0, 0.0, 0.0, 6, false, np.float64...
 2026-03-08 18:39:49,020 - INFO - 127.0.0.1 - - [08/Mar/2026 18:39:49] "GET /api/alerts HTTP/1.1" 200 -
 2026-03-08 18:39:49,035 - INFO - 127.0.0.1 - - [08/Mar/2026 18:39:49] "GET /api/stats HTTP/1.1" 200 -
 2026-03-08 18:39:49,040 - INFO - 127.0.0.1 - - [08/Mar/2026 18:39:49] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:39,516 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-03-08 18:40:39,516 - INFO - Triggering periodic analysis...
+2026-03-08 18:40:39,531 - INFO - Analyzing traffic from 2026-03-08 18:10:39.531017 to 2026-03-08 18:40:39.531017
+2026-03-08 18:40:39,540 - INFO - Retrieved 1073 rows from conn_log
+2026-03-08 18:40:39,584 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.640 interval=2.1s
+2026-03-08 18:40:39,617 - INFO - Checking for synchronized beaconing...
+2026-03-08 18:40:39,672 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-03-08 18:40:39,672 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-08 18:40:42,025 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:42] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:42,146 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:42] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:42,160 - INFO - Analyzing traffic from 2026-03-08 18:10:42.160693 to 2026-03-08 18:40:42.160693
+2026-03-08 18:40:42,176 - INFO - Retrieved 1070 rows from conn_log
+2026-03-08 18:40:42,201 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:42] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:42,233 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.1s
+2026-03-08 18:40:42,268 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:42] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:42,297 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:42] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:43,048 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:43,153 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:43,163 - INFO - Analyzing traffic from 2026-03-08 18:10:43.163195 to 2026-03-08 18:40:43.163195
+2026-03-08 18:40:43,170 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:40:43,192 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:43,235 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:43,266 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:43,312 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:43,645 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:43,762 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:43,774 - INFO - Analyzing traffic from 2026-03-08 18:10:43.774162 to 2026-03-08 18:40:43.774162
+2026-03-08 18:40:43,785 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:40:43,811 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:43,826 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:43,857 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:43,889 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:43,963 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:43] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:43,974 - INFO - Analyzing traffic from 2026-03-08 18:10:43.974094 to 2026-03-08 18:40:43.974094
+2026-03-08 18:40:43,984 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:40:44,043 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:44,056 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:44,083 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:44] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:44,114 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:44] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:44,768 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:44] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:44,877 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:44] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:44,889 - INFO - Analyzing traffic from 2026-03-08 18:10:44.889040 to 2026-03-08 18:40:44.889040
+2026-03-08 18:40:44,898 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:40:44,942 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:44] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:44,958 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:44,987 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:44] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:45,025 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:45] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:45,395 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:45] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:45,508 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:45,522 - INFO - Analyzing traffic from 2026-03-08 18:10:45.522390 to 2026-03-08 18:40:45.522390
+2026-03-08 18:40:45,538 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:40:45,539 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:45] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:45,582 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:45,612 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:45] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:45,637 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:45] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:46,064 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:46,171 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:46,180 - INFO - Analyzing traffic from 2026-03-08 18:10:46.179922 to 2026-03-08 18:40:46.179922
+2026-03-08 18:40:46,189 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:40:46,204 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:46,251 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:46,282 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:46,309 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:46,684 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:46,794 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:46,807 - INFO - Analyzing traffic from 2026-03-08 18:10:46.807668 to 2026-03-08 18:40:46.807668
+2026-03-08 18:40:46,814 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:40:46,834 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:46,872 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:46,897 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:46,924 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:46] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:47,297 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:47] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:47,413 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:47] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:47,424 - INFO - Analyzing traffic from 2026-03-08 18:10:47.424355 to 2026-03-08 18:40:47.424355
+2026-03-08 18:40:47,434 - INFO - Retrieved 1069 rows from conn_log
+2026-03-08 18:40:47,480 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:47] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:47,498 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:47,528 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:47] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:47,563 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:47] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:48,539 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:48] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:48,660 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:48] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:48,673 - INFO - Analyzing traffic from 2026-03-08 18:10:48.673578 to 2026-03-08 18:40:48.673578
+2026-03-08 18:40:48,681 - INFO - Retrieved 1071 rows from conn_log
+2026-03-08 18:40:48,705 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:48] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:48,747 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.632 interval=2.1s
+2026-03-08 18:40:48,784 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:48] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:48,827 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:48] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:49,269 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:49] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:49,379 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:49] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:49,393 - INFO - Analyzing traffic from 2026-03-08 18:10:49.393637 to 2026-03-08 18:40:49.393637
+2026-03-08 18:40:49,405 - INFO - Retrieved 1073 rows from conn_log
+2026-03-08 18:40:49,413 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:49] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:49,460 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.638 interval=2.1s
+2026-03-08 18:40:49,488 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:49] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:49,513 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:49] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:49,918 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:49] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:50,025 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:50,034 - INFO - Analyzing traffic from 2026-03-08 18:10:50.034550 to 2026-03-08 18:40:50.034550
+2026-03-08 18:40:50,041 - INFO - Retrieved 1073 rows from conn_log
+2026-03-08 18:40:50,064 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:50] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:50,095 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.638 interval=2.1s
+2026-03-08 18:40:50,122 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:50] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:50,156 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:50] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:50,565 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:50] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:50,697 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:50] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:50,706 - INFO - Analyzing traffic from 2026-03-08 18:10:50.706091 to 2026-03-08 18:40:50.706091
+2026-03-08 18:40:50,719 - INFO - Retrieved 1073 rows from conn_log
+2026-03-08 18:40:50,731 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:50] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:50,779 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.638 interval=2.1s
+2026-03-08 18:40:50,811 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:50] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:50,842 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:50] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:51,897 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:51] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:51,993 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:51] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:52,000 - INFO - Analyzing traffic from 2026-03-08 18:10:52.000319 to 2026-03-08 18:40:52.000319
+2026-03-08 18:40:52,007 - INFO - Retrieved 1072 rows from conn_log
+2026-03-08 18:40:52,031 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:52] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:52,059 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.638 interval=2.1s
+2026-03-08 18:40:52,090 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:52] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:52,114 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:52] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:52,602 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:52] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:52,693 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:52] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:52,702 - INFO - Analyzing traffic from 2026-03-08 18:10:52.702770 to 2026-03-08 18:40:52.702770
+2026-03-08 18:40:52,711 - INFO - Retrieved 1072 rows from conn_log
+2026-03-08 18:40:52,718 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:52] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:52,761 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.638 interval=2.1s
+2026-03-08 18:40:52,791 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:52] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:52,821 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:52] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:53,292 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:53] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:53,398 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:53,409 - INFO - Analyzing traffic from 2026-03-08 18:10:53.409119 to 2026-03-08 18:40:53.409119
+2026-03-08 18:40:53,420 - INFO - Retrieved 1070 rows from conn_log
+2026-03-08 18:40:53,420 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:53] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:53,468 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.631 interval=2.1s
+2026-03-08 18:40:53,493 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:53] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:53,521 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:53] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:53,909 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:53] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:53,996 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:54,007 - INFO - Analyzing traffic from 2026-03-08 18:10:54.007220 to 2026-03-08 18:40:54.007220
+2026-03-08 18:40:54,014 - INFO - Retrieved 1069 rows from conn_log
+2026-03-08 18:40:54,035 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:54,066 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.628 interval=2.1s
+2026-03-08 18:40:54,091 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:54] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:54,122 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:54] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:54,540 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:54] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:54,624 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:54] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:54,635 - INFO - Analyzing traffic from 2026-03-08 18:10:54.635920 to 2026-03-08 18:40:54.635920
+2026-03-08 18:40:54,641 - INFO - Retrieved 1069 rows from conn_log
+2026-03-08 18:40:54,646 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:54,689 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.628 interval=2.1s
+2026-03-08 18:40:54,721 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:54] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:54,757 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:54] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:55,267 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:55] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:55,356 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:55] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:55,365 - INFO - Analyzing traffic from 2026-03-08 18:10:55.365450 to 2026-03-08 18:40:55.365450
+2026-03-08 18:40:55,372 - INFO - Retrieved 1067 rows from conn_log
+2026-03-08 18:40:55,411 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:55] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:55,426 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.638 interval=2.1s
+2026-03-08 18:40:55,461 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:55] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:55,501 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:55] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:56,199 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:56] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:56,304 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:56,317 - INFO - Analyzing traffic from 2026-03-08 18:10:56.317037 to 2026-03-08 18:40:56.317037
+2026-03-08 18:40:56,328 - INFO - Retrieved 1065 rows from conn_log
+2026-03-08 18:40:56,329 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:56] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:56,372 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:56,404 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:56] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:56,426 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:56] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:56,860 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:56] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:56,995 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:56] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:57,005 - INFO - Analyzing traffic from 2026-03-08 18:10:57.005006 to 2026-03-08 18:40:57.005006
+2026-03-08 18:40:57,021 - INFO - Retrieved 1064 rows from conn_log
+2026-03-08 18:40:57,021 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:57] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:57,074 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.5s
+2026-03-08 18:40:57,102 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:57] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:57,128 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:57] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:58,089 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:58] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:58,252 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:58] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:58,259 - INFO - Analyzing traffic from 2026-03-08 18:10:58.259807 to 2026-03-08 18:40:58.259807
+2026-03-08 18:40:58,269 - INFO - Retrieved 1064 rows from conn_log
+2026-03-08 18:40:58,278 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:58] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:58,330 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.628 interval=2.1s
+2026-03-08 18:40:58,361 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:58] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:58,384 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:58] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:59,009 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:59,107 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:59,117 - INFO - Analyzing traffic from 2026-03-08 18:10:59.117021 to 2026-03-08 18:40:59.117021
+2026-03-08 18:40:59,125 - INFO - Retrieved 1064 rows from conn_log
+2026-03-08 18:40:59,133 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:59,178 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.628 interval=2.1s
+2026-03-08 18:40:59,207 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:59,239 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:40:59,708 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET / HTTP/1.1" 200 -
+2026-03-08 18:40:59,807 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:40:59,814 - INFO - Analyzing traffic from 2026-03-08 18:10:59.814694 to 2026-03-08 18:40:59.814694
+2026-03-08 18:40:59,823 - INFO - Retrieved 1065 rows from conn_log
+2026-03-08 18:40:59,848 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:40:59,877 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.628 interval=2.1s
+2026-03-08 18:40:59,913 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:40:59,944 - INFO - 127.0.0.1 - - [08/Mar/2026 18:40:59] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:00,449 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:00] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:00,542 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:00,552 - INFO - Analyzing traffic from 2026-03-08 18:11:00.552191 to 2026-03-08 18:41:00.552191
+2026-03-08 18:41:00,559 - INFO - Retrieved 1067 rows from conn_log
+2026-03-08 18:41:00,566 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:00] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:00,607 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.634 interval=2.5s
+2026-03-08 18:41:00,634 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:00] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:00,663 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:01,197 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:01] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:01,282 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:01] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:01,291 - INFO - Analyzing traffic from 2026-03-08 18:11:01.291741 to 2026-03-08 18:41:01.291741
+2026-03-08 18:41:01,299 - INFO - Retrieved 1067 rows from conn_log
+2026-03-08 18:41:01,319 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:01] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:01,352 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.634 interval=2.5s
+2026-03-08 18:41:01,375 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:01,406 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:01] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:02,049 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:02] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:02,148 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:02,160 - INFO - Analyzing traffic from 2026-03-08 18:11:02.159958 to 2026-03-08 18:41:02.159958
+2026-03-08 18:41:02,168 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:41:02,186 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:02] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:02,216 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.636 interval=2.1s
+2026-03-08 18:41:02,245 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:02,269 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:02] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:02,893 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:02] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:02,975 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:02] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:02,983 - INFO - Analyzing traffic from 2026-03-08 18:11:02.983706 to 2026-03-08 18:41:02.983706
+2026-03-08 18:41:02,995 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:41:03,001 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:03] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:03,044 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.636 interval=2.1s
+2026-03-08 18:41:03,073 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:03,097 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:03] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:04,252 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:04] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:04,363 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:04,373 - INFO - Analyzing traffic from 2026-03-08 18:11:04.373167 to 2026-03-08 18:41:04.373167
+2026-03-08 18:41:04,380 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:41:04,420 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:04,433 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.636 interval=2.1s
+2026-03-08 18:41:04,466 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:04,489 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:04] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:04,982 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:04] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:05,082 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:05,091 - INFO - Analyzing traffic from 2026-03-08 18:11:05.091672 to 2026-03-08 18:41:05.091672
+2026-03-08 18:41:05,100 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:41:05,107 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:05] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:05,153 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.636 interval=2.1s
+2026-03-08 18:41:05,182 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:05,213 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:05] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:06,217 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:06] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:06,322 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:06,331 - INFO - Analyzing traffic from 2026-03-08 18:11:06.331334 to 2026-03-08 18:41:06.331334
+2026-03-08 18:41:06,338 - INFO - Retrieved 1068 rows from conn_log
+2026-03-08 18:41:06,359 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:06] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:06,387 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.636 interval=2.1s
+2026-03-08 18:41:06,420 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:06,444 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:06] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:07,427 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:07] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:07,523 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:07,532 - INFO - Analyzing traffic from 2026-03-08 18:11:07.532118 to 2026-03-08 18:41:07.532118
+2026-03-08 18:41:07,538 - INFO - Retrieved 1069 rows from conn_log
+2026-03-08 18:41:07,561 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:07] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:07,592 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.636 interval=2.1s
+2026-03-08 18:41:07,626 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:07,652 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:07] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:08,098 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:08] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:08,202 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:08,213 - INFO - Analyzing traffic from 2026-03-08 18:11:08.213210 to 2026-03-08 18:41:08.213210
+2026-03-08 18:41:08,220 - INFO - Retrieved 1067 rows from conn_log
+2026-03-08 18:41:08,229 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:08] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:08,270 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.630 interval=2.1s
+2026-03-08 18:41:08,306 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:08,338 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:08] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:09,246 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:09] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:09,370 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:09] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:09,380 - INFO - Analyzing traffic from 2026-03-08 18:11:09.380654 to 2026-03-08 18:41:09.380654
+2026-03-08 18:41:09,388 - INFO - Retrieved 1065 rows from conn_log
+2026-03-08 18:41:09,413 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:09] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:09,436 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.634 interval=2.5s
+2026-03-08 18:41:09,463 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:09,516 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:09] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:10,628 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:10] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:10,721 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:10,730 - INFO - Analyzing traffic from 2026-03-08 18:11:10.730076 to 2026-03-08 18:41:10.730076
+2026-03-08 18:41:10,738 - INFO - Retrieved 1065 rows from conn_log
+2026-03-08 18:41:10,762 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:10] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:10,787 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.634 interval=2.5s
+2026-03-08 18:41:10,815 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:10] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:10,846 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:10] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:11,711 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:11] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:11,813 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:11,825 - INFO - Analyzing traffic from 2026-03-08 18:11:11.825303 to 2026-03-08 18:41:11.825303
+2026-03-08 18:41:11,833 - INFO - Retrieved 1063 rows from conn_log
+2026-03-08 18:41:11,859 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:11] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:11,881 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.634 interval=2.5s
+2026-03-08 18:41:11,910 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:11] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:11,942 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:11] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:12,497 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:12] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:12,589 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:12] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:12,597 - INFO - Analyzing traffic from 2026-03-08 18:11:12.597355 to 2026-03-08 18:41:12.597355
+2026-03-08 18:41:12,603 - INFO - Retrieved 1065 rows from conn_log
+2026-03-08 18:41:12,625 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:12] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:12,656 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.629 interval=2.1s
+2026-03-08 18:41:12,686 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:12] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:12,709 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:12] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:13,155 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:13] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:13,244 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:13,253 - INFO - Analyzing traffic from 2026-03-08 18:11:13.253869 to 2026-03-08 18:41:13.253869
+2026-03-08 18:41:13,265 - INFO - Retrieved 1065 rows from conn_log
+2026-03-08 18:41:13,272 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:13,312 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.629 interval=2.1s
+2026-03-08 18:41:13,346 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:13,386 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:13] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:13,791 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:13] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:13,910 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:13] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:13,924 - INFO - Analyzing traffic from 2026-03-08 18:11:13.924148 to 2026-03-08 18:41:13.924148
+2026-03-08 18:41:13,941 - INFO - Retrieved 1067 rows from conn_log
+2026-03-08 18:41:13,942 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:14,000 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.1s
+2026-03-08 18:41:14,036 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:14,065 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:14] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:14,449 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:14] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:14,557 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:14] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:14,571 - INFO - Analyzing traffic from 2026-03-08 18:11:14.571598 to 2026-03-08 18:41:14.571598
+2026-03-08 18:41:14,581 - INFO - Retrieved 1067 rows from conn_log
+2026-03-08 18:41:14,626 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:14,648 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.633 interval=2.1s
+2026-03-08 18:41:14,685 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:14,721 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:14] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:15,077 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:15,219 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:15,228 - INFO - Analyzing traffic from 2026-03-08 18:11:15.228049 to 2026-03-08 18:41:15.228049
+2026-03-08 18:41:15,235 - INFO - Retrieved 1069 rows from conn_log
+2026-03-08 18:41:15,262 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:15,283 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.625 interval=2.1s
+2026-03-08 18:41:15,315 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:15,355 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:15,683 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET / HTTP/1.1" 200 -
+2026-03-08 18:41:15,774 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:15,784 - INFO - Analyzing traffic from 2026-03-08 18:11:15.784643 to 2026-03-08 18:41:15.784643
+2026-03-08 18:41:15,798 - INFO - Retrieved 1071 rows from conn_log
+2026-03-08 18:41:15,799 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:41:15,845 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.634 interval=2.1s
+2026-03-08 18:41:15,879 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-08 18:41:15,913 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:15] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:39,646 - INFO - Triggering periodic analysis...
+2026-03-08 18:41:39,660 - INFO - Analyzing traffic from 2026-03-08 18:11:39.660353 to 2026-03-08 18:41:39.660353
+2026-03-08 18:41:39,669 - INFO - Retrieved 1072 rows from conn_log
+2026-03-08 18:41:39,711 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.622 interval=2.1s
+2026-03-08 18:41:39,747 - INFO - Checking for synchronized beaconing...
+2026-03-08 18:41:45,794 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:41:45,815 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:45] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:41:45,822 - INFO - 127.0.0.1 - - [08/Mar/2026 18:41:45] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:42:15,795 - INFO - 127.0.0.1 - - [08/Mar/2026 18:42:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:42:15,815 - INFO - 127.0.0.1 - - [08/Mar/2026 18:42:15] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:42:15,823 - INFO - 127.0.0.1 - - [08/Mar/2026 18:42:15] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:42:39,779 - INFO - Triggering periodic analysis...
+2026-03-08 18:42:39,792 - INFO - Analyzing traffic from 2026-03-08 18:12:39.792330 to 2026-03-08 18:42:39.792330
+2026-03-08 18:42:39,800 - INFO - Retrieved 1069 rows from conn_log
+2026-03-08 18:42:39,838 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.631 interval=2.5s
+2026-03-08 18:42:39,863 - INFO - Checking for synchronized beaconing...
+2026-03-08 18:42:45,796 - INFO - 127.0.0.1 - - [08/Mar/2026 18:42:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:42:45,811 - INFO - 127.0.0.1 - - [08/Mar/2026 18:42:45] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:42:45,818 - INFO - 127.0.0.1 - - [08/Mar/2026 18:42:45] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:43:15,802 - INFO - 127.0.0.1 - - [08/Mar/2026 18:43:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:43:15,818 - INFO - 127.0.0.1 - - [08/Mar/2026 18:43:15] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:43:15,823 - INFO - 127.0.0.1 - - [08/Mar/2026 18:43:15] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:43:39,885 - INFO - Triggering periodic analysis...
+2026-03-08 18:43:39,897 - INFO - Analyzing traffic from 2026-03-08 18:13:39.897020 to 2026-03-08 18:43:39.897020
+2026-03-08 18:43:39,904 - INFO - Retrieved 1069 rows from conn_log
+2026-03-08 18:43:39,939 - INFO - BEACON DETECTED: mac=08:00:27:e0:40:55 ip=192.168.56.30 p_score=0.630 interval=2.5s
+2026-03-08 18:43:39,964 - INFO - Checking for synchronized beaconing...
+2026-03-08 18:43:45,808 - INFO - 127.0.0.1 - - [08/Mar/2026 18:43:45] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:43:45,827 - INFO - 127.0.0.1 - - [08/Mar/2026 18:43:45] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:43:45,833 - INFO - 127.0.0.1 - - [08/Mar/2026 18:43:45] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:44:15,810 - INFO - 127.0.0.1 - - [08/Mar/2026 18:44:15] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-08 18:44:15,825 - INFO - 127.0.0.1 - - [08/Mar/2026 18:44:15] "GET /api/stats HTTP/1.1" 200 -
+2026-03-08 18:44:15,830 - INFO - 127.0.0.1 - - [08/Mar/2026 18:44:15] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-08 18:44:40,065 - INFO - Triggering periodic analysis...
+2026-03-08 18:44:40,109 - ERROR - Failed to connect to PG: connection to server at "localhost" (::1), port 5432 failed: FATAL:  the database system is shutting down
+
+2026-03-08 18:44:40,110 - INFO - Checking for synchronized beaconing...
