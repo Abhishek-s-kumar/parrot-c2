@@ -1,0 +1,7 @@
+datasets/
+opt/Malware-Project/BigDataset/
+*.pcap
+*.log
+logs/
+venv/
+output/
