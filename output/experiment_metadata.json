@@ -1,13 +1,1 @@
-{
-  "experiment_timestamp": "2026-03-07T18:58:48Z",
-  "scenarios": {
-    "scenario_test": {
-      "accuracy": 1.0,
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "fpr": 0.0,
-      "total_hosts": 2
-    }
-  }
-}
+{"experiment_timestamp": "2026-03-10T06:17:10Z", "scenarios": {}}
