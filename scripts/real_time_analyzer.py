@@ -1,4 +1,5 @@
 import os
+import time
 import sys
 import logging
 import configparser
@@ -49,17 +50,17 @@ class DetectionEngine:
         """Returns True if the IP is likely a host (not broadcast/multicast/unspecified)."""
         if not ip or ip in ['0.0.0.0', '255.255.255.255', '::', self.MONITOR_IP]:
             return False
-        
+
+        # FOR THIS DATASET/EXPERIMENT: Only analyze local hosts (192.168.x.x)
+        if not ip.startswith('192.168.'):
+            return False
+
         # IPv4 Multicast (224.0.0.0/4)
         if ip.startswith(('224.', '225.', '226.', '227.', '228.', '229.', '230.', '231.', '232.', '233.', '234.', '235.', '236.', '237.', '238.', '239.')):
             return False
-            
+
         # IPv6 Multicast (ff00::/8)
         if ip.lower().startswith('ff'):
-            return False
-            
-        # IPv4 Broadcast (common lab patterns)
-        if ip.endswith('.255'):
             return False
 
         return True
@@ -355,7 +356,7 @@ class DetectionEngine:
             # Pull all fields needed for behavioral analysis
             query = """
                 SELECT id_orig_h, id_resp_h, ts, orig_bytes, resp_bytes, duration,
-                       local_orig, orig_l2_addr, resp_l2_addr
+                       local_orig, local_resp, orig_l2_addr, resp_l2_addr
                 FROM conn_log 
                 WHERE ts >= %s AND ts <= %s
                 ORDER BY ts ASC
@@ -371,50 +372,55 @@ class DetectionEngine:
             results = []
             db_batch = []
             
-            import time as pytime
-            start_perf = pytime.time()
+            start_perf = time.time()
             
             # Compute host_mac and host_ip:
             # We prefer the ORIGINATOR side (orig_l2_addr / id_orig_h) as the primary host identity
             # because in a C2 scenario, the victim machine INITIATES the beacon callout.
-            # The local_orig field from Zeek should be used to determine this, but it's often
-            # NULL in practice. We use a robust fallback: prefer orig_l2_addr, fall back to resp_l2_addr.
-            df['host_mac'] = df['orig_l2_addr'].astype(str).replace({'nan': None, 'None': None, '-': None})
-            df['host_ip'] = df['id_orig_h'].astype(str).replace({'nan': None, 'None': None})
+            # Define a unified host_id: Use MAC if available, otherwise fall back to IP.
+            # We use the 'local_orig' and 'local_resp' flags from Zeek to determine the local host.
+            # Optimized host identity assignment using vector operations
+            def get_lo(v): return str(v).lower() in ('true', 't', '1')
+            def get_lr(v): return str(v).lower() in ('true', 't', '1')
             
-            # For rows where orig_l2_addr is missing, fall back to the responder side
-            resp_mac_col = df['resp_l2_addr'].astype(str).replace({'nan': None, 'None': None, '-': None})
-            resp_ip_col = df['id_resp_h'].astype(str).replace({'nan': None, 'None': None})
-            df['host_mac'] = df['host_mac'].fillna(resp_mac_col)
-            df['host_ip'] = df['host_ip'].fillna(resp_ip_col)
+            lo_mask = df['local_orig'].apply(get_lo)
+            lr_mask = df['local_resp'].apply(get_lr)
+            
+            # Case 1: Local Originator or (not local orig and not local resp)
+            mask1 = lo_mask | (~lo_mask & ~lr_mask)
+            # Case 2: Local Responder (only if not caught by Case 1)
+            mask2 = ~mask1 & lr_mask
+            
+            df['host_id'] = None
+            df['host_ip_clean'] = None
+            
+            # Prefer MAC if available, fallback to IP
+            df.loc[mask1, 'host_id'] = df.loc[mask1, 'orig_l2_addr'].where(df.loc[mask1, 'orig_l2_addr'].notna() & (df.loc[mask1, 'orig_l2_addr'] != '-'), df.loc[mask1, 'id_orig_h'])
+            df.loc[mask1, 'host_ip_clean'] = df.loc[mask1, 'id_orig_h']
+            
+            df.loc[mask2, 'host_id'] = df.loc[mask2, 'resp_l2_addr'].where(df.loc[mask2, 'resp_l2_addr'].notna() & (df.loc[mask2, 'resp_l2_addr'] != '-'), df.loc[mask2, 'id_resp_h'])
+            df.loc[mask2, 'host_ip_clean'] = df.loc[mask2, 'id_resp_h']
+            
+            df = df.dropna(subset=['host_id'])
+            df = df.dropna(subset=['host_id'])
+            
+            # Filter for valid local host IDs (exclude broadcast/multicast)
+            df = df[df['host_ip_clean'].apply(self._is_host_address)]
 
-            # Build MAC → primary display IP map (prefer IPv4 over IPv6)
-            mac_to_display_ip = {}
-            for _, row in df.iterrows():
-                mac = row['host_mac']
-                ip = row['host_ip']
-                if mac and mac not in ('nan', '-', 'None'):
-                    if mac not in mac_to_display_ip:
-                        mac_to_display_ip[mac] = ip
-                    elif '.' in ip and ':' in mac_to_display_ip.get(mac, ''):
-                        mac_to_display_ip[mac] = ip
+            if df.empty:
+                print(f"No valid local host traffic found in the last {window_minutes} minutes.")
+                return []
 
-            # Filter rows without a valid host MAC
-            df = df[~df['host_mac'].isin(['nan', '-', 'None', ''])]
-            df = df.dropna(subset=['host_mac'])
-
-            # Group natively by hardware MAC address
-            macs = df['host_mac'].unique()
+            # Group natively by the unified host_id
+            host_ids = df['host_id'].unique()
             
             hosts_analyzed = 0
-            for mac in macs:
-                host_df = df[df['host_mac'] == mac].copy()
+            for hid in host_ids:
+                host_df = df[df['host_id'] == hid].copy()
                 
-                # Get the primary IP for this MAC to check if it's a valid target
-                display_ip = mac_to_display_ip.get(mac, '')
-                if not self._is_host_address(display_ip):
-                    continue
-                    
+                # Use the most frequent IP for this host_id as the display IP
+                display_ip = host_df['host_ip_clean'].mode()[0] if not host_df['host_ip_clean'].empty else '0.0.0.0'
+                
                 hosts_analyzed += 1
                 
                 if len(host_df) < 3:  # Minimum samples needed for analysis
@@ -512,7 +518,7 @@ class DetectionEngine:
                 ))
 
                 if detected:
-                    logging.info(f"BEACON DETECTED: mac={mac} ip={display_ip} p_score={p_score:.3f} interval={interval_est:.1f}s")
+                    logging.info(f"BEACON DETECTED: host={hid} ip={display_ip} p_score={p_score:.3f} interval={interval_est:.1f}s")
                     try:
                         out_dir = "/home/user/Desktop/c2/c2/output"
                         os.makedirs(out_dir, exist_ok=True)
@@ -530,9 +536,10 @@ class DetectionEngine:
                         pd.DataFrame({'frequency': freqs, 'magnitude': fft_vals}).to_csv(os.path.join(out_dir, f'fft_{display_ip}.csv'), index=False)
                         
                         # Save Autocorrelation Data
-                        lags = range(1, min(len(sig), 50))
-                        corrs = [np.corrcoef(sig[:-lag], sig[lag:])[0, 1] for lag in lags if (len(sig)-lag) > 1]
-                        pd.DataFrame({'lag': list(lags)[:len(corrs)], 'correlation': corrs}).to_csv(os.path.join(out_dir, f'autocorr_{display_ip}.csv'), index=False)
+                        lags_list = list(range(1, min(len(sig), 50)))
+                        sig_arr = np.array(sig)
+                        corrs = [np.corrcoef(sig_arr[:-lag], sig_arr[lag:])[0, 1] for lag in lags_list if (len(sig_arr)-lag) > 1]
+                        pd.DataFrame({'lag': lags_list[:len(corrs)], 'correlation': corrs}).to_csv(os.path.join(out_dir, f'autocorr_{display_ip}.csv'), index=False)
                         
                     except Exception as e:
                         logging.warning(f"Could not save plotting data for {display_ip}: {e}")
@@ -552,27 +559,40 @@ class DetectionEngine:
                         r['detection_type'] = 'anomaly'
                         logging.info(f"ANOMALY DETECTED: host={r['host']} z_score={z:.3f} samples={r['samples']}")
 
-            # Phase 1.2: Execute Batch Insert
+            # Phase 1.2: Execute Batch Insert (Real-time update moved out of loop for performance, but committing now)
             if db_batch:
                 cursor = conn.cursor()
-                cursor.executemany("""
-                    INSERT INTO detection_results (
-                        host_ip, p_score, fft_peak, autocorr_max, entropy_norm, 
-                        sample_count, detected, beacon_interval_estimate, 
-                        signal_length, analysis_window, detection_type
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                """, [b + (results[i]['detection_type'],) for i, b in enumerate(db_batch)])
-                conn.commit()
-                cursor.close()
+                try:
+                    query = """
+                        INSERT INTO detection_results (
+                            host_ip, p_score, fft_peak, autocorr_max, entropy_norm, 
+                            sample_count, detected, beacon_interval_estimate, 
+                            signal_length, analysis_window, detection_type
+                        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    """
+                    # Ensure alignment between db_batch and results
+                    insert_data = []
+                    for i, b in enumerate(db_batch):
+                        dtype = results[i]['detection_type'] if i < len(results) else 'beacon'
+                        insert_data.append(b + (dtype,))
+                    
+                    cursor.executemany(query, insert_data)
+                    conn.commit()
+                except Exception as e:
+                    logging.error(f"Failed to insert detections: {e}")
+                    conn.rollback()
+                finally:
+                    cursor.close()
             
             # Improvement: Performance Logging (Task 6.2)
-            end_perf = pytime.time()
+            end_perf = time.time()
             perf_file = "/home/user/Desktop/c2/c2/output/performance_metrics.csv"
             exists = os.path.exists(perf_file)
             with open(perf_file, 'a') as f:
                 if not exists:
                     f.write("timestamp,hosts_analyzed,records_processed,analysis_time\n")
                 f.write(f"{datetime.now().isoformat()},{hosts_analyzed},{len(df)},{end_perf - start_perf:.4f}\n")
+            logging.info(f"Analysis finished: {hosts_analyzed} hosts analyzed in {end_perf - start_perf:.2f}s")
 
             return results
 
@@ -653,7 +673,7 @@ def main():
     db_config = config['database']
     
     engine = DetectionEngine(db_config)
-    results = engine.analyze_recent_traffic(window_minutes=args.window)
+    results = engine.analyze_recent_traffic(window_minutes=args.window) or []
     print(f"Analyzed {len(results)} hosts.")
 
 if __name__ == "__main__":

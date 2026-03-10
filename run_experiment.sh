@@ -42,15 +42,17 @@ fi
 for SCENARIO in "${AVAILABLE_SCENARIOS[@]}"; do
     echo "=== Processing Scenario: ${SCENARIO} ==="
 
-    # Define the compressed log file path (fallback to uncompressed if it exists)
-    LOG_FILE="${BASE_DIR}/datasets/iot23/${SCENARIO}/conn.log.labeled.gz"
+    # Define the log file path (prioritize slim, then gz, then raw)
+    LOG_FILE="${BASE_DIR}/datasets/iot23/${SCENARIO}/conn.log.labeled.slim"
     if [ ! -f "${LOG_FILE}" ]; then
-        LOG_FILE="${BASE_DIR}/datasets/iot23/${SCENARIO}/conn.log.labeled"
+        LOG_FILE="${BASE_DIR}/datasets/iot23/${SCENARIO}/conn.log.labeled.gz"
+        if [ ! -f "${LOG_FILE}" ]; then
+            LOG_FILE="${BASE_DIR}/datasets/iot23/${SCENARIO}/conn.log.labeled"
+        fi
     fi
 
     echo "--- [0/5] Cleaning database ---"
     psql -w -X -c "
-        TRUNCATE detection_results; 
         TRUNCATE ground_truth; 
         TRUNCATE conn_log;
         ALTER TABLE detection_results ADD COLUMN IF NOT EXISTS scenario VARCHAR(50);

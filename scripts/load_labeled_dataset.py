@@ -1,195 +1,180 @@
-import pandas as pd
-import psycopg2
-import configparser
-from datetime import datetime, timezone, timedelta
-import logging
-import sys
 import os
-import gzip
-import glob
+import sys
+import logging
+import configparser
+import psycopg2
+import pandas as pd
 import io
+import time
 import re
+import gzip
+from datetime import datetime, timezone
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def load_config(config_path):
+def map_ip_vec(ip_series):
+    # Normalize 192.168.x.y to 192.168.56.y
+    return ip_series.fillna('').astype(str).str.replace(r'^192\.168\.\d+\.', '192.168.56.', regex=True)
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python3 load_labeled_dataset.py <file_path> [--recent] [--limit <n>]")
+        return
+
+    file_path = sys.argv[1]
+    use_recent_ts = "--recent" in sys.argv
+    
+    limit = None
+    if "--limit" in sys.argv:
+        idx = sys.argv.index("--limit")
+        if idx + 1 < len(sys.argv):
+            limit = int(sys.argv[idx + 1])
+
     config = configparser.ConfigParser()
-    config.read(config_path)
-    return dict(config['database'])
+    config.read('/home/user/Desktop/c2/c2/config/database.conf')
+    db_config = config['database']
 
-def connect_db(db_config):
-    try:
-        params = db_config.copy()
-        if 'name' in params:
-            params['dbname'] = params.pop('name')
-        return psycopg2.connect(**params)
-    except Exception as e:
-        logging.error(f"Database connection failed: {e}")
-        return None
-
-def map_label(label_str):
-    if not label_str: return 0
-    label_str = label_str.lower()
-    if 'benign' in label_str:
-        return 0
-    if 'c&c' in label_str or 'malicious' in label_str or 'attack' in label_str or 'heartbeat' in label_str or 'port scan' in label_str:
-        return 1
-    return 0
-
-def map_ip(ip_str):
-    """Maps any 192.168.x.y to 192.168.56.y for environment alignment."""
-    if ip_str.startswith('192.168.'):
-        parts = ip_str.split('.')
-        if len(parts) == 4:
-            return f"192.168.56.{parts[3]}"
-    return ip_str
-
-def ingest_labeled_log(file_path, db_config):
-    conn = connect_db(db_config)
-    if not conn: return
-
+    conn = psycopg2.connect(
+        host=db_config['host'],
+        database=db_config['name'],
+        user=db_config['user'],
+        password=db_config['password']
+    )
     cursor = conn.cursor()
+
     try:
-        logging.info(f"Starting ingestion of {file_path}")
-        
-        # Detect field indices
-        opener = gzip.open if file_path.endswith('.gz') else open
-        mode = 'rt' if file_path.endswith('.gz') else 'r'
-        
-        fields_map = {}
-        # Pre-scan for header
-        with opener(file_path, mode) as f:
+        # 1. Parse Header
+        fields = []
+        with open(file_path, 'r') if not file_path.endswith('.gz') else gzip.open(file_path, 'rt') as f:
             for line in f:
-                if line.startswith('#fields'):
-                    fields = line.strip().split('\t')[1:]
-                    for i, field in enumerate(fields):
-                        fields_map[field.replace('.', '_')] = i
+                if line.startswith("#fields"):
+                    fields = re.split(r'\s+', line.strip())[1:]
+                    fields = [f.replace('.', '_').replace('-', '_') for f in fields]
                     break
         
-        if not fields_map:
-            logging.warning("No #fields header found, using default IoT-23 indices.")
-            fields_map = {
-                'ts': 0, 'uid': 1, 'id_orig_h': 2, 'id_orig_p': 3, 'id_resp_h': 4, 'id_resp_p': 5,
-                'proto': 6, 'service': 7, 'duration': 8, 'orig_bytes': 9, 'resp_bytes': 10,
-                'conn_state': 11, 'local_orig': 12, 'local_resp': 13, 'missed_bytes': 14,
-                'history': 15, 'orig_pkts': 16, 'orig_ip_bytes': 17, 'resp_pkts': 18,
-                'resp_ip_bytes': 19, 'label': 21
-            }
+        if not fields:
+            logging.error("Could not find #fields in header")
+            return
 
-        # Calculate offset if --recent
+        # 2. Determine Timestamp Offset
         offset = 0
-        if "--recent" in sys.argv:
-            max_ts = 0
-            with opener(file_path, mode) as f:
+        if use_recent_ts:
+            with open(file_path, 'r') if not file_path.endswith('.gz') else gzip.open(file_path, 'rt') as f:
                 for line in f:
-                    if not line.startswith('#'):
-                        parts = line.strip().split('\t')
-                        ts_idx = fields_map.get('ts')
-                        if ts_idx is not None and ts_idx < len(parts):
+                    if not line.startswith("#"):
+                        parts = line.split('\t')
+                        if len(parts) > 0:
                             try:
-                                ts = float(parts[ts_idx])
-                                if ts > max_ts: max_ts = ts
+                                max_ts = float(parts[0])
+                                # Start at now - 2 hours to ensure everything is in the past
+                                offset = datetime.now(timezone.utc).timestamp() - max_ts - 7200
+                                logging.info(f"Using offset: {offset}s (Start at T-2h)")
+                                break
                             except: pass
-            if max_ts > 0:
-                offset = datetime.now(timezone.utc).timestamp() - max_ts
-                logging.info(f"Timestamp offset: {offset}s")
 
-        # Optimized ingestion using COPY
-        f_conn = io.StringIO()
-        f_gt = io.StringIO()
-        count = 0
-        batch_size = 50000
+        # 3. Optimized Ingestion Loop
+        # Reduce chunk size for better visibility and memory management
+        batch_size = 200000 
+        reader = pd.read_csv(file_path, sep='\t', names=fields, comment='#', chunksize=batch_size, low_memory=False, na_values='-', engine='c')
         
-        with opener(file_path, mode) as f:
-            for line in f:
-                if line.startswith('#'): continue
-                
-                parts = line.rstrip('\n\r').split('\t')
-                
-                try:
-                    def get_f(name, default_val):
-                        idx = fields_map.get(name)
-                        if idx is not None and idx < len(parts):
-                            v = parts[idx]
-                            return v if v != '-' else default_val
-                        return default_val
+        total_count = 0
+        start_time = time.time()
+        
+        for df in reader:
+            # Drop unneeded columns early to save memory
+            # Keep only what we need for conn_log and ground_truth
+            needed_cols = ['ts', 'uid', 'id_orig_h', 'id_orig_p', 'id_resp_h', 'id_resp_p', 'proto', 'service', 'duration', 'orig_bytes', 'resp_bytes', 'conn_state', 'local_orig', 'local_resp', 'missed_bytes', 'history', 'orig_pkts', 'orig_ip_bytes', 'resp_pkts', 'resp_ip_bytes', 'label']
+            # Add tunnel_parents if label is missing (fix for Scenario 17)
+            if 'label' not in df.columns and 'tunnel_parents' in df.columns:
+                # In Scenario 17, the last columns are merged into tunnel_parents due to space-separator
+                # Split tunnel_parents into temp columns
+                # Typically: [tunnel_parents, label, detailed_label]
+                # data looks like: "-   Malicious   PartOf..."
+                split_df = df['tunnel_parents'].astype(str).str.split(r'\s+', expand=True, n=2)
+                df['tunnel_parents'] = split_df[0]
+                if split_df.shape[1] > 1:
+                    df['label'] = split_df[1]
+                if split_df.shape[1] > 2:
+                    df['detailed_label'] = split_df[2]
+            
+            # Filter columns we actually use
+            active_cols = [c for c in needed_cols if c in df.columns]
+            df = df[active_cols].copy()
 
-                    ts_raw = get_f('ts', None)
-                    if not ts_raw: continue
-                    ts_epoch = float(ts_raw) + offset
-                    ts_dt = datetime.fromtimestamp(ts_epoch, tz=timezone.utc).isoformat()
-                    
-                    uid = get_f('uid', '')
-                    orig_h = map_ip(get_f('id_orig_h', ''))
-                    orig_p = get_f('id_orig_p', '0')
-                    resp_h = map_ip(get_f('id_resp_h', ''))
-                    resp_p = get_f('id_resp_p', '0')
-                    proto = get_f('proto', '')
-                    service = get_f('service', '')
-                    duration = get_f('duration', '0.0')
-                    orig_bytes = get_f('orig_bytes', '0')
-                    resp_bytes = get_f('resp_bytes', '0')
-                    conn_state = get_f('conn_state', '')
-                    local_orig = 'TRUE' if get_f('local_orig', 'F') == 'T' else 'FALSE'
-                    local_resp = 'TRUE' if get_f('local_resp', 'F') == 'T' else 'FALSE'
-                    missed_bytes = get_f('missed_bytes', '0')
-                    history = get_f('history', '')
-                    orig_pkts = get_f('orig_pkts', '0')
-                    orig_ip_bytes = get_f('orig_ip_bytes', '0')
-                    resp_pkts = get_f('resp_pkts', '0')
-                    resp_ip_bytes = get_f('resp_ip_bytes', '0')
-                    
-                    label_str = get_f('label', 'Benign')
-                    label_val = map_label(label_str)
-                    
-                    # conn_log line (TSV format for COPY)
-                    f_conn.write(f"{ts_dt}\t{uid}\t{orig_h}\t{orig_p}\t{resp_h}\t{resp_p}\t{proto}\t{service}\t"
-                                f"{duration}\t{orig_bytes}\t{resp_bytes}\t{conn_state}\t{local_orig}\t"
-                                f"{local_resp}\t{missed_bytes}\t{history}\t{orig_pkts}\t{orig_ip_bytes}\t"
-                                f"{resp_pkts}\t{resp_ip_bytes}\t{ts_dt}\n")
-                    
-                    # ground_truth line
-                    f_gt.write(f"{orig_h}\t{ts_dt}\t{label_val}\n")
-                    
-                    count += 1
-                    if count % batch_size == 0:
-                        f_conn.seek(0)
-                        f_gt.seek(0)
-                        cursor.copy_from(f_conn, 'conn_log', columns=('ts', 'uid', 'id_orig_h', 'id_orig_p', 'id_resp_h', 'id_resp_p', 'proto', 'service', 'duration', 'orig_bytes', 'resp_bytes', 'conn_state', 'local_orig', 'local_resp', 'missed_bytes', 'history', 'orig_pkts', 'orig_ip_bytes', 'resp_pkts', 'resp_ip_bytes', 'imported_at'))
-                        cursor.copy_from(f_gt, 'ground_truth', columns=('host_ip', 'timestamp', 'label'))
-                        conn.commit()
-                        f_conn = io.StringIO()
-                        f_gt = io.StringIO()
-                        logging.info(f"Ingested {count} records...")
+            # Process timestamps
+            df['ts_numeric'] = pd.to_numeric(df['ts'], errors='coerce') + offset
+            df['ts_dt'] = pd.to_datetime(df['ts_numeric'], unit='s')
+            
+            # Normalize IPs
+            df['id_orig_h'] = map_ip_vec(df['id_orig_h'])
+            df['id_resp_h'] = map_ip_vec(df['id_resp_h'])
+            
+            # Standardize numerics
+            for col in ['orig_bytes', 'resp_bytes', 'id_orig_p', 'id_resp_p', 'missed_bytes', 'orig_pkts', 'orig_ip_bytes', 'resp_pkts', 'resp_ip_bytes']:
+                if col in df.columns:
+                    df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype('int64')
 
-                except Exception:
-                    continue
+            # Boolean logic
+            for col in ['local_orig', 'local_resp']:
+                if col in df.columns:
+                    df[col] = df[col].astype(str).str.upper().isin(['T', 'TRUE', '1'])
+                else:
+                    df[col] = False
 
-            # Final batch
-            if count % batch_size != 0:
-                f_conn.seek(0)
-                f_gt.seek(0)
-                cursor.copy_from(f_conn, 'conn_log', columns=('ts', 'uid', 'id_orig_h', 'id_orig_p', 'id_resp_h', 'id_resp_p', 'proto', 'service', 'duration', 'orig_bytes', 'resp_bytes', 'conn_state', 'local_orig', 'local_resp', 'missed_bytes', 'history', 'orig_pkts', 'orig_ip_bytes', 'resp_pkts', 'resp_ip_bytes', 'imported_at'))
-                cursor.copy_from(f_gt, 'ground_truth', columns=('host_ip', 'timestamp', 'label'))
-                conn.commit()
+            # Label mapping
+            if 'label' in df.columns:
+                df['label_val'] = df['label'].fillna('Benign').astype(str).str.lower().apply(
+                    lambda s: 1 if any(kw in s for kw in ['c&c', 'malicious', 'attack', 'heartbeat', 'port scan']) else 0
+                )
+            else:
+                df['label_val'] = 0
 
-        logging.info(f"Done. Successfully ingested {count} records.")
+            # COPY to conn_log
+            conn_cols = ['ts_dt', 'uid', 'id_orig_h', 'id_orig_p', 'id_resp_h', 'id_resp_p', 'proto', 'service', 'duration', 'orig_bytes', 'resp_bytes', 'conn_state', 'local_orig', 'local_resp', 'missed_bytes', 'history', 'orig_pkts', 'orig_ip_bytes', 'resp_pkts', 'resp_ip_bytes']
+            # Ensure all exist
+            for col in conn_cols:
+                if col not in df.columns: df[col] = '-' if df[col].dtype == object else 0
+            
+            # Map duration if missing
+            if 'duration' not in df.columns: df['duration'] = 0.0
+            else: df['duration'] = pd.to_numeric(df['duration'], errors='coerce').fillna(0.0)
+
+            conn_buffer = io.StringIO()
+            # Use a faster separator or just standard CSV
+            df[conn_cols].to_csv(conn_buffer, index=False, header=False, sep=',', na_rep='-')
+            conn_buffer.seek(0)
+            
+            copy_sql = f"COPY conn_log({','.join(['ts' if c == 'ts_dt' else c for c in conn_cols])}, imported_at) FROM STDIN WITH CSV"
+            # Add imported_at manually to buffer if needed, or just let DB handle it?
+            # Actually, I added imported_at in the COPY list but not in the CSV.
+            # I'll Fix the SQL to use CURRENT_TIMESTAMP default by omitting it or providing it.
+            copy_sql = f"COPY conn_log({','.join(['ts' if c == 'ts_dt' else c for c in conn_cols])}) FROM STDIN WITH CSV"
+            cursor.copy_expert(copy_sql, conn_buffer)
+
+            # COPY to ground_truth
+            gt_buffer = io.StringIO()
+            df[['id_orig_h', 'ts_dt', 'label_val']].to_csv(gt_buffer, index=False, header=False, sep=',')
+            gt_buffer.seek(0)
+            cursor.copy_expert("COPY ground_truth(host_ip, timestamp, label) FROM STDIN WITH CSV", gt_buffer)
+
+            conn.commit()
+            total_count = total_count + int(len(df))
+            logging.info(f"Ingested {total_count} records...")
+            
+            if limit is not None and total_count >= limit:
+                logging.info(f"Reached limit of {limit} records. Stopping.")
+                break
+
+        logging.info(f"Done. {total_count} records in {time.time() - start_time:.2f}s")
+        
     except Exception as e:
         conn.rollback()
-        logging.error(f"Failed: {e}")
+        logging.error(f"Error: {e}")
+        import traceback
+        traceback.print_exc()
     finally:
-        cursor.close()
         conn.close()
 
-def process_input(target_path, db_config):
-    if os.path.isdir(target_path):
-        paths = sorted(glob.glob(os.path.join(target_path, "*", "conn.log.labeled*")))
-        for p in paths: ingest_labeled_log(p, db_config)
-    else:
-        ingest_labeled_log(target_path, db_config)
-
 if __name__ == "__main__":
-    if len(sys.argv) < 2: sys.exit(1)
-    db_config = load_config('/home/user/Desktop/c2/c2/config/database.conf')
-    process_input(sys.argv[1], db_config)
+    main()

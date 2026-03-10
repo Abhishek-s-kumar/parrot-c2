@@ -31861,3 +31861,199 @@ LINE 6: ...S ('192.168.56.10', 0.3, 0.0, 0.0, 0.0, 6, false, np.float64...
 2026-03-10 08:36:37,480 - INFO - Retrieved 8265 rows from conn_log
 2026-03-10 08:41:42,600 - INFO - Analyzing traffic from 2026-03-03 08:41:42.600637 to 2026-03-10 08:41:42.600637
 2026-03-10 08:41:46,102 - INFO - Retrieved 1008748 rows from conn_log
+2026-03-10 09:48:36,478 - INFO - Analyzing traffic from 2026-03-03 09:48:36.477899 to 2026-03-10 09:48:36.477899
+2026-03-10 09:48:42,748 - INFO - Retrieved 1008748 rows from conn_log
+2026-03-10 09:48:54,481 - INFO - BEACON DETECTED: host=168.187.0.39 ip=168.187.0.39 p_score=0.689 interval=38336.8s
+2026-03-10 09:48:56,104 - INFO - BEACON DETECTED: host=4.68.110.10 ip=4.68.110.10 p_score=0.605 interval=6202.0s
+2026-03-10 09:49:12,146 - INFO - BEACON DETECTED: host=218.248.235.157 ip=218.248.235.157 p_score=0.642 interval=29496.4s
+2026-03-10 09:49:23,796 - INFO - BEACON DETECTED: host=138.44.192.81 ip=138.44.192.81 p_score=0.638 interval=27293.7s
+2026-03-10 09:49:27,374 - INFO - BEACON DETECTED: host=218.248.235.161 ip=218.248.235.161 p_score=0.617 interval=15187.0s
+2026-03-10 09:49:35,549 - INFO - BEACON DETECTED: host=150.199.51.29 ip=150.199.51.29 p_score=0.641 interval=41711.6s
+2026-03-10 09:49:41,160 - INFO - BEACON DETECTED: host=63.234.1.166 ip=63.234.1.166 p_score=0.611 interval=36594.6s
+2026-03-10 09:50:17,299 - INFO - BEACON DETECTED: host=185.18.150.110 ip=185.18.150.110 p_score=0.716 interval=30266.8s
+2026-03-10 09:50:23,878 - INFO - BEACON DETECTED: host=202.112.31.237 ip=202.112.31.237 p_score=0.653 interval=47627.2s
+2026-03-10 09:50:24,312 - INFO - BEACON DETECTED: host=188.228.183.2 ip=188.228.183.2 p_score=0.625 interval=25341.9s
+2026-03-10 09:51:13,193 - INFO - BEACON DETECTED: host=133.33.148.13 ip=133.33.148.13 p_score=0.667 interval=45778.0s
+2026-03-10 09:51:13,426 - INFO - BEACON DETECTED: host=14.141.63.225 ip=14.141.63.225 p_score=0.709 interval=36872.2s
+2026-03-10 09:51:33,534 - INFO - BEACON DETECTED: host=18.4.7.65 ip=18.4.7.65 p_score=0.637 interval=29358.5s
+2026-03-10 09:52:38,702 - INFO - BEACON DETECTED: host=202.112.27.1 ip=202.112.27.1 p_score=0.611 interval=29937.1s
+2026-03-10 09:52:47,958 - INFO - BEACON DETECTED: host=38.140.127.113 ip=38.140.127.113 p_score=0.616 interval=36232.0s
+2026-03-10 09:53:16,340 - INFO - BEACON DETECTED: host=200.69.177.54 ip=200.69.177.54 p_score=0.649 interval=24695.0s
+2026-03-10 09:54:02,786 - INFO - BEACON DETECTED: host=146.94.254.33 ip=146.94.254.33 p_score=0.627 interval=37849.1s
+2026-03-10 09:54:23,958 - INFO - BEACON DETECTED: host=148.61.0.117 ip=148.61.0.117 p_score=0.682 interval=29338.6s
+2026-03-10 09:56:39,075 - INFO - BEACON DETECTED: host=196.47.185.2 ip=196.47.185.2 p_score=0.675 interval=20355.4s
+2026-03-10 09:59:39,222 - INFO - BEACON DETECTED: host=202.73.96.25 ip=202.73.96.25 p_score=0.642 interval=13769.5s
+2026-03-10 10:06:59,580 - INFO - Analyzing traffic from 2026-03-03 10:06:59.580246 to 2026-03-10 10:06:59.580246
+2026-03-10 10:07:03,933 - INFO - Retrieved 1008748 rows from conn_log
+2026-03-10 10:13:44,458 - INFO - Analyzing traffic from 2026-03-03 10:13:44.458021 to 2026-03-10 10:13:44.458021
+2026-03-10 10:13:49,193 - INFO - Retrieved 1008748 rows from conn_log
+2026-03-10 10:14:21,860 - INFO - Analysis finished: 2 hosts analyzed in 32.67s
+2026-03-10 10:24:29,650 - INFO - Analyzing traffic from 2026-03-03 10:24:29.650776 to 2026-03-10 10:24:29.650776
+2026-03-10 10:24:34,208 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:25:18,265 - INFO - Analyzing traffic from 2026-03-03 10:25:18.264938 to 2026-03-10 10:25:18.264938
+2026-03-10 10:25:22,443 - INFO - Retrieved 1008748 rows from conn_log
+2026-03-10 10:25:57,347 - INFO - Analysis finished: 2 hosts analyzed in 34.90s
+2026-03-10 10:38:58,595 - INFO - Analyzing traffic from 2026-03-03 10:38:58.595780 to 2026-03-10 10:38:58.595780
+2026-03-10 10:38:59,864 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:03,680 - INFO - Analyzing traffic from 2026-03-03 10:39:03.680132 to 2026-03-10 10:39:03.680132
+2026-03-10 10:39:03,687 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:09,566 - INFO - Analyzing traffic from 2026-03-03 10:39:09.566380 to 2026-03-10 10:39:09.566380
+2026-03-10 10:39:09,573 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:12,958 - INFO - Analyzing traffic from 2026-03-03 10:39:12.958794 to 2026-03-10 10:39:12.958794
+2026-03-10 10:39:12,966 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:17,361 - INFO - Analyzing traffic from 2026-03-03 10:39:17.361821 to 2026-03-10 10:39:17.361821
+2026-03-10 10:39:17,402 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:21,417 - INFO - Analyzing traffic from 2026-03-03 10:39:21.417341 to 2026-03-10 10:39:21.417341
+2026-03-10 10:39:21,426 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:26,375 - INFO - Analyzing traffic from 2026-03-03 10:39:26.374967 to 2026-03-10 10:39:26.374967
+2026-03-10 10:39:26,387 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:29,670 - INFO - Analyzing traffic from 2026-03-03 10:39:29.670521 to 2026-03-10 10:39:29.670521
+2026-03-10 10:39:29,677 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:34,116 - INFO - Analyzing traffic from 2026-03-03 10:39:34.116409 to 2026-03-10 10:39:34.116409
+2026-03-10 10:39:34,122 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:38,854 - INFO - Analyzing traffic from 2026-03-03 10:39:38.853960 to 2026-03-10 10:39:38.853960
+2026-03-10 10:39:38,863 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:43,804 - INFO - Analyzing traffic from 2026-03-03 10:39:43.804113 to 2026-03-10 10:39:43.804113
+2026-03-10 10:39:43,810 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:47,081 - INFO - Analyzing traffic from 2026-03-03 10:39:47.081132 to 2026-03-10 10:39:47.081132
+2026-03-10 10:39:47,088 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:51,301 - INFO - Analyzing traffic from 2026-03-03 10:39:51.301202 to 2026-03-10 10:39:51.301202
+2026-03-10 10:39:51,307 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:39:58,101 - INFO - Analyzing traffic from 2026-03-03 10:39:58.101085 to 2026-03-10 10:39:58.101085
+2026-03-10 10:39:58,108 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:01,897 - INFO - Analyzing traffic from 2026-03-03 10:40:01.897039 to 2026-03-10 10:40:01.897039
+2026-03-10 10:40:01,905 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:07,989 - INFO - Analyzing traffic from 2026-03-03 10:40:07.989765 to 2026-03-10 10:40:07.989765
+2026-03-10 10:40:07,999 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:14,940 - INFO - Analyzing traffic from 2026-03-03 10:40:14.940802 to 2026-03-10 10:40:14.940802
+2026-03-10 10:40:14,954 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:19,124 - INFO - Analyzing traffic from 2026-03-03 10:40:19.124089 to 2026-03-10 10:40:19.124089
+2026-03-10 10:40:19,133 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:26,251 - INFO - Analyzing traffic from 2026-03-03 10:40:26.250938 to 2026-03-10 10:40:26.250938
+2026-03-10 10:40:26,257 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:34,541 - INFO - Analyzing traffic from 2026-03-03 10:40:34.541700 to 2026-03-10 10:40:34.541700
+2026-03-10 10:40:34,549 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:38,058 - INFO - Analyzing traffic from 2026-03-03 10:40:38.058367 to 2026-03-10 10:40:38.058367
+2026-03-10 10:40:38,066 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:42,140 - INFO - Analyzing traffic from 2026-03-03 10:40:42.140002 to 2026-03-10 10:40:42.140002
+2026-03-10 10:40:42,154 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:50,880 - INFO - Analyzing traffic from 2026-03-03 10:40:50.880209 to 2026-03-10 10:40:50.880209
+2026-03-10 10:40:50,915 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:40:58,487 - INFO - Analyzing traffic from 2026-03-03 10:40:58.487778 to 2026-03-10 10:40:58.487778
+2026-03-10 10:40:58,494 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:07,485 - INFO - Analyzing traffic from 2026-03-03 10:41:07.485790 to 2026-03-10 10:41:07.485790
+2026-03-10 10:41:07,524 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:10,777 - INFO - Analyzing traffic from 2026-03-03 10:41:10.777159 to 2026-03-10 10:41:10.777159
+2026-03-10 10:41:10,784 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:14,337 - INFO - Analyzing traffic from 2026-03-03 10:41:14.337294 to 2026-03-10 10:41:14.337294
+2026-03-10 10:41:14,344 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:20,132 - INFO - Analyzing traffic from 2026-03-03 10:41:20.132478 to 2026-03-10 10:41:20.132478
+2026-03-10 10:41:20,142 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:27,504 - INFO - Analyzing traffic from 2026-03-03 10:41:27.504090 to 2026-03-10 10:41:27.504090
+2026-03-10 10:41:27,511 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:30,967 - INFO - Analyzing traffic from 2026-03-03 10:41:30.967606 to 2026-03-10 10:41:30.967606
+2026-03-10 10:41:30,973 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:37,833 - INFO - Analyzing traffic from 2026-03-03 10:41:37.833338 to 2026-03-10 10:41:37.833338
+2026-03-10 10:41:37,839 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:44,484 - INFO - Analyzing traffic from 2026-03-03 10:41:44.484529 to 2026-03-10 10:41:44.484529
+2026-03-10 10:41:44,491 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:52,481 - INFO - Analyzing traffic from 2026-03-03 10:41:52.481868 to 2026-03-10 10:41:52.481868
+2026-03-10 10:41:52,488 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:55,787 - INFO - Analyzing traffic from 2026-03-03 10:41:55.787096 to 2026-03-10 10:41:55.787096
+2026-03-10 10:41:55,799 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:41:59,156 - INFO - Analyzing traffic from 2026-03-03 10:41:59.156456 to 2026-03-10 10:41:59.156456
+2026-03-10 10:41:59,197 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 10:44:38,307 - INFO - Analyzing traffic from 2026-03-03 10:44:38.307353 to 2026-03-10 10:44:38.307353
+2026-03-10 10:44:38,320 - INFO - Retrieved 127 rows from conn_log
+2026-03-10 10:44:38,320 - ERROR - Error during analysis: 'local_resp'
+2026-03-10 10:47:38,971 - INFO - Analyzing traffic from 2026-03-03 10:47:38.970924 to 2026-03-10 10:47:38.970924
+2026-03-10 10:47:38,991 - INFO - Retrieved 121 rows from conn_log
+2026-03-10 10:47:39,021 - INFO - Analysis finished: 2 hosts analyzed in 0.03s
+2026-03-10 10:51:50,184 - INFO - Analyzing traffic from 2026-03-03 10:51:50.184528 to 2026-03-10 10:51:50.184528
+2026-03-10 10:51:50,240 - INFO - Retrieved 9902 rows from conn_log
+2026-03-10 10:51:50,313 - INFO - Analysis finished: 2 hosts analyzed in 0.07s
+2026-03-10 10:56:21,848 - INFO - Analyzing traffic from 2026-03-10 09:56:21.848548 to 2026-03-10 10:56:21.848548
+2026-03-10 10:57:03,544 - INFO - Retrieved 2278112 rows from conn_log
+2026-03-10 10:57:21,844 - INFO - Analysis finished: 2 hosts analyzed in 18.22s
+2026-03-10 11:07:24,506 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-03-10 11:07:24,506 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-10 11:08:27,519 - INFO - Analyzing traffic from 2026-03-10 10:08:27.519503 to 2026-03-10 11:08:27.519503
+2026-03-10 11:08:48,037 - INFO - Retrieved 2277944 rows from conn_log
+2026-03-10 11:09:14,545 - INFO - Analysis finished: 1 hosts analyzed in 26.43s
+2026-03-10 11:10:21,386 - INFO - Analyzing traffic from 2026-03-10 10:10:21.386297 to 2026-03-10 11:10:21.386297
+2026-03-10 11:10:34,743 - INFO - Retrieved 2277761 rows from conn_log
+2026-03-10 11:10:47,063 - INFO - Analysis finished: 1 hosts analyzed in 12.32s
+2026-03-10 11:12:09,902 - INFO - Analyzing traffic from 2026-03-10 10:12:09.902738 to 2026-03-10 11:12:09.902738
+2026-03-10 11:12:24,764 - INFO - Retrieved 2278228 rows from conn_log
+2026-03-10 11:12:45,168 - INFO - Analysis finished: 1 hosts analyzed in 20.02s
+2026-03-10 11:13:58,296 - INFO - Analyzing traffic from 2026-03-10 10:13:58.295922 to 2026-03-10 11:13:58.295922
+2026-03-10 11:14:17,812 - INFO - Retrieved 2278373 rows from conn_log
+2026-03-10 11:14:36,496 - INFO - Analysis finished: 1 hosts analyzed in 18.66s
+2026-03-10 11:18:10,384 - INFO - Analyzing traffic from 2026-03-03 11:18:10.384757 to 2026-03-10 11:18:10.384757
+2026-03-10 11:18:10,422 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:14,096 - INFO - Analyzing traffic from 2026-03-03 11:18:14.096207 to 2026-03-10 11:18:14.096207
+2026-03-10 11:18:14,104 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:17,723 - INFO - Analyzing traffic from 2026-03-03 11:18:17.723595 to 2026-03-10 11:18:17.723595
+2026-03-10 11:18:17,731 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:21,385 - INFO - Analyzing traffic from 2026-03-03 11:18:21.385697 to 2026-03-10 11:18:21.385697
+2026-03-10 11:18:21,393 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:24,719 - INFO - Analyzing traffic from 2026-03-03 11:18:24.719079 to 2026-03-10 11:18:24.719079
+2026-03-10 11:18:24,726 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:27,847 - INFO - Analyzing traffic from 2026-03-03 11:18:27.847538 to 2026-03-10 11:18:27.847538
+2026-03-10 11:18:27,854 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:31,204 - INFO - Analyzing traffic from 2026-03-03 11:18:31.203979 to 2026-03-10 11:18:31.203979
+2026-03-10 11:18:31,210 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:34,506 - INFO - Analyzing traffic from 2026-03-03 11:18:34.506225 to 2026-03-10 11:18:34.506225
+2026-03-10 11:18:34,517 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:37,389 - INFO - Analyzing traffic from 2026-03-03 11:18:37.389819 to 2026-03-10 11:18:37.389819
+2026-03-10 11:18:37,396 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:40,333 - INFO - Analyzing traffic from 2026-03-03 11:18:40.332861 to 2026-03-10 11:18:40.332861
+2026-03-10 11:18:40,345 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:43,701 - INFO - Analyzing traffic from 2026-03-03 11:18:43.701847 to 2026-03-10 11:18:43.701847
+2026-03-10 11:18:43,708 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:46,616 - INFO - Analyzing traffic from 2026-03-03 11:18:46.616422 to 2026-03-10 11:18:46.616422
+2026-03-10 11:18:46,622 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:49,695 - INFO - Analyzing traffic from 2026-03-03 11:18:49.694931 to 2026-03-10 11:18:49.694931
+2026-03-10 11:18:49,703 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:53,456 - INFO - Analyzing traffic from 2026-03-03 11:18:53.456134 to 2026-03-10 11:18:53.456134
+2026-03-10 11:18:53,463 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:18:57,445 - INFO - Analyzing traffic from 2026-03-03 11:18:57.444977 to 2026-03-10 11:18:57.444977
+2026-03-10 11:18:57,452 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:19:01,093 - INFO - Analyzing traffic from 2026-03-03 11:19:01.093660 to 2026-03-10 11:19:01.093660
+2026-03-10 11:19:01,103 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:19:04,838 - INFO - Analyzing traffic from 2026-03-03 11:19:04.837897 to 2026-03-10 11:19:04.837897
+2026-03-10 11:19:04,844 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:19:08,416 - INFO - Analyzing traffic from 2026-03-03 11:19:08.416839 to 2026-03-10 11:19:08.416839
+2026-03-10 11:19:08,424 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:19:12,201 - INFO - Analyzing traffic from 2026-03-03 11:19:12.201692 to 2026-03-10 11:19:12.201692
+2026-03-10 11:19:12,209 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:19:16,681 - INFO - Analyzing traffic from 2026-03-03 11:19:16.681481 to 2026-03-10 11:19:16.681481
+2026-03-10 11:19:16,696 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:19:20,469 - INFO - Analyzing traffic from 2026-03-03 11:19:20.469371 to 2026-03-10 11:19:20.469371
+2026-03-10 11:19:20,476 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:19:23,877 - INFO - Analyzing traffic from 2026-03-03 11:19:23.877142 to 2026-03-10 11:19:23.877142
+2026-03-10 11:19:23,883 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 11:21:05,786 - INFO - Analyzing traffic from 2026-03-03 11:21:05.786633 to 2026-03-10 11:21:05.786633
+2026-03-10 11:21:05,856 - INFO - Retrieved 19711 rows from conn_log
+2026-03-10 11:21:05,981 - INFO - Analysis finished: 2 hosts analyzed in 0.12s
+2026-03-10 11:26:41,895 - INFO - Analyzing traffic from 2026-03-03 11:26:41.894717 to 2026-03-10 11:26:41.894717
+2026-03-10 11:26:58,842 - INFO - Retrieved 3000000 rows from conn_log
+2026-03-10 11:27:19,231 - INFO - Analysis finished: 2 hosts analyzed in 20.35s
+2026-03-10 11:28:08,159 - INFO - Analyzing traffic from 2026-03-03 11:28:08.158910 to 2026-03-10 11:28:08.158910
+2026-03-10 11:28:08,239 - INFO - Retrieved 19648 rows from conn_log
+2026-03-10 11:28:08,337 - INFO - Analysis finished: 2 hosts analyzed in 0.10s
+2026-03-10 11:29:19,079 - INFO - Analyzing traffic from 2026-03-03 11:29:19.079031 to 2026-03-10 11:29:19.079031
+2026-03-10 11:29:24,675 - INFO - Retrieved 999992 rows from conn_log
+2026-03-10 11:29:28,654 - INFO - Analysis finished: 2 hosts analyzed in 3.98s
+2026-03-10 11:29:34,928 - INFO - Analyzing traffic from 2026-03-03 11:29:34.928659 to 2026-03-10 11:29:34.928659
+2026-03-10 11:29:34,937 - INFO - Retrieved 583 rows from conn_log
+2026-03-10 11:29:34,964 - INFO - Analysis finished: 2 hosts analyzed in 0.03s
+2026-03-10 11:29:38,936 - INFO - Analyzing traffic from 2026-03-03 11:29:38.936423 to 2026-03-10 11:29:38.936423
+2026-03-10 11:29:38,944 - INFO - Retrieved 538 rows from conn_log
+2026-03-10 11:29:38,971 - INFO - Analysis finished: 2 hosts analyzed in 0.03s
+2026-03-10 11:29:47,312 - INFO - Analyzing traffic from 2026-03-03 11:29:47.312177 to 2026-03-10 11:29:47.312177
+2026-03-10 11:29:47,343 - INFO - Retrieved 8462 rows from conn_log
+2026-03-10 11:29:47,383 - INFO - Analysis finished: 2 hosts analyzed in 0.04s
