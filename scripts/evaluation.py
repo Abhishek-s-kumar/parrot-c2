@@ -30,15 +30,14 @@ class EvaluationModule:
         try:
             cursor = conn.cursor()
             
-            # Use scenario filter if provided and column exists (will be populated by run_experiment.sh)
+            # Use scenario filter if provided and column exists
             filter_clause = ""
             params = None
             if self.scenario_name != "unknown":
-                 # Check if column exists first to allow backwards compatibility
                  cursor.execute("SELECT column_name FROM information_schema.columns WHERE table_name='detection_results' AND column_name='scenario'")
                  if cursor.fetchone():
-                     filter_clause = "WHERE scenario = %(scenario)s"
-                     params = {'scenario': self.scenario_name}
+                     filter_clause = "WHERE scenario = %(target_scenario)s"
+                     params = {'target_scenario': self.scenario_name}
             
             cursor.execute(f"SELECT COUNT(*) FROM detection_results {filter_clause}", params)
             dr_count = cursor.fetchone()[0]
@@ -47,6 +46,8 @@ class EvaluationModule:
             cursor.close()
 
             # Include the scenario filter in the main evaluation query
+            # We must be careful to handle the join prefix
+            query_filter = filter_clause.replace('WHERE scenario', 'WHERE dr.scenario')
             query = f"""
                 SELECT dr.host_ip, dr.p_score, dr.detected, gt.actual_label
                 FROM detection_results dr
@@ -55,7 +56,7 @@ class EvaluationModule:
                     FROM ground_truth
                     GROUP BY 1
                 ) gt ON dr.host_ip = gt.host_ip
-                {filter_clause.replace('scenario', 'dr.scenario')}
+                {query_filter}
             """
             df = pd.read_sql_query(query, conn, params=params)
             

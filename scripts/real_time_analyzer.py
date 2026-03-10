@@ -643,12 +643,17 @@ class DetectionEngine:
             conn.close()
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description='C2 Detection Engine')
+    parser.add_argument('--window', type=int, default=60, help='Analysis window in minutes')
+    args = parser.parse_args()
+    
     config = configparser.ConfigParser()
     config.read('/home/user/Desktop/c2/c2/config/database.conf')
     db_config = config['database']
     
     engine = DetectionEngine(db_config)
-    results = engine.analyze_recent_traffic()
+    results = engine.analyze_recent_traffic(window_minutes=args.window)
     print(f"Analyzed {len(results)} hosts.")
 
 if __name__ == "__main__":

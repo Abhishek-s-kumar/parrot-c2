@@ -31851,3 +31851,13 @@ LINE 6: ...S ('192.168.56.10', 0.3, 0.0, 0.0, 0.0, 6, false, np.float64...
 2026-03-10 05:51:08,052 - INFO - Retrieved 0 rows from conn_log
 2026-03-10 05:52:16,000 - INFO - Analyzing traffic from 2026-03-10 04:52:16.000338 to 2026-03-10 05:52:16.000338
 2026-03-10 05:52:16,043 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 08:28:58,760 - INFO - Analyzing traffic from 2026-03-10 07:28:58.760207 to 2026-03-10 08:28:58.760207
+2026-03-10 08:28:58,804 - INFO - Retrieved 8265 rows from conn_log
+2026-03-10 08:29:52,243 - INFO - Analyzing traffic from 2026-03-10 07:29:52.243119 to 2026-03-10 08:29:52.243119
+2026-03-10 08:29:52,328 - INFO - Retrieved 8265 rows from conn_log
+2026-03-10 08:33:08,411 - INFO - Analyzing traffic from 2026-03-10 07:33:08.411774 to 2026-03-10 08:33:08.411774
+2026-03-10 08:33:08,463 - INFO - Retrieved 8265 rows from conn_log
+2026-03-10 08:36:37,447 - INFO - Analyzing traffic from 2026-03-10 07:36:37.447536 to 2026-03-10 08:36:37.447536
+2026-03-10 08:36:37,480 - INFO - Retrieved 8265 rows from conn_log
+2026-03-10 08:41:42,600 - INFO - Analyzing traffic from 2026-03-03 08:41:42.600637 to 2026-03-10 08:41:42.600637
+2026-03-10 08:41:46,102 - INFO - Retrieved 1008748 rows from conn_log
