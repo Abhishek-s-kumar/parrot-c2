@@ -1,21 +1,21 @@
 {
-  "experiment_timestamp": "2026-03-10T11:27:28Z",
+  "experiment_timestamp": "2026-03-10T15:02:32Z",
   "scenarios": {
     "scenario_1": {
-      "accuracy": 1.0,
+      "accuracy": 0.9814814814814815,
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0,
-      "fpr": 0.0,
-      "total_hosts": 2
+      "fpr": 0.018518518518518517,
+      "total_hosts": 54
     },
     "scenario_17": {
-      "accuracy": 1.0,
+      "accuracy": 0.6666666666666666,
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0,
-      "fpr": 0.0,
-      "total_hosts": 1
+      "fpr": 0.3333333333333333,
+      "total_hosts": 3
     },
     "scenario_20": {
       "accuracy": 1.0,
@@ -23,7 +23,7 @@
       "recall": 0.0,
       "f1": 0.0,
       "fpr": 0.0,
-      "total_hosts": 1
+      "total_hosts": 3
     },
     "scenario_21": {
       "accuracy": 1.0,
@@ -31,7 +31,7 @@
       "recall": 0.0,
       "f1": 0.0,
       "fpr": 0.0,
-      "total_hosts": 1
+      "total_hosts": 5
     },
     "scenario_3": {
       "accuracy": 1.0,
@@ -39,7 +39,7 @@
       "recall": 0.0,
       "f1": 0.0,
       "fpr": 0.0,
-      "total_hosts": 1
+      "total_hosts": 3
     }
   }
 }

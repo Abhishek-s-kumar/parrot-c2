@@ -12256,3 +12256,18 @@ connection to server at "localhost" (::1), port 5432 failed: FATAL:  password au
 2026-03-08 18:44:34,575 - INFO - Imported 2 records from conn.log
 2026-03-08 18:44:35,658 - INFO - Imported 2 records from conn.log
 2026-03-08 18:44:37,667 - INFO - Imported 2 records from conn.log
+2026-03-10 14:05:09,794 - INFO - Connected to PostgreSQL
+2026-03-10 14:05:09,942 - INFO - Imported 10 records from conn.log
+2026-03-10 14:05:09,945 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-03-10 14:11:24,242 - INFO - Connected to PostgreSQL
+2026-03-10 14:11:24,321 - INFO - Imported 10 records from conn.log
+2026-03-10 14:11:24,324 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-03-10 14:36:22,652 - INFO - Connected to PostgreSQL
+2026-03-10 14:36:22,695 - INFO - Imported 10 records from conn.log
+2026-03-10 14:36:22,696 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-03-10 14:40:50,878 - INFO - Connected to PostgreSQL
+2026-03-10 14:40:50,931 - INFO - Imported 10 records from conn.log
+2026-03-10 14:40:50,934 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-03-10 15:00:42,879 - INFO - Connected to PostgreSQL
+2026-03-10 15:00:42,973 - INFO - Started Monitoring Zeek logs at /home/user/Desktop/c2/c2/logs/zeek/conn.log
+2026-03-10 15:01:34,926 - INFO - Imported 9 records from conn.log

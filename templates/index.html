@@ -175,19 +175,7 @@
     <div class="container">
         <div class="grid-main">
             <!-- Top Row Metrics -->
-            <div class="card col-4">
-                <div class="card-title">Detection Score Trends</div>
-                <div class="chart-container">
-                    <canvas id="trendChart"></canvas>
-                </div>
-            </div>
-            <div class="card col-4">
-                <div class="card-title">Interval Distribution (s)</div>
-                <div class="chart-container">
-                    <canvas id="intervalChart"></canvas>
-                </div>
-            </div>
-            <div class="card col-4">
+            <div class="card col-12">
                 <div class="card-title">Top Malicious Hosts</div>
                 <div class="chart-container">
                     <canvas id="hostChart"></canvas>
@@ -229,23 +217,9 @@
     </div>
 
     <script>
-        let trendChart, intervalChart, hostChart;
+        let hostChart;
 
         function initCharts() {
-            const ctxT = document.getElementById('trendChart').getContext('2d');
-            trendChart = new Chart(ctxT, {
-                type: 'line',
-                data: { labels: [], datasets: [{ label: 'Detections', data: [], borderColor: '#58a6ff', tension: 0.3 }] },
-                options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } }
-            });
-
-            const ctxI = document.getElementById('intervalChart').getContext('2d');
-            intervalChart = new Chart(ctxI, {
-                type: 'bar',
-                data: { labels: [], datasets: [{ label: 'Hosts', data: [], backgroundColor: '#3fb950' }] },
-                options: { maintainAspectRatio: false, plugins: { legend: { display: false } } }
-            });
-
             const ctxH = document.getElementById('hostChart').getContext('2d');
             hostChart = new Chart(ctxH, {
                 type: 'doughnut',
@@ -259,15 +233,6 @@
                 const res = await fetch('/api/stats');
                 const data = await res.json();
 
-                // Update Trend
-                trendChart.data.labels = data.trends.map(t => new Date(t.hour).getHours() + ':00');
-                trendChart.data.datasets[0].data = data.trends.map(t => t.count);
-                trendChart.update();
-
-                // Update Intervals
-                intervalChart.data.labels = data.intervals.map(i => i.bucket + 's');
-                intervalChart.data.datasets[0].data = data.intervals.map(i => i.count);
-                intervalChart.update();
 
                 // Update Hosts
                 hostChart.data.labels = data.top_hosts.map(h => h.host.substring(0, 15));

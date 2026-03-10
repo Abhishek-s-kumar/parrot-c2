@@ -32057,3 +32057,852 @@ LINE 6: ...S ('192.168.56.10', 0.3, 0.0, 0.0, 0.0, 6, false, np.float64...
 2026-03-10 11:29:47,312 - INFO - Analyzing traffic from 2026-03-03 11:29:47.312177 to 2026-03-10 11:29:47.312177
 2026-03-10 11:29:47,343 - INFO - Retrieved 8462 rows from conn_log
 2026-03-10 11:29:47,383 - INFO - Analysis finished: 2 hosts analyzed in 0.04s
+2026-03-10 14:05:12,291 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-03-10 14:05:12,292 - INFO - Triggering periodic analysis...
+2026-03-10 14:05:12,301 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-03-10 14:05:12,302 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-10 14:05:12,305 - INFO - Analyzing traffic from 2026-03-10 13:35:12.305497 to 2026-03-10 14:05:12.305497
+2026-03-10 14:05:12,555 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:05:12,555 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:05:22,209 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:22] "GET / HTTP/1.1" 200 -
+2026-03-10 14:05:23,099 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:23] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:05:23,113 - INFO - Analyzing traffic from 2026-03-10 13:35:23.113847 to 2026-03-10 14:05:23.113847
+2026-03-10 14:05:23,912 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:05:23,916 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:23] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:05:23,975 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:23] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:05:24,097 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-10 14:05:28,928 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:28] "GET / HTTP/1.1" 200 -
+2026-03-10 14:05:29,259 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:05:29,269 - INFO - Analyzing traffic from 2026-03-10 13:35:29.269368 to 2026-03-10 14:05:29.269368
+2026-03-10 14:05:29,664 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:05:29,665 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:29] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:05:29,700 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:29] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:05:30,436 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:30] "GET / HTTP/1.1" 200 -
+2026-03-10 14:05:30,802 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:05:30,817 - INFO - Analyzing traffic from 2026-03-10 13:35:30.817630 to 2026-03-10 14:05:30.817630
+2026-03-10 14:05:31,050 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:05:31,050 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:31] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:05:31,151 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:31] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:05:33,269 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:33] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:05:36,730 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:36] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:05:37,885 - INFO - 127.0.0.1 - - [10/Mar/2026 14:05:37] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:06:00,833 - INFO - 127.0.0.1 - - [10/Mar/2026 14:06:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:06:00,849 - INFO - 127.0.0.1 - - [10/Mar/2026 14:06:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:06:08,995 - INFO - 127.0.0.1 - - [10/Mar/2026 14:06:08] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:06:12,660 - INFO - Triggering periodic analysis...
+2026-03-10 14:06:12,684 - INFO - Analyzing traffic from 2026-03-10 13:36:12.678566 to 2026-03-10 14:06:12.678566
+2026-03-10 14:06:12,717 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:06:12,718 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:06:30,841 - INFO - 127.0.0.1 - - [10/Mar/2026 14:06:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:06:30,870 - INFO - 127.0.0.1 - - [10/Mar/2026 14:06:30] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:06:38,273 - INFO - 127.0.0.1 - - [10/Mar/2026 14:06:38] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:07:00,833 - INFO - 127.0.0.1 - - [10/Mar/2026 14:07:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:07:00,851 - INFO - 127.0.0.1 - - [10/Mar/2026 14:07:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:07:07,466 - INFO - 127.0.0.1 - - [10/Mar/2026 14:07:07] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:07:12,763 - INFO - Triggering periodic analysis...
+2026-03-10 14:07:12,775 - INFO - Analyzing traffic from 2026-03-10 13:37:12.775337 to 2026-03-10 14:07:12.775337
+2026-03-10 14:07:12,780 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:07:12,781 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:07:30,837 - INFO - 127.0.0.1 - - [10/Mar/2026 14:07:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:07:30,859 - INFO - 127.0.0.1 - - [10/Mar/2026 14:07:30] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:07:38,239 - INFO - 127.0.0.1 - - [10/Mar/2026 14:07:38] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:08:00,840 - INFO - 127.0.0.1 - - [10/Mar/2026 14:08:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:08:00,864 - INFO - 127.0.0.1 - - [10/Mar/2026 14:08:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:08:08,140 - INFO - 127.0.0.1 - - [10/Mar/2026 14:08:08] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:08:12,799 - INFO - Triggering periodic analysis...
+2026-03-10 14:08:12,812 - INFO - Analyzing traffic from 2026-03-10 13:38:12.812432 to 2026-03-10 14:08:12.812432
+2026-03-10 14:08:12,819 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:08:12,820 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:08:30,841 - INFO - 127.0.0.1 - - [10/Mar/2026 14:08:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:08:30,858 - INFO - 127.0.0.1 - - [10/Mar/2026 14:08:30] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:08:37,042 - INFO - 127.0.0.1 - - [10/Mar/2026 14:08:37] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:09:00,845 - INFO - 127.0.0.1 - - [10/Mar/2026 14:09:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:09:00,869 - INFO - 127.0.0.1 - - [10/Mar/2026 14:09:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:09:05,728 - INFO - 127.0.0.1 - - [10/Mar/2026 14:09:05] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:09:12,837 - INFO - Triggering periodic analysis...
+2026-03-10 14:09:12,849 - INFO - Analyzing traffic from 2026-03-10 13:39:12.849090 to 2026-03-10 14:09:12.849090
+2026-03-10 14:09:12,854 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:09:12,855 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:09:30,843 - INFO - 127.0.0.1 - - [10/Mar/2026 14:09:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:09:30,859 - INFO - 127.0.0.1 - - [10/Mar/2026 14:09:30] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:09:34,327 - INFO - 127.0.0.1 - - [10/Mar/2026 14:09:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:10:00,845 - INFO - 127.0.0.1 - - [10/Mar/2026 14:10:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:10:00,879 - INFO - 127.0.0.1 - - [10/Mar/2026 14:10:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:10:04,844 - INFO - 127.0.0.1 - - [10/Mar/2026 14:10:04] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:10:12,868 - INFO - Triggering periodic analysis...
+2026-03-10 14:10:12,879 - INFO - Analyzing traffic from 2026-03-10 13:40:12.879205 to 2026-03-10 14:10:12.879205
+2026-03-10 14:10:12,883 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:10:12,883 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:10:30,852 - INFO - 127.0.0.1 - - [10/Mar/2026 14:10:30] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:10:30,870 - INFO - 127.0.0.1 - - [10/Mar/2026 14:10:30] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:10:34,459 - INFO - 127.0.0.1 - - [10/Mar/2026 14:10:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:10:59,139 - INFO - Analyzing traffic from 2026-03-10 13:40:59.139122 to 2026-03-10 14:10:59.139122
+2026-03-10 14:10:59,144 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:10:59,145 - INFO - 127.0.0.1 - - [10/Mar/2026 14:10:59] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:10:59,169 - INFO - 127.0.0.1 - - [10/Mar/2026 14:10:59] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:00,152 - INFO - Analyzing traffic from 2026-03-10 13:41:00.152098 to 2026-03-10 14:11:00.152098
+2026-03-10 14:11:00,158 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:00,159 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:00] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:00,183 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:00,849 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:00] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:00,861 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:01,038 - INFO - Analyzing traffic from 2026-03-10 13:41:01.038734 to 2026-03-10 14:11:01.038734
+2026-03-10 14:11:01,045 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:01,045 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:01,123 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:01] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:01,963 - INFO - Analyzing traffic from 2026-03-10 13:41:01.963234 to 2026-03-10 14:11:01.963234
+2026-03-10 14:11:01,969 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:01,971 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:02,014 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:02] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:02,617 - INFO - Analyzing traffic from 2026-03-10 13:41:02.617857 to 2026-03-10 14:11:02.617857
+2026-03-10 14:11:02,623 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:02,624 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:02,672 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:02] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:02,715 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:02] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:04,356 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:04] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:04,530 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:04] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:04,541 - INFO - Analyzing traffic from 2026-03-10 13:41:04.541247 to 2026-03-10 14:11:04.541247
+2026-03-10 14:11:04,546 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:04,547 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:04,585 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:04] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:05,485 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:05] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:05,757 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:05] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:05,768 - INFO - Analyzing traffic from 2026-03-10 13:41:05.768851 to 2026-03-10 14:11:05.768851
+2026-03-10 14:11:05,777 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:05,782 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:05,888 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:05] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:06,512 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:06] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:06,766 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:06,786 - INFO - Analyzing traffic from 2026-03-10 13:41:06.786593 to 2026-03-10 14:11:06.786593
+2026-03-10 14:11:06,792 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:06,794 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:06,831 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:06] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:07,745 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:07] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:08,055 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:08] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:08,068 - INFO - Analyzing traffic from 2026-03-10 13:41:08.068705 to 2026-03-10 14:11:08.068705
+2026-03-10 14:11:08,073 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:08,074 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:08,194 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:08] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:10,116 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:10] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:10,281 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:10] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:10,309 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:10] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:10,349 - INFO - Analyzing traffic from 2026-03-10 13:41:10.348375 to 2026-03-10 14:11:10.348375
+2026-03-10 14:11:10,357 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:10,358 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:10] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:10,440 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:10] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:11,248 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:11] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:11,588 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:11] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:11,594 - INFO - Analyzing traffic from 2026-03-10 13:41:11.593957 to 2026-03-10 14:11:11.593957
+2026-03-10 14:11:11,599 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:11,601 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:11] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:11,667 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:11] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:12,115 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:12] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:12,821 - INFO - Analyzing traffic from 2026-03-10 13:41:12.821167 to 2026-03-10 14:11:12.821167
+2026-03-10 14:11:12,832 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:12,834 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:12] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:12,901 - INFO - Triggering periodic analysis...
+2026-03-10 14:11:12,921 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:12] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:12,923 - INFO - Analyzing traffic from 2026-03-10 13:41:12.923381 to 2026-03-10 14:11:12.923381
+2026-03-10 14:11:12,932 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:12,932 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:11:13,513 - INFO - Analyzing traffic from 2026-03-10 13:41:13.513238 to 2026-03-10 14:11:13.513238
+2026-03-10 14:11:13,520 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:13,520 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:13,574 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:13] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:13,604 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:13,996 - INFO - Analyzing traffic from 2026-03-10 13:41:13.996202 to 2026-03-10 14:11:13.996202
+2026-03-10 14:11:14,004 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:14,005 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:14,118 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:14] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:14,907 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:14] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:17,165 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:17] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:18,181 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:18] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:26,163 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-03-10 14:11:26,163 - INFO - Triggering periodic analysis...
+2026-03-10 14:11:26,173 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-03-10 14:11:26,173 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-10 14:11:26,177 - INFO - Analyzing traffic from 2026-03-10 13:41:26.177591 to 2026-03-10 14:11:26.177591
+2026-03-10 14:11:26,188 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:26,188 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:11:32,533 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:32] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:32,661 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:32] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:32,674 - INFO - Analyzing traffic from 2026-03-10 13:41:32.674002 to 2026-03-10 14:11:32.674002
+2026-03-10 14:11:32,684 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:32,686 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:32] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:32,718 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:32] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:33,445 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:33] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:33,669 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:33] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:33,680 - INFO - Analyzing traffic from 2026-03-10 13:41:33.679221 to 2026-03-10 14:11:33.679221
+2026-03-10 14:11:33,692 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:33,695 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:33] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:33,830 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:33] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:34,659 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:34] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:34,923 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:34] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:34,940 - INFO - Analyzing traffic from 2026-03-10 13:41:34.940099 to 2026-03-10 14:11:34.940099
+2026-03-10 14:11:34,948 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:34,951 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:34] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:35,028 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:35] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:36,247 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:36] "GET / HTTP/1.1" 200 -
+2026-03-10 14:11:36,555 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:11:36,575 - INFO - Analyzing traffic from 2026-03-10 13:41:36.575557 to 2026-03-10 14:11:36.575557
+2026-03-10 14:11:36,588 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:11:36,589 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:36] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:11:36,664 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:36] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:11:38,826 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:38] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:40,076 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:40] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:41,360 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:41] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:11:42,995 - INFO - 127.0.0.1 - - [10/Mar/2026 14:11:42] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:12:06,588 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:12:06,606 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:06] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:11,453 - INFO - Analyzing traffic from 2026-03-10 13:42:11.453175 to 2026-03-10 14:12:11.453175
+2026-03-10 14:12:11,461 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:11,462 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:11] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:11,542 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:11] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:12,319 - INFO - Analyzing traffic from 2026-03-10 13:42:12.319565 to 2026-03-10 14:12:12.319565
+2026-03-10 14:12:12,328 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:12,332 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:12] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:12,412 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:12] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:12,846 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:12] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:12:12,886 - INFO - Analyzing traffic from 2026-03-10 13:42:12.886730 to 2026-03-10 14:12:12.886730
+2026-03-10 14:12:12,896 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:12,896 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:12] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:12,927 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:12] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:13,379 - INFO - Analyzing traffic from 2026-03-10 13:42:13.379095 to 2026-03-10 14:12:13.379095
+2026-03-10 14:12:13,385 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:13,386 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:13,413 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:13] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:13,853 - INFO - Analyzing traffic from 2026-03-10 13:42:13.853567 to 2026-03-10 14:12:13.853567
+2026-03-10 14:12:13,858 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:13,861 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:13,888 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:13] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:14,244 - INFO - Analyzing traffic from 2026-03-10 13:42:14.244590 to 2026-03-10 14:12:14.244590
+2026-03-10 14:12:14,249 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:14,250 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:14,275 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:14] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:14,410 - INFO - Analyzing traffic from 2026-03-10 13:42:14.409956 to 2026-03-10 14:12:14.409956
+2026-03-10 14:12:14,414 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:14,417 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:14,444 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:14] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:14,577 - INFO - Analyzing traffic from 2026-03-10 13:42:14.577537 to 2026-03-10 14:12:14.577537
+2026-03-10 14:12:14,589 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:14,590 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:14,623 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:14] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:14,755 - INFO - Analyzing traffic from 2026-03-10 13:42:14.755059 to 2026-03-10 14:12:14.755059
+2026-03-10 14:12:14,759 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:14,760 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:14,789 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:14] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:16,259 - INFO - Analyzing traffic from 2026-03-10 13:42:16.259869 to 2026-03-10 14:12:16.259869
+2026-03-10 14:12:16,266 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:16,266 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:16] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:16,290 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:16] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:16,393 - INFO - Analyzing traffic from 2026-03-10 13:42:16.393483 to 2026-03-10 14:12:16.393483
+2026-03-10 14:12:16,399 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:16,399 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:16] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:16,424 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:16] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:16,593 - INFO - Analyzing traffic from 2026-03-10 13:42:16.593399 to 2026-03-10 14:12:16.593399
+2026-03-10 14:12:16,598 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:16,599 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:16] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:16,621 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:16] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:16,867 - INFO - Analyzing traffic from 2026-03-10 13:42:16.867150 to 2026-03-10 14:12:16.867150
+2026-03-10 14:12:16,872 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:16,872 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:16] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:16,902 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:16] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:26,206 - INFO - Triggering periodic analysis...
+2026-03-10 14:12:26,217 - INFO - Analyzing traffic from 2026-03-10 13:42:26.217205 to 2026-03-10 14:12:26.217205
+2026-03-10 14:12:26,222 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:26,222 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:12:30,931 - INFO - Analyzing traffic from 2026-03-10 13:42:30.931561 to 2026-03-10 14:12:30.931561
+2026-03-10 14:12:30,935 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:30,936 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:30] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:30,965 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:30] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:31,604 - INFO - Analyzing traffic from 2026-03-10 13:42:31.604668 to 2026-03-10 14:12:31.604668
+2026-03-10 14:12:31,610 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:31,610 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:31] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:31,638 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:31] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:32,153 - INFO - Analyzing traffic from 2026-03-10 13:42:32.153686 to 2026-03-10 14:12:32.153686
+2026-03-10 14:12:32,158 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:32,158 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:32] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:32,182 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:32] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:32,650 - INFO - Analyzing traffic from 2026-03-10 13:42:32.650161 to 2026-03-10 14:12:32.650161
+2026-03-10 14:12:32,655 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:32,658 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:32] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:32,683 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:32] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:33,038 - INFO - Analyzing traffic from 2026-03-10 13:42:33.038478 to 2026-03-10 14:12:33.038478
+2026-03-10 14:12:33,048 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:33,049 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:33,117 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:33,233 - INFO - Analyzing traffic from 2026-03-10 13:42:33.233078 to 2026-03-10 14:12:33.233078
+2026-03-10 14:12:33,237 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:33,237 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:33,263 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:33,417 - INFO - Analyzing traffic from 2026-03-10 13:42:33.417868 to 2026-03-10 14:12:33.417868
+2026-03-10 14:12:33,422 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:33,423 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:33,449 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:33,643 - INFO - Analyzing traffic from 2026-03-10 13:42:33.643130 to 2026-03-10 14:12:33.643130
+2026-03-10 14:12:33,651 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:33,652 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:33,684 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:33,718 - INFO - Analyzing traffic from 2026-03-10 13:42:33.717823 to 2026-03-10 14:12:33.717823
+2026-03-10 14:12:33,725 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:33,726 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:33,766 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:33,899 - INFO - Analyzing traffic from 2026-03-10 13:42:33.899785 to 2026-03-10 14:12:33.899785
+2026-03-10 14:12:33,903 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:33,904 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:33,929 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:33] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:34,071 - INFO - Analyzing traffic from 2026-03-10 13:42:34.071040 to 2026-03-10 14:12:34.071040
+2026-03-10 14:12:34,076 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:34,077 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:34] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:34,123 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:34] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:34,616 - INFO - Analyzing traffic from 2026-03-10 13:42:34.616396 to 2026-03-10 14:12:34.616396
+2026-03-10 14:12:34,620 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:12:34,621 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:34] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:34,648 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:34] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:35,172 - INFO - Analyzing traffic from 2026-03-10 13:42:35.172785 to 2026-03-10 14:12:35.172785
+2026-03-10 14:12:35,190 - INFO - Retrieved 4874 rows from conn_log
+2026-03-10 14:12:35,250 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:12:35,251 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:35] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:35,275 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:35] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:36,584 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:12:36,601 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:36] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:36,677 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:36] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:12:38,363 - INFO - Analyzing traffic from 2026-03-10 13:42:38.363833 to 2026-03-10 14:12:38.363833
+2026-03-10 14:12:38,384 - INFO - Retrieved 4875 rows from conn_log
+2026-03-10 14:12:38,443 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:12:38,444 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:38] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:38,465 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:38] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:39,280 - INFO - Analyzing traffic from 2026-03-10 13:42:39.280162 to 2026-03-10 14:12:39.280162
+2026-03-10 14:12:39,301 - INFO - Retrieved 4871 rows from conn_log
+2026-03-10 14:12:39,373 - INFO - Analysis finished: 2 hosts analyzed in 0.07s
+2026-03-10 14:12:39,374 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:39] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:39,396 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:39] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:40,058 - INFO - Analyzing traffic from 2026-03-10 13:42:40.058484 to 2026-03-10 14:12:40.058484
+2026-03-10 14:12:40,074 - INFO - Retrieved 4869 rows from conn_log
+2026-03-10 14:12:40,127 - INFO - Analysis finished: 2 hosts analyzed in 0.05s
+2026-03-10 14:12:40,128 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:40] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:40,148 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:40] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:40,913 - INFO - Analyzing traffic from 2026-03-10 13:42:40.913717 to 2026-03-10 14:12:40.913717
+2026-03-10 14:12:40,934 - INFO - Retrieved 4871 rows from conn_log
+2026-03-10 14:12:41,015 - INFO - Analysis finished: 2 hosts analyzed in 0.08s
+2026-03-10 14:12:41,016 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:41] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:41,046 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:41] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:41,823 - INFO - Analyzing traffic from 2026-03-10 13:42:41.823046 to 2026-03-10 14:12:41.823046
+2026-03-10 14:12:41,846 - INFO - Retrieved 4871 rows from conn_log
+2026-03-10 14:12:41,929 - INFO - Analysis finished: 2 hosts analyzed in 0.08s
+2026-03-10 14:12:41,929 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:41] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:41,959 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:41] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:42,566 - INFO - Analyzing traffic from 2026-03-10 13:42:42.565963 to 2026-03-10 14:12:42.565963
+2026-03-10 14:12:42,596 - INFO - Retrieved 4871 rows from conn_log
+2026-03-10 14:12:42,678 - INFO - Analysis finished: 2 hosts analyzed in 0.08s
+2026-03-10 14:12:42,679 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:42] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:42,710 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:42] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:43,375 - INFO - Analyzing traffic from 2026-03-10 13:42:43.374969 to 2026-03-10 14:12:43.374969
+2026-03-10 14:12:43,401 - INFO - Retrieved 4870 rows from conn_log
+2026-03-10 14:12:43,495 - INFO - Analysis finished: 2 hosts analyzed in 0.09s
+2026-03-10 14:12:43,497 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:43] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:43,539 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:43] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:44,066 - INFO - Analyzing traffic from 2026-03-10 13:42:44.066719 to 2026-03-10 14:12:44.066719
+2026-03-10 14:12:44,084 - INFO - Retrieved 4869 rows from conn_log
+2026-03-10 14:12:44,128 - INFO - Analysis finished: 2 hosts analyzed in 0.04s
+2026-03-10 14:12:44,129 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:44] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:44,162 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:44] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:45,192 - INFO - Analyzing traffic from 2026-03-10 13:42:45.192662 to 2026-03-10 14:12:45.192662
+2026-03-10 14:12:45,216 - INFO - Retrieved 4870 rows from conn_log
+2026-03-10 14:12:45,280 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:12:45,281 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:45] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:45,312 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:45] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:45,765 - INFO - Analyzing traffic from 2026-03-10 13:42:45.765002 to 2026-03-10 14:12:45.765002
+2026-03-10 14:12:45,784 - INFO - Retrieved 4869 rows from conn_log
+2026-03-10 14:12:45,852 - INFO - Analysis finished: 2 hosts analyzed in 0.07s
+2026-03-10 14:12:45,854 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:45] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:45,877 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:45] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:46,385 - INFO - Analyzing traffic from 2026-03-10 13:42:46.385884 to 2026-03-10 14:12:46.385884
+2026-03-10 14:12:46,404 - INFO - Retrieved 4871 rows from conn_log
+2026-03-10 14:12:46,468 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:12:46,469 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:46] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:46,497 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:46] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:46,905 - INFO - Analyzing traffic from 2026-03-10 13:42:46.904998 to 2026-03-10 14:12:46.904998
+2026-03-10 14:12:46,923 - INFO - Retrieved 4871 rows from conn_log
+2026-03-10 14:12:46,984 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:12:46,985 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:46] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:47,010 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:47] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:47,470 - INFO - Analyzing traffic from 2026-03-10 13:42:47.470437 to 2026-03-10 14:12:47.470437
+2026-03-10 14:12:47,495 - INFO - Retrieved 4871 rows from conn_log
+2026-03-10 14:12:47,674 - INFO - Analysis finished: 2 hosts analyzed in 0.18s
+2026-03-10 14:12:47,676 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:47] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:47,748 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:47] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:48,107 - INFO - Analyzing traffic from 2026-03-10 13:42:48.107911 to 2026-03-10 14:12:48.107911
+2026-03-10 14:12:48,128 - INFO - Retrieved 4870 rows from conn_log
+2026-03-10 14:12:48,221 - INFO - Analysis finished: 2 hosts analyzed in 0.09s
+2026-03-10 14:12:48,223 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:48] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:48,254 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:48] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:48,723 - INFO - Analyzing traffic from 2026-03-10 13:42:48.723022 to 2026-03-10 14:12:48.723022
+2026-03-10 14:12:48,742 - INFO - Retrieved 4870 rows from conn_log
+2026-03-10 14:12:48,824 - INFO - Analysis finished: 2 hosts analyzed in 0.08s
+2026-03-10 14:12:48,825 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:48] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:48,856 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:48] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:49,319 - INFO - Analyzing traffic from 2026-03-10 13:42:49.319653 to 2026-03-10 14:12:49.319653
+2026-03-10 14:12:49,344 - INFO - Retrieved 4869 rows from conn_log
+2026-03-10 14:12:49,424 - INFO - Analysis finished: 2 hosts analyzed in 0.08s
+2026-03-10 14:12:49,424 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:49] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:49,455 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:49] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:49,859 - INFO - Analyzing traffic from 2026-03-10 13:42:49.859698 to 2026-03-10 14:12:49.859698
+2026-03-10 14:12:49,888 - INFO - Retrieved 4870 rows from conn_log
+2026-03-10 14:12:49,947 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:12:49,948 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:49] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:49,973 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:49] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:50,567 - INFO - Analyzing traffic from 2026-03-10 13:42:50.567018 to 2026-03-10 14:12:50.567018
+2026-03-10 14:12:50,586 - INFO - Retrieved 4870 rows from conn_log
+2026-03-10 14:12:50,629 - INFO - Analysis finished: 2 hosts analyzed in 0.04s
+2026-03-10 14:12:50,633 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:50] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:50,656 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:50] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:51,122 - INFO - Analyzing traffic from 2026-03-10 13:42:51.122184 to 2026-03-10 14:12:51.122184
+2026-03-10 14:12:51,146 - INFO - Retrieved 4869 rows from conn_log
+2026-03-10 14:12:51,202 - INFO - Analysis finished: 2 hosts analyzed in 0.05s
+2026-03-10 14:12:51,203 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:51] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:51,227 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:51] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:51,673 - INFO - Analyzing traffic from 2026-03-10 13:42:51.673102 to 2026-03-10 14:12:51.673102
+2026-03-10 14:12:51,696 - INFO - Retrieved 4869 rows from conn_log
+2026-03-10 14:12:51,742 - INFO - Analysis finished: 2 hosts analyzed in 0.04s
+2026-03-10 14:12:51,744 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:51] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:51,781 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:51] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:52,181 - INFO - Analyzing traffic from 2026-03-10 13:42:52.181209 to 2026-03-10 14:12:52.181209
+2026-03-10 14:12:52,204 - INFO - Retrieved 4869 rows from conn_log
+2026-03-10 14:12:52,281 - INFO - Analysis finished: 2 hosts analyzed in 0.08s
+2026-03-10 14:12:52,283 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:52] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:52,302 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:52] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:52,840 - INFO - Analyzing traffic from 2026-03-10 13:42:52.840834 to 2026-03-10 14:12:52.840834
+2026-03-10 14:12:52,859 - INFO - Retrieved 4868 rows from conn_log
+2026-03-10 14:12:52,925 - INFO - Analysis finished: 2 hosts analyzed in 0.07s
+2026-03-10 14:12:52,927 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:52] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:52,953 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:52] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:12:53,353 - INFO - Analyzing traffic from 2026-03-10 13:42:53.353672 to 2026-03-10 14:12:53.353672
+2026-03-10 14:12:53,374 - INFO - Retrieved 4868 rows from conn_log
+2026-03-10 14:12:53,437 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:12:53,438 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:53] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:12:53,476 - INFO - 127.0.0.1 - - [10/Mar/2026 14:12:53] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:06,198 - INFO - Analyzing traffic from 2026-03-03 14:13:06.198633 to 2026-03-10 14:13:06.198633
+2026-03-10 14:13:06,360 - INFO - Retrieved 19648 rows from conn_log
+2026-03-10 14:13:06,457 - INFO - Analysis finished: 2 hosts analyzed in 0.10s
+2026-03-10 14:13:06,586 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:13:06,626 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:06] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:06,640 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:06] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:13:17,260 - INFO - Analyzing traffic from 2026-03-10 13:43:17.260924 to 2026-03-10 14:13:17.260924
+2026-03-10 14:13:17,284 - INFO - Retrieved 4874 rows from conn_log
+2026-03-10 14:13:17,351 - INFO - Analysis finished: 2 hosts analyzed in 0.07s
+2026-03-10 14:13:17,352 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:17] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:17,386 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:17] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:17,981 - INFO - Analyzing traffic from 2026-03-10 13:43:17.981934 to 2026-03-10 14:13:17.981934
+2026-03-10 14:13:18,003 - INFO - Retrieved 4874 rows from conn_log
+2026-03-10 14:13:18,064 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:13:18,069 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:18] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:18,097 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:18] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:18,645 - INFO - Analyzing traffic from 2026-03-10 13:43:18.645357 to 2026-03-10 14:13:18.645357
+2026-03-10 14:13:18,676 - INFO - Retrieved 4874 rows from conn_log
+2026-03-10 14:13:18,749 - INFO - Analysis finished: 2 hosts analyzed in 0.07s
+2026-03-10 14:13:18,750 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:18] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:18,787 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:18] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:19,299 - INFO - Analyzing traffic from 2026-03-10 13:43:19.299338 to 2026-03-10 14:13:19.299338
+2026-03-10 14:13:19,323 - INFO - Retrieved 4874 rows from conn_log
+2026-03-10 14:13:19,376 - INFO - Analysis finished: 2 hosts analyzed in 0.05s
+2026-03-10 14:13:19,381 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:19] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:19,407 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:19] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:19,895 - INFO - Analyzing traffic from 2026-03-10 13:43:19.895491 to 2026-03-10 14:13:19.895491
+2026-03-10 14:13:19,920 - INFO - Retrieved 4873 rows from conn_log
+2026-03-10 14:13:19,976 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:13:19,981 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:19] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:20,010 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:20] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:20,551 - INFO - Analyzing traffic from 2026-03-10 13:43:20.551906 to 2026-03-10 14:13:20.551906
+2026-03-10 14:13:20,635 - INFO - Retrieved 4873 rows from conn_log
+2026-03-10 14:13:20,696 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:13:20,701 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:20] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:20,744 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:20] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:21,083 - INFO - Analyzing traffic from 2026-03-10 13:43:21.083844 to 2026-03-10 14:13:21.083844
+2026-03-10 14:13:21,104 - INFO - Retrieved 4873 rows from conn_log
+2026-03-10 14:13:21,193 - INFO - Analysis finished: 2 hosts analyzed in 0.09s
+2026-03-10 14:13:21,194 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:21] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:21,226 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:21] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:21,607 - INFO - Analyzing traffic from 2026-03-10 13:43:21.607876 to 2026-03-10 14:13:21.607876
+2026-03-10 14:13:21,629 - INFO - Retrieved 4873 rows from conn_log
+2026-03-10 14:13:21,681 - INFO - Analysis finished: 2 hosts analyzed in 0.05s
+2026-03-10 14:13:21,685 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:21] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:21,720 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:21] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:22,152 - INFO - Analyzing traffic from 2026-03-10 13:43:22.152269 to 2026-03-10 14:13:22.152269
+2026-03-10 14:13:22,170 - INFO - Retrieved 4874 rows from conn_log
+2026-03-10 14:13:22,224 - INFO - Analysis finished: 2 hosts analyzed in 0.05s
+2026-03-10 14:13:22,226 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:22] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:22,275 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:22] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:23,068 - INFO - Analyzing traffic from 2026-03-10 13:43:23.067948 to 2026-03-10 14:13:23.067948
+2026-03-10 14:13:23,093 - INFO - Retrieved 4873 rows from conn_log
+2026-03-10 14:13:23,145 - INFO - Analysis finished: 2 hosts analyzed in 0.05s
+2026-03-10 14:13:23,148 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:23] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:23,196 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:23] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:23,292 - INFO - Analyzing traffic from 2026-03-10 13:43:23.292822 to 2026-03-10 14:13:23.292822
+2026-03-10 14:13:23,321 - INFO - Retrieved 4873 rows from conn_log
+2026-03-10 14:13:23,393 - INFO - Analysis finished: 2 hosts analyzed in 0.07s
+2026-03-10 14:13:23,395 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:23] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:23,428 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:23] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:23,766 - INFO - Analyzing traffic from 2026-03-10 13:43:23.766643 to 2026-03-10 14:13:23.766643
+2026-03-10 14:13:23,789 - INFO - Retrieved 4873 rows from conn_log
+2026-03-10 14:13:23,855 - INFO - Analysis finished: 2 hosts analyzed in 0.07s
+2026-03-10 14:13:23,858 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:23] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:23,891 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:23] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:24,421 - INFO - Analyzing traffic from 2026-03-10 13:43:24.420976 to 2026-03-10 14:13:24.420976
+2026-03-10 14:13:24,444 - INFO - Retrieved 4873 rows from conn_log
+2026-03-10 14:13:24,508 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:13:24,509 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:24] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:24,544 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:24] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:25,041 - INFO - Analyzing traffic from 2026-03-10 13:43:25.041809 to 2026-03-10 14:13:25.041809
+2026-03-10 14:13:25,065 - INFO - Retrieved 4874 rows from conn_log
+2026-03-10 14:13:25,129 - INFO - Analysis finished: 2 hosts analyzed in 0.06s
+2026-03-10 14:13:25,134 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:25] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:25,161 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:25] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:26,235 - INFO - Triggering periodic analysis...
+2026-03-10 14:13:26,246 - INFO - Analyzing traffic from 2026-03-10 13:43:26.246299 to 2026-03-10 14:13:26.246299
+2026-03-10 14:13:26,267 - INFO - Retrieved 4873 rows from conn_log
+2026-03-10 14:13:26,338 - INFO - Analysis finished: 2 hosts analyzed in 0.07s
+2026-03-10 14:13:26,343 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:13:36,585 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:13:36,603 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:36] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:13:45,090 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:45] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:13:59,058 - INFO - Analyzing traffic from 2026-03-10 13:43:59.058493 to 2026-03-10 14:13:59.058493
+2026-03-10 14:13:59,063 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:13:59,063 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:59] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:13:59,091 - INFO - 127.0.0.1 - - [10/Mar/2026 14:13:59] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:00,250 - INFO - Analyzing traffic from 2026-03-10 13:44:00.250321 to 2026-03-10 14:14:00.250321
+2026-03-10 14:14:00,257 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:00,259 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:00] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:00,308 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:00,940 - INFO - Analyzing traffic from 2026-03-10 13:44:00.940701 to 2026-03-10 14:14:00.940701
+2026-03-10 14:14:00,945 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:00,946 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:00] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:00,973 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:01,486 - INFO - Analyzing traffic from 2026-03-10 13:44:01.486505 to 2026-03-10 14:14:01.486505
+2026-03-10 14:14:01,490 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:01,492 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:01,519 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:01] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:01,960 - INFO - Analyzing traffic from 2026-03-10 13:44:01.960562 to 2026-03-10 14:14:01.960562
+2026-03-10 14:14:01,963 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:01,964 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:01] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:01,988 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:01] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:02,318 - INFO - Analyzing traffic from 2026-03-10 13:44:02.318392 to 2026-03-10 14:14:02.318392
+2026-03-10 14:14:02,322 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:02,323 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:02,349 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:02] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:03,901 - INFO - Analyzing traffic from 2026-03-10 13:44:03.901379 to 2026-03-10 14:14:03.901379
+2026-03-10 14:14:03,905 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:03,906 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:03] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:03,931 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:03] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:04,659 - INFO - Analyzing traffic from 2026-03-10 13:44:04.659280 to 2026-03-10 14:14:04.659280
+2026-03-10 14:14:04,663 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:04,664 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:04,686 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:04] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:05,720 - INFO - Analyzing traffic from 2026-03-10 13:44:05.720499 to 2026-03-10 14:14:05.720499
+2026-03-10 14:14:05,741 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:05,742 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:05] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:05,783 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:05] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:06,374 - INFO - Analyzing traffic from 2026-03-10 13:44:06.374216 to 2026-03-10 14:14:06.374216
+2026-03-10 14:14:06,379 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:06,380 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:06] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:06,405 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:06] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:06,606 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:14:06,624 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:06] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:07,166 - INFO - Analyzing traffic from 2026-03-10 13:44:07.166207 to 2026-03-10 14:14:07.166207
+2026-03-10 14:14:07,170 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:07,171 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:07] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:07,198 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:07] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:07,409 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:07] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:14:08,236 - INFO - Analyzing traffic from 2026-03-10 13:44:08.236526 to 2026-03-10 14:14:08.236526
+2026-03-10 14:14:08,240 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:08,240 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:08,272 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:08] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:08,877 - INFO - Analyzing traffic from 2026-03-10 13:44:08.877854 to 2026-03-10 14:14:08.877854
+2026-03-10 14:14:08,881 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:08,881 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:08] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:08,903 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:08] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:09,572 - INFO - Analyzing traffic from 2026-03-10 13:44:09.572251 to 2026-03-10 14:14:09.572251
+2026-03-10 14:14:09,575 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:09,576 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:09,599 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:09] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:11,281 - INFO - Analyzing traffic from 2026-03-10 13:44:11.280928 to 2026-03-10 14:14:11.280928
+2026-03-10 14:14:11,284 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:11,285 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:11] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:11,317 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:11] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:12,544 - INFO - Analyzing traffic from 2026-03-10 13:44:12.544000 to 2026-03-10 14:14:12.544000
+2026-03-10 14:14:12,547 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:12,548 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:12] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:12,575 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:12] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:13,293 - INFO - Analyzing traffic from 2026-03-10 13:44:13.293070 to 2026-03-10 14:14:13.293070
+2026-03-10 14:14:13,297 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:13,297 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:13,372 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:13] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:13,926 - INFO - Analyzing traffic from 2026-03-10 13:44:13.926125 to 2026-03-10 14:14:13.926125
+2026-03-10 14:14:13,940 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:13,942 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:13] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:14,044 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:14] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:14,584 - INFO - Analyzing traffic from 2026-03-10 13:44:14.584525 to 2026-03-10 14:14:14.584525
+2026-03-10 14:14:14,638 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:14,641 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:14] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:14,753 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:14] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:16,882 - INFO - Analyzing traffic from 2026-03-10 13:44:16.882495 to 2026-03-10 14:14:16.882495
+2026-03-10 14:14:16,885 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:16,886 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:16] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:16,907 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:16] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:17,680 - INFO - Analyzing traffic from 2026-03-10 13:44:17.680306 to 2026-03-10 14:14:17.680306
+2026-03-10 14:14:17,684 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:17,685 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:17] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:17,708 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:17] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:18,393 - INFO - Analyzing traffic from 2026-03-10 13:44:18.393903 to 2026-03-10 14:14:18.393903
+2026-03-10 14:14:18,397 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:18,398 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:18] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:18,471 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:18] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:19,014 - INFO - Analyzing traffic from 2026-03-10 13:44:19.013416 to 2026-03-10 14:14:19.013416
+2026-03-10 14:14:19,018 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:19,020 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:19] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:19,049 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:19] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:19,532 - INFO - Analyzing traffic from 2026-03-10 13:44:19.532881 to 2026-03-10 14:14:19.532881
+2026-03-10 14:14:19,536 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:19,537 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:19] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:19,561 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:19] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:19,865 - INFO - Analyzing traffic from 2026-03-10 13:44:19.865895 to 2026-03-10 14:14:19.865895
+2026-03-10 14:14:19,872 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:19,873 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:19] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:19,895 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:19] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:20,255 - INFO - Analyzing traffic from 2026-03-10 13:44:20.255864 to 2026-03-10 14:14:20.255864
+2026-03-10 14:14:20,268 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:20,270 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:20] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:20,343 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:20] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:20,451 - INFO - Analyzing traffic from 2026-03-10 13:44:20.451891 to 2026-03-10 14:14:20.451891
+2026-03-10 14:14:20,455 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:20,455 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:20] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:20,478 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:20] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:20,752 - INFO - Analyzing traffic from 2026-03-10 13:44:20.752237 to 2026-03-10 14:14:20.752237
+2026-03-10 14:14:20,756 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:20,757 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:20] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:20,784 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:20] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:23,103 - INFO - Analyzing traffic from 2026-03-03 14:14:23.103674 to 2026-03-10 14:14:23.103674
+2026-03-10 14:14:27,758 - INFO - Retrieved 999992 rows from conn_log
+2026-03-10 14:14:28,746 - INFO - Analyzing traffic from 2026-03-10 13:44:28.746606 to 2026-03-10 14:14:28.746606
+2026-03-10 14:14:28,785 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:28,786 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:28] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:28,871 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:28] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:29,296 - INFO - Analyzing traffic from 2026-03-10 13:44:29.296820 to 2026-03-10 14:14:29.296820
+2026-03-10 14:14:29,301 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:29,302 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:29] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:29,328 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:29] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:31,115 - INFO - Analyzing traffic from 2026-03-10 13:44:31.115587 to 2026-03-10 14:14:31.115587
+2026-03-10 14:14:31,118 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:31,119 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:31] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:31,147 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:31] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:31,683 - INFO - Analysis finished: 2 hosts analyzed in 3.92s
+2026-03-10 14:14:36,597 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:36] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:14:36,613 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:36] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:14:36,613 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:36] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:36,830 - INFO - Analyzing traffic from 2026-03-03 14:14:36.830031 to 2026-03-10 14:14:36.830031
+2026-03-10 14:14:36,838 - INFO - Retrieved 583 rows from conn_log
+2026-03-10 14:14:36,867 - INFO - Analysis finished: 2 hosts analyzed in 0.03s
+2026-03-10 14:14:38,309 - INFO - Analyzing traffic from 2026-03-10 13:44:38.309514 to 2026-03-10 14:14:38.309514
+2026-03-10 14:14:38,313 - INFO - Retrieved 62 rows from conn_log
+2026-03-10 14:14:38,338 - INFO - Analysis finished: 1 hosts analyzed in 0.02s
+2026-03-10 14:14:38,340 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:38] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:38,366 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:38] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:40,178 - INFO - Analyzing traffic from 2026-03-10 13:44:40.178435 to 2026-03-10 14:14:40.178435
+2026-03-10 14:14:40,182 - INFO - Retrieved 46 rows from conn_log
+2026-03-10 14:14:40,202 - INFO - Analysis finished: 1 hosts analyzed in 0.02s
+2026-03-10 14:14:40,203 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:40] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:40,229 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:40] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:40,854 - INFO - Analyzing traffic from 2026-03-03 14:14:40.853965 to 2026-03-10 14:14:40.853965
+2026-03-10 14:14:40,861 - INFO - Retrieved 538 rows from conn_log
+2026-03-10 14:14:40,890 - INFO - Analysis finished: 2 hosts analyzed in 0.03s
+2026-03-10 14:14:41,141 - INFO - Analyzing traffic from 2026-03-10 13:44:41.141875 to 2026-03-10 14:14:41.141875
+2026-03-10 14:14:41,145 - INFO - Retrieved 46 rows from conn_log
+2026-03-10 14:14:41,164 - INFO - Analysis finished: 1 hosts analyzed in 0.02s
+2026-03-10 14:14:41,165 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:41] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:41,195 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:41] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:42,021 - INFO - Analyzing traffic from 2026-03-10 13:44:42.021112 to 2026-03-10 14:14:42.021112
+2026-03-10 14:14:42,024 - INFO - Retrieved 46 rows from conn_log
+2026-03-10 14:14:42,043 - INFO - Analysis finished: 1 hosts analyzed in 0.02s
+2026-03-10 14:14:42,044 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:42] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:42,066 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:42] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:42,792 - INFO - Analyzing traffic from 2026-03-10 13:44:42.792702 to 2026-03-10 14:14:42.792702
+2026-03-10 14:14:42,797 - INFO - Retrieved 46 rows from conn_log
+2026-03-10 14:14:42,820 - INFO - Analysis finished: 1 hosts analyzed in 0.02s
+2026-03-10 14:14:42,821 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:42] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:42,849 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:42] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:43,656 - INFO - Analyzing traffic from 2026-03-10 13:44:43.656531 to 2026-03-10 14:14:43.656531
+2026-03-10 14:14:43,662 - INFO - Retrieved 46 rows from conn_log
+2026-03-10 14:14:43,683 - INFO - Analysis finished: 1 hosts analyzed in 0.02s
+2026-03-10 14:14:43,685 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:43] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:43,713 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:43] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:44,412 - INFO - Analyzing traffic from 2026-03-10 13:44:44.412651 to 2026-03-10 14:14:44.412651
+2026-03-10 14:14:44,418 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:44,419 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:44] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:44,444 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:44] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:45,064 - INFO - Triggering periodic analysis...
+2026-03-10 14:14:45,077 - INFO - Analyzing traffic from 2026-03-10 13:44:45.077364 to 2026-03-10 14:14:45.077364
+2026-03-10 14:14:45,082 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:45,082 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:14:45,184 - INFO - Analyzing traffic from 2026-03-10 13:44:45.184894 to 2026-03-10 14:14:45.184894
+2026-03-10 14:14:45,188 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:45,189 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:45] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:45,228 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:45] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:45,794 - INFO - Analyzing traffic from 2026-03-10 13:44:45.794069 to 2026-03-10 14:14:45.794069
+2026-03-10 14:14:45,796 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:45,797 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:45] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:45,826 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:45] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:46,360 - INFO - Analyzing traffic from 2026-03-10 13:44:46.360864 to 2026-03-10 14:14:46.360864
+2026-03-10 14:14:46,364 - INFO - Retrieved 0 rows from conn_log
+2026-03-10 14:14:46,364 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:46] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:14:46,388 - INFO - 127.0.0.1 - - [10/Mar/2026 14:14:46] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:14:49,649 - INFO - Analyzing traffic from 2026-03-03 14:14:49.649274 to 2026-03-10 14:14:49.649274
+2026-03-10 14:14:49,678 - INFO - Retrieved 8462 rows from conn_log
+2026-03-10 14:14:49,725 - INFO - Analysis finished: 2 hosts analyzed in 0.05s
+2026-03-10 14:15:06,597 - INFO - 127.0.0.1 - - [10/Mar/2026 14:15:06] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:15:06,621 - INFO - 127.0.0.1 - - [10/Mar/2026 14:15:06] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:15:06,727 - INFO - 127.0.0.1 - - [10/Mar/2026 14:15:06] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:36:23,987 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-03-10 14:36:23,988 - INFO - Triggering periodic analysis...
+2026-03-10 14:36:23,997 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-03-10 14:36:23,997 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-10 14:36:24,003 - INFO - Analyzing traffic from 2026-03-10 14:06:24.003586 to 2026-03-10 14:36:24.003586
+2026-03-10 14:36:27,677 - INFO - 127.0.0.1 - - [10/Mar/2026 14:36:27] "GET / HTTP/1.1" 200 -
+2026-03-10 14:36:28,050 - INFO - 127.0.0.1 - - [10/Mar/2026 14:36:28] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:36:28,071 - INFO - Analyzing traffic from 2026-03-10 14:06:28.071298 to 2026-03-10 14:36:28.071298
+2026-03-10 14:36:30,582 - INFO - Retrieved 1137293 rows from conn_log
+2026-03-10 14:36:35,916 - INFO - Analyzing traffic from 2026-03-10 14:06:35.914001 to 2026-03-10 14:36:35.914001
+2026-03-10 14:36:37,226 - INFO - 127.0.0.1 - - [10/Mar/2026 14:36:37] "GET / HTTP/1.1" 200 -
+2026-03-10 14:36:37,890 - INFO - 127.0.0.1 - - [10/Mar/2026 14:36:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:36:38,087 - INFO - Analyzing traffic from 2026-03-10 14:06:38.086433 to 2026-03-10 14:36:38.086433
+2026-03-10 14:36:38,494 - INFO - Retrieved 1137293 rows from conn_log
+2026-03-10 14:36:39,111 - INFO - Analysis finished: 2 hosts analyzed in 8.52s
+2026-03-10 14:36:39,560 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:36:48,506 - INFO - 127.0.0.1 - - [10/Mar/2026 14:36:48] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:36:49,148 - INFO - Retrieved 1137293 rows from conn_log
+2026-03-10 14:36:49,256 - INFO - Retrieved 1137453 rows from conn_log
+2026-03-10 14:36:55,430 - INFO - 127.0.0.1 - - [10/Mar/2026 14:36:55] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:36:59,285 - WARNING - SYNCHRONIZED BEACONING DETECTED across hosts: ['41.205.155.1', '196.46.40.90', '196.46.0.116', '196.44.239.62', '192.168.56.1', '156.39.191.250', '197.136.168.82']
+2026-03-10 14:36:59,799 - INFO - Analysis finished: 2 hosts analyzed in 21.26s
+2026-03-10 14:37:00,003 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:00] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:37:02,444 - INFO - Analysis finished: 2 hosts analyzed in 13.30s
+2026-03-10 14:37:02,680 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:37:02,681 - INFO - Analysis finished: 2 hosts analyzed in 13.40s
+2026-03-10 14:37:02,895 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:02] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:37:03,159 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:03] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:37:07,627 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:37:07,661 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:07] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:37:12,792 - INFO - Analyzing traffic from 2026-03-10 14:07:12.792857 to 2026-03-10 14:37:12.792857
+2026-03-10 14:37:13,339 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:13] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:37:16,489 - INFO - Retrieved 1136978 rows from conn_log
+2026-03-10 14:37:20,521 - INFO - Analysis finished: 2 hosts analyzed in 4.03s
+2026-03-10 14:37:20,719 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:20] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:37:20,957 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:20] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:37:37,630 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:37:37,673 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:37] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:37:38,518 - INFO - 127.0.0.1 - - [10/Mar/2026 14:37:38] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:37:59,286 - INFO - Triggering periodic analysis...
+2026-03-10 14:37:59,297 - INFO - Analyzing traffic from 2026-03-10 14:07:59.296955 to 2026-03-10 14:37:59.296955
+2026-03-10 14:38:02,791 - INFO - Retrieved 1137144 rows from conn_log
+2026-03-10 14:38:06,811 - INFO - Analysis finished: 2 hosts analyzed in 4.02s
+2026-03-10 14:38:07,027 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:38:07,630 - INFO - 127.0.0.1 - - [10/Mar/2026 14:38:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:38:07,667 - INFO - 127.0.0.1 - - [10/Mar/2026 14:38:07] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:38:09,302 - INFO - 127.0.0.1 - - [10/Mar/2026 14:38:09] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:38:10,819 - WARNING - SYNCHRONIZED BEACONING DETECTED across hosts: ['41.205.155.1', '196.46.40.90', '196.46.0.116', '196.44.239.62', '192.168.56.1', '156.39.191.250', '197.136.168.82']
+2026-03-10 14:38:37,630 - INFO - 127.0.0.1 - - [10/Mar/2026 14:38:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:38:37,647 - INFO - 127.0.0.1 - - [10/Mar/2026 14:38:37] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:38:38,425 - INFO - 127.0.0.1 - - [10/Mar/2026 14:38:38] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:39:07,636 - INFO - 127.0.0.1 - - [10/Mar/2026 14:39:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:39:07,654 - INFO - 127.0.0.1 - - [10/Mar/2026 14:39:07] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:39:08,372 - INFO - 127.0.0.1 - - [10/Mar/2026 14:39:08] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:39:10,826 - INFO - Triggering periodic analysis...
+2026-03-10 14:39:10,836 - INFO - Analyzing traffic from 2026-03-10 14:09:10.836706 to 2026-03-10 14:39:10.836706
+2026-03-10 14:39:13,993 - INFO - Retrieved 1137471 rows from conn_log
+2026-03-10 14:39:18,029 - INFO - Analysis finished: 2 hosts analyzed in 4.04s
+2026-03-10 14:39:18,221 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:39:21,504 - WARNING - SYNCHRONIZED BEACONING DETECTED across hosts: ['41.205.155.1', '196.46.40.90', '196.46.0.116', '196.44.239.62', '192.168.56.1', '156.39.191.250', '197.136.168.82']
+2026-03-10 14:39:37,637 - INFO - 127.0.0.1 - - [10/Mar/2026 14:39:37] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:39:37,723 - INFO - 127.0.0.1 - - [10/Mar/2026 14:39:37] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:39:38,529 - INFO - 127.0.0.1 - - [10/Mar/2026 14:39:38] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:40:07,898 - INFO - 127.0.0.1 - - [10/Mar/2026 14:40:07] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:40:07,913 - INFO - 127.0.0.1 - - [10/Mar/2026 14:40:07] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:40:08,696 - INFO - 127.0.0.1 - - [10/Mar/2026 14:40:08] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:40:21,507 - INFO - Triggering periodic analysis...
+2026-03-10 14:40:21,517 - INFO - Analyzing traffic from 2026-03-10 14:10:21.517471 to 2026-03-10 14:40:21.517471
+2026-03-10 14:40:25,156 - INFO - Retrieved 1137314 rows from conn_log
+2026-03-10 14:40:52,919 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-03-10 14:40:52,920 - INFO - Triggering periodic analysis...
+2026-03-10 14:40:52,926 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-03-10 14:40:52,927 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-10 14:40:52,933 - INFO - Analyzing traffic from 2026-03-10 14:10:52.933173 to 2026-03-10 14:40:52.933173
+2026-03-10 14:40:53,695 - INFO - 127.0.0.1 - - [10/Mar/2026 14:40:53] "GET / HTTP/1.1" 200 -
+2026-03-10 14:40:53,909 - INFO - 127.0.0.1 - - [10/Mar/2026 14:40:53] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 14:40:53,926 - INFO - Analyzing traffic from 2026-03-10 14:10:53.926919 to 2026-03-10 14:40:53.926919
+2026-03-10 14:40:54,844 - INFO - 127.0.0.1 - - [10/Mar/2026 14:40:54] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 14:40:56,994 - INFO - Retrieved 1137552 rows from conn_log
+2026-03-10 14:40:58,483 - INFO - Retrieved 1137633 rows from conn_log
+2026-03-10 14:41:02,945 - INFO - Analysis finished: 2 hosts analyzed in 5.95s
+2026-03-10 14:41:03,191 - INFO - Checking for synchronized beaconing...
+2026-03-10 14:41:04,423 - INFO - Analysis finished: 2 hosts analyzed in 5.94s
+2026-03-10 14:41:04,705 - INFO - 127.0.0.1 - - [10/Mar/2026 14:41:04] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 14:41:05,260 - INFO - 127.0.0.1 - - [10/Mar/2026 14:41:05] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 14:41:07,094 - WARNING - SYNCHRONIZED BEACONING DETECTED across hosts: ['41.205.155.1', '197.136.168.82', '156.39.191.250', '41.208.48.126', '196.46.40.90', '196.44.239.62', '196.46.0.116', '192.168.56.1', '41.208.48.123']
+2026-03-10 15:00:44,876 - INFO - Starting C2 Monitor Service (Interval: 60s)
+2026-03-10 15:00:44,877 - INFO - Triggering periodic analysis...
+2026-03-10 15:00:44,881 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+2026-03-10 15:00:44,881 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-10 15:00:44,889 - INFO - Analyzing traffic from 2026-03-10 14:30:44.889448 to 2026-03-10 15:00:44.889448
+2026-03-10 15:00:47,840 - INFO - 127.0.0.1 - - [10/Mar/2026 15:00:47] "GET /api/status HTTP/1.1" 200 -
+2026-03-10 15:00:48,991 - INFO - Retrieved 1137827 rows from conn_log
+2026-03-10 15:00:53,193 - INFO - Analysis finished: 1 hosts analyzed in 4.20s
+2026-03-10 15:00:53,406 - INFO - Checking for synchronized beaconing...
+2026-03-10 15:01:00,315 - INFO - 127.0.0.1 - - [10/Mar/2026 15:01:00] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 15:01:00,500 - WARNING - SYNCHRONIZED BEACONING DETECTED across hosts: ['41.210.240.124', '156.62.3.247', '77.92.159.238', '41.205.155.1', '91.176.240.1']
+2026-03-10 15:01:01,971 - INFO - Analyzing traffic from 2026-03-10 14:31:01.971293 to 2026-03-10 15:01:01.971293
+2026-03-10 15:01:05,790 - INFO - Retrieved 1137665 rows from conn_log
+2026-03-10 15:01:09,491 - INFO - Analysis finished: 1 hosts analyzed in 3.70s
+2026-03-10 15:01:09,691 - INFO - 127.0.0.1 - - [10/Mar/2026 15:01:09] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 15:01:09,952 - INFO - 127.0.0.1 - - [10/Mar/2026 15:01:09] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 15:01:11,564 - INFO - Analyzing traffic from 2026-03-10 14:31:11.564695 to 2026-03-10 15:01:11.564695
+2026-03-10 15:01:15,082 - INFO - Retrieved 1137827 rows from conn_log
+2026-03-10 15:01:19,171 - INFO - Analysis finished: 1 hosts analyzed in 4.09s
+2026-03-10 15:01:19,367 - INFO - 127.0.0.1 - - [10/Mar/2026 15:01:19] "GET /api/analyze HTTP/1.1" 200 -
+2026-03-10 15:01:19,707 - INFO - 127.0.0.1 - - [10/Mar/2026 15:01:19] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 15:01:29,880 - INFO - 127.0.0.1 - - [10/Mar/2026 15:01:29] "GET /api/alerts HTTP/1.1" 200 -
+2026-03-10 15:01:29,902 - INFO - 127.0.0.1 - - [10/Mar/2026 15:01:29] "GET /api/stats HTTP/1.1" 200 -
+2026-03-10 15:01:34,948 - INFO - 127.0.0.1 - - [10/Mar/2026 15:01:34] "GET /api/online_systems HTTP/1.1" 200 -
+2026-03-10 15:01:41,886 - INFO - Analyzing traffic from 2026-03-10 14:31:41.886820 to 2026-03-10 15:01:41.886820
+2026-03-10 15:01:42,554 - INFO - Analyzing traffic from 2026-03-10 14:31:42.554164 to 2026-03-10 15:01:42.554164
+2026-03-10 15:03:05,716 - INFO - Analyzing traffic from 2026-03-03 15:03:05.715956 to 2026-03-10 15:03:05.715956
+2026-03-10 15:03:05,857 - INFO - Retrieved 19626 rows from conn_log
+2026-03-10 15:03:05,926 - INFO - BEACON DETECTED: host=192.168.56.1 ip=192.168.56.1 p_score=0.487 interval=196.6s
+2026-03-10 15:03:05,953 - INFO - Analysis finished: 2 hosts analyzed in 0.09s
+2026-03-10 15:04:01,193 - INFO - Analyzing traffic from 2026-03-03 15:04:01.193749 to 2026-03-10 15:04:01.193749
+2026-03-10 15:04:04,787 - INFO - Retrieved 999992 rows from conn_log
+2026-03-10 15:04:08,382 - INFO - BEACON DETECTED: host=192.168.56.111 ip=192.168.56.111 p_score=0.499 interval=17.8s
+2026-03-10 15:04:08,458 - INFO - Analysis finished: 2 hosts analyzed in 3.67s
+2026-03-10 15:04:14,984 - INFO - Analyzing traffic from 2026-03-03 15:04:14.984830 to 2026-03-10 15:04:14.984830
+2026-03-10 15:04:14,992 - INFO - Retrieved 583 rows from conn_log
+2026-03-10 15:04:15,018 - INFO - Analysis finished: 2 hosts analyzed in 0.03s
+2026-03-10 15:04:19,437 - INFO - Analyzing traffic from 2026-03-03 15:04:19.437785 to 2026-03-10 15:04:19.437785
+2026-03-10 15:04:19,447 - INFO - Retrieved 538 rows from conn_log
+2026-03-10 15:04:19,470 - INFO - Analysis finished: 2 hosts analyzed in 0.02s
+2026-03-10 15:04:27,756 - INFO - Analyzing traffic from 2026-03-03 15:04:27.756396 to 2026-03-10 15:04:27.756396
+2026-03-10 15:04:27,790 - INFO - Retrieved 8462 rows from conn_log
+2026-03-10 15:04:27,829 - INFO - Analysis finished: 2 hosts analyzed in 0.04s
+2026-03-10 18:47:27,771 - INFO - Analyzing traffic from 2026-03-03 18:47:27.771539 to 2026-03-10 18:47:27.771539
