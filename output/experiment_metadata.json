@@ -1,45 +1,13 @@
 {
-  "experiment_timestamp": "2026-03-10T15:02:32Z",
+  "experiment_timestamp": "2026-03-10T20:02:45Z",
   "scenarios": {
-    "scenario_1": {
-      "accuracy": 0.9814814814814815,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
-      "fpr": 0.018518518518518517,
-      "total_hosts": 54
-    },
     "scenario_17": {
-      "accuracy": 0.6666666666666666,
+      "accuracy": 0.5,
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0,
-      "fpr": 0.3333333333333333,
-      "total_hosts": 3
-    },
-    "scenario_20": {
-      "accuracy": 1.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
-      "fpr": 0.0,
-      "total_hosts": 3
-    },
-    "scenario_21": {
-      "accuracy": 1.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
-      "fpr": 0.0,
-      "total_hosts": 5
-    },
-    "scenario_3": {
-      "accuracy": 1.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
-      "fpr": 0.0,
-      "total_hosts": 3
+      "fpr": 0.5,
+      "total_hosts": 4
     }
   }
 }

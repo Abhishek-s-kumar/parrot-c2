@@ -13,12 +13,19 @@ export PGHOST="127.0.0.1"
 export PGUSER="c2user"
 export PGDATABASE="c2db"
 
-# Auto-discover all scenario directories in datasets/iot23/ safely
-SCENARIOS=($(find "${BASE_DIR}/datasets/iot23" -maxdepth 1 -type d -name "scenario_*" -printf "%f\n" | sort))
+# Allow specific scenario selection
+if [ ! -z "$1" ]; then
+    SCENARIOS=("$1")
+else
+    # Auto-discover all scenario directories in datasets/iot23/ safely
+    SCENARIOS=($(find "${BASE_DIR}/datasets/iot23" -maxdepth 1 -type d -name "scenario_*" -printf "%f\n" | sort))
+fi
 TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+COMPLETED_LOG="${BASE_DIR}/output/completed_scenarios.log"
+touch "${COMPLETED_LOG}"
 
 echo "=== C2 Detection Experiment Starting: ${TIMESTAMP} ==="
-echo "Found ${#SCENARIOS[@]} scenarios."
+echo "Found ${#SCENARIOS[@]} scenarios to process."
 
 # Initialize metadata
 echo "{\"experiment_timestamp\": \"${TIMESTAMP}\", \"scenarios\": {}}" > ${METADATA_FILE}
@@ -41,6 +48,11 @@ fi
 
 for SCENARIO in "${AVAILABLE_SCENARIOS[@]}"; do
     echo "=== Processing Scenario: ${SCENARIO} ==="
+
+    if grep -q "^${SCENARIO}$" "${COMPLETED_LOG}"; then
+        echo " [+] Scenario ${SCENARIO} already completed. Skipping."
+        continue
+    fi
 
     # Define the log file path (prioritize slim, then gz, then raw)
     LOG_FILE="${BASE_DIR}/datasets/iot23/${SCENARIO}/conn.log.labeled.slim"
@@ -82,7 +94,12 @@ for SCENARIO in "${AVAILABLE_SCENARIOS[@]}"; do
     echo "--- [5/5] Cross-Host Correlation ---"
     ${VENV_PYTHON} ${BASE_DIR}/scripts/cross_host_correlation.py > /dev/null
 
+    echo "--- System Metrics ---"
+    free -h
+    psql -w -X -c "SELECT COUNT(*) AS total_flows FROM conn_log;"
+
     # Log completion for this scenario
+    echo "${SCENARIO}" >> "${COMPLETED_LOG}"
     echo "Scenario ${SCENARIO} complete."
 done
 

@@ -5,3 +5,4 @@ opt/Malware-Project/BigDataset/
 logs/
 venv/
 output/
+__pycache__/

@@ -136,5 +136,40 @@ else
     echo " [INFO] No beacon detections in the last 60 minutes — awaiting traffic."
 fi
 
+# 9. Detection Engine Diagnostic
+echo "[*] Diagnostic: Investigating Low P-Scores..."
+HVOL_LOW_SCORE=$(PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c "SELECT host_ip, p_score, sample_count FROM detection_results WHERE analyzed_at >= NOW() - INTERVAL '60 minutes' AND sample_count > 100 AND p_score < 0.45 ORDER BY analyzed_at DESC LIMIT 5;" 2>/dev/null)
+
+if [ -n "$HVOL_LOW_SCORE" ] && [ "$HVOL_LOW_SCORE" != " " ]; then
+    echo " [!] ALERT: Identified hosts with HIGH TRAFFIC but LOW P-SCORE:"
+    echo "$HVOL_LOW_SCORE" | while read -r line; do
+        IP=$(echo "$line" | awk '{print $1}')
+        SCORE=$(echo "$line" | awk '{print $3}')
+        SAMPLES=$(echo "$line" | awk '{print $5}')
+        echo "  -> IP: $IP (Score: $SCORE, Samples: $SAMPLES)"
+        
+        # Check for Destination Diversity (Behavioral Dilution)
+        DIVERSITY=$(PGPASSWORD=c2password psql -h 127.0.0.1 -U $DB_USER -d $DB_NAME -t -c "SELECT COUNT(DISTINCT id_resp_h) FROM conn_log WHERE id_orig_h = '$IP' AND ts >= NOW() - INTERVAL '60 minutes';" 2>/dev/null | xargs)
+        if [ "$DIVERSITY" -gt 5 ]; then
+            echo "     [DIAGNOSIS] Behavioral Noise: Host talks to $DIVERSITY distinct IPs. Legitimate traffic and background noise are masking the beacon."
+            echo "     [INFO] The system uses 'Periodicity Priority' to help, but high noise still reduces confidence."
+        fi
+        
+        # Check for Aliasing / Spectral Jitter (Verify if the recommendation was applied)
+        WINDOW=$(grep "window_high_rate" $c2_DIR/config/detection_weights.ini | cut -d'=' -f2 | xargs)
+        if [ "$SAMPLES" -gt 300 ]; then
+            if (( $(echo "$WINDOW > 2.0" | bc -l) )); then
+                echo "     [DIAGNOSIS] Aliasing: FFT resolution is insufficient for fast beacons (Current Window: ${WINDOW}s)."
+                echo "     [ACTION] CRITICAL: Reduce 'window_high_rate' to 2.0 in config/detection_weights.ini"
+            else
+                echo "     [DIAGNOSIS] Spectral Jitter/Leakage: 2s resolution active but score remains low. Fast beacons (e.g. 3.2s) mismatch buckets."
+                echo "     [INFO] Hybrid logic implemented in Detection Engine will now fallback to Autocorrelation for better intervals."
+            fi
+        fi
+    done
+else
+    echo " [OK] No high-volume hosts with suspicious low scores found."
+fi
+
 echo "--------------------------------------"
 echo "Troubleshooting Complete."

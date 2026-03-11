@@ -195,14 +195,17 @@ class DetectionEngine:
         return 0.0, 0.0
 
     def calculate_autocorrelation(self, signal):
-        """Calculates normalized autocorrelation and returns the maximum coefficient."""
+        """
+        Calculates normalized autocorrelation.
+        Returns (max_coefficient, peak_lag) to help with frequency estimation.
+        """
         if not isinstance(signal, (pd.Series, np.ndarray, list)):
-            return 0.0
+            return 0.0, 0
             
         sig = signal.values if hasattr(signal, 'values') else np.array(signal)
         n = len(sig)
         if n < 5:
-            return 0.0
+            return 0.0, 0
         
         # Normalize signal (Mean center and scale)
         sig = sig - np.mean(sig)
@@ -210,19 +213,25 @@ class DetectionEngine:
         if std > 0:
             sig = sig / std
 
-        # Use skip_lags=1 to catch 10-30s beacons (Issue 3)
+        # Use skip_lags=1 to catch 10-30s beacons
         lags = range(1, min(n, 50)) 
-        if not lags: return 0.0
+        if not lags: return 0.0, 0
         
         corrs = []
+        lags_list = []
         for lag in lags:
             if (n - lag) > 1:
                 # Use Pearson correlation for normalized signal
                 c = np.corrcoef(sig[:-lag], sig[lag:])[0, 1]
                 if not np.isnan(c):
                     corrs.append(c)
+                    lags_list.append(lag)
         
-        return float(max(corrs)) if corrs else 0.0
+        if not corrs:
+            return 0.0, 0
+            
+        max_idx = np.argmax(corrs)
+        return float(corrs[max_idx]), int(lags_list[max_idx])
 
     def calculate_entropy(self, signal):
         """Calculates normalized Shannon entropy of the signal."""
@@ -319,14 +328,29 @@ class DetectionEngine:
 
     def calculate_final_score(self, periodicity_score, dest_diversity, pkt_stability,
                               session_score, dest_reputation):
-        """Two-part 60/40 behavioral fusion per spec."""
+        """
+        Improved Behavioral Fusion (60/40)
+        Corrected weights to sum to 1.0 (Normalization fix)
+        Added 'Periodicity Priority' to catch beacons on noisy victim hosts.
+        """
+        # Behavioral component (weighted sum = 1.0)
         behavior_score = (
-            0.30 * dest_diversity +
-            0.20 * pkt_stability +
-            0.10 * session_score +
-            0.10 * dest_reputation
+            0.40 * dest_diversity +
+            0.30 * pkt_stability +
+            0.15 * session_score +
+            0.15 * dest_reputation
         )
-        return float(np.clip(0.6 * periodicity_score + 0.4 * behavior_score, 0, 1))
+        
+        # Base fusion
+        final_score = 0.6 * periodicity_score + 0.4 * behavior_score
+        
+        # Periodicity Priority: If periodicity is very strong, it should override behavioral noise.
+        # This helps on victim machines that talk to many legitimate IPs.
+        if periodicity_score > 0.7:
+            boost = (periodicity_score - 0.7) * 0.5
+            final_score = min(0.95, final_score + boost)
+            
+        return float(np.clip(final_score, 0, 1))
 
     def calculate_p_score(self, fft_peak, autocorr_max, entropy_norm, iat_var_score, pkt_stab_score):
         """Legacy periodicity-only score (kept for internal use as periodicity_score component)."""
@@ -441,13 +465,20 @@ class DetectionEngine:
                 fft_peak_v, autocorr_max_v, entropy_norm_v = 0.0, 0.0, 1.0
                 iat_score_v, pkt_score_v = 0.0, 0.0
                 
-                if len(resampled) >= 5:
-                    fft_peak_v, _ = self.calculate_fft(resampled)
-                    autocorr_max_v = self.calculate_autocorrelation(resampled)
+                if len(resampled) >= 3:
+                    fft_peak_v, peak_f_v = self.calculate_fft(resampled)
+                    autocorr_max_v, peak_lag_v = self.calculate_autocorrelation(resampled)
                     entropy_norm_v = self.calculate_entropy(resampled)
                     iat_score_v = self.calculate_iat_variance_score(resampled.values)
                     pkt_score_v = self.calculate_pkt_stability_score(host_df)
                     p_score_v = self.calculate_p_score(fft_peak_v, autocorr_max_v, entropy_norm_v, iat_score_v, pkt_score_v)
+
+                    # Hybrid Frequency Estimation for resampled data
+                    # If FFT peak is weak but autocorrelation is strong, trust autocorrelation for interval
+                    if fft_peak_v < 0.2 and autocorr_max_v > 0.5 and peak_lag_v > 0:
+                        # Convert lag back to frequency: f = 1 / (lag * step_seconds)
+                        # We'll handle peak_f_v update later in the interval_est section
+                        pass
 
                 # --- Type 2: Sparse Events ---
                 host_df_t = host_df.sort_values('ts')
@@ -457,12 +488,20 @@ class DetectionEngine:
                 fft_peak_t, autocorr_max_t, entropy_norm_t = 0.0, 0.0, 1.0
                 iat_score_t, pkt_score_t = 0.0, 0.0
                 
-                if len(deltas) >= 5:
-                    fft_peak_t, _ = self.calculate_fft(deltas)
-                    autocorr_max_t = self.calculate_autocorrelation(deltas)
+                if len(deltas) >= 3:
+                    fft_peak_t, peak_f_t = self.calculate_fft(deltas)
+                    autocorr_max_t, peak_lag_t = self.calculate_autocorrelation(deltas)
                     entropy_norm_t = self.calculate_entropy(deltas)
                     iat_score_t = self.calculate_iat_variance_score(deltas.values)
                     pkt_score_t = pkt_score_v # Reuse packet stability from same host
+                    
+                    # Robust delta periodicity: if signal is constant (intervals are same), 
+                    # FFT and Autocorr might fail, but iat_score will be 1.0.
+                    # We boost the periodicity score if iat_score is extremely high.
+                    if iat_score_t > 0.95:
+                        fft_peak_t = max(fft_peak_t, 0.5) 
+                        autocorr_max_t = max(autocorr_max_t, 0.8)
+                    
                     p_score_t = self.calculate_p_score(fft_peak_t, autocorr_max_t, entropy_norm_t, iat_score_t, pkt_score_t)
 
                 # --- Behavioral Features (Improvement 2) ---
@@ -496,12 +535,32 @@ class DetectionEngine:
                     'samples': len(host_df)
                 })
                 
-                # Prepare for Database Batch
+                # Phase 2.1: Robust Interval Estimation
                 interval_est = 0.0
-                if p_score_v >= p_score_t:
-                    _, peak_f = self.calculate_fft(resampled)
-                    interval_est = float(1.0 / peak_f if peak_f > 0 else 0.0)
-                else:
+                step_secs = float(step.replace('s', ''))
+                
+                if p_score_v >= p_score_t and p_score_v > 0:
+                    # Prefer resampled FFT frequency for dense beacons
+                    if peak_f_v > 0:
+                        interval_est = float(1.0 / peak_f_v)
+                    # Fallback to Autocorr lag if FFT failed (spectral leakage)
+                    elif autocorr_max_v > 0.4 and peak_lag_v > 0:
+                        interval_est = float(peak_lag_v * step_secs)
+                
+                # If resampled failed or deltas are better, use delta stats
+                if interval_est <= 0 or p_score_t > p_score_v:
+                    if iat_score_t > 0.8: # Stable intervals
+                        interval_est = float(np.mean(deltas))
+                    elif autocorr_max_t > 0.4 and peak_lag_t > 0:
+                        # Lag in deltas refers to sequences, not time. 
+                        # For true time in sparse events, mean is usually best.
+                        interval_est = float(np.mean(deltas))
+                    elif peak_f_t > 0:
+                        # Frequency of deltas is cycles per connection, not time.
+                        interval_est = float(np.mean(deltas))
+                
+                # Final guard: if we have high sample count and high periodicity but 0 interval
+                if interval_est <= 0 and periodicity_score > 0.3:
                     interval_est = float(np.mean(deltas)) if len(deltas) > 0 else 0.0
 
                 db_batch.append((
