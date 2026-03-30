@@ -37,7 +37,11 @@ fi
 
 # 2. Check Zeek Log Updates
 echo "[*] Checking Zeek Log Capture..."
-CONN_LOG="$ZEEK_DIR/spool/zeek/conn.log"
+CONN_LOG="$ZEEK_DIR/logs/current/conn.log"
+if [ ! -f "$CONN_LOG" ]; then
+    CONN_LOG="$ZEEK_DIR/spool/zeek/conn.log"
+fi
+
 if sudo test -f "$CONN_LOG"; then
     LAST_MOD=$(sudo stat -c %Y "$CONN_LOG")
     CURR_TIME=$(date +%s)
@@ -48,7 +52,46 @@ if sudo test -f "$CONN_LOG"; then
         echo " [OK] Zeek conn.log is updating (Last update: $DIFF seconds ago)."
     fi
 else
-    echo " [!] CRITICAL: Zeek conn.log NOT FOUND in spool directory!"
+    echo " [!] CRITICAL: Zeek conn.log NOT FOUND!"
+fi
+
+# 2.5 Check Zeek Log Forwarder (tail -F)
+echo "[*] Checking Zeek Log Forwarder..."
+FORWARDER_PID_FILE="$c2_DIR/.zeek_forwarder.pid"
+LOCAL_CONN_LOG="$c2_DIR/logs/zeek/conn.log"
+
+FORWARDER_RUNNING=false
+if [ -f "$FORWARDER_PID_FILE" ]; then
+    FPID=$(cat "$FORWARDER_PID_FILE")
+    if ps -p $FPID > /dev/null 2>&1; then
+        FORWARDER_RUNNING=true
+    fi
+fi
+
+if [ "$FORWARDER_RUNNING" = true ]; then
+    echo " [OK] Forwarder process is running (PID $FPID)."
+    # Check if local log is updating alongside the source
+    if [ -f "$LOCAL_CONN_LOG" ]; then
+        L_SIZE=$(stat -c %s "$LOCAL_CONN_LOG")
+        S_SIZE=$(sudo stat -c %s "$CONN_LOG")
+        if [ "$L_SIZE" -lt "$S_SIZE" ]; then
+             echo " [!] WARNING: Local log ($L_SIZE bytes) is smaller than source ($S_SIZE bytes)."
+             echo "     Forwarder may be stuck. Attempting to restart..."
+             sudo pkill -f "tail -F $CONN_LOG" || true
+             nohup sudo tail -n +1 -F "$CONN_LOG" > "$LOCAL_CONN_LOG" 2>/dev/null &
+             echo $! > "$FORWARDER_PID_FILE"
+             echo " [INFO] Forwarder restarted and synced."
+        else
+             echo " [OK] Local log is synced with source."
+        fi
+    fi
+else
+    echo " [!] CRITICAL: Zeek Log Forwarder NOT running."
+    echo "     Attempting to start forwarder..."
+    mkdir -p "$(dirname "$LOCAL_CONN_LOG")"
+    nohup sudo tail -n +1 -F "$CONN_LOG" > "$LOCAL_CONN_LOG" 2>/dev/null &
+    echo $! > "$FORWARDER_PID_FILE"
+    echo " [INFO] Forwarder started."
 fi
 
 # 3. Check Database Connectivity
